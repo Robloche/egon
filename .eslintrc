@@ -1,0 +1,255 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "requireConfigFile": false,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "flowtype"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:all",
+    "plugin:react/all"
+  ],
+  "rules": {
+    "array-element-newline": [
+      "error",
+      "consistent"
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": true
+      }
+    ],
+    "block-spacing": [
+      "error",
+      "never"
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "callback-return": "off",
+    "class-methods-use-this": "off",
+    "complexity": [
+      "error",
+      30
+    ],
+    "curly": "off",
+    "dot-location": [
+      2,
+      "property"
+    ],
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1,
+    "func-style": [
+      "error",
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "function-call-argument-newline": "off",
+    "function-paren-newline": [
+      "error",
+      "consistent"
+    ],
+    "id-length": "off",
+    "implicit-arrow-linebreak": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "ignoredNodes": [
+          "JSXAttribute"
+        ],
+        "SwitchCase": 1
+      }
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-single"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "lines-around-comment": [
+      "error",
+      {
+        "beforeBlockComment": false
+      }
+    ],
+    "max-depth": [
+      "error",
+      6
+    ],
+    "max-len": [
+      1,
+      200,
+      2,
+      {
+        "ignoreComments": true,
+        "ignorePattern": "d='([\\s\\S]*?)'"
+      }
+    ],
+    "max-lines": "off",
+    "max-lines-per-function": [
+      "error",
+      {
+        "skipBlankLines": true,
+        "skipComments": true,
+        "max": 100
+      }
+    ],
+    "max-params": "off",
+    "max-statements": "off",
+    "multiline-ternary": "off",
+    "newline-per-chained-call": "off",
+    "no-extra-parens": [
+      "error",
+      "functions"
+    ],
+    "no-invalid-this": "off",
+    "no-loop-func": "error",
+    "no-magic-numbers": [
+      "error",
+      {
+        "ignore": [
+          0,
+          1,
+          -1
+        ]
+      }
+    ],
+    "no-negated-condition": "off",
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-process-env": "off",
+    "no-ternary": "off",
+    "no-undef-init": "off",
+    "no-undefined": "off",
+    "no-unused-expressions": "off",
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": true,
+        "classes": false,
+        "variables": false
+      }
+    ],
+    "no-warning-comments": 0,
+    "one-var": "off",
+    "padded-blocks": [
+      "error",
+      {
+        "blocks": "never",
+        "classes": "always",
+        "switches": "never"
+      }
+    ],
+    "prefer-named-capture-group": "off",
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "react/forbid-component-props": "off",
+    "react/function-component-definition": [
+      0
+    ],
+    "react/jsx-closing-bracket-location": [
+      1,
+      {
+        "selfClosing": "after-props",
+        "nonEmpty": "after-props"
+      }
+    ],
+    "react/jsx-closing-tag-location": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-indent": [
+      "error",
+      2
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      2
+    ],
+    "react/jsx-max-depth": [
+      2,
+      {
+        "max": 10
+      }
+    ],
+    "react/jsx-newline": "off",
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "ignoreRefs": true
+      }
+    ],
+    "react/jsx-no-literals": "off",
+    "react/jsx-one-expression-per-line": [
+      0
+    ],
+    "react/jsx-wrap-multilines": "off",
+    "react/no-danger": "off",
+    "react/no-set-state": "off",
+    "react/prefer-stateless-function": "off",
+    "react/sort-comp": [
+      "error",
+      {
+        "order": [
+          "type-annotations",
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "render"
+        ]
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ]
+  }
+}

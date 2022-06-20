@@ -1,0 +1,9 @@
+# production
+/build
+/public
+/dist
+
+# test
+/test
+
+/node_modules

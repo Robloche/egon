@@ -1,0 +1,309 @@
+authentication.browser_and_os;{{browser}} sous {{os}}
+authentication.connection;Connexion
+authentication.my_device;Mon ordinateur
+authentication.service_temporarily_down;Service momentanément indisponible, veuillez réessayer ultérieurement.
+authentication.version;version {{version}}
+carousel.tooltip.fullscreen;Plein écran (F)
+carousel.tooltip.toggle_play;Lecture / pause (Espace)
+carousel.tooltip.toggle_sound;Couper / remettre le son (M)
+common.actions.back;Retour
+common.actions.back_to_top;Retour en haut
+common.actions.cancel;Annuler
+common.actions.confirm;Confirmer
+common.actions.delete;Supprimer
+common.actions.delete_all;Supprimer tout
+common.actions.delete_recording;Suppr. l'enregistrement
+common.actions.delete_series_recording;Supprimer la série
+common.actions.more;Plus
+common.actions.more_info;Plus d'information
+common.actions.no;Non
+common.actions.ok;OK
+common.actions.record;Enregistrer
+common.actions.record_series;Enregistrer la série
+common.actions.see_all;Voir tout
+common.actions.stop;Arrêter
+common.actions.watch;Regarder
+common.actions.watch_live;Voir en direct
+common.actions.yes;Oui
+common.datetime.date_names.1;1er
+common.datetime.date_names.10;10
+common.datetime.date_names.11;11
+common.datetime.date_names.12;12
+common.datetime.date_names.13;13
+common.datetime.date_names.14;14
+common.datetime.date_names.15;15
+common.datetime.date_names.16;16
+common.datetime.date_names.17;17
+common.datetime.date_names.18;18
+common.datetime.date_names.19;19
+common.datetime.date_names.2;2
+common.datetime.date_names.20;20
+common.datetime.date_names.21;21
+common.datetime.date_names.22;22
+common.datetime.date_names.23;23
+common.datetime.date_names.24;24
+common.datetime.date_names.25;25
+common.datetime.date_names.26;26
+common.datetime.date_names.27;27
+common.datetime.date_names.28;28
+common.datetime.date_names.29;29
+common.datetime.date_names.3;3
+common.datetime.date_names.30;30
+common.datetime.date_names.31;31
+common.datetime.date_names.4;4
+common.datetime.date_names.5;5
+common.datetime.date_names.6;6
+common.datetime.date_names.7;7
+common.datetime.date_names.8;8
+common.datetime.date_names.9;9
+common.datetime.day_names.long.friday;vendredi
+common.datetime.day_names.long.monday;lundi
+common.datetime.day_names.long.saturday;samedi
+common.datetime.day_names.long.sunday;dimanche
+common.datetime.day_names.long.thursday;jeudi
+common.datetime.day_names.long.tuesday;mardi
+common.datetime.day_names.long.wednesday;mercredi
+common.datetime.day_names.short.friday;ven
+common.datetime.day_names.short.monday;lun
+common.datetime.day_names.short.saturday;sam
+common.datetime.day_names.short.sunday;dim
+common.datetime.day_names.short.thursday;jeu
+common.datetime.day_names.short.tuesday;mar
+common.datetime.day_names.short.wednesday;mer
+common.datetime.duration_hour_minute;{{hours}}h{{minutes}}
+common.datetime.duration_minute;{{minutes}} min
+common.datetime.expiration.day_one;expire dans {{count}} jour
+common.datetime.expiration.day_other;expire dans {{count}} jours
+common.datetime.expiration.expired;expiré
+common.datetime.expiration.hour_one;expire dans {{count}} heure
+common.datetime.expiration.hour_other;expire dans {{count}} heures
+common.datetime.expiration.less_1_minute;expire dans moins d'une minute
+common.datetime.expiration.minute_one;expire dans {{count}} minute
+common.datetime.expiration.minute_other;expire dans {{count}} minutes
+common.datetime.expiration.more_1_year;expire dans plus d'un an
+common.datetime.expiration.more_3_months;expire dans plus de 3 mois
+common.datetime.month_names.april;avril
+common.datetime.month_names.august;août
+common.datetime.month_names.december;décembre
+common.datetime.month_names.february;février
+common.datetime.month_names.january;janvier
+common.datetime.month_names.july;juillet
+common.datetime.month_names.june;juin
+common.datetime.month_names.march;mars
+common.datetime.month_names.may;mai
+common.datetime.month_names.november;novembre
+common.datetime.month_names.october;octobre
+common.datetime.month_names.september;septembre
+common.datetime.scheduled_event_status.about_to_start;commence à l'instant
+common.datetime.scheduled_event_status.finishing;se termine
+common.datetime.scheduled_event_status.long_past_date;{{month}} {{year}}
+common.datetime.scheduled_event_status.remaining_hour_minute;reste {{hours}}h{{minutes}}
+common.datetime.scheduled_event_status.remaining_minute;reste {{minutes}} min
+common.datetime.scheduled_event_status.since_hour_minute;depuis {{hours}}h{{minutes}}
+common.datetime.scheduled_event_status.since_minute;depuis {{minutes}} min
+common.datetime.scheduled_event_status.specific_date;{{day}} {{date}} {{month}} - {{time}}
+common.datetime.scheduled_event_status.start_in_hour_minute;dans {{hours}}h{{minutes}}
+common.datetime.scheduled_event_status.start_in_minute;dans {{minutes}} min
+common.datetime.scheduled_event_status.starting;commence à l'instant
+common.datetime.scheduled_event_status.this_week;{{day}} {{date}} - {{time}}
+common.datetime.scheduled_event_status.today;aujourd'hui {{time}}
+common.datetime.scheduled_event_status.tomorrow;demain {{time}}
+common.datetime.scheduled_event_status.yesterday;hier {{time}}
+common.messages.errors.code;Code : {{code}}
+common.messages.errors.missing_application_id;Application Id manquant
+common.messages.errors.missing_data_collection_sak_name;SAK manquante pour le hub de data collection
+common.messages.errors.missing_data_collection_sak_value;Valeur SAK manquante pour {{sakName}}
+common.messages.errors.missing_distributor_id;Distributor Id manquant
+common.messages.errors.missing_parameters_list;Paramètre(s) manquant(s) dans {{name}} : {{list}}
+common.messages.errors.missing_recording_etag;L'enregistrement d'id {{assetId}} n'a pas d'e-tag
+common.messages.errors.missing_response_property;Propriété {{property}} manquante dans la réponse
+common.messages.errors.missing_search_key;Clé de recherche manquante
+common.messages.errors.missing_url_definition;Définition manquante pour {{urlDef}}
+common.messages.errors.missing_urls_definition_for_distributor;Définition d'URLs manquantes pour le distributeur {{distributorId}}
+common.messages.errors.missing_url_definition_for_distributor;Définition de l'URL {{methodName}} manquante pour le distributeur {{distributorId}}
+common.messages.errors.missing_bo_authentication_settings;Donnée d'authentification BO manquant
+common.messages.errors.no_drm;Aucune DRM supportée
+common.messages.errors.ntg_api_not_initialized;API Netgem non initialisée
+common.messages.errors.payment_system_not_loaded;Une erreur s'est produite, veuillez recharger la page.
+common.messages.errors.request_failed;La requête a échoué
+common.messages.errors.retry;Une erreur s'est produite, veuillez réessayer ultérieurement.
+common.messages.errors.streams_stop_failure;Erreur lors de la fermeture des flux
+common.messages.errors.unknown_bo_error;Erreur BO inconnue
+common.messages.errors.version_error;Version d'application introuvable
+common.messages.errors.viewing_history_cleanup_failure;Erreur lors du nettoyage de l'historique de lecture
+common.messages.loading;Chargement...
+common.metadata.language.french;VF
+common.metadata.language.estonian;EST
+common.metadata.language.russian;RUS
+common.metadata.language.lithuanian;LIT
+common.metadata.language.letonian;LET
+common.metadata.language.english;ANG
+common.metadata.language.original_version_with_subtitles;VOST
+common.metadata.no_age_restriction;Tous publics
+common.metadata.unknown_title;Titre inconnu
+common.status_picto.catchup;REPLAY
+common.status_picto.future;FUTUR
+common.status_picto.live;EN DIRECT
+common.status_picto.past;PAS DE REPLAY
+common.status_picto.preview;EN AVANCE
+common.status_picto.recording;ENREGISTREMENT
+common.status.live_recording;Enr. en cours
+common.status.scheduled_recording;Enr. programmé
+credits.by;De
+credits.google_search;Chercher avec Google
+credits.presented;Présenté par
+credits.wikipedia.copyright;© Copyright
+credits.wikipedia.copyright_name;Wikipedia
+credits.wikipedia.disambiguation;Ce nom correspond à plusieurs personnes. Cliquez sur le bouton ci-dessous pour en savoir plus.
+credits.wikipedia.license;Cet article est sous licence
+credits.wikipedia.license_name;CC BY-SA 3.0
+credits.wikipedia.more;Ouvrir la page Wikipedia
+credits.wikipedia.not_found;La page Wikipedia n'existe pas...
+credits.with;Avec
+external_payment_system.check_out.load_failure;Impossible d'effectuer un achat. Veuillez réessayer ultérieurement.
+external_payment_system.portal.load_failure;Impossible d'ouvrir votre compte. Veuillez réessayer ultérieurement.
+footer.cookie_policy;Politique de cookies
+footer.download_mobile_app;Téléchargez votre application mobile
+footer.legal_notice;Mentions légales
+footer.personal_data;Données personnelles
+footer.question;Une question?
+footer.version;version {{version}}
+key.escape;Échap.
+key.space;Espace
+login.browser_not_compatible.available_browsers;Vous pouvez toutefois l'utiliser sur PC ou Mac avec les navigateurs suivants :
+login.browser_not_compatible.download_mobile_apps;Ou téléchargez l'application depuis les stores :
+login.browser_not_compatible.service_not_available;Le service n'est pas encore disponible pour votre navigateur.
+login.guest_sign_in_error;Le service est temporairement indisponible, nous vous invitons à ressayer dans quelques instants.
+login.load_failure;La connexion au serveur a échoué.
+login.loading;Chargement...
+login.mobile_browser.download_mobile_apps;Pour profiter au mieux de vos films et séries, installez l'application
+modal.authentication_required.title;Identification requise
+modal.authentication_required.message;Votre appareil a été déconnecté de votre compte. Veuillez vous identifier à nouveau.
+;
+modal.card.actions.add_to_favorites;Ajouter aux favoris
+modal.card.actions.remove_from_favorites;Retirer des favoris
+modal.card.actions.share;Partager
+modal.card.actions.start_over;Reprendre au début
+modal.card.actions.trailer;Bande-annonce
+modal.card.status_picto.failure;Enr. en échec
+modal.card.status_picto.warning_exceeded_concurrency;Enr. en conflit
+modal.card.status_picto.warning_out_of_quota;Enr. hors quota
+modal.card.status_picto.warning_server;Enr. en erreur
+modal.external_content.load_error;Impossible de charger la page. Veuillez réessayer ultérieurement.
+modal.keyboard_shortcuts.back_to_live;Retour au direct (pendant un timeshift)
+modal.keyboard_shortcuts.close_player;Ferme le lecteur
+modal.keyboard_shortcuts.decrease_volume;Réduit le volume
+modal.keyboard_shortcuts.exit_fullscreen;Quitte le mode plein écran
+modal.keyboard_shortcuts.forward_10seconds;Avance de 10 secondes
+modal.keyboard_shortcuts.forward_30seconds;Avance de 30 secondes
+modal.keyboard_shortcuts.header.player;Lecture d'un film
+modal.keyboard_shortcuts.header.trailer;Bande-annonce en fond d'écran
+modal.keyboard_shortcuts.hide_controller;Masque l'interface
+modal.keyboard_shortcuts.increase_volume;Augmente le volume
+modal.keyboard_shortcuts.next_channel;Passe à la chaîne suivante (lecture d'un direct)
+modal.keyboard_shortcuts.previous_channel;Passe à la chaîne précédente (lecture d'un direct)
+modal.keyboard_shortcuts.rewind_10seconds;Recule de 10 secondes
+modal.keyboard_shortcuts.rewind_30seconds;Recule de 30 secondes
+modal.keyboard_shortcuts.show_info;Affiche les informations du programme
+modal.keyboard_shortcuts.title;Raccourcis clavier
+modal.keyboard_shortcuts.toggle_fullscreen;Active ou désactive le mode plein écran
+modal.keyboard_shortcuts.toggle_play;Met en pause ou reprend la lecture
+modal.keyboard_shortcuts.toggle_sound;Coupe ou remet le son
+modal.legal_notice.headquarters;Siège social :
+modal.legal_notice.host;Hébergement :
+modal.legal_notice.host_name;Microsoft Azure
+modal.legal_notice.publishing_director;Directeur de la publication :
+modal.legal_notice.title;Mentions légales
+modal.new_version.click_below;Veuillez cliquer ci-dessous pour rafraîchir cette page.
+modal.new_version.refresh;RAFRAÎCHIR
+modal.new_version.title;Nouvelle version disponible
+my_videos.empty.recordings;Vos enregistrements terminés et vos programmations futures
+my_videos.empty.subtitle.multiple_features;Retrouvez dans cet écran :
+my_videos.empty.subtitle.tv_only;Retrouvez dans cet écran vos programmes favoris et votre historique de lecture
+my_videos.empty.subtitle.vod_only;Retrouvez dans cet écran vos locations et achats VOD
+my_videos.empty.title;Vous n'avez pas encore de programmes dans votre espace MES VIDÉOS
+my_videos.empty.tv;Vos programmes TV favoris et votre historique de lecture
+my_videos.empty.vod;Vos locations et achats VOD
+player.errors.certificate_load_error;Erreur de chargement du certificat : {{message}}
+player.errors.certificate_set_error;Erreur d'installation du certificat
+player.errors.ckc_retrieval_error;Erreur lors de la récupération du CKC: {{message}}
+player.errors.content_unavailable_in_country;Ce contenu n'est pas autorisé pour votre localisation actuelle.
+player.errors.decryption_error;Erreur de décryptage de la vidéo
+player.errors.drm_not_supported;DRM non supportée
+player.errors.encryption_initialization_data_type_error;Mauvais type donnée de decryptage : {{type}}
+player.errors.max_concurrency_exceeded;Vous avez atteint le nombre maximal de lectures simultanées sur plusieurs appareils.
+player.errors.media_keys_error;Erreur de media keys
+player.errors.media_keys_session_error;Erreur de media keys session
+player.errors.media_keys_session_request_error;Erreur de génération de requête de media keys session : {{message}}
+player.errors.missing_channel;Cette chaîne n'est pas disponible.
+player.errors.missing_right;Vous devez souscrire un abonnement pour visionner ce contenu.
+player.errors.start_error;Erreur lors du démarrage de la video : {{message}}
+player.language.english;Anglais
+player.language.french;Français
+player.language.german;Allemand
+player.language.qaa;VO
+player.language.qad;Audiodescription
+player.language.undetermined;Indéterminé
+player.no_program_info;Aucune information de programme
+player.options.audio;Audio
+player.options.subtitles;Sous-titres
+player.resume.question;Souhaitez-vous reprendre la lecture là où vous vous êtes arrêté ou recommencer depuis le début ?
+player.resume.resume;Reprendre à {{position}}
+player.resume.start_over;Recommencer
+player.resume.title;Confirmation de lecture
+player.subtitles.creation_error;Erreur lors de la création des sous-titres
+player.subtitles.load_error;Une erreur est survenue lors du chargement des sous-titres, veuillez réessayer ultérieurement.
+player.subtitles.none;Non sélectionnés
+player.trailer.not_found;La bande-annonce demandée n'existe pas
+search.no_result;Pas de résultat
+search.placeholder;Tapez au moins 3 lettres
+settings.actions.mode_basic;Mode basique
+settings.actions.mode_expert;Mode expert
+settings.actions.reset;Réglages par défaut
+settings.general.search_history.delete.label;Supprimer mon historique de recherche
+settings.general.search_history.delete.confirmation_question;Vous êtes sur le point de supprimer tout votre historique de recherche. Cette action est irréversible.\n\nVoulez-vous vraiment tout supprimer ?
+settings.general.search_history.delete.confirmation_title;Confirmation de suppression
+settings.general.search_history.delete.success;Historique de recherche supprimé
+settings.general.title;Général
+settings.general.version_application;Version d'application : {{version}}
+settings.general.version_bo;Version du BO : {{version}}
+settings.general.version_crm_back;Version du CRM Back : {{version}}
+settings.general.version_crm_front;Version du CRM Front : {{version}}
+settings.general.viewing_history.delete.label;Supprimer mon historique de lecture
+settings.general.viewing_history.delete.confirmation_question;Vous êtes sur le point de supprimer tout votre historique de lecture. Cette action est irréversible.\n\nVoulez-vous vraiment tout supprimer ?
+settings.general.viewing_history.delete.confirmation_title;Confirmation de suppression
+settings.general.viewing_history.delete.error;Une erreur est survenue lors de la suppression de l'historique de lecture
+settings.general.viewing_history.delete.success;Historique de lecture supprimé
+settings.menu.delete_search_history;Effacer mon historique de recherche
+settings.menu.delete_viewing_history;Effacer mon historique de lecture
+settings.menu.keyboard_shortcuts;Raccourcis clavier
+settings.menu.logout;Déconnecter cet appareil
+settings.menu.open_account;Accéder à mon compte
+settings.menu.preferences;Préférences
+settings.menu.recordings;Gérer mes enregistrements
+settings.reset.confirmation_button;Réinitialiser
+settings.reset.confirmation_question;Souhaitez-vous vraiment revenir aux réglages d'origine ?
+settings.reset.confirmation_title;Réinitialisation des réglages
+settings.title;Préférences
+settings.video.auto_resume.ask_confirmation;Demander confirmation
+settings.video.auto_resume.auto_resume;Reprendre automatiquement
+settings.video.auto_resume.label;Reprendre la lecture au dernier point sans confirmation
+settings.video.auto_select_audio_track.label;Sélectionner la dernière piste audio (si disponible)
+settings.video.auto_select_subtitles_track.label;Sélectionner les derniers sous-titres (si disponible)
+settings.video.last_audio_track.label;Dernière piste audio :
+settings.video.last_audio_track.none;Aucune
+settings.video.last_subtitles_track.label;Derniers sous-titres :
+settings.video.last_subtitles_track.none;Aucuns
+settings.video.live_delay.label;Décalage de la tête de lecture en live
+settings.video.stable_buffer_time.label;Durée du buffer interne quand la vidéo n'est pas jouée en qualité maximale
+settings.video.buffer_time_at_top_quality.label;Durée du buffer interne quand la vidéo est jouée en qualité maximale
+settings.video.buffer_time_at_top_quality_long_form.label;Durée du buffer interne quand la vidéo est jouée en qualité maximale (long-form content)
+settings.video.subtitles_color.label;Couleur des sous-titres
+settings.video.subtitles_color.white;Blanc
+settings.video.subtitles_color.yellow;Jaune
+settings.video.subtitles_size.big;Grande
+settings.video.subtitles_size.label;Taille des sous-titres
+settings.video.subtitles_size.medium;Moyenne
+settings.video.subtitles_size.small;Petite
+settings.video.title;Vidéo
+settings.video.volume.label;Volume
