@@ -8,15 +8,16 @@ import sys
 #
 # Generates locales and write them to src/locales/
 #
-# Usage: generate-locales.py <app folder> [-l=<lang1>,<lang2>,...]
+# Usage: generate-locales.py [-l=<lang1>,<lang2>,...]
 #
-# Reads from <repo root folder>/locales-sources/core-<lang>.csv and writes to src/locales/<lang>/translation.json
+# Reads from <repo root folder>/locales-sources/core-<lang>.csv
+# Writes to src/locales/<lang>/translation.json
 #
 
 scriptFile = os.path.realpath(__file__)
 repoRootPath = os.path.dirname(os.path.dirname(scriptFile))
 localesSourcePath = os.path.join(repoRootPath, 'locales-sources')
-localesTargetPath =  os.path.join(repoRootPath, 'packages', 'ntg-core', 'src', 'locales')
+localesTargetPath =  os.path.join(repoRootPath, 'src', 'locales')
 LOCALES_SOURCE_EXTENSION = '.csv'
 LOCALES_TARGET_FILENAME = 'translation.json'
 CORE_NAME = 'core'
@@ -50,27 +51,19 @@ def readFile(file, jsonObj):
 
 # Parse command line
 languages = []
-features = []
-if len(sys.argv) == 1:
-    print('Provide application name and, optionally, one or more features and one or more languages')
-    print('Usage: {} <app name> [-f=<feature1>,<feature2>,...] [-l=<lang1>,<lang2>,...]'.format(os.path.split(scriptFile)[1]))
-    sys.exit(1)
-else:
+if len(sys.argv) > 1:
     for option in sys.argv[2:]:
         [name,value]=option.split('=')
-        if name == '-f':
-            features = value.split(',')
         if name == '-l':
             languages = value.split(',')
 
+if len(languages) == 0:
+    languages = getAvailableLanguages()
     if len(languages) == 0:
-        languages = getAvailableLanguages()
-        if len(languages) == 0:
-            print('No language provided and no locales found in {}'.format(localesSourcePath))
-            sys.exit(1)
+        print('No language provided and no locales found in {}'.format(localesSourcePath))
+        sys.exit(1)
 
-appName = sys.argv[1]
-sources = [CORE_NAME] + list(map(lambda f: 'feature-' + f, features)) + ['app-' + appName]
+sources = [CORE_NAME]
 
 # Read CSV sources and write JSON for all languages
 for lang in languages:

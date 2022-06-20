@@ -2,6 +2,7 @@
 
 import './App.scss';
 import * as React from 'react';
+import {Localizer} from './helpers/localizer';
 import logo from './logo.svg';
 
 const App = (): React.Node => (
@@ -14,6 +15,8 @@ const App = (): React.Node => (
       <p>
         Edit <code>src/App.js</code> and save to reload.
       </p>
+      <div>{Localizer.localize('egon.foo', {test: 'teeeeest'})}</div>
+      <div>{Localizer.localize('egon.bar')}</div>
       <a
         className='app-link'
         href='https://reactjs.org'
