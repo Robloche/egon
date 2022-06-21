@@ -1,16 +1,16 @@
 /* @flow */
 
 import type {AppAction} from './types';
-import {REDUX_TYPE_UPDATE_FOO} from './constants';
+import {REDUX_TYPE_SET_LANGUAGE} from './constants';
 
-const updateFoo: (foo: boolean) => AppAction =
-  (foo) => {
+const setLanguage: (language: string) => AppAction =
+  (language) => {
     return {
-      foo,
-      type: REDUX_TYPE_UPDATE_FOO
+      language,
+      type: REDUX_TYPE_SET_LANGUAGE
     };
   };
 
 export {
-  updateFoo
+  setLanguage
 };

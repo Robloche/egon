@@ -1,16 +1,16 @@
 /* @flow */
 
-import {REDUX_TYPE_UPDATE_FOO} from './constants';
+import {REDUX_TYPE_SET_LANGUAGE} from './constants';
 
 export type AppState = {|
-  foo: boolean
+  language: string
 |};
 
 export type AppAction =
 // Default action
   {|type: null|} |
-// Update foo
+// Set language
   {|
-    foo: boolean,
-    type: typeof REDUX_TYPE_UPDATE_FOO
+    language: string,
+    type: typeof REDUX_TYPE_SET_LANGUAGE
   |};

@@ -1,10 +1,10 @@
 /* @flow */
 
 import type {AppAction, AppState} from './types';
-import {REDUX_TYPE_UPDATE_FOO} from './constants';
+import {REDUX_TYPE_SET_LANGUAGE} from './constants';
 
 const DefaultState: AppState = {
-  foo: false
+  language: 'fr'
 };
 
 const DefaultAction: AppAction = {type: null};
@@ -12,10 +12,10 @@ const DefaultAction: AppAction = {type: null};
 const appReducer: (state: AppState, action: AppAction) => AppState =
   (state = DefaultState, action = DefaultAction) => {
     switch (action.type) {
-      case REDUX_TYPE_UPDATE_FOO:
+      case REDUX_TYPE_SET_LANGUAGE:
         return {
           ...state,
-          foo: action.foo
+          language: action.language
         };
 
       default:
