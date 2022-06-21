@@ -1,13 +1,13 @@
 /* @flow */
 
-import {AppAction, AppState} from './types';
+import type {AppAction, AppState} from './types';
 import {REDUX_TYPE_UPDATE_FOO} from './constants';
 
 const DefaultState: AppState = {
   foo: false
 };
 
-const DefaultAction: AppState = {type: null};
+const DefaultAction: AppAction = {type: null};
 
 const appReducer: (state: AppState, action: AppAction) => AppState =
   (state = DefaultState, action = DefaultAction) => {

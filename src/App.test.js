@@ -1,11 +1,11 @@
 import {render, screen} from '@testing-library/react';
 import App from './App';
 import React from 'react';
+import initializeTest from './tests/test-base';
 
-// eslint-disable-next-line no-undef
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/ui);
-  // eslint-disable-next-line no-undef
-  expect(linkElement).toBeInTheDocument();
-});
+test('renders learn react link', () =>
+  initializeTest(() => {
+    render(<App />);
+    const linkElement = screen.getByText(/learn react/ui);
+    expect(linkElement).toBeInTheDocument();
+  }));

@@ -2,36 +2,43 @@
 
 import './App.scss';
 import * as React from 'react';
-import {Localizer} from './helpers/localizer';
+import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import Contact from './components/Contact';
+import Home from './components/Home';
 import {Provider} from 'react-redux';
-import Test from './components/test';
+import Test from './components/Test';
 import appReducer from './redux/reducers';
 import {configureStore} from '@reduxjs/toolkit';
-import logo from './logo.svg';
 
 const store = configureStore({reducer: appReducer});
 
 const App = (): React.Node => (
   <Provider store={store}>
-    <div className='app'>
-      <header className='app-header'>
-        <img
-          alt='logo'
-          className='app-logo'
-          src={logo} />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div>{Localizer.localize('egon.foo', {test: 'teeeeest'})}</div>
-        <div>{Localizer.localize('egon.bar')}</div>
-        <Test />
-        <a
-          className='app-link'
-          href='https://reactjs.org'
-          rel='noopener noreferrer'
-          target='_blank'>Learn React</a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <nav>
+        <div>
+          <Link to='/'>Home</Link>
+        </div>
+        <div>
+          <Link to='/contact'>Contact</Link>
+        </div>
+        <div>
+          <Link to='/test'>Test</Link>
+        </div>
+      </nav>
+      <Routes>
+        <Route
+          element={<Contact />}
+          path='/contact' />
+        <Route
+          element={<Test />}
+          path='/test' />
+        <Route
+          element={<Home />}
+          exact
+          path='/' />
+      </Routes>
+    </BrowserRouter>
   </Provider>
 );
 

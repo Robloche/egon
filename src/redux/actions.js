@@ -1,6 +1,6 @@
 /* @flow */
 
-import {AppAction} from './types';
+import type {AppAction} from './types';
 import {REDUX_TYPE_UPDATE_FOO} from './constants';
 
 const updateFoo: (foo: boolean) => AppAction =

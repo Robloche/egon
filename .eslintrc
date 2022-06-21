@@ -10,8 +10,9 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react",
-    "flowtype"
+    "flowtype",
+    "jest",
+    "react"
   ],
   "settings": {
     "react": {
@@ -20,8 +21,9 @@
   },
   "env": {
     "browser": true,
-    "node": true,
-    "es6": true
+    "es6": true,
+    "jest/globals": true,
+    "node": true
   },
   "extends": [
     "eslint:all",
