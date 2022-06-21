@@ -1,0 +1,3 @@
+/* @flow */
+
+export const REDUX_TYPE_UPDATE_FOO: 'REDUX_TYPE_UPDATE_FOO' = 'REDUX_TYPE_UPDATE_FOO';
