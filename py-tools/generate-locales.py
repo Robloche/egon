@@ -19,7 +19,7 @@ repoRootPath = os.path.dirname(os.path.dirname(scriptFile))
 localesSourcePath = os.path.join(repoRootPath, 'locales-sources')
 localesTargetPath =  os.path.join(repoRootPath, 'src', 'locales')
 LOCALES_SOURCE_EXTENSION = '.csv'
-LOCALES_TARGET_FILENAME = 'translation.json'
+LOCALES_TARGET_EXTENSION = '.json'
 CORE_NAME = 'core'
 CSV_SEPARATOR = u';'
 KEY_SEPARATOR = u'.'
@@ -85,7 +85,7 @@ for lang in languages:
         jsonObj = readFile(file, jsonObj)
 
     # Write JSON file
-    target = os.path.join(localesTargetPath, lang, LOCALES_TARGET_FILENAME)
+    target = os.path.join(localesTargetPath, '{}{}'.format(lang, LOCALES_TARGET_EXTENSION))
     createFolderIfNotExist(target)
     content = json.dumps(jsonObj, sort_keys=True, indent=2)
     with open(target, 'w') as f:

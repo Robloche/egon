@@ -2,9 +2,10 @@
 
 import './App.scss';
 import * as React from 'react';
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';
 import Home from './components/Home';
+import Menu from './components/Menu';
 import {Provider} from 'react-redux';
 import Test from './components/Test';
 import appReducer from './redux/reducers';
@@ -15,24 +16,22 @@ const store = configureStore({reducer: appReducer});
 const App = (): React.Node => (
   <Provider store={store}>
     <BrowserRouter>
-      <nav>
-        <div>
-          <Link to='/'>Home</Link>
-        </div>
-        <div>
-          <Link to='/contact'>Contact</Link>
-        </div>
-        <div>
-          <Link to='/test'>Test</Link>
-        </div>
-      </nav>
+      <Menu />
       <Routes>
         <Route
           element={<Contact />}
-          path='/contact' />
+          path='/:lang/contact' />
         <Route
           element={<Test />}
-          path='/test' />
+          path='/:lang/test' />
+        <Route
+          element={<Home />}
+          exact
+          path='/:lang/home' />
+        <Route
+          element={<Home />}
+          exact
+          path='/:lang' />
         <Route
           element={<Home />}
           exact

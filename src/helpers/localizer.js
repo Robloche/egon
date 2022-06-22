@@ -1,46 +1,8 @@
 /* @flow */
 
+import LanguageDetector from 'i18next-browser-languagedetector';
 import i18nInstance from 'i18next';
 import {initReactI18next} from 'react-i18next';
-
-const cleanLanguage: (language: string) => string =
-  (language) => {
-    const [code] = language.toLowerCase().split('-');
-    return code;
-  };
-
-/*
- * What this function does:
- *  - Removes duplicates
- *  - Removes country-specific codes (e.g. ["fr", "fr-BE"] and ["fr-CA"] both becomes ["fr"])
- *  - Converts to lower case
- *  - Preserves order
- */
-const cleanLanguageList: (languages: $ReadOnlyArray<string>) => Array<string> =
-  (languages) => {
-    const langDic = {};
-
-    if (languages) {
-      let i = 0;
-      languages.forEach((l) => {
-        const code = cleanLanguage(l);
-        if (typeof langDic[code] !== 'number') {
-          langDic[code] = i;
-          i += 1;
-        }
-      });
-    }
-
-    const langCodes = Object.keys(langDic);
-    const cleanedLanguages = Array(langCodes.length);
-
-    langCodes.forEach((code) => {
-      const index = langDic[code];
-      cleanedLanguages[index] = code;
-    });
-
-    return cleanedLanguages;
-  };
 
 export class Localizer {
 
@@ -48,13 +10,13 @@ export class Localizer {
 
   static language: string;
 
-  static initialize: (language: string, translations: {[string]: any}) => Promise<*> =
-    (language, translations) => {
+  static supportedLanguages: Array<string>;
+
+  static initialize: (supportedLanguages: Array<string>, translations: {[string]: any}) => Promise<*> =
+    (supportedLanguages, translations) => {
       if (Localizer.instance) {
         return Promise.resolve();
       }
-
-      Localizer.language = language;
 
       const resources = {};
       Object.entries(translations).forEach(([lang, file]) => {
@@ -62,20 +24,33 @@ export class Localizer {
       });
 
       return i18nInstance
+        .use(LanguageDetector)
         .use(initReactI18next)
         .init({
-          debug: false,
+          debug: true,
           defaultNS: 'translation',
+          detection: {
+            lookupCookie: 'i18next',
+            lookupFromPathIndex: 0,
+            lookupFromSubdomainIndex: 0,
+            lookupLocalStorage: 'i18nextLng',
+            lookupQuerystring: 'lng',
+            lookupSessionStorage: 'i18nextLng',
+            order: ['path', 'querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'subdomain']
+          },
+          fallbackLng: supportedLanguages[0],
           interpolation: {
             escapeValue: false
           },
           keySeparator: '.',
-          lng: language,
-          ns: ['translation'],
-          resources
+          ns: Object.keys(translations),
+          resources,
+          supportedLngs: supportedLanguages
         })
         .then(() => {
           Localizer.instance = i18nInstance;
+          Localizer.language = i18nInstance.language;
+          Localizer.supportedLanguages = supportedLanguages;
         });
     };
 
@@ -85,27 +60,9 @@ export class Localizer {
   static localize: (key: string, options: any) => string =
     (key, options) => Localizer.instance.t(key, options).replace(/(?: )([:!?-])/uig, '\u00A0$1').replace(/_/uig, '\u00A0');
 
-  /*
-   * What this function does:
-   *  - Takes all languages defined in browser
-   *  - Only keeps languages supported by application
-   *  - If resulting list is empty, returns supported languages
-   *  - Preserves order
-   */
-  static getAppLanguages: (supportedLanguages: $ReadOnlyArray<string>) => Array<string> =
-    (supportedLanguages) => {
-      const {language, languages} = navigator;
-      const browserLanguages = cleanLanguageList(languages && languages.length ? languages : [language]);
-
-      const appLanguages = [];
-      browserLanguages.forEach((lang) => {
-        const cleanLang = cleanLanguage(lang);
-        if (supportedLanguages.includes(cleanLang)) {
-          appLanguages.push(cleanLang);
-        }
-      });
-
-      return appLanguages.length > 0 ? appLanguages : [...supportedLanguages];
+  static changeLanguage: (language: string) => void =
+    (language) => {
+      Localizer.instance.changeLanguage(language);
     };
 
 }

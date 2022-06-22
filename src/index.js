@@ -7,30 +7,21 @@ import {Localizer} from './helpers/localizer';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {logError} from './helpers/debug';
-import translationEn from './locales/en/translation.json';
-import translationFr from './locales/fr/translation.json';
+import translationEn from './locales/en.json';
+import translationFr from './locales/fr.json';
 
 const mainElement: ?HTMLElement = document.getElementById('root');
 if (!mainElement) {
   logError('No "root" element to render application');
 }
 
-const translations = {
+const translations = Object.freeze({
   en: translationEn,
   fr: translationFr
-};
-
-// Languages supported by application
-export const APP_SUPPORTED_LANGUAGES = ['fr', 'en'];
-
-// Get the best from supported languages and browser's languages
-export const APP_LANGUAGES: Array<string> = Localizer.getAppLanguages(APP_SUPPORTED_LANGUAGES);
-
-// First app language wins jackpot and is promoted official language for this session
-export const [APP_LANGUAGE] = APP_LANGUAGES;
+});
 
 // Initialize the localization module
-Localizer.initialize(APP_LANGUAGE, {[APP_LANGUAGE]: translations[APP_LANGUAGE]})
+Localizer.initialize(['fr', 'en'], translations)
   .then(() => {
     ReactDOM.createRoot(mainElement).render(
       <React.StrictMode>

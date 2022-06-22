@@ -1,0 +1,32 @@
+.menu {
+  background-color: grey;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  > .menu__languages {
+    margin-top: 2rem;
+
+    input[type='radio'] {
+      display: none;
+
+      &:checked + label {
+        background-color: var(--white-transparent-3);
+        cursor: default;
+      }
+    }
+
+    input[type='radio'] + label {
+      cursor: pointer;
+      flex-grow: 1;
+      font-size: 1rem;
+      margin: 0;
+      padding: .2rem .4rem;
+
+      &:hover {
+        background-color: var(--white-transparent-4);
+      }
+    }
+  }
+}

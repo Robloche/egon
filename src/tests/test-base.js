@@ -1,10 +1,10 @@
 /* @flow */
 
 import {Localizer} from '../helpers/localizer';
-import translationFr from '../locales/fr/translation.json';
+import translationFr from '../locales/fr.json';
 
 const initializeTest = (testFuction: () => void): void => {
-  Localizer.initialize('fr', {fr: translationFr})
+  Localizer.initialize(['fr'], {fr: translationFr})
     .then(() => {
       try {
         testFuction();
