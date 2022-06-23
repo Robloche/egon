@@ -1,3 +1,12 @@
+.menu__overlay {
+  //background-color: #345C67;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .menu {
   background-color: grey;
   padding: 2rem;
@@ -5,28 +14,35 @@
   right: 0;
   top: 0;
 
-  > .menu__languages {
-    margin-top: 2rem;
+  &.menu__closed {
+    cursor: pointer;
+  }
 
-    input[type='radio'] {
-      display: none;
+  &.menu__opened {
+    > .menu__languages {
+      margin-top: 2rem;
 
-      &:checked + label {
-        background-color: var(--white-transparent-3);
-        cursor: default;
+      input[type='radio'] {
+        display: none;
+
+        &:checked + label {
+          background-color: var(--white-transparent-3);
+          cursor: default;
+        }
       }
-    }
 
-    input[type='radio'] + label {
-      cursor: pointer;
-      flex-grow: 1;
-      font-size: 1rem;
-      margin: 0;
-      padding: .2rem .4rem;
+      input[type='radio'] + label {
+        cursor: pointer;
+        flex-grow: 1;
+        font-size: 1rem;
+        margin: 0;
+        padding: .2rem .4rem;
 
-      &:hover {
-        background-color: var(--white-transparent-4);
+        &:hover {
+          background-color: var(--white-transparent-4);
+        }
       }
     }
   }
+
 }
