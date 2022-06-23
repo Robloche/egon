@@ -1,1 +1,4 @@
-egon.foo;Bonjour monde
+hello;Salut
+menu.home;Accueil
+menu.contact;Contact
+menu.test;Test

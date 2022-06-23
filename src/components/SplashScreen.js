@@ -5,6 +5,8 @@ import {setSplashScreenShown} from '../redux/actions';
 import {useDispatch} from 'react-redux';
 import {useEffect} from 'react';
 
+const SPLASH_SCREEN_TIMEOUT = 2000;
+
 const SplashScreen = () => {
   const dispatch = useDispatch();
 
@@ -12,8 +14,7 @@ const SplashScreen = () => {
   useEffect(() => {
     setTimeout(() => {
       dispatch(setSplashScreenShown());
-      // eslint-disable-next-line no-magic-numbers
-    }, 3000);
+    }, SPLASH_SCREEN_TIMEOUT);
   }, []);
 
   return (

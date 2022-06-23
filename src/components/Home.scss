@@ -1,3 +1,9 @@
 .home {
+  align-items: stretch;
   background-color: #697FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+  width: 100%;
 }

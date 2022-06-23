@@ -9,19 +9,21 @@ import ReactDOM from 'react-dom/client';
 import {logError} from './helpers/debug';
 import translationEn from './locales/en.json';
 import translationFr from './locales/fr.json';
+import translationIt from './locales/it.json';
 
-const mainElement: ?HTMLElement = document.getElementById('root');
+const mainElement: ?HTMLElement = document.querySelector('.root');
 if (!mainElement) {
   logError('No "root" element to render application');
 }
 
 const translations = Object.freeze({
   en: translationEn,
-  fr: translationFr
+  fr: translationFr,
+  it: translationIt
 });
 
 // Initialize the localization module
-Localizer.initialize(['fr', 'en'], translations)
+Localizer.initialize(['fr', 'en', 'it'], translations)
   .then((i18n) => {
     ReactDOM.createRoot(mainElement).render(
       <React.StrictMode>

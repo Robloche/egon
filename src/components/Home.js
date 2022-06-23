@@ -2,6 +2,8 @@
 
 import './Home.scss';
 import * as React from 'react';
+import Carousel from './Carousel';
+import Footer from './Footer';
 import {Localizer} from '../helpers/localizer';
 import SplashScreen from './SplashScreen';
 import {useSelector} from 'react-redux';
@@ -16,7 +18,9 @@ const Home = (): React.Node => {
 
   return (
     <div className='home'>
-      <div>{Localizer.localize('egon.foo')}</div>
+      <Carousel />
+      <div>{Localizer.localize('hello')}</div>
+      <Footer />
     </div>
   );
 };
