@@ -13,17 +13,18 @@ const Menu = (): React.Node => {
 
   const language = useSelector((state) => state.language);
 
-  const languageOnChange = useCallback((event) => {
-    const {target: {value}} = event;
-    dispatch(setLanguage(value));
-    Localizer.changeLanguage(value);
-  }, []);
-
+  // Initialization
   useEffect(() => {
     if (Localizer.language !== language) {
       // Language in store does not reflect language in Localizer
       dispatch(setLanguage(Localizer.language));
     }
+  }, []);
+
+  const languageOnChange = useCallback((event) => {
+    const {target: {value}} = event;
+    dispatch(setLanguage(value));
+    Localizer.changeLanguage(value);
   }, []);
 
   return (

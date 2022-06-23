@@ -22,10 +22,10 @@ const translations = Object.freeze({
 
 // Initialize the localization module
 Localizer.initialize(['fr', 'en'], translations)
-  .then(() => {
+  .then((i18n) => {
     ReactDOM.createRoot(mainElement).render(
       <React.StrictMode>
-        <I18nextProvider i18n={Localizer.getInstance()}>
+        <I18nextProvider i18n={i18n}>
           <App />
         </I18nextProvider>
       </React.StrictMode>

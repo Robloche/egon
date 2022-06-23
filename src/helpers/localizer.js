@@ -6,7 +6,7 @@ import {initReactI18next} from 'react-i18next';
 
 export class Localizer {
 
-  static instance: any;
+  static #instance: any;
 
   static language: string;
 
@@ -14,8 +14,8 @@ export class Localizer {
 
   static initialize: (supportedLanguages: Array<string>, translations: {[string]: any}) => Promise<*> =
     (supportedLanguages, translations) => {
-      if (Localizer.instance) {
-        return Promise.resolve();
+      if (Localizer.#instance) {
+        return Promise.resolve(Localizer.#instance);
       }
 
       const resources = {};
@@ -27,7 +27,7 @@ export class Localizer {
         .use(LanguageDetector)
         .use(initReactI18next)
         .init({
-          debug: true,
+          debug: false,
           defaultNS: 'translation',
           detection: {
             lookupCookie: 'i18next',
@@ -48,21 +48,19 @@ export class Localizer {
           supportedLngs: supportedLanguages
         })
         .then(() => {
-          Localizer.instance = i18nInstance;
+          Localizer.#instance = i18nInstance;
           Localizer.language = i18nInstance.language;
           Localizer.supportedLanguages = supportedLanguages;
+          return i18nInstance;
         });
     };
 
-  static getInstance: () => any =
-    () => Localizer.instance;
-
   static localize: (key: string, options: any) => string =
-    (key, options) => Localizer.instance.t(key, options).replace(/(?: )([:!?-])/uig, '\u00A0$1').replace(/_/uig, '\u00A0');
+    (key, options) => Localizer.#instance.t(key, options).replace(/(?: )([:!?-])/uig, '\u00A0$1').replace(/_/uig, '\u00A0');
 
   static changeLanguage: (language: string) => void =
     (language) => {
-      Localizer.instance.changeLanguage(language);
+      Localizer.#instance.changeLanguage(language);
     };
 
 }

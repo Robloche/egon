@@ -1,6 +1,5 @@
 /* @flow */
 
-import './App.scss';
 import * as React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';

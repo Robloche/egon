@@ -3,11 +3,6 @@
 import './Contact.scss';
 import * as React from 'react';
 
-const Contact = (): React.Node => {
-  // eslint-disable-next-line no-console
-  console.log('Contact');
-
-  return <div>Contact</div>;
-};
+const Contact = (): React.Node => <div className='contact'>Contact</div>;
 
 export default Contact;
