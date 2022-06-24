@@ -1,0 +1,19 @@
+.bullet {
+  cursor: pointer;
+  fill: #696969;
+  height: 10px;
+  //opacity: .9;
+  transform: scale(1);
+  //transition: opacity 300ms ease-out, transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  width: 10px;
+
+  &:hover {
+    //opacity: 1;
+    transform: scale(1.1);
+  }
+
+  &.selected {
+    fill: #4F4F4F;
+  }
+}
