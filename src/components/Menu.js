@@ -6,16 +6,21 @@ import {useCallback, useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
+import type {ModeType} from '../types/index';
 import {setLanguage} from '../redux/actions';
 
-const Menu = (): React.Node => {
+type MenuProps = {|
+  +mode: ModeType
+|};
+
+const Menu = ({mode}: MenuProps): React.Node => {
   const dispatch = useDispatch();
 
   const language = useSelector((state) => state.language);
 
   // Initialization
   useEffect(() => {
-    // Close menu when user clicks outside of it
+    // Close menu when user clicks outside it
     const onMouseUp = (event: MouseEvent) => {
       const {target} = event;
 
@@ -51,7 +56,7 @@ const Menu = (): React.Node => {
   if (!isOpen) {
     return (
       <div
-        className='menu menu__closed'
+        className={`menu menu__closed ${mode.toLowerCase()}`}
         onClick={menuOnClick}>{Localizer.localize('menu.label')}</div>
     );
   }

@@ -7,6 +7,14 @@
   &.menu__closed {
     cursor: pointer;
     text-transform: uppercase;
+
+    &.dark {
+      color: var(--black);
+    }
+
+    &.light {
+      color: var(--white);
+    }
   }
 
   &.menu__opened {

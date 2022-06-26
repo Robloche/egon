@@ -5,7 +5,6 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';
 import Expertise from './components/Expertise';
 import Home from './components/Home';
-import Menu from './components/Menu';
 import {Provider} from 'react-redux';
 import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
@@ -16,7 +15,6 @@ const store = configureStore({reducer: appReducer});
 const App = (): React.Node => (
   <Provider store={store}>
     <BrowserRouter>
-      <Menu />
       <Routes>
         <Route
           element={<Contact />}
