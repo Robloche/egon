@@ -11,28 +11,28 @@ import translationEn from './locales/en.json';
 import translationFr from './locales/fr.json';
 import translationIt from './locales/it.json';
 
-const mainElement: ?HTMLElement = document.querySelector('.root');
-if (!mainElement) {
-  logError('No "root" element to render application');
-}
-
 const translations = Object.freeze({
   en: translationEn,
   fr: translationFr,
   it: translationIt
 });
 
-// Initialize the localization module
-Localizer.initialize(['fr', 'en', 'it'], translations)
-  .then((i18n) => {
-    ReactDOM.createRoot(mainElement).render(
-      <React.StrictMode>
-        <I18nextProvider i18n={i18n}>
-          <App />
-        </I18nextProvider>
-      </React.StrictMode>
-    );
-  });
+const mainElement: ?HTMLElement = document.querySelector('.root');
+if (mainElement) {
+  // Initialize the localization module
+  Localizer.initialize(['fr', 'en', 'it'], translations)
+    .then((i18n) => {
+      ReactDOM.createRoot(mainElement).render(
+        <React.StrictMode>
+          <I18nextProvider i18n={i18n}>
+            <App />
+          </I18nextProvider>
+        </React.StrictMode>
+      );
+    });
+} else {
+  logError('No root element to render application');
+}
 
 /*
  * If you want to start measuring performance in your app, pass a function

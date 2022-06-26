@@ -1,7 +1,7 @@
 /* @flow */
 
-import {REDUX_TYPE_SET_LANGUAGE, REDUX_TYPE_SPLASH_SCREEN_SHOWN} from './constants';
 import type {AppAction} from './types';
+import {REDUX_TYPE_SET_LANGUAGE} from './constants';
 
 const setLanguage: (language: string) => AppAction =
   (language) => {
@@ -11,12 +11,6 @@ const setLanguage: (language: string) => AppAction =
     };
   };
 
-const setSplashScreenShown: () => AppAction =
-  () => {
-    return {type: REDUX_TYPE_SPLASH_SCREEN_SHOWN};
-  };
-
 export {
-  setLanguage,
-  setSplashScreenShown
+  setLanguage
 };

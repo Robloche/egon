@@ -1,19 +1,20 @@
 import './SplashScreen.scss';
 import * as React from 'react';
 import logo from '../assets/logo.svg';
-import {setSplashScreenShown} from '../redux/actions';
-import {useDispatch} from 'react-redux';
 import {useEffect} from 'react';
+import {useNavigate} from 'react-router-dom';
+import {useSelector} from 'react-redux';
 
 const SPLASH_SCREEN_TIMEOUT = 2000;
 
 const SplashScreen = () => {
-  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const language = useSelector((state) => state.language);
 
   // Initialization
   useEffect(() => {
     setTimeout(() => {
-      dispatch(setSplashScreenShown());
+      navigate(`/${language}/home`);
     }, SPLASH_SCREEN_TIMEOUT);
   }, []);
 

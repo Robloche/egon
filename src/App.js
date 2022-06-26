@@ -3,10 +3,11 @@
 import * as React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';
+import Expertise from './components/Expertise';
 import Home from './components/Home';
 import Menu from './components/Menu';
 import {Provider} from 'react-redux';
-import Test from './components/Test';
+import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
 import {configureStore} from '@reduxjs/toolkit';
 
@@ -21,18 +22,18 @@ const App = (): React.Node => (
           element={<Contact />}
           path='/:lang/contact' />
         <Route
-          element={<Test />}
+          element={<Expertise />}
           path='/:lang/test' />
         <Route
           element={<Home />}
           exact
           path='/:lang/home' />
         <Route
-          element={<Home />}
+          element={<SplashScreen />}
           exact
           path='/:lang' />
         <Route
-          element={<Home />}
+          element={<SplashScreen />}
           exact
           path='/' />
       </Routes>

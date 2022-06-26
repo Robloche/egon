@@ -1,20 +1,23 @@
 .menu {
-  background-color: rgba(255, 255, 255, .2);
-  padding: 2rem;
   position: fixed;
   right: 3rem;
   top: 2rem;
   z-index: 20;
 
-  &.hidden {
-    display: none;
-  }
-
   &.menu__closed {
     cursor: pointer;
+    text-transform: uppercase;
   }
 
   &.menu__opened {
+    background-color: #394D16;
+    padding: 2rem;
+
+    > nav {
+      display: flex;
+      flex-direction: column;
+    }
+
     > .menu__languages {
       margin-top: 2rem;
 

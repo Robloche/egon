@@ -12,7 +12,6 @@ const Menu = (): React.Node => {
   const dispatch = useDispatch();
 
   const language = useSelector((state) => state.language);
-  const isSplashScreenShown = useSelector((state) => state.isSplashScreenShown);
 
   // Initialization
   useEffect(() => {
@@ -51,23 +50,17 @@ const Menu = (): React.Node => {
   if (!isOpen) {
     return (
       <div
-        className={`menu menu__closed ${isSplashScreenShown ? '' : 'hidden'}`}
-        onClick={menuOnClick}>ooo</div>
+        className='menu menu__closed'
+        onClick={menuOnClick}>{Localizer.localize('menu.label')}</div>
     );
   }
 
   return (
     <div className='menu menu__opened'>
       <nav>
-        <div>
-          <Link to={`/${language}`}>{Localizer.localize('menu.home')}</Link>
-        </div>
-        <div>
-          <Link to={`/${language}/contact`}>{Localizer.localize('menu.contact')}</Link>
-        </div>
-        <div>
-          <Link to={`/${language}/test`}>{Localizer.localize('menu.test')}</Link>
-        </div>
+        <Link to={`/${language}/home`}>{Localizer.localize('menu.home')}</Link>
+        <Link to={`/${language}/expertise`}>{Localizer.localize('menu.expertise')}</Link>
+        <Link to={`/${language}/contact`}>{Localizer.localize('menu.contact')}</Link>
       </nav>
       <div className='menu__languages'>{Localizer.supportedLanguages.map((lang) => {
         const id = `lang-${lang}`;
