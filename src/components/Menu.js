@@ -15,6 +15,7 @@ const Menu = (): React.Node => {
 
   // Initialization
   useEffect(() => {
+    // Close menu when user clicks outside of it
     const onMouseUp = (event: MouseEvent) => {
       const {target} = event;
 
