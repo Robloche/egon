@@ -22,12 +22,22 @@ const App = (): React.Node => (
           element={<Contact />}
           path='/:lang/contact' />
         <Route
+          element={<Contact />}
+          path='/contact' />
+        <Route
           element={<Expertise />}
           path='/:lang/test' />
+        <Route
+          element={<Expertise />}
+          path='/test' />
         <Route
           element={<Home />}
           exact
           path='/:lang/home' />
+        <Route
+          element={<Home />}
+          exact
+          path='/home' />
         <Route
           element={<SplashScreen />}
           exact
