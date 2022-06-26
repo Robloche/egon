@@ -60,7 +60,24 @@ export class Localizer {
 
   static changeLanguage: (language: string) => void =
     (language) => {
-      Localizer.#instance.changeLanguage(language);
+      Localizer.#instance.changeLanguage(language)
+        .then(() => {
+          const {location: {href, pathname}} = window;
+          const regex = new RegExp(`/(${Localizer.supportedLanguages.join('|')})/`, 'ui');
+          const newUrl = new URL(href);
+
+          const ma = pathname.match(regex);
+          if (ma) {
+            // Replace
+            newUrl.pathname = pathname.replace(ma[0], `/${language}/`);
+          } else {
+            // Add
+            newUrl.pathname = `/${language}${pathname}`;
+          }
+
+          // Check replace vs navigate
+          window.location.replace(newUrl);
+        });
     };
 
 }
