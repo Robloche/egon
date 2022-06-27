@@ -5,12 +5,16 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';
 import Expertise from './components/Expertise';
 import Home from './components/Home';
+import {Localizer} from './helpers/localizer';
 import {Provider} from 'react-redux';
 import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
 import {configureStore} from '@reduxjs/toolkit';
 
 const store = configureStore({reducer: appReducer});
+
+// Pass dispatch function to Localizer so that it can update store whenever language changes
+Localizer.setDispatch(store.dispatch);
 
 const App = (): React.Node => (
   <Provider store={store}>

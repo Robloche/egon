@@ -21,7 +21,7 @@ const SplashScreen = () => {
     return () => {
       clearTimeout(splashScreenTimer);
     };
-  }, []);
+  }, [navigate]);
 
   return (
     <div className='splash-screen'>

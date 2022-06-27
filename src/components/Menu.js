@@ -3,19 +3,16 @@
 import './Menu.scss';
 import * as React from 'react';
 import {useCallback, useEffect, useState} from 'react';
-import {useDispatch, useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
 import type {ModeType} from '../types/index';
-import {setLanguage} from '../redux/actions';
+import {useSelector} from 'react-redux';
 
 type MenuProps = {|
   +mode: ModeType
 |};
 
 const Menu = ({mode}: MenuProps): React.Node => {
-  const dispatch = useDispatch();
-
   const language = useSelector((state) => state.language);
 
   // Initialization
@@ -31,11 +28,6 @@ const Menu = ({mode}: MenuProps): React.Node => {
 
     document.addEventListener('mouseup', onMouseUp);
 
-    if (Localizer.language !== language) {
-      // Language in store does not reflect language in Localizer
-      dispatch(setLanguage(Localizer.language));
-    }
-
     return () => {
       document.removeEventListener('mouseup', onMouseUp);
     };
@@ -43,7 +35,6 @@ const Menu = ({mode}: MenuProps): React.Node => {
 
   const languageOnChange = useCallback((event) => {
     const {target: {value}} = event;
-    dispatch(setLanguage(value));
     Localizer.changeLanguage(value);
   }, []);
 

@@ -11,7 +11,7 @@ type BulletProps = {
 };
 
 const Bullet = ({index, isSelected, onClick}: BulletProps): React.Node => {
-  const handleOnClick = useCallback(() => onClick(index));
+  const handleOnClick = useCallback(() => onClick(index), [index, onClick]);
 
   return (
     <svg

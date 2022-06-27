@@ -3,8 +3,11 @@
 import LanguageDetector from 'i18next-browser-languagedetector';
 import i18nInstance from 'i18next';
 import {initReactI18next} from 'react-i18next';
+import {setLanguage} from '../redux/actions';
 
 export class Localizer {
+
+  static dispatch: any;
 
   static #instance: any;
 
@@ -51,8 +54,14 @@ export class Localizer {
           Localizer.#instance = i18nInstance;
           Localizer.language = i18nInstance.language;
           Localizer.supportedLanguages = supportedLanguages;
+          Localizer.dispatch(setLanguage(Localizer.language));
           return i18nInstance;
         });
+    };
+
+  static setDispatch: (dispatch: any) => void =
+    (dispatch) => {
+      Localizer.dispatch = dispatch;
     };
 
   static localize: (key: string, options: any) => string =
@@ -62,6 +71,8 @@ export class Localizer {
     (language) => {
       Localizer.#instance.changeLanguage(language)
         .then(() => {
+          Localizer.dispatch(setLanguage(language));
+
           const {location: {href, pathname}} = window;
           const regex = new RegExp(`/(${Localizer.supportedLanguages.join('|')})/`, 'ui');
           const newUrl = new URL(href);
