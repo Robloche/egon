@@ -12,7 +12,8 @@
   "plugins": [
     "flowtype",
     "jest",
-    "react"
+    "react",
+    "react-hooks"
   ],
   "settings": {
     "react": {
@@ -249,6 +250,7 @@
         ]
       }
     ],
+    "react-hooks/exhaustive-deps": "warn",
     "space-before-function-paren": [
       "error",
       "never"
