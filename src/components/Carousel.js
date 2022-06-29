@@ -16,32 +16,25 @@ const IMAGE_SWITCH_TIMEOUT = 1000;
 
 const IMAGES = [image0, image1, image2, image3, image4, image5];
 
+// eslint-disable-next-line no-unused-vars
 const nextIndex = (index) => (index + 1) % IMAGES.length;
 
 const Carousel = (): React.Node => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [transition, setTransition] = useState(null);
 
   const imageSwitchTimer = useRef(null);
 
-  const startTransition = useCallback((newIndex) => {
-    // eslint-disable-next-line no-console
-    console.log(`[startTransition] currentIndex: ${currentIndex} | newIndex: ${newIndex}`);
-    setTransition({
-      direction: newIndex - currentIndex,
-      newIndex
-    });
-  }, [currentIndex, setTransition]);
-
+  // eslint-disable-next-line no-unused-vars
   const startTimer = useCallback((index) => {
     imageSwitchTimer.current = setTimeout(() => {
-      startTransition(nextIndex(index));
+      // StartTransition(nextIndex(index));
     }, IMAGE_SWITCH_TIMEOUT);
-  }, [startTransition]);
+  }, []);
 
   // DEBUG: FIX that so timer is only launched once (well, since there's a cleanup, it might be...)
+  // eslint-disable-next-line arrow-body-style
   useEffect(() => {
-    startTimer(0);
+    // StartTimer(0);
     return () => {
       clearTimeout(imageSwitchTimer.current);
     };
@@ -53,77 +46,24 @@ const Carousel = (): React.Node => {
     }
 
     clearTimeout(imageSwitchTimer.current);
-    startTransition(index);
-  }, [currentIndex, startTransition]);
-
-  const handleOnAnimationEnd = useCallback((event) => {
-    const {animationName, target} = event;
-
-    if (animationName.startsWith('slide-in-from-')) {
-      const index = Number(target.getAttribute('data-index'));
-      // Console.log(`[handleOnAnimationEnd] currentIndex: ${index}`);
-      setTransition(null);
-      setCurrentIndex(index);
-      startTimer(index);
-    }
-  }, [startTimer]);
-
-  // Console.log(`[render] currentIndex: ${currentIndex} | newIndex: ${newIndex} | transition: ${transition}`);
-
-  const getSlideClass = (index) => {
-    if (transition === null) {
-      // Static slide
-      return index === currentIndex ? 'visible' : '';
-    }
-
-    const {direction, newIndex} = transition;
-
-    // Animation is happening
-    if (index === currentIndex) {
-      // Slide is disappearing
-      return `slide-out-to-${direction > 0 ? 'left' : 'right'}`;
-    }
-    if (index === newIndex) {
-      // Slide is appearing
-      return `slide-in-from-${direction > 0 ? 'right' : 'left'}`;
-    }
-    // Slide is neither appearing nor disappearing
-    return '';
-  };
-
-  const renderImage = (index) => {
-    if (typeof index === 'undefined') {
-      return null;
-    }
-
-    const img = IMAGES[index];
-
-    return (
-      <img
-        className={`carousel__slide ${getSlideClass(index)}`}
-        data-index={index}
-        onAnimationEnd={handleOnAnimationEnd}
-        src={img} />
-    );
-  };
-
-  /*
-   * DEBUG
-   * {IMAGES.map((img, index) => (
-   * index !== currentIndex && index !== newIndex ? null
-   * : <img
-   * className={`carousel__slide ${getSlideClass(index)}`}
-   * data-index={index}
-   * key={img.toString()}
-   * onAnimationEnd={handleOnAnimationEnd}
-   * src={img} />
-   * ))}
-   */
+    setCurrentIndex(index);
+  }, [currentIndex]);
 
   return (
     <div className='carousel'>
-      {renderImage(currentIndex)}
-      {renderImage(transition?.newIndex)}
+      <div className='carousel__slider'>
+        {IMAGES.map((img, index) => (
+          <div
+            className={`carousel__slide ${index === currentIndex ? 'visible' : ''}`}
+            data-index={index}
+            key={img.toString()}
+            style={{backgroundImage: `url(${img})`}}>
+            <div className='slide__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum felis dictum vulputate rutrum. Fusce feugiat, arcu eget blandit imperdiet, ligula dui
+              bibendum ligula, a rhoncus tellus elit lacinia tortor.
+            </div>
+          </div>
+        ))}
+      </div>
       <div className='carousel__buttons'>{IMAGES.map((img, index) => <Bullet
         index={index}
         isSelected={index === currentIndex}
