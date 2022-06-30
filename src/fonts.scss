@@ -1,0 +1,28 @@
+// sass-lint:disable no-duplicate-properties
+
+// Formats:
+//  - eot          IE9
+//  - eot?#iefix   IE6-IE8
+//  - woff, woff2  Chrome, Firefox
+//  - ttf          Chrome, Firefox, Opera, Safari, Android, iOS 4.2+
+//  - svg          iOS 4.1-
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/Helvetica Neue ME.eot');
+  src: url('./assets/fonts/Helvetica Neue ME.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/Helvetica Neue ME.woff2') format('woff2'),
+  url('./assets/fonts/Helvetica Neue ME.woff') format('woff'),
+  url('./assets/fonts/Helvetica Neue ME.ttf') format('truetype'),
+  url('./assets/fonts/Helvetica Neue ME.svg#Helvetica Neue ME') format('svg');
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url('./assets/fonts/Bodoni.eot');
+  src: url('./assets/fonts/Bodoni.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/Bodoni.woff2') format('woff2'),
+  url('./assets/fonts/Bodoni.woff') format('woff'),
+  url('./assets/fonts/Bodoni.ttf') format('truetype'),
+  url('./assets/fonts/Bodoni.svg#Bodoni') format('svg');
+}

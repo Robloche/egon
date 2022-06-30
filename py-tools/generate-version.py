@@ -9,6 +9,9 @@ import os
 import sys
 from datetime import datetime, timezone
 
+print('Version generation is currently disabled')
+sys.exit(1)
+
 repoRootPath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 coreBuildPath = os.path.join(repoRootPath, 'build')
 

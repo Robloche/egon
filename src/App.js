@@ -3,7 +3,8 @@
 import * as React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';
-import Expertise from './components/Expertise';
+import Creation from './components/Creation';
+import Expertises from './components/Expertises';
 import Home from './components/Home';
 import {Localizer} from './helpers/localizer';
 import {Provider} from 'react-redux';
@@ -27,11 +28,17 @@ const App = (): React.Node => (
           element={<Contact />}
           path='/contact' />
         <Route
-          element={<Expertise />}
-          path='/:lang/test' />
+          element={<Creation />}
+          path='/:lang/creation' />
         <Route
-          element={<Expertise />}
-          path='/test' />
+          element={<Creation />}
+          path='/creation' />
+        <Route
+          element={<Expertises />}
+          path='/:lang/expertises' />
+        <Route
+          element={<Expertises />}
+          path='/expertises' />
         <Route
           element={<Home />}
           exact

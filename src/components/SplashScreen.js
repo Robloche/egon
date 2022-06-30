@@ -1,11 +1,11 @@
 import './SplashScreen.scss';
 import * as React from 'react';
 import {useEffect, useRef} from 'react';
-import logo from '../assets/logo.svg';
+import egon from '../assets/images/egon-animation.gif';
 import {useNavigate} from 'react-router-dom';
 import {useSelector} from 'react-redux';
 
-const SPLASH_SCREEN_TIMEOUT = 2000;
+const SPLASH_SCREEN_TIMEOUT = 2500;
 
 const SplashScreen = () => {
   const navigate = useNavigate();
@@ -25,12 +25,10 @@ const SplashScreen = () => {
 
   return (
     <div className='splash-screen'>
-      <header className='splash-screen__header'>
-        <img
-          alt='logo'
-          className='splash-screen__logo'
-          src={logo} />
-      </header>
+      <img
+        alt='Logo Egon Paris'
+        className='splash-screen__logo'
+        src={egon} />
     </div>
   );
 };

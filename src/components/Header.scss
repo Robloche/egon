@@ -1,4 +1,23 @@
-.footer {
-  background-color: #FB6173;
-  height: 200px;
+.header {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  left: 0;
+  height: var(--header-height);
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+
+  > a {
+    align-items: center;
+    display: flex;
+    height: var(--header-height);
+
+    > img {
+      height: 80%;
+    }
+  }
 }

@@ -1,0 +1,21 @@
+.social {
+  align-items: center;
+  display: flex;
+
+  > a {
+    align-items: center;
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+
+    > img {
+      height: 24px;
+    }
+  }
+}

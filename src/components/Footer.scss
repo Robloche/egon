@@ -1,4 +1,42 @@
 .footer {
-  background-color: #FB6173;
-  height: 200px;
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex: 1 0 auto;
+  height: var(--footer-height);
+  justify-content: space-between;
+  padding: 0 40px;
+
+  > .footer__links {
+    > a {
+      border-bottom: 1px solid var(--black);
+      color: var(--black);
+      font-size: .8rem;
+      font-weight: bold;
+      padding-bottom: .2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &:hover {
+        color: rgba(0, 0, 0, .8);
+      }
+    }
+
+    > button {
+      background-color: var(--black);
+      color: var(--white);
+      cursor: pointer;
+      font-weight: bold;
+      padding: .5rem 1rem;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .8);
+      }
+    }
+  }
 }

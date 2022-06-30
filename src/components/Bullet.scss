@@ -1,7 +1,9 @@
 .bullet {
   cursor: pointer;
-  fill: #FFF;
+  fill: none;
   height: 10px;
+  stroke: var(--white);
+  stroke-width: 10%;
   transform: scale(1);
   transition: transform 300ms ease-out;
   width: 10px;
@@ -10,7 +12,7 @@
     transform: scale(1.1);
   }
 
-  &.selected {
-    fill: #AFAFAF;
+  &.full {
+    fill: var(--white);
   }
 }

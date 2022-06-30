@@ -1,12 +1,12 @@
 /* @flow */
 
-import './Expertise.scss';
+import './Creation.scss';
 import * as React from 'react';
 
-const Expertise = (): React.Node => (
-  <div className='expertise'>
-    <div>Expertise</div>
+const Creation = (): React.Node => (
+  <div className='creation'>
+    <div>Creation</div>
   </div>
 );
 
-export default Expertise;
+export default Creation;

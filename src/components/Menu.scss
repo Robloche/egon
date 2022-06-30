@@ -1,52 +1,103 @@
 .menu {
-  position: fixed;
-  right: 3rem;
-  top: 2rem;
-  z-index: 20;
+  &.menu__label,
+  > .menu__label {
+    font-weight: bold;
+    letter-spacing: .2rem;
+    padding-bottom: .2rem;
+  }
 
   &.menu__closed {
+    border-bottom: 1px solid var(--black);
+    color: var(--black);
     cursor: pointer;
     text-transform: uppercase;
-
-    &.dark {
-      color: var(--black);
-    }
-
-    &.light {
-      color: var(--white);
-    }
   }
 
   &.menu__opened {
-    background-color: #394D16;
+    background-color: var(--green);
+    color: var(--white);
+    min-width: 25rem;
     padding: 2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 550;
 
-    > nav {
+    > .menu__header,
+    > .menu__footer {
+      align-items: center;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
     }
 
-    > .menu__languages {
-      margin-top: 2rem;
+    > .menu__header {
+      > .close {
+        height: 1.1rem;
+      }
+    }
 
-      input[type='radio'] {
-        display: none;
+    > .menu__footer {
+      > .menu__languages {
 
-        &:checked + label {
-          background-color: var(--white-transparent-3);
-          cursor: default;
+        input[type='radio'] {
+          display: none;
+
+          &:checked + label {
+            border-bottom: 1px solid var(--white);
+            cursor: default;
+          }
+        }
+
+        input[type='radio'] + label {
+          color: var(--white);
+          cursor: pointer;
+          flex-grow: 1;
+          font-size: .8rem;
+          padding: .2rem 0;
+
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+        }
+
+        input[type='radio']:not(:checked) + label {
+          &:hover {
+            opacity: .8;
+          }
+        }
+      }
+    }
+
+    > .menu__links {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0;
+
+      > .menu__item_toggle,
+      > .menu__item {
+        border-bottom: .1rem solid var(--white);
+        color: var(--white);
+        font-size: 1.7rem;
+        font-weight: lighter;
+        line-height: 2.7rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:not(:first-child) {
+          margin-top: 1.5rem;
         }
       }
 
-      input[type='radio'] + label {
-        cursor: pointer;
-        flex-grow: 1;
-        font-size: 1rem;
-        margin: 0;
-        padding: .2rem .4rem;
+      > .menu__item_accordion {
+        display: flex;
+        flex-direction: column;
+        padding-top: .6rem;
 
-        &:hover {
-          background-color: var(--white-transparent-4);
+        > a {
+          color: var(--white);
+          font-weight: lighter;
+          line-height: 1.6rem;
+          text-decoration: none;
         }
       }
     }
