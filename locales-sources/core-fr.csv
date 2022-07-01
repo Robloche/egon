@@ -12,7 +12,7 @@ agency.founder.paragraph2;Elle a choisi de s'entourer d'un collectif d'indépend
 agency.founder.contact_me;Contactez-moi :
 agency.manifest.side_title;L'AGENCE - Le manifeste
 agency.manifest.paragraph1_number;N°01
-agency.manifest.paragraph1_text;Expressif et radical, il touche, interpelle, sublime,\ndécrit, réinvente, véritable stratège épi.curieux,\nvoué à l'expression du beau\npar le sens juste et exact, le lien, l'image et le mot,\nil procure le rêve et provoque l'émotion.
+agency.manifest.paragraph1_text;Expressif et radical,\nil touche, interpelle, sublime,\ndécrit, réinvente, véritable stratège épi.curieux,\nvoué à l'expression du beau\npar le sens juste et exact, le lien, l'image et le mot,\nil procure le rêve et provoque l'émotion.
 agency.manifest.paragraph1_title;Artiste par nature
 agency.manifest.paragraph2_number;N°02
 agency.manifest.paragraph2_text;L'esprit nomade,\nIl se nourrit d'hier pour mieux appréhender demain,\npragmatique, actif et inspiré,\nIl pense les arts de Vivre avec conscience,\npassion et rigueur.
@@ -25,7 +25,7 @@ agency.manifest.paragraph4_text;Egon est un électron libre, créatif et engagé
 agency.manifest.paragraph4_title;Éclaireur et éclairé
 agency.philosophy.contact_us;Contactez-nous :
 agency.philosophy.paragraph1_text;voué à l'expression du beau par le sens juste et exact, l'image et le mot.
-agency.philosophy.paragraph1_title;expert des maisons de luxe et amoureaux de l'art de vivre,expert des maisons de luxe et amoureaux de l'art de vivre,
+agency.philosophy.paragraph1_title;expert des maisons de luxe et amoureaux de l'art de vivre,
 agency.philosophy.paragraph2_text;aussi émotionnelle qu'intemporelle, est fondatrice et fédératrice et permet à vos équipes, vos clients, vos amis de s'unir dans un idéal, et de voir loin, pour longtemps.
 agency.philosophy.paragraph2_title;Un complice convaincu qu'une Direction Artistique singulière,
 agency.philosophy.paragraph3_text;parce qu'aujourd'hui communiquer différemment n'est plus une question mais une mission pour projeter un futur désirable cohérent.\nL'authenticité des messages, la transparence, le respect, la communication directe, franche et collaborative sont autant d'actes positifs générateurs de confiance, de véritables enjeux éthiques auxquels nous croyons fondamentalement.
@@ -81,7 +81,7 @@ expertises.digital.column3.item1;Stratégie
 expertises.digital.column3.item2;Calendrier éditorial
 expertises.digital.column3.item3;Production de contenu
 expertises.digital.column3.item4;Guidelines
-expertises.digital.column3.title;Social media
+expertises.digital.column3.title;Social Media
 expertises.digital.paragraph1;Nous croyons à la simplicité et à la pertinence digitale.\nCe qui est en ligne doit être utile.\nNous créons en intégrant le principe de sobriété fonctionnelle\net défendons l'accessibilité à tous.
 expertises.digital.paragraph2;La communication devient conversation, instantanée, directe et universelle.\nNous croyons au lien entre les femmes et les hommes.\nNous faisons rêver mais nos dires sont vrais et vérifiés.\nNous créons, produisons mais ne saturons pas nos audiences.
 expertises.digital.side_title;LES EXPERTISES - Digital
@@ -155,13 +155,13 @@ join_us.side_title;NOUS REJOINDRE
 join_us.title;Participez à l'histoire d'Egon
 manifest.page1.pre;N°01
 manifest.page1.title;Artiste par nature
-manifest.page1.text;Expressif et radical,\nIl touche, interpelle, sublime,\ndécrit, réinvente, véritable stratège épi.curieux,\nvoué à l'expression du beau\npar le sens juste et exact, le lien, l'image et le mot,\nil procure le rêve et provoque l'émotion.
+manifest.page1.text;Expressif et radical,\nIl touche, interpelle, sublime,\ndécrit, réinvente, véritable stratège épi.curieux,\nvoué à l'expression du beau\npar le sens juste et exact, le lien, l'image et le mot,\nil procure le rêve et provoque l'émotion
 manifest.page2.pre;N°02
 manifest.page2.title;Enraciné dans la terre
-manifest.page2.text;L'esprit nomade,\nIl se nourrit d'hier pour mieux appréhender demain,\npragmatique, actif et inspiré,\nIl pense les arts de Vivre avec conscience,\npassion et rigueur.
+manifest.page2.text;L'esprit nomade,\nIl se nourrit d'hier pour mieux appréhender demain,\npragmatique, actif et inspiré,\nIl pense les arts de Vivre avec conscience,\npassion et rigueur
 manifest.page3.pre;N°03
 manifest.page3.title;Philanthrope décomplexé
-manifest.page3.text;Il évolue dans un environnement créatif\nà géométrie variable, qu'il s'est choisi.
+manifest.page3.text;Il évolue dans un environnement créatif\nà géométrie variable, qu'il s'est choisi
 manifest.page4.pre;Tour à tour,
 manifest.page4.title;Éclaireur et éclairé
 manifest.page4.text;Egon Paris\nest un électron libre, créatif et engagé.

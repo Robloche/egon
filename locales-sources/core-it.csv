@@ -11,13 +11,13 @@ agency.founder.paragraph1;
 agency.founder.paragraph2;
 agency.founder.contact_me;
 agency.manifest.side_title;
-agency.manifest.paragraph1_number;
+agency.manifest.paragraph1_number;N°01
 agency.manifest.paragraph1_text;
 agency.manifest.paragraph1_title;
-agency.manifest.paragraph2_number;
+agency.manifest.paragraph2_number;N°02
 agency.manifest.paragraph2_text;
 agency.manifest.paragraph2_title;
-agency.manifest.paragraph3_number;
+agency.manifest.paragraph3_number;N°03
 agency.manifest.paragraph3_text;
 agency.manifest.paragraph3_title;
 agency.manifest.paragraph4_number;
@@ -36,14 +36,14 @@ agency.philosophy.paragraph5_title;
 agency.philosophy.paragraph6_text;
 agency.philosophy.side_title;
 agency.philosophy.title;
-agency.scroll;
+agency.scroll;Scroll
 agency.tagline1;
 agency.tagline2;
 common.egon;Egon
-contact.address1;
-contact.address1;
-contact.side_title;
-creation.customers.egon_collective;
+contact.address1;71-73 rue de Chézy
+contact.address1;92200 Neuilly-sur-Seine
+contact.side_title;CONTACT
+creation.customers.egon_collective;Egon collective.
 creation.customers.paragraph1;
 creation.customers.side_title;
 creation.customers.thanks;
@@ -54,7 +54,7 @@ creation.projects.paragraph2;
 creation.projects.side_title;
 expertises.creation.closing;
 expertises.creation.column1.item1;
-expertises.creation.column1.item2;
+expertises.creation.column1.item2;Mood
 expertises.creation.column1.title;
 expertises.creation.column2.item1;
 expertises.creation.column2.item2;
@@ -67,27 +67,27 @@ expertises.creation.paragraph2;
 expertises.creation.side_title;
 expertises.creation.title;
 expertises.digital.closing;
-expertises.digital.column1.item1;
-expertises.digital.column1.item2;
+expertises.digital.column1.item1;UX & UI design
+expertises.digital.column1.item2;Webdesign
 expertises.digital.column1.item3;
-expertises.digital.column1.title;
+expertises.digital.column1.title;Site Web & e-shop
 expertises.digital.column2.item1;
 expertises.digital.column2.item2;
 expertises.digital.column2.item3;
 expertises.digital.column2.item4;
-expertises.digital.column2.item5;
+expertises.digital.column2.item5;Copywriting
 expertises.digital.column2.title;
 expertises.digital.column3.item1;
 expertises.digital.column3.item2;
 expertises.digital.column3.item3;
-expertises.digital.column3.item4;
-expertises.digital.column3.title;
+expertises.digital.column3.item4;Guidelines
+expertises.digital.column3.title;Social Media
 expertises.digital.paragraph1;
 expertises.digital.paragraph2;
 expertises.digital.side_title;
-expertises.digital.title;
+expertises.digital.title;Site Web\n& Social Media
 expertises.edition.closing;
-expertises.edition.column1.item1;
+expertises.edition.column1.item1;Story-telling
 expertises.edition.column1.item2;
 expertises.edition.column1.title;
 expertises.edition.column2.item1;
@@ -95,14 +95,14 @@ expertises.edition.column2.item2;
 expertises.edition.column2.item3;
 expertises.edition.column2.item4;
 expertises.edition.column2.title;
-expertises.edition.column3.item1;
+expertises.edition.column3.item1;Sourcing
 expertises.edition.column3.item2;
 expertises.edition.column3.item3;
 expertises.edition.column3.item4;
 expertises.edition.column3.item5;
 expertises.edition.column3.item6;
 expertises.edition.column3.item7;
-expertises.edition.column3.title;
+expertises.edition.column3.title;Print Management
 expertises.edition.paragraph1;
 expertises.edition.paragraph2;
 expertises.edition.side_title;
@@ -110,17 +110,17 @@ expertises.edition.title;
 expertises.production.closing;
 expertises.production.column1.item1;
 expertises.production.column1.title;
-expertises.production.column2.item1;
+expertises.production.column2.item1;Storyboard
 expertises.production.column2.title;
 expertises.production.column3.item1;
 expertises.production.column3.item2;
 expertises.production.column3.item3;
 expertises.production.column3.title;
-expertises.production.column4.item1;
+expertises.production.column4.item1;Shooting
 expertises.production.column4.item2;
-expertises.production.column4.item3;
+expertises.production.column4.item3;Motion
 expertises.production.column4.item4;
-expertises.production.column4.item5;
+expertises.production.column4.item5;Sound-design
 expertises.production.column4.title;
 expertises.production.paragraph1;
 expertises.production.paragraph2;
@@ -128,12 +128,12 @@ expertises.production.side_title;
 expertises.production.title;
 expertises.strategy.closing;
 expertises.strategy.column1.item1;
-expertises.strategy.column1.item2;
+expertises.strategy.column1.item2;Benchmarking
 expertises.strategy.column1.item3;
 expertises.strategy.column1.item4;
-expertises.strategy.column1.item5;
+expertises.strategy.column1.item5;Naming
 expertises.strategy.column1.title;
-expertises.strategy.column2.item1;
+expertises.strategy.column2.item1;Story-telling
 expertises.strategy.column2.item2;
 expertises.strategy.column2.item3;
 expertises.strategy.column2.title;
@@ -153,13 +153,13 @@ footer.privacy_policy;
 join_us.paragraph;
 join_us.side_title;
 join_us.title;
-manifest.page1.pre;
+manifest.page1.pre;N°01
 manifest.page1.title;
 manifest.page1.text;
-manifest.page2.pre;
+manifest.page2.pre;N°02
 manifest.page2.title;
 manifest.page2.text;
-manifest.page3.pre;
+manifest.page3.pre;N°03
 manifest.page3.title;
 manifest.page3.text;
 manifest.page4.pre;
@@ -176,7 +176,7 @@ menu.creation.customers;
 menu.creation.label;
 menu.creation.projects;
 menu.expertises.creation;
-menu.expertises.digital;
+menu.expertises.digital;Digital
 menu.expertises.edition;
 menu.expertises.label;Le competenze
 menu.expertises.production;

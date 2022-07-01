@@ -1,186 +1,186 @@
-agency.first_name.founder;
-agency.first_name.paragraph1;
-agency.first_name.paragraph2;
-agency.first_name.paragraph3;
-agency.first_name.pronunciation;
-agency.first_name.side_title;
-agency.first_name.why_egon;
-agency.founder.side_title;
-agency.founder.title;
-agency.founder.paragraph1;
-agency.founder.paragraph2;
-agency.founder.contact_me;
-agency.manifest.side_title;
-agency.manifest.paragraph1_number;
-agency.manifest.paragraph1_text;
-agency.manifest.paragraph1_title;
-agency.manifest.paragraph2_number;
-agency.manifest.paragraph2_text;
-agency.manifest.paragraph2_title;
-agency.manifest.paragraph3_number;
-agency.manifest.paragraph3_text;
-agency.manifest.paragraph3_title;
-agency.manifest.paragraph4_number;
-agency.manifest.paragraph4_text;
-agency.manifest.paragraph4_title;
-agency.philosophy.contact_us;
-agency.philosophy.paragraph1_text;
-agency.philosophy.paragraph1_title;
-agency.philosophy.paragraph2_text;
-agency.philosophy.paragraph2_title;
-agency.philosophy.paragraph3_text;
-agency.philosophy.paragraph3_title;
-agency.philosophy.paragraph4_title;
-agency.philosophy.paragraph5_text;
-agency.philosophy.paragraph5_title;
-agency.philosophy.paragraph6_text;
-agency.philosophy.side_title;
-agency.philosophy.title;
-agency.scroll;
-agency.tagline1;
-agency.tagline2;
+agency.first_name.founder;Founder
+agency.first_name.paragraph1;Starting a business is like having a child, naming them, preparing them for life, inspiring and nourishing them.\nI chose Egon, an Austrian first name.\nEgon like Egon Schiele, the celebrated Expressionist.\nAn inspiring figure with a prolific body of work, he made the personal playful.\nA star of my imagination, he intensified my first emotions.
+agency.first_name.paragraph2;Egon: four potent letters that speak of wanderlust.\nIndependent, creative and committed.\nEgon Paris is an advertising agency dedicated to the art of living. 
+agency.first_name.paragraph3;Because Living is an Art
+agency.first_name.pronunciation;How do you say my name?
+agency.first_name.side_title;OUR AGENCY - Our name
+agency.first_name.why_egon;Why Egon?
+agency.founder.side_title;OUR AGENCY - Our founder
+agency.founder.title;Founder
+agency.founder.paragraph1;A creative and exacting entrepreneur, Séverine is a passionate aesthete with 20 years’ experience as a communications expert for luxury houses, and a particular affinity for the arts of living.
+agency.founder.paragraph2;She chose to surround herself with a community of independent workers sensitive to luxury codes with branding expertise. Artistic Directors, Writers, Motion Designers, Graphic Designers, Film-makers, Photographers and Web Developers have helped make her dream a reality: working alongside you with commitment and determination.
+agency.founder.contact_me;Contact me
+agency.manifest.side_title;OUR AGENCY - Manifesto
+agency.manifest.paragraph1_number;N°01
+agency.manifest.paragraph1_text;meaningful and radical,\nit touches, beckons, enhances, describes, reinvents,\n a truly epi.curious strategist,\n here to tell stories of beauty \nby capturing true meaning, connections, images and words,\ninspiring dreams and stirring emotion
+agency.manifest.paragraph1_title;Artist by nature
+agency.manifest.paragraph2_number;N°02
+agency.manifest.paragraph2_text;A wandering spirit, \nIt learns from the past to enlighten the future, pragmatic, active and inspired, \nIt approaches the Arts of Living from a place of awareness, \npassion and precision.
+agency.manifest.paragraph2_title;Rooted in the earth
+agency.manifest.paragraph3_number;N°03
+agency.manifest.paragraph3_text;It functions within the creative,\nshapeshifting environment it chose for itself
+agency.manifest.paragraph3_title;An unconventional philanthropist
+agency.manifest.paragraph4_number;Both,
+agency.manifest.paragraph4_text;Egon is a creative and committed free spirit.
+agency.manifest.paragraph4_title;Enlightener and enlightened,
+agency.philosophy.contact_us;Contact us
+agency.philosophy.paragraph1_text;it’s here to tell stories of beauty by capturing true meaning, images and words.
+agency.philosophy.paragraph1_title;An expert in luxury houses and art of living lover,
+agency.philosophy.paragraph2_text;emotional and timeless, creates and unites, sparking recognition among your teams, clients and friends, and bringing your long-term future into clear focus.
+agency.philosophy.paragraph2_title;It’s a accomplice convinced that Artistic Direction, when unique
+agency.philosophy.paragraph3_text;because, in today’s world, communicating differently is no longer an option.  As we look to a desirable and coherent future, we must make it our mission. From authentic messaging to transparency, respect and direct, open and collaborative communication, positive action leads to trust and the ethical challenges we fundamentally believe in.
+agency.philosophy.paragraph3_title;Egon is committed to responsible Artistic Direction
+agency.philosophy.paragraph4_title;Egon’s creative approach will ensure the sustainable performance of your brand.
+agency.philosophy.paragraph5_text;With a humble grasp of the world we live in, Egon is committed to embracing tomorrow’s world where we communicate better, with creative, meaningful and timeless messages.
+agency.philosophy.paragraph5_title;Egon,
+agency.philosophy.paragraph6_text;Egon brings you a set of values and a community of joyful, passionate and independent people obsessed with honing their creativity and committed to being rather than having.
+agency.philosophy.side_title;OUR AGENCY - Philosophy
+agency.philosophy.title;Egon is an independent, creative and committed partner who understands your brand and its challenges and brings a passion to its work.
+agency.scroll;Scroll
+agency.tagline1;advertising agency\ndedicated to the Art of Living
+agency.tagline2;independent, creative and committed
 common.egon;Egon
-contact.address1;
-contact.address1;
-contact.side_title;
-creation.customers.egon_collective;
-creation.customers.paragraph1;
-creation.customers.side_title;
-creation.customers.thanks;
+contact.address1;71-73 rue de Chézy
+contact.address1;92200 Neuilly-sur-Seine
+contact.side_title;CONTACT
+creation.customers.egon_collective;Egon collective.
+creation.customers.paragraph1;It is thanks to our cherished Clients that we’re able to do what we do and live in a world where we communicate better, with creative, meaningful and timeless messages. So thank you. Thank you for supporting us in our work.
+creation.customers.side_title;CREATION - Clients
+creation.customers.thanks;Thank you!
 creation.customers.title;
 creation.projects.contact;
 creation.projects.paragraph1;
 creation.projects.paragraph2;
-creation.projects.side_title;
+creation.projects.side_title;CREATION - Projects
 expertises.creation.closing;
-expertises.creation.column1.item1;
-expertises.creation.column1.item2;
-expertises.creation.column1.title;
-expertises.creation.column2.item1;
-expertises.creation.column2.item2;
-expertises.creation.column2.title;
-expertises.creation.column3.item1;
-expertises.creation.column3.item2;
-expertises.creation.column3.item3;
-expertises.creation.paragraph1;
-expertises.creation.paragraph2;
-expertises.creation.side_title;
-expertises.creation.title;
+expertises.creation.column1.item1;Artistic Direction
+expertises.creation.column1.item2;Mood
+expertises.creation.column1.title;Scope of expression
+expertises.creation.column2.item1;Logo
+expertises.creation.column2.item2;Graphic charter
+expertises.creation.column2.title;Visual Identity
+expertises.creation.column3.item1;Advertising
+expertises.creation.column3.item2;360 Campaign
+expertises.creation.column3.item3;Illustration
+expertises.creation.paragraph1;The long-term success of your brand is built on creation, innovation, the crafting of a real identity and unique, original and signed Artistic Direction.
+expertises.creation.paragraph2;We create differently to innovate without exploitation, to surprise in a meaningful and coherent way, and to conceive on a grand and inventive scale within an eco-design approach.
+expertises.creation.side_title;EXPERTISE - Creation
+expertises.creation.title;Artistic Direction
 expertises.digital.closing;
-expertises.digital.column1.item1;
-expertises.digital.column1.item2;
-expertises.digital.column1.item3;
-expertises.digital.column1.title;
-expertises.digital.column2.item1;
-expertises.digital.column2.item2;
-expertises.digital.column2.item3;
-expertises.digital.column2.item4;
-expertises.digital.column2.item5;
-expertises.digital.column2.title;
-expertises.digital.column3.item1;
-expertises.digital.column3.item2;
-expertises.digital.column3.item3;
-expertises.digital.column3.item4;
-expertises.digital.column3.title;
-expertises.digital.paragraph1;
-expertises.digital.paragraph2;
-expertises.digital.side_title;
-expertises.digital.title;
+expertises.digital.column1.item1;UX & UI design
+expertises.digital.column1.item2;Webdesign
+expertises.digital.column1.item3;Development
+expertises.digital.column1.title;Site Web & e-shop
+expertises.digital.column2.item1;SEO strategy 
+expertises.digital.column2.item2;SEA campaign
+expertises.digital.column2.item3;Semantic audit
+expertises.digital.column2.item4;Technical support
+expertises.digital.column2.item5;Copywriting
+expertises.digital.column2.title;SEO
+expertises.digital.column3.item1;Strategy
+expertises.digital.column3.item2;Editorial schedule
+expertises.digital.column3.item3;Content production
+expertises.digital.column3.item4;Guidelines
+expertises.digital.column3.title;Social Media
+expertises.digital.paragraph1;We believe in simplicity and digital relevance.\nOnline content should be useful.\nOur creativity is guided by functional simplicity and we champion accessibility for all.
+expertises.digital.paragraph2;Communications bring about instant, direct and global conversation.\nWe believe in the connection between women and men.\nWe inspire dreams but our words are true and verified.\nWe create and produce without overwhelming our audiences.
+expertises.digital.side_title;EXPERTISE - Digital
+expertises.digital.title;Site Web\n& Social Media
 expertises.edition.closing;
-expertises.edition.column1.item1;
-expertises.edition.column1.item2;
-expertises.edition.column1.title;
-expertises.edition.column2.item1;
-expertises.edition.column2.item2;
-expertises.edition.column2.item3;
-expertises.edition.column2.item4;
-expertises.edition.column2.title;
-expertises.edition.column3.item1;
-expertises.edition.column3.item2;
-expertises.edition.column3.item3;
-expertises.edition.column3.item4;
-expertises.edition.column3.item5;
-expertises.edition.column3.item6;
-expertises.edition.column3.item7;
-expertises.edition.column3.title;
-expertises.edition.paragraph1;
-expertises.edition.paragraph2;
-expertises.edition.side_title;
-expertises.edition.title;
+expertises.edition.column1.item1;Story-telling
+expertises.edition.column1.item2;Multilingual copywriting
+expertises.edition.column1.title;Editorial Strategy
+expertises.edition.column2.item1;Page layout
+expertises.edition.column2.item2;Execution
+expertises.edition.column2.item3;Photo-engraving
+expertises.edition.column2.item4;Retouching
+expertises.edition.column2.title;Artistic Direction
+expertises.edition.column3.item1;Sourcing
+expertises.edition.column3.item2;Negotiation
+expertises.edition.column3.item3;Recommandation
+expertises.edition.column3.item4;Setup
+expertises.edition.column3.item5;Manufacturing
+expertises.edition.column3.item6;Mailing
+expertises.edition.column3.item7;Monitoring and Follow-up
+expertises.edition.column3.title;Print Management
+expertises.edition.paragraph1;Make your mark, print and distribute. As editorial writers, we love beautiful, well conceived books that are skilfully and distinctively crafted.
+expertises.edition.paragraph2;We advocate timeless creations and sustainable production methods. We prioritise recycled paper and embellishments rooted in creativity.We select responsible printers and we’re proud to include them in our value chain.
+expertises.edition.side_title;EXPERTISE - Publishing
+expertises.edition.title;Publishing
 expertises.production.closing;
-expertises.production.column1.item1;
-expertises.production.column1.title;
-expertises.production.column2.item1;
-expertises.production.column2.title;
-expertises.production.column3.item1;
-expertises.production.column3.item2;
-expertises.production.column3.item3;
-expertises.production.column3.title;
-expertises.production.column4.item1;
-expertises.production.column4.item2;
-expertises.production.column4.item3;
-expertises.production.column4.item4;
-expertises.production.column4.item5;
-expertises.production.column4.title;
-expertises.production.paragraph1;
-expertises.production.paragraph2;
-expertises.production.side_title;
-expertises.production.title;
+expertises.production.column1.item1;Intentions
+expertises.production.column1.title;Photo Direction
+expertises.production.column2.item1;Storyboard
+expertises.production.column2.title;Filmmaking
+expertises.production.column3.item1;Art procurement
+expertises.production.column3.item2;Casting
+expertises.production.column3.item3;Scouting
+expertises.production.column3.title;Pre-production
+expertises.production.column4.item1;Shooting
+expertises.production.column4.item2;Filming
+expertises.production.column4.item3;Motion
+expertises.production.column4.item4;Post-Production
+expertises.production.column4.item5;Sound-design
+expertises.production.column4.title;Photo Production\nFilm production
+expertises.production.paragraph1;Did you say Brand Content? Photos? Videos?\nWe produce our ideas from A to Z, with attention to detail, precision, creativity and methodology.
+expertises.production.paragraph2;Nothing is destroyed in our production process. We work with an inclusive idea, within the budget and with a friendly team that is exacting and creative, responsible and empathetic. 
+expertises.production.side_title;EXPERTISE - Production
+expertises.production.title;Brand Content
 expertises.strategy.closing;
-expertises.strategy.column1.item1;
-expertises.strategy.column1.item2;
-expertises.strategy.column1.item3;
-expertises.strategy.column1.item4;
-expertises.strategy.column1.item5;
-expertises.strategy.column1.title;
-expertises.strategy.column2.item1;
-expertises.strategy.column2.item2;
-expertises.strategy.column2.item3;
-expertises.strategy.column2.title;
-expertises.strategy.column3.item1;
-expertises.strategy.column3.item2;
-expertises.strategy.column3.item3;
-expertises.strategy.column3.title;
-expertises.strategy.paragraph1;
-expertises.strategy.paragraph2;
-expertises.strategy.side_title;
-expertises.strategy.title;
-footer.contact;
-footer.join_us;
-footer.legal_notice;
-footer.newsletter;
-footer.privacy_policy;
-join_us.paragraph;
-join_us.side_title;
-join_us.title;
-manifest.page1.pre;
-manifest.page1.title;
-manifest.page1.text;
-manifest.page2.pre;
-manifest.page2.title;
-manifest.page2.text;
-manifest.page3.pre;
-manifest.page3.title;
-manifest.page3.text;
-manifest.page4.pre;
-manifest.page4.title;
-manifest.page4.text;
+expertises.strategy.column1.item1;Brand auditing
+expertises.strategy.column1.item2;Benchmarking
+expertises.strategy.column1.item3;Strategic Planning
+expertises.strategy.column1.item4;Brand architecture
+expertises.strategy.column1.item5;Naming
+expertises.strategy.column1.title;Consulting & Strategy
+expertises.strategy.column2.item1;Story-telling
+expertises.strategy.column2.item2;Multilingual copywriting
+expertises.strategy.column2.item3;Manifesto
+expertises.strategy.column2.title;Editorial Identity
+expertises.strategy.column3.item1;Vision, Mission and Promise
+expertises.strategy.column3.item2;Pillars, Values and Personality
+expertises.strategy.column3.item3;Products and Know-How
+expertises.strategy.column3.title;Brand Platorm
+expertises.strategy.paragraph1;We see a brand story through the lens of an original, brand-specific concept, adopting an understated, sustainable and fundamental approach for most of our clients. We write, set the tone and capture the essence of your brand in a striking and moving mission statement.
+expertises.strategy.paragraph2;Let’s make the personal playful!
+expertises.strategy.side_title;EXPERTISE - Strategy
+expertises.strategy.title;Consulting, Strategy & Brand Architecture
+footer.contact;Contact
+footer.join_us;Join us
+footer.legal_notice;Legal notices
+footer.newsletter;Newsletter
+footer.privacy_policy;Privacy Policy
+join_us.paragraph;Truly epi.curious,\nYou're free, creative and independent, \nYou cultivate the spoken word and enjoy verbal sparring,\nYour eye is both sharp and mischievous,\nYour self-discipline is formidable,\nYour sense of humour is renowned,\nYou're sensitive to the challenges of sustainable and responsible communications,\nFor you, life is all about beauty, laughter and pleasure,\nSend your application to egon@egonparis.com to join our community
+join_us.side_title;JOIN US
+join_us.title;Join the Egon story
+manifest.page1.pre;N°01
+manifest.page1.title;Artist by nature
+manifest.page1.text;Meaningful and radical,\nIt touches, beckons, enhances, describes, reinvents, \na truly epi.curious strategist, \nhere to tell stories of beauty \nby capturing true meaning, connections, images and words, \ninspiring dreams and stirring emotion
+manifest.page2.pre;N°02
+manifest.page2.title;Rooted in the earth
+manifest.page2.text;A wandering spirit,\nIt learns from the past to enlighten the future,\npragmatic, active and inspired,\nIt approaches the Arts of Living from a place of \nawareness, passion and precision
+manifest.page3.pre;N°03
+manifest.page3.title;Unconventional philanthropist
+manifest.page3.text;It functions within the creative, shapeshifting \nenvironment it chose for itself
+manifest.page4.pre;Both
+manifest.page4.title;Enlightener and enlightened
+manifest.page4.text;Egon Paris\nis a creative and committed free spirit.
 menu.label;Menu
-menu.agency.first_name;
-menu.agency.founder;
-menu.agency.label;
-menu.agency.manifest;
-menu.agency.philosophy;
+menu.agency.first_name;Our name
+menu.agency.founder;Our founder
+menu.agency.label;Our agency
+menu.agency.manifest;Manifesto
+menu.agency.philosophy;Philosophy
 menu.contact.label;Contact
-menu.creation.customers;
-menu.creation.label;
-menu.creation.projects;
-menu.expertises.creation;
-menu.expertises.digital;
-menu.expertises.edition;
+menu.creation.customers;Clients
+menu.creation.label;Creation
+menu.creation.projects;Projects
+menu.expertises.creation;Creation
+menu.expertises.digital;Digital
+menu.expertises.edition;Publishing
 menu.expertises.label;The expertises
-menu.expertises.production;
-menu.expertises.strategy;
+menu.expertises.production;Production
+menu.expertises.strategy;Strategy
 menu.language.en;UK
 menu.language.fr;FR
 menu.language.it;IT
