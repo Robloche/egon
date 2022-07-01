@@ -124,8 +124,8 @@ const Menu = (): React.Node => {
     }
 
     const index = Number(target.getAttribute('data-index'));
-    const newStates = [...expandedStates];
-    newStates[index] = !newStates[index];
+    const newStates = [false, false, false];
+    newStates[index] = !expandedStates[index];
     setExpandedStates(newStates);
   }, [expandedStates, setExpandedStates]);
 

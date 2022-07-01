@@ -92,13 +92,14 @@
       > .menu__item_accordion {
         display: flex;
         flex-direction: column;
-        height: 0;
+        max-height: 0;
         opacity: 0;
+        overflow: hidden;
         padding-top: .6rem;
-        transition: height var(--short-transition) ease-out, opacity var(--short-transition) ease-out;
+        transition: max-height var(--medium-transition) ease-out, opacity var(--medium-transition) ease-out;
 
         &.expanded {
-          height: auto;
+          max-height: 10rem;
           opacity: 1;
 
           > a {
