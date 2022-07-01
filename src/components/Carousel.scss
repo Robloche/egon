@@ -1,7 +1,8 @@
 .carousel {
   display: flex;
   flex: 1 0 auto;
-  height: 900px;
+  // DEBUG
+  height: 1007px;
   position: relative;
 
   > .carousel__slider {
@@ -14,7 +15,7 @@
       height: 100%;
       opacity: 0;
       position: absolute;
-      transition: opacity 200ms ease-out;
+      transition: opacity var(--short-transition) ease-out;
       width: 100%;
 
       &.visible {
@@ -31,7 +32,6 @@
         left: 0;
         position: absolute;
         top: 0;
-        white-space: pre-line;
         width: 100%;
 
         > .slide__text-pre {
@@ -61,6 +61,27 @@
 
     > .bullet {
       margin: 0 5px;
+    }
+  }
+
+  > .carousel__scroll {
+    bottom: 20px;
+    position: absolute;
+    left: calc(50% - 2px);
+
+    > .carousel__scroll-text {
+      color: var(--white);
+      font-size: .5rem;
+      letter-spacing: .2rem;
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+      transform-origin: left;
+    }
+
+    > .carousel__scroll-line {
+      background-color: var(--white);
+      height: 60px;
+      width: 1px;
     }
   }
 }

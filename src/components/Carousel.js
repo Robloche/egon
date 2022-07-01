@@ -63,6 +63,10 @@ const Carousel = (): React.Node => {
         isFull={index <= currentIndex}
         key={img.toString()}
         onClick={handleBulletOnClick} />)}</div>
+      <div className='carousel__scroll'>
+        <div className='carousel__scroll-text'>{Localizer.localize('agency.scroll')}</div>
+        <div className='carousel__scroll-line' />
+      </div>
     </div>
   );
 };

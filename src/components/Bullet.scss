@@ -5,7 +5,7 @@
   stroke: var(--white);
   stroke-width: 10%;
   transform: scale(1);
-  transition: transform 300ms ease-out;
+  transition: transform var(--short-transition) ease-out;
   width: 10px;
 
   &:hover {

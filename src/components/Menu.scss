@@ -46,6 +46,12 @@
             border-bottom: 1px solid var(--white);
             cursor: default;
           }
+
+          &:not(:checked) + label {
+            &:hover {
+              opacity: .8;
+            }
+          }
         }
 
         input[type='radio'] + label {
@@ -57,12 +63,6 @@
 
           &:not(:last-child) {
             margin-right: 10px;
-          }
-        }
-
-        input[type='radio']:not(:checked) + label {
-          &:hover {
-            opacity: .8;
           }
         }
       }
@@ -77,6 +77,7 @@
       > .menu__item {
         border-bottom: .1rem solid var(--white);
         color: var(--white);
+        cursor: pointer;
         font-size: 1.7rem;
         font-weight: lighter;
         line-height: 2.7rem;
@@ -91,12 +92,25 @@
       > .menu__item_accordion {
         display: flex;
         flex-direction: column;
+        height: 0;
+        opacity: 0;
         padding-top: .6rem;
+        transition: height var(--short-transition) ease-out, opacity var(--short-transition) ease-out;
+
+        &.expanded {
+          height: auto;
+          opacity: 1;
+
+          > a {
+            pointer-events: all;
+          }
+        }
 
         > a {
           color: var(--white);
           font-weight: lighter;
           line-height: 1.6rem;
+          pointer-events: none;
           text-decoration: none;
         }
       }
