@@ -1,0 +1,88 @@
+.page-expertises__introduction {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  > .page-expertises__content {
+    align-items: flex-start;
+    display: flex;
+    column-gap: 2rem;
+    padding: 6rem 0;
+
+    > .page-expertises__title {
+      font: 3rem Bodoni;
+      line-height: 2.8rem;
+      text-align: right;
+    }
+
+    > .page-expertises__description {
+      line-height: 1.4rem;
+      max-width: 44rem;
+
+      > div {
+        &:first-child {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.page-expertises__listing {
+  color: var(--white);
+  column-gap: 8rem;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+
+  &.expertises__image1 {
+    background-image: url(../assets/images/expertises1.png);
+  }
+
+  &.expertises__image2 {
+    background-image: url(../assets/images/expertises2.png);
+  }
+
+  &.expertises__image3 {
+    background-image: url(../assets/images/expertises3.png);
+  }
+
+  &.expertises__image4 {
+    background-image: url(../assets/images/expertises4.png);
+  }
+
+  &.expertises__image5 {
+    background-image: url(../assets/images/expertises5.png);
+  }
+
+  .listing__title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &:before {
+      background-color: var(--white);
+      content: '';
+      height: 1px;
+      position: absolute;
+      top: -1rem;
+      width: 2.5rem;
+    }
+  }
+
+  .listing__item {
+    font-size: .9rem;
+    line-height: 1.4rem;
+  }
+}
+
+.page-expertises__closing {
+  align-items: center;
+  background-color: var(--khaki);
+  color: var(--white);
+  display: flex;
+  font: 2rem Bodoni;
+  justify-content: center;
+  padding: 4rem;
+}

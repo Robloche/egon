@@ -8,6 +8,7 @@ import Header from './Header';
 import {Localizer} from '../helpers/localizer';
 import egon from '../assets/images/egon-by-severine.png';
 import qrCode from '../assets/svg/qr-code.svg';
+import severine from '../assets/images/severine.png';
 import {useSelector} from 'react-redux';
 
 const renderSectionFirstName = () => (
@@ -110,6 +111,30 @@ const renderSectionManifest = () => (
   </div>
 );
 
+const renderSectionFounder = () => (
+  <div
+    className='page-agency__founder page-agency__section'
+    id='founder'>
+    <div className='side-title'>{Localizer.localize('agency.founder.side_title')}</div>
+    <img
+      alt="Séverine Breton Join-Diéterle, fondatrice d'Egon Paris"
+      src={severine} />
+    <div className='founder__content'>
+      <div className='founder__title'>Séverine Breton Join-Diéterle</div>
+      <div className='founder__label'>{Localizer.localize('agency.founder.title')}</div>
+      <div className='founder__paragraph paragraph-highlight'>{Localizer.localize('agency.founder.paragraph1')}</div>
+      <div className='founder__paragraph'>{Localizer.localize('agency.founder.paragraph2')}</div>
+      <div className='founder__contact'>
+        <div>{Localizer.localize('agency.founder.contact_me')}</div>
+        <a
+          href='mailto:sbreton@egonparis.com'
+          rel='noopener noreferrer'
+          target='_blank'>sbreton@egonparis.com</a>
+      </div>
+    </div>
+  </div>
+);
+
 const Home = (): React.Node => {
   useSelector((state) => state.language);
 
@@ -127,6 +152,7 @@ const Home = (): React.Node => {
       {renderSectionFirstName()}
       {renderSectionPhilosophy()}
       {renderSectionManifest()}
+      {renderSectionFounder()}
       <Footer />
     </div>
   );

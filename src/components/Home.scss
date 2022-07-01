@@ -219,4 +219,50 @@
       }
     }
   }
+
+  > .page-agency__founder {
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+    justify-content: space-evenly;
+
+    > img {
+      max-height: 800px
+    }
+
+    > .founder__content {
+      max-width: 36rem;
+
+      > .founder__title {
+        font: 3rem Bodoni;
+        line-height: 2.8rem;
+      }
+
+      > .founder__label {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+      }
+
+      > .founder__paragraph {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin-bottom: 1.6rem;
+
+        &.paragraph-highlight {
+          font: 1.4rem Bodoni;
+        }
+      }
+
+      > .founder__contact {
+        color: var(--white);
+        display: flex;
+        margin-top: 4rem;
+
+        > a {
+          color: var(--white);
+          margin-left: .4rem;
+        }
+      }
+    }
+  }
 }
