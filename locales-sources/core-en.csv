@@ -7,12 +7,12 @@ agency.first_name.side_title;OUR AGENCY - Our name
 agency.first_name.why_egon;Why Egon?
 agency.founder.side_title;OUR AGENCY - Our founder
 agency.founder.title;Founder
-agency.founder.paragraph1;A creative and exacting entrepreneur, Séverine is a passionate aesthete with 20 years’ experience as a communications expert for luxury houses, and a particular affinity for the arts of living.
+agency.founder.paragraph1;A creative and exacting entrepreneur, Séverine is a passionate aesthete with 20 years' experience as a communications expert for luxury houses, and a particular affinity for the arts of living.
 agency.founder.paragraph2;She chose to surround herself with a community of independent workers sensitive to luxury codes with branding expertise. Artistic Directors, Writers, Motion Designers, Graphic Designers, Film-makers, Photographers and Web Developers have helped make her dream a reality: working alongside you with commitment and determination.
 agency.founder.contact_me;Contact me
 agency.manifest.side_title;OUR AGENCY - Manifesto
 agency.manifest.paragraph1_number;N°01
-agency.manifest.paragraph1_text;meaningful and radical,\nit touches, beckons, enhances, describes, reinvents,\n a truly epi.curious strategist,\n here to tell stories of beauty \nby capturing true meaning, connections, images and words,\ninspiring dreams and stirring emotion
+agency.manifest.paragraph1_text;meaningful and radical, it touches, beckons, enhances, describes, reinvents,\n a truly epi.curious strategist,\n here to tell stories of beauty \nby capturing true meaning, connections, images and words,\ninspiring dreams and stirring emotion
 agency.manifest.paragraph1_title;Artist by nature
 agency.manifest.paragraph2_number;N°02
 agency.manifest.paragraph2_text;A wandering spirit, \nIt learns from the past to enlighten the future, pragmatic, active and inspired, \nIt approaches the Arts of Living from a place of awareness, \npassion and precision.
@@ -24,18 +24,18 @@ agency.manifest.paragraph4_number;Both,
 agency.manifest.paragraph4_text;Egon is a creative and committed free spirit.
 agency.manifest.paragraph4_title;Enlightener and enlightened,
 agency.philosophy.contact_us;Contact us
-agency.philosophy.paragraph1_text;it’s here to tell stories of beauty by capturing true meaning, images and words.
+agency.philosophy.paragraph1_text;it's here to tell stories of beauty by capturing true meaning,\nimages and words.
 agency.philosophy.paragraph1_title;An expert in luxury houses and art of living lover,
 agency.philosophy.paragraph2_text;emotional and timeless, creates and unites, sparking recognition among your teams, clients and friends, and bringing your long-term future into clear focus.
-agency.philosophy.paragraph2_title;It’s a accomplice convinced that Artistic Direction, when unique
-agency.philosophy.paragraph3_text;because, in today’s world, communicating differently is no longer an option.  As we look to a desirable and coherent future, we must make it our mission. From authentic messaging to transparency, respect and direct, open and collaborative communication, positive action leads to trust and the ethical challenges we fundamentally believe in.
+agency.philosophy.paragraph2_title;It's a accomplice convinced that Artistic Direction, when unique
+agency.philosophy.paragraph3_text;because, in today's world, communicating differently is no longer an option.\nAs we look to a desirable and coherent future,\nwe must make it our mission.\nFrom authentic messaging to transparency, respect and direct,\nopen and collaborative communication, positive action leads to trust and the ethical challenges\nwe fundamentally believe in.
 agency.philosophy.paragraph3_title;Egon is committed to responsible Artistic Direction
-agency.philosophy.paragraph4_title;Egon’s creative approach will ensure the sustainable performance of your brand.
-agency.philosophy.paragraph5_text;With a humble grasp of the world we live in, Egon is committed to embracing tomorrow’s world where we communicate better, with creative, meaningful and timeless messages.
+agency.philosophy.paragraph4_title;Egon's creative approach will ensure the sustainable performance of your brand.
+agency.philosophy.paragraph5_text;With a humble grasp of the world we live in, Egon is committed to embracing tomorrow's world\nwhere we communicate better,\nwith creative, meaningful and timeless messages.
 agency.philosophy.paragraph5_title;Egon,
-agency.philosophy.paragraph6_text;Egon brings you a set of values and a community of joyful, passionate and independent people obsessed with honing their creativity and committed to being rather than having.
+agency.philosophy.closing;Egon brings you a set of values\nand a community of joyful, passionate and independent people\nobsessed with honing their creativity\nand committed to being rather than having.
 agency.philosophy.side_title;OUR AGENCY - Philosophy
-agency.philosophy.title;Egon is an independent, creative and committed partner who understands your brand and its challenges and brings a passion to its work.
+agency.philosophy.title;Egon is an independent, creative and committed partner\nwho understands your brand and its challenges\nand brings a passion to its work.
 agency.scroll;Scroll
 agency.tagline1;advertising agency\ndedicated to the Art of Living
 agency.tagline2;independent, creative and committed
@@ -44,7 +44,7 @@ contact.address1;71-73 rue de Chézy
 contact.address1;92200 Neuilly-sur-Seine
 contact.side_title;CONTACT
 creation.customers.egon_collective;Egon collective.
-creation.customers.paragraph1;It is thanks to our cherished Clients that we’re able to do what we do and live in a world where we communicate better, with creative, meaningful and timeless messages. So thank you. Thank you for supporting us in our work.
+creation.customers.paragraph1;It is thanks to our cherished Clients that we're able to do what we do and live in a world where we communicate better, with creative, meaningful and timeless messages. So thank you. Thank you for supporting us in our work.
 creation.customers.side_title;CREATION - Clients
 creation.customers.thanks;Thank you!
 creation.customers.title;
@@ -104,7 +104,7 @@ expertises.edition.column3.item6;Mailing
 expertises.edition.column3.item7;Monitoring and Follow-up
 expertises.edition.column3.title;Print Management
 expertises.edition.paragraph1;Make your mark, print and distribute. As editorial writers, we love beautiful, well conceived books that are skilfully and distinctively crafted.
-expertises.edition.paragraph2;We advocate timeless creations and sustainable production methods. We prioritise recycled paper and embellishments rooted in creativity.We select responsible printers and we’re proud to include them in our value chain.
+expertises.edition.paragraph2;We advocate timeless creations and sustainable production methods. We prioritise recycled paper and embellishments rooted in creativity.We select responsible printers and we're proud to include them in our value chain.
 expertises.edition.side_title;EXPERTISE - Publishing
 expertises.edition.title;Publishing
 expertises.production.closing;
@@ -142,7 +142,7 @@ expertises.strategy.column3.item2;Pillars, Values and Personality
 expertises.strategy.column3.item3;Products and Know-How
 expertises.strategy.column3.title;Brand Platorm
 expertises.strategy.paragraph1;We see a brand story through the lens of an original, brand-specific concept, adopting an understated, sustainable and fundamental approach for most of our clients. We write, set the tone and capture the essence of your brand in a striking and moving mission statement.
-expertises.strategy.paragraph2;Let’s make the personal playful!
+expertises.strategy.paragraph2;Let's make the personal playful!
 expertises.strategy.side_title;EXPERTISE - Strategy
 expertises.strategy.title;Consulting, Strategy & Brand Architecture
 footer.contact;Contact

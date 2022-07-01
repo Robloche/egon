@@ -6,7 +6,109 @@ import Carousel from './Carousel';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
+import egon from '../assets/images/egon-by-severine.png';
+import qrCode from '../assets/svg/qr-code.svg';
 import {useSelector} from 'react-redux';
+
+const renderSectionFirstName = () => (
+  <div
+    className='page-agency__first-name page-agency__section'
+    id='first-name'>
+    <div className='side-title'>{Localizer.localize('agency.first_name.side_title')}</div>
+    <div className='first-name__drawing'>
+      <img
+        alt='Egon by Séverine'
+        src={egon} />
+    </div>
+    <div className='first-name__content'>
+      <div className='first-name__title'>{Localizer.localize('agency.first_name.why_egon')}</div>
+      <div className='first-name__paragraph'>{Localizer.localize('agency.first_name.paragraph1')}</div>
+      <div className='first-name__paragraph paragraph-bold'>{Localizer.localize('agency.first_name.paragraph2')}</div>
+      <div className='first-name__paragraph paragraph-bold paragraph-blue'>{Localizer.localize('agency.first_name.paragraph3')}</div>
+      <div className='first-name__severine'>Séverine Breton Join-Diéterle</div>
+      <div className='first-name__founder'>{Localizer.localize('agency.first_name.founder')}</div>
+    </div>
+    <div className='first-name__pronunciation'>
+      <img
+        alt='QR code pointant vers la prononciation du prénom Egon'
+        src={qrCode} />
+      <div className='first-name__line' />
+      <div className='first-name__how'>{Localizer.localize('agency.first_name.pronunciation')}</div>
+    </div>
+  </div>
+);
+
+
+const renderSectionPhilosophy = () => (
+  <div
+    className='page-agency__philosophy page-agency__section'
+    id='philosophy'>
+    <div className='side-title'>{Localizer.localize('agency.philosophy.side_title')}</div>
+    <div className='philosophy__content'>
+      <div className='philosophy__title'>{Localizer.localize('agency.philosophy.title')}</div>
+      <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph1_title')}</div>
+      <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph1_text')}</div>
+      <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph2_title')}</div>
+      <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph2_text')}</div>
+      <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph3_title')}</div>
+      <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph3_text')}</div>
+      <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph4_title')}</div>
+      <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph5_title')}</div>
+      <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph5_text')}</div>
+    </div>
+    <div className='philosophy__closing'>
+      <div className='philosophy__closing-content'>
+        <div className='philosophy__title title-white'>{Localizer.localize('agency.philosophy.closing')}</div>
+        <div className='philosophy__contact'>
+          <div>{Localizer.localize('agency.philosophy.contact_us')}</div>
+          <a
+            href='mailto:egon@egonparis.com'
+            rel='noopener noreferrer'
+            target='_blank'>egon@egonparis.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const renderSectionManifest = () => (
+  <div
+    className='page-agency__manifest page-agency__section'
+    id='manifest'>
+    <div className='side-title'>{Localizer.localize('agency.manifest.side_title')}</div>
+    <div className='manifest__content'>
+      <div className='manifest__title'>
+        <div>{Localizer.localize('agency.manifest.paragraph1_title')}</div>
+        <div className='manifest__title-line-number'>
+          <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph1_number')}</div>
+          <div className='manifest__title-line' />
+        </div>
+      </div>
+      <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph1_text')}</div>
+      <div className='manifest__title manifest-right'>
+        <div className='manifest__title-line-number'>
+          <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph2_number')}</div>
+          <div className='manifest__title-line' />
+        </div>
+        <div>{Localizer.localize('agency.manifest.paragraph2_title')}</div>
+      </div>
+      <div className='manifest__text manifest-right'>{Localizer.localize('agency.manifest.paragraph2_text')}</div>
+      <div className='manifest__title'>
+        <div>{Localizer.localize('agency.manifest.paragraph3_title')}</div>
+        <div className='manifest__title-line-number'>
+          <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph3_number')}</div>
+          <div className='manifest__title-line' />
+        </div>
+      </div>
+      <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph3_text')}</div>
+      <div className='manifest__section--right'>
+        <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph4_number')}</div>
+        <div className='manifest__title'>{Localizer.localize('agency.manifest.paragraph4_title')}</div>
+        <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph4_text')}</div>
+      </div>
+    </div>
+  </div>
+);
 
 const Home = (): React.Node => {
   useSelector((state) => state.language);
@@ -22,70 +124,9 @@ const Home = (): React.Node => {
         </div>
       </div>
       <Header />
-      <div style={{
-        backgroundColor: '#000',
-        color: '#fff'
-      }}>
-        <p
-          id='first-name'
-          style={{backgroundColor: '#1E2C1E'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non volutpat elit. Phasellus sit amet
-          tellus vel ipsum luctus dapibus. Nulla facilisi. Integer quis nunc vestibulum odio viverra pretium sed ut magna. Duis vitae dui interdum,
-          pulvinar velit ac, vulputate ligula. Curabitur sagittis enim nec ante cursus laoreet. Nam sit amet elementum quam. Praesent imperdiet risus
-          ut libero egestas pellentesque.</p>
-        <p>Suspendisse dignissim ex vel ipsum consequat, sit amet molestie orci rhoncus. Praesent non diam eros. Duis quis tincidunt metus. Nunc
-          interdum nisi sit amet eros facilisis gravida. Morbi ultrices convallis enim, at varius nulla pharetra mollis. Praesent nec auctor elit.
-          Vestibulum suscipit risus vitae neque rhoncus laoreet. Aenean maximus nulla sed nunc porttitor, at vehicula mauris pellentesque. Orci varius
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In at metus eu quam feugiat facilisis non ac sapien. Fusce interdum
-          et sapien vehicula ullamcorper. Etiam pretium mattis lorem, finibus pellentesque erat elementum ut. Sed in arcu quam.</p>
-        <p>Nulla facilisi. Morbi quam quam, varius vel fermentum ut, feugiat vel odio. Maecenas eget felis eget eros sodales bibendum. Mauris id
-          molestie dolor, non semper nibh. Curabitur pulvinar velit ac ultrices dictum. Aliquam arcu arcu, lobortis ornare lobortis eu, sodales ac
-          turpis. Phasellus hendrerit elit id leo egestas ornare vitae ac metus. Cras nibh leo, auctor ac diam eu, elementum blandit purus. Suspendisse
-          ac metus tincidunt, vulputate massa sed, varius tortor. Suspendisse blandit dignissim dui et aliquet. Nam pellentesque velit felis, sed
-          euismod tortor tincidunt vel.</p>
-        <p
-          id='philosophy'
-          style={{backgroundColor: '#1E222C'}}>Quisque quis sem id lorem porta imperdiet. Vestibulum id sagittis mi, vitae facilisis ligula. Nulla id
-          consequat lacus. Morbi justo magna, consectetur quis ligula ac, faucibus tempor felis. Mauris pharetra, justo ut tempor tempus, velit sapien
-          commodo purus, in pharetra metus odio nec metus. Donec dignissim ac metus ut laoreet. Nulla ornare eu massa eget semper. Nam sed faucibus
-          libero, non malesuada massa. Nunc molestie efficitur erat at lacinia. Vivamus ac dignissim sapien. Duis at ultricies sem. Vivamus placerat,
-          urna id feugiat aliquam, risus libero lobortis sapien, quis elementum nisi tellus non odio. Phasellus malesuada massa ut odio blandit
-          condimentum. Integer congue erat egestas felis rutrum maximus.</p>
-        <p>Maecenas commodo neque augue, ornare imperdiet metus pretium sit amet. Nullam tristique, velit eget molestie venenatis, mi ipsum mattis
-          metus, sit amet dapibus dui odio quis neque. Cras suscipit ut nisl at fermentum. Vivamus interdum aliquet arcu eu pharetra. Nam non rutrum mi.
-          Ut vitae risus dolor. Nullam semper molestie viverra. Quisque vel arcu a est consectetur sodales nec vitae nisl. Aliquam ut ipsum in lacus
-          vehicula pulvinar eget at erat. Nam tincidunt euismod erat, vitae imperdiet dui ultrices nec. Phasellus venenatis tempus ligula, at lacinia
-          diam efficitur vitae. Cras aliquam ipsum nec erat pretium rhoncus sit amet et eros. Phasellus suscipit lacus id ornare fermentum.</p>
-        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam condimentum diam ultricies justo pharetra
-          ullamcorper. Phasellus non facilisis felis. Integer scelerisque id ante eget finibus. Nam auctor ultrices libero at aliquam. Pellentesque
-          ultrices elementum dolor, a congue diam interdum quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Suspendisse fermentum massa ac erat tincidunt, vitae placerat elit viverra.</p>
-        <p
-          id='manifest'
-          style={{backgroundColor: '#2C1E1E'}}>Etiam eget maximus ante, vitae euismod justo. Morbi nec aliquet enim. Curabitur tortor eros, feugiat sed
-          mattis sit amet, ultricies eu sapien. Nunc eu pharetra tellus, eget venenatis augue. Etiam at pharetra magna. Aenean congue sapien eros.
-          Integer massa massa, eleifend non laoreet in, egestas id turpis. Ut hendrerit pharetra justo ac elementum. Aenean rhoncus sollicitudin metus,
-          quis fringilla felis laoreet sit amet. Vivamus elit diam, porta et dolor quis, hendrerit ullamcorper libero. Nam euismod eros ullamcorper odio
-          interdum posuere. Suspendisse lacus eros, vulputate vitae est eget, tristique lobortis dui. Quisque hendrerit sed neque vel malesuada.
-          Phasellus ultrices magna eget sapien consequat bibendum. Quisque cursus, velit non molestie lobortis, enim ligula volutpat risus, vel
-          fermentum lectus neque vel diam.</p>
-        <p>Morbi elementum eu mi fermentum maximus. Aliquam erat volutpat. Etiam ligula dolor, finibus vitae eleifend sed, sollicitudin ac elit. Ut quis
-          ipsum ut velit ullamcorper malesuada. Suspendisse diam dui, feugiat quis augue vitae, accumsan ornare ipsum. Suspendisse euismod turpis sit
-          amet accumsan tempor. Etiam scelerisque feugiat nulla. Praesent sit amet euismod sem.</p>
-        <p
-          id='founder'
-          style={{backgroundColor: '#291E2C'}}>Morbi congue et nisl id rutrum. Phasellus suscipit tristique mi, ac fermentum leo hendrerit in. Integer
-          placerat odio mi, in gravida elit euismod nec. Quisque tempor nisi tortor, sed malesuada ante gravida at. Donec faucibus vitae dolor
-          imperdiet tincidunt. Donec sit amet porttitor felis. Proin nec lectus quam. In tincidunt gravida lorem, non sollicitudin lectus iaculis vitae.
-          Nam at arcu nulla. Quisque et quam vel mauris tincidunt sollicitudin. Mauris consequat justo arcu. Etiam mattis laoreet odio ut dictum. Nunc
-          vitae dui pharetra, sodales risus vel, sodales ante. In id nulla in sem consectetur auctor sit amet ac ipsum. Proin bibendum nisi lorem,
-          euismod venenatis purus gravida sed.</p>
-        <p>Nullam ultrices sapien eget mi viverra, ac consectetur nibh sodales. Donec bibendum quam turpis, auctor faucibus magna rutrum vestibulum. Ut
-          mollis sem in enim venenatis, ac facilisis felis sagittis. Nunc id consectetur risus, eget vestibulum mi. Donec molestie non nibh non commodo.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ut ligula vel turpis venenatis tincidunt eu
-          at orci. Donec erat leo, faucibus at venenatis ut, auctor eget erat. Morbi et molestie turpis. Nunc auctor, eros nec venenatis tempor, dolor
-          nisl rhoncus leo, vitae finibus nisi augue id mauris. Nullam suscipit lacus tincidunt mollis bibendum. Fusce a quam non justo venenatis
-          maximus. Vestibulum justo neque, congue eu rutrum eu, maximus vel sem. Fusce quis lacinia diam.</p>
-      </div>
+      {renderSectionFirstName()}
+      {renderSectionPhilosophy()}
+      {renderSectionManifest()}
       <Footer />
     </div>
   );

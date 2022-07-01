@@ -1,4 +1,10 @@
 .page-agency {
+  > .page-agency__section {
+    align-items: flex-start;
+    display: flex;
+    position: relative;
+  }
+
   > .page-agency__name {
     align-items: flex-start;
     background-color: var(--black);
@@ -29,9 +35,188 @@
     }
   }
 
-  p {
-    line-height: 1.5rem;
-    margin: 20px auto;
-    max-width: 800px;
+  > .page-agency__first-name {
+    background-color: var(--whitish);
+    justify-content: space-evenly;
+    padding: 4rem;
+
+    > .first-name__drawing {
+      > img {
+        max-height: 800px
+      }
+    }
+
+    > .first-name__content {
+      margin: 0 2rem;
+
+      > .first-name__title {
+        font: 3rem Bodoni;
+        margin-bottom: 6rem;
+      }
+
+      > .first-name__paragraph {
+        line-height: 1.4rem;
+        margin-bottom: 2rem;
+
+        &.paragraph-bold {
+          font-weight: bold;
+        }
+
+        &.paragraph-blue {
+          color: var(--blue);
+        }
+      }
+
+      > .first-name__severine {
+        font: 1.2rem Bodoni;
+      }
+
+      > .first-name__founder {
+        font-weight: bold;
+      }
+    }
+
+    > .first-name__pronunciation {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      > img {
+        width: 10rem;
+      }
+
+      > .first-name__line {
+        background-color: var(--black);
+        height: 14rem;
+        margin: 2rem 0;
+        width: 1px;
+      }
+
+      > .first-name__how {
+        max-width: 10rem;
+        text-align: center;
+      }
+    }
+  }
+
+  > .page-agency__philosophy {
+    align-items: center;
+    flex-direction: column;
+
+    .philosophy__title {
+      font: 3rem Bodoni;
+      line-height: 2.8rem;
+      margin-bottom: 2rem;
+
+      &.title-white {
+        color: var(--white);
+      }
+    }
+
+    > .philosophy__content {
+      margin: 2rem 0;
+
+      > .philosophy__paragraph-title {
+        font-weight: bold;
+        margin-top: 2rem;
+      }
+
+      > .philosophy__paragraph-content {
+        // TODO
+      }
+    }
+
+    > .philosophy__closing {
+      align-items: center;
+      background-image: url(../assets/images/homepage.png);
+      display: flex;
+      flex-direction: column;
+      height: 613px;
+      justify-content: center;
+      width: 100%;
+
+      > .philosophy__closing-content {
+        > .philosophy__contact {
+          color: var(--white);
+          display: flex;
+          margin-top: 4rem;
+
+          > a {
+            color: var(--white);
+            margin-left: .4rem;
+          }
+        }
+      }
+    }
+  }
+
+  > .page-agency__manifest {
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    flex-direction: column;
+    padding: 4rem 0;
+
+    > .manifest__content {
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+      width: 60%;
+
+      .manifest__title {
+        align-items: center;
+        display: grid;
+        font: 3rem Bodoni;
+        grid-column-gap: 2rem;
+        grid-template-columns: auto 1fr;
+        line-height: 2.8rem;
+        margin-bottom: 2rem;
+
+        &.manifest-right {
+          grid-template-columns: 1fr auto;
+
+          > .manifest__title-line-number {
+            align-items: flex-start;
+          }
+        }
+
+        > .manifest__title-line-number {
+          align-items: flex-end;
+          display: flex;
+          flex-direction: column;
+
+          > .manifest__title-number {
+            font: 1rem 'Helvetica Neue';
+            margin-bottom: 1rem;
+          }
+
+          > .manifest__title-line {
+            background-color: var(--white);
+            height: 1px;
+            width: 100%;
+          }
+        }
+      }
+
+      > .manifest__text {
+        line-height: 1.6rem;
+        margin-bottom: 3rem;
+
+        &.manifest-right {
+          text-align: right;
+        }
+      }
+
+      > .manifest__section--right {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+
+        > .manifest__title {
+          display: flex;
+          margin-bottom: 1rem;
+        }
+      }
+    }
   }
 }
