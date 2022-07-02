@@ -104,7 +104,7 @@ const renderSectionManifest = () => (
         </div>
       </div>
       <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph3_text')}</div>
-      <div className='manifest__section--right'>
+      <div className='manifest__section'>
         <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph4_number')}</div>
         <div className='manifest__title'>{Localizer.localize('agency.manifest.paragraph4_title')}</div>
         <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph4_text')}</div>

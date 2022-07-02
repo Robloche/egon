@@ -216,7 +216,7 @@
         }
       }
 
-      > .manifest__section--right {
+      > .manifest__section {
         align-items: flex-end;
         display: flex;
         flex-direction: column;
@@ -236,7 +236,7 @@
     justify-content: space-evenly;
 
     > img {
-      max-height: 800px
+      max-height: 800px;
     }
 
     > .founder__content {
