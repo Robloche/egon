@@ -23,6 +23,7 @@ agency.manifest.paragraph3_title;
 agency.manifest.paragraph4_number;
 agency.manifest.paragraph4_text;
 agency.manifest.paragraph4_title;
+agency.philosophy.closing;
 agency.philosophy.contact_us;
 agency.philosophy.paragraph1_text;
 agency.philosophy.paragraph1_title;
@@ -33,7 +34,6 @@ agency.philosophy.paragraph3_title;
 agency.philosophy.paragraph4_title;
 agency.philosophy.paragraph5_text;
 agency.philosophy.paragraph5_title;
-agency.philosophy.closing;
 agency.philosophy.side_title;
 agency.philosophy.title;
 agency.scroll;Scroll
@@ -41,17 +41,17 @@ agency.tagline1;
 agency.tagline2;
 common.egon;Egon
 contact.address1;71-73 rue de Chézy
-contact.address1;92200 Neuilly-sur-Seine
+contact.address2;92200 Neuilly-sur-Seine
 contact.side_title;CONTACT
 creation.customers.egon_collective;Egon collective.
-creation.customers.paragraph1;
+creation.customers.paragraph;
 creation.customers.side_title;
 creation.customers.thanks;
 creation.customers.title;
 creation.projects.contact;
-creation.projects.paragraph1;
-creation.projects.paragraph2;
+creation.projects.paragraph;
 creation.projects.side_title;
+creation.projects.title;
 expertises.creation.closing;
 expertises.creation.column1.item1;
 expertises.creation.column1.item2;Mood
@@ -59,9 +59,9 @@ expertises.creation.column1.title;
 expertises.creation.column2.item1;
 expertises.creation.column2.item2;
 expertises.creation.column2.title;
-expertises.creation.column3.item1;
-expertises.creation.column3.item2;
-expertises.creation.column3.item3;
+expertises.creation.column3.title;
+expertises.creation.column4.title;
+expertises.creation.column5.title;
 expertises.creation.paragraph1;
 expertises.creation.paragraph2;
 expertises.creation.side_title;

@@ -1,0 +1,39 @@
+.page-creation__section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &.section__customers {
+    background-color: var(--bright-green);
+  }
+
+  > .page-creation__content {
+    padding: 6rem 0;
+
+    > .page-creation__paragraph {
+      line-height: 1.4rem;
+      margin-bottom: 2rem;
+
+      &.title {
+        font: 3rem Bodoni;
+        line-height: 2.8rem;
+      }
+
+      &.huge {
+        font-size: 5rem;
+        margin-top: 6rem;
+      }
+    }
+
+    > .page-creation__contact {
+      display: flex;
+      margin-top: 4rem;
+
+      > a {
+        color: var(--black);
+        margin-left: .4rem;
+      }
+    }
+  }
+}

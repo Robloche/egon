@@ -37,13 +37,13 @@ const renderSectionStrategy = () => (
         <div className='listing__item'>{Localizer.localize('expertises.strategy.column2.item3')}</div>
       </div>
       <div>
-        <div className='listing__title'>{Localizer.localize('expertises.strategy.column2.title')}</div>
-        <div className='listing__item'>{Localizer.localize('expertises.strategy.column2.item1')}</div>
-        <div className='listing__item'>{Localizer.localize('expertises.strategy.column2.item2')}</div>
-        <div className='listing__item'>{Localizer.localize('expertises.strategy.column2.item3')}</div>
+        <div className='listing__title'>{Localizer.localize('expertises.strategy.column3.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.strategy.column3.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.strategy.column3.item2')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.strategy.column3.item3')}</div>
       </div>
     </div>
-    <div className='page-expertises__closing'>{Localizer.localize('expertises.strategy.closing')}</div>
+    <div className='page-expertises__closing closing1'>{Localizer.localize('expertises.strategy.closing')}</div>
   </>
 );
 
@@ -53,10 +53,32 @@ const renderSectionCreation = () => (
       className='page-expertises__introduction'
       id='creation'>
       <div className='side-title'>{Localizer.localize('expertises.creation.side_title')}</div>
-      todo
+      <div className='page-expertises__content'>
+        <div className='page-expertises__title'>{Localizer.localize('expertises.creation.title')}</div>
+        <div className='page-expertises__description'>
+          <div>{Localizer.localize('expertises.creation.paragraph1')}</div>
+          <div>{Localizer.localize('expertises.creation.paragraph2')}</div>
+        </div>
+      </div>
     </div>
-    <div className='page-expertises__listing expertises__image2'>todo</div>
-    <div className='page-expertises__closing'>{Localizer.localize('expertises.creation.closing')}</div>
+    <div className='page-expertises__listing expertises__image2'>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.creation.column1.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.creation.column1.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.creation.column1.item2')}</div>
+      </div>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.creation.column2.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.creation.column2.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.creation.column2.item2')}</div>
+      </div>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.creation.column3.title')}</div>
+        <div className='listing__title'>{Localizer.localize('expertises.creation.column4.title')}</div>
+        <div className='listing__title'>{Localizer.localize('expertises.creation.column5.title')}</div>
+      </div>
+    </div>
+    <div className='page-expertises__closing closing2'>{Localizer.localize('expertises.creation.closing')}</div>
   </>
 );
 
@@ -66,10 +88,38 @@ const renderSectionDigital = () => (
       className='page-expertises__introduction'
       id='digital'>
       <div className='side-title'>{Localizer.localize('expertises.digital.side_title')}</div>
-      todo
+      <div className='page-expertises__content'>
+        <div className='page-expertises__title'>{Localizer.localize('expertises.digital.title')}</div>
+        <div className='page-expertises__description'>
+          <div>{Localizer.localize('expertises.digital.paragraph1')}</div>
+          <div>{Localizer.localize('expertises.digital.paragraph2')}</div>
+        </div>
+      </div>
     </div>
-    <div className='page-expertises__listing expertises__image3'>todo</div>
-    <div className='page-expertises__closing'>{Localizer.localize('expertises.digital.closing')}</div>
+    <div className='page-expertises__listing expertises__image3'>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.digital.column1.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column1.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column1.item2')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column1.item3')}</div>
+      </div>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.digital.column2.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column2.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column2.item2')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column2.item3')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column2.item4')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column2.item5')}</div>
+      </div>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.digital.column3.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column3.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column3.item2')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column3.item3')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.digital.column3.item4')}</div>
+      </div>
+    </div>
+    <div className='page-expertises__closing closing3'>{Localizer.localize('expertises.digital.closing')}</div>
   </>
 );
 
@@ -79,10 +129,39 @@ const renderSectionEdition = () => (
       className='page-expertises__introduction'
       id='edition'>
       <div className='side-title'>{Localizer.localize('expertises.edition.side_title')}</div>
-      todo
+      <div className='page-expertises__content'>
+        <div className='page-expertises__title'>{Localizer.localize('expertises.edition.title')}</div>
+        <div className='page-expertises__description'>
+          <div>{Localizer.localize('expertises.edition.paragraph1')}</div>
+          <div>{Localizer.localize('expertises.edition.paragraph2')}</div>
+        </div>
+      </div>
     </div>
-    <div className='page-expertises__listing expertises__image4'>todo</div>
-    <div className='page-expertises__closing'>{Localizer.localize('expertises.edition.closing')}</div>
+    <div className='page-expertises__listing expertises__image4'>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.edition.column1.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column1.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column1.item2')}</div>
+      </div>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.edition.column2.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column2.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column2.item2')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column2.item3')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column2.item4')}</div>
+      </div>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.edition.column3.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column3.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column3.item2')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column3.item3')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column3.item4')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column3.item5')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column3.item6')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.edition.column3.item7')}</div>
+      </div>
+    </div>
+    <div className='page-expertises__closing closing4'>{Localizer.localize('expertises.edition.closing')}</div>
   </>
 );
 
@@ -92,10 +171,37 @@ const renderSectionProduction = () => (
       className='page-expertises__introduction'
       id='production'>
       <div className='side-title'>{Localizer.localize('expertises.production.side_title')}</div>
-      todo
+      <div className='page-expertises__content'>
+        <div className='page-expertises__title'>{Localizer.localize('expertises.production.title')}</div>
+        <div className='page-expertises__description'>
+          <div>{Localizer.localize('expertises.production.paragraph1')}</div>
+          <div>{Localizer.localize('expertises.production.paragraph2')}</div>
+        </div>
+      </div>
     </div>
-    <div className='page-expertises__listing expertises__image5'>todo</div>
-    <div className='page-expertises__closing'>{Localizer.localize('expertises.production.closing')}</div>
+    <div className='page-expertises__listing expertises__image5'>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.production.column1.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column1.item1')}</div>
+        <div className='listing__title'>{Localizer.localize('expertises.production.column2.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column2.item1')}</div>
+      </div>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.production.column3.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column3.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column3.item2')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column3.item3')}</div>
+      </div>
+      <div>
+        <div className='listing__title'>{Localizer.localize('expertises.production.column4.title')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column4.item1')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column4.item2')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column4.item3')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column4.item4')}</div>
+        <div className='listing__item'>{Localizer.localize('expertises.production.column4.item5')}</div>
+      </div>
+    </div>
+    <div className='page-expertises__closing closing5'>{Localizer.localize('expertises.production.closing')}</div>
   </>
 );
 

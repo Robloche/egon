@@ -23,6 +23,7 @@ agency.manifest.paragraph3_title;An unconventional philanthropist
 agency.manifest.paragraph4_number;Both,
 agency.manifest.paragraph4_text;Egon is a creative and committed free spirit.
 agency.manifest.paragraph4_title;Enlightener and enlightened,
+agency.philosophy.closing;Egon brings you a set of values\nand a community of joyful, passionate and independent people\nobsessed with honing their creativity\nand committed to being rather than having.
 agency.philosophy.contact_us;Contact us
 agency.philosophy.paragraph1_text;it's here to tell stories of beauty by capturing true meaning,\nimages and words.
 agency.philosophy.paragraph1_title;An expert in luxury houses and art of living lover,
@@ -33,7 +34,6 @@ agency.philosophy.paragraph3_title;Egon is committed to responsible Artistic Dir
 agency.philosophy.paragraph4_title;Egon's creative approach will ensure the sustainable performance of your brand.
 agency.philosophy.paragraph5_text;With a humble grasp of the world we live in, Egon is committed to embracing tomorrow's world\nwhere we communicate better,\nwith creative, meaningful and timeless messages.
 agency.philosophy.paragraph5_title;Egon,
-agency.philosophy.closing;Egon brings you a set of values\nand a community of joyful, passionate and independent people\nobsessed with honing their creativity\nand committed to being rather than having.
 agency.philosophy.side_title;OUR AGENCY - Philosophy
 agency.philosophy.title;Egon is an independent, creative and committed partner\nwho understands your brand and its challenges\nand brings a passion to its work.
 agency.scroll;Scroll
@@ -41,17 +41,17 @@ agency.tagline1;advertising agency\ndedicated to the Art of Living
 agency.tagline2;independent, creative and committed
 common.egon;Egon
 contact.address1;71-73 rue de Chézy
-contact.address1;92200 Neuilly-sur-Seine
+contact.address2;92200 Neuilly-sur-Seine
 contact.side_title;CONTACT
 creation.customers.egon_collective;Egon collective.
-creation.customers.paragraph1;It is thanks to our cherished Clients that we're able to do what we do and live in a world where we communicate better, with creative, meaningful and timeless messages. So thank you. Thank you for supporting us in our work.
+creation.customers.paragraph;It is thanks to our cherished Clients that we're able to do what we do and live in a world where we communicate better, with creative, meaningful and timeless messages. So thank you. Thank you for supporting us in our work.
 creation.customers.side_title;CREATION - Clients
 creation.customers.thanks;Thank you!
 creation.customers.title;
 creation.projects.contact;
-creation.projects.paragraph1;
-creation.projects.paragraph2;
+creation.projects.paragraph;
 creation.projects.side_title;CREATION - Projects
+creation.projects.title;
 expertises.creation.closing;
 expertises.creation.column1.item1;Artistic Direction
 expertises.creation.column1.item2;Mood
@@ -59,9 +59,9 @@ expertises.creation.column1.title;Scope of expression
 expertises.creation.column2.item1;Logo
 expertises.creation.column2.item2;Graphic charter
 expertises.creation.column2.title;Visual Identity
-expertises.creation.column3.item1;Advertising
-expertises.creation.column3.item2;360 Campaign
-expertises.creation.column3.item3;Illustration
+expertises.creation.column3.title;Advertising
+expertises.creation.column4.title;360 Campaign
+expertises.creation.column5.title;Illustration
 expertises.creation.paragraph1;The long-term success of your brand is built on creation, innovation, the crafting of a real identity and unique, original and signed Artistic Direction.
 expertises.creation.paragraph2;We create differently to innovate without exploitation, to surprise in a meaningful and coherent way, and to conceive on a grand and inventive scale within an eco-design approach.
 expertises.creation.side_title;EXPERTISE - Creation

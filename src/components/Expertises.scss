@@ -37,23 +37,23 @@
   padding: 4rem;
 
   &.expertises__image1 {
-    background-image: url(../assets/images/expertises1.png);
+    background-image: url('../assets/images/expertises1.png');
   }
 
   &.expertises__image2 {
-    background-image: url(../assets/images/expertises2.png);
+    background-image: url('../assets/images/expertises2.png');
   }
 
   &.expertises__image3 {
-    background-image: url(../assets/images/expertises3.png);
+    background-image: url('../assets/images/expertises3.png');
   }
 
   &.expertises__image4 {
-    background-image: url(../assets/images/expertises4.png);
+    background-image: url('../assets/images/expertises4.png');
   }
 
   &.expertises__image5 {
-    background-image: url(../assets/images/expertises5.png);
+    background-image: url('../assets/images/expertises5.png');
   }
 
   .listing__title {
@@ -61,13 +61,17 @@
     margin-bottom: 1rem;
     position: relative;
 
-    &:before {
+    &::before {
       background-color: var(--white);
       content: '';
       height: 1px;
       position: absolute;
       top: -1rem;
       width: 2.5rem;
+    }
+
+    &:not(:first-child) {
+      margin-top: 2rem;
     }
   }
 
@@ -79,10 +83,29 @@
 
 .page-expertises__closing {
   align-items: center;
-  background-color: var(--khaki);
   color: var(--white);
   display: flex;
   font: 2rem Bodoni;
   justify-content: center;
   padding: 4rem;
+
+  &.closing1 {
+    background-color: var(--khaki);
+  }
+
+  &.closing2 {
+    background-color: var(--blue);
+  }
+
+  &.closing3 {
+    background-color: var(--bright-green);
+  }
+
+  &.closing4 {
+    background-color: var(--maroon);
+  }
+
+  &.closing5 {
+    background-color: var(--light-blue);
+  }
 }

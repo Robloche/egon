@@ -54,8 +54,10 @@ const renderSectionPhilosophy = () => (
       <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph3_title')}</div>
       <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph3_text')}</div>
       <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph4_title')}</div>
-      <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph5_title')}</div>
-      <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph5_text')}</div>
+      <div className='philosophy__paragraph-content spaced'>
+        <span>{Localizer.localize('agency.philosophy.paragraph5_title')}</span>
+        <span>{Localizer.localize('agency.philosophy.paragraph5_text')}</span>
+      </div>
     </div>
     <div className='philosophy__closing'>
       <div className='philosophy__closing-content'>

@@ -23,6 +23,7 @@ agency.manifest.paragraph3_title;Philanthrope décomplexé
 agency.manifest.paragraph4_number;Tour à tour,
 agency.manifest.paragraph4_text;Egon est un électron libre, créatif et engagé.
 agency.manifest.paragraph4_title;Éclaireur et éclairé
+agency.philosophy.closing;Egon, c'est un ensemble de valeurs,\nun collectif d'hommes et de femmes bienheureux,\nconvaincus et indépendants, habités par une envie\nde créer mieux et engagés pour Être plutôt qu'Avoir.
 agency.philosophy.contact_us;Contactez-nous :
 agency.philosophy.paragraph1_text;voué à l'expression du beau par le sens juste et exact,\nl'image et le mot.
 agency.philosophy.paragraph1_title;expert des maisons de luxe et amoureaux de l'art de vivre,
@@ -33,7 +34,6 @@ agency.philosophy.paragraph3_title;Un acolyte qui a la détermination de penser 
 agency.philosophy.paragraph4_title;Egon vous offre une création au service d'une performance durable.
 agency.philosophy.paragraph5_text;c'est une humble prise de conscience du monde actuel\net une volonté d'appartenir au monde de demain, un monde où\nl'on communique mieux avec créativité, sens et intemporalité.
 agency.philosophy.paragraph5_title;Egon,
-agency.philosophy.closing;Egon, c'est un ensemble de valeurs,\nun collectif d'hommes et de femmes bienheureux,\nconvaincus et indépendants, habités par une envie\nde créer mieux et engagés pour Être plutôt qu'Avoir.
 agency.philosophy.side_title;L'AGENCE - La philosophie
 agency.philosophy.title;Egon, un partenaire libre, créatif et engagé\nqui comprend votre marque et ses défis,\navec passion,
 agency.scroll;Scroll
@@ -41,17 +41,17 @@ agency.tagline1;Agence conseil en communication\nvouée à l'Art de Vivre
 agency.tagline2;libre, créative et engagée.
 common.egon;Egon
 contact.address1;71-73 rue de Chézy
-contact.address1;92200 Neuilly-sur-Seine
+contact.address2;92200 Neuilly-sur-Seine
 contact.side_title;CONTACT
 creation.customers.egon_collective;Egon collective.
-creation.customers.paragraph1;chers Clients, que nous existons et que nous avons la capacité aujourd'hui de participer\nà un monde où l'on communique mieux avec créativité, sens et intemporalité.\nAlors Merci à vous. Merci de votre confiance, Merci de nous soutenir dans notre démarche.
+creation.customers.paragraph;chers Clients, que nous existons et que nous avons la capacité aujourd'hui de participer\nà un monde où l'on communique mieux avec créativité, sens et intemporalité.\nAlors Merci à vous. Merci de votre confiance, Merci de nous soutenir dans notre démarche.
 creation.customers.side_title;LA CRÉATION - Les clients
 creation.customers.thanks;Merci !
 creation.customers.title;C'est grâce à vous,
 creation.projects.contact;Et si on s'en parlait ?
-creation.projects.paragraph1;La création est un parcours.\nUn parcours de sens, de culture, d'imaginaire.\nL'issue est plurielle, protéiforme.
-creation.projects.paragraph2;Nous aimons ce que vous aimez à travers vos yeux, votre histoire, votre sens, vos sens.\nNotre inspiration naît d'ailleurs, d'ici, de votre héritage, de vos mots surtout qui nous guident\nà chaque pas de notre réflexion.\nNous revendiquons la justesse, la cohérence, la longévité.
+creation.projects.paragraph;Nous aimons ce que vous aimez à travers vos yeux, votre histoire, votre sens, vos sens.\nNotre inspiration naît d'ailleurs, d'ici, de votre héritage, de vos mots surtout qui nous guident\nà chaque pas de notre réflexion.\nNous revendiquons la justesse, la cohérence, la longévité.
 creation.projects.side_title;LA CRÉATION - Les projets
+creation.projects.title;La création est un parcours.\nUn parcours de sens, de culture, d'imaginaire.\nL'issue est plurielle, protéiforme.
 expertises.creation.closing;Nous croyons que vivre reste un art en quête de perpétuité
 expertises.creation.column1.item1;Direction de Création
 expertises.creation.column1.item2;Mood
@@ -59,9 +59,9 @@ expertises.creation.column1.title;Territoire d'expression
 expertises.creation.column2.item1;Logo
 expertises.creation.column2.item2;Charte graphique
 expertises.creation.column2.title;Identité visuelle
-expertises.creation.column3.item1;Publicité
-expertises.creation.column3.item2;Campagne d'activation\nglobale
-expertises.creation.column3.item3;Illustration
+expertises.creation.column3.title;Publicité
+expertises.creation.column4.title;Campagne d'activation\nglobale
+expertises.creation.column5.title;Illustration
 expertises.creation.paragraph1;Créer, innover, donner une véritable identité à votre maison,\nlui offrir une Direction Artistique singulière,\nunique et signée sont autant de gages de réussites, pour longtemps.
 expertises.creation.paragraph2;Nous créons autrement, pour innover sans exploiter.\nSurprendre avec sens et cohérence.\nImaginer avec grandeur et inventivité\ndans une démarche éco-conceptuelle.
 expertises.creation.side_title;LES EXPERTISES - Création

@@ -42,7 +42,7 @@
 
     > .first-name__drawing {
       > img {
-        max-height: 800px
+        max-height: 800px;
       }
     }
 
@@ -122,13 +122,22 @@
       }
 
       > .philosophy__paragraph-content {
-        // TODO
+        &.spaced {
+          margin: 2rem 0;
+        }
+
+        span {
+          &:first-child {
+            font-weight: bold;
+            margin-right: .2rem;
+          }
+        }
       }
     }
 
     > .philosophy__closing {
       align-items: center;
-      background-image: url(../assets/images/homepage.png);
+      background-image: url('../assets/images/homepage.png');
       display: flex;
       flex-direction: column;
       height: 613px;

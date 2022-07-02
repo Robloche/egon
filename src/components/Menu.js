@@ -4,6 +4,7 @@ import './Menu.scss';
 import * as React from 'react';
 import {useCallback, useEffect, useState} from 'react';
 import {HashLink} from 'react-router-hash-link';
+import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
 import Social from './Social';
 import {useSelector} from 'react-redux';
@@ -83,10 +84,9 @@ const renderLinks = (language, expandedStates, toggleSection) => (
         scroll={scroll}
         to={`/${language}/creation#customers`}>{Localizer.localize('menu.creation.customers')}</HashLink>
     </div>
-    <HashLink
+    <Link
       className='menu__item'
-      smooth
-      to={`/${language}/contact`}>{Localizer.localize('menu.contact.label')}</HashLink>
+      to={`/${language}/contact`}>{Localizer.localize('menu.contact.label')}</Link>
   </nav>
 );
 

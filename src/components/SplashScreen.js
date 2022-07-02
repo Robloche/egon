@@ -5,7 +5,7 @@ import egon from '../assets/images/egon-animation.gif';
 import {useNavigate} from 'react-router-dom';
 import {useSelector} from 'react-redux';
 
-const SPLASH_SCREEN_TIMEOUT = 2500;
+const SPLASH_SCREEN_TIMEOUT = 1500;
 
 const SplashScreen = () => {
   const navigate = useNavigate();

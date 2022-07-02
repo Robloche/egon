@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Creation from './components/Creation';
 import Expertises from './components/Expertises';
 import Home from './components/Home';
+import JoinUs from './components/JoinUs';
 import {Localizer} from './helpers/localizer';
 import {Provider} from 'react-redux';
 import SplashScreen from './components/SplashScreen';
@@ -47,6 +48,14 @@ const App = (): React.Node => (
           element={<Home />}
           exact
           path='/home' />
+        <Route
+          element={<JoinUs />}
+          exact
+          path='/:lang/join-us' />
+        <Route
+          element={<JoinUs />}
+          exact
+          path='/join-us' />
         <Route
           element={<SplashScreen />}
           exact
