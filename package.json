@@ -36,6 +36,7 @@
     "start": "run-s -l prepare start-app",
     "build": "run-s -l prepare build-app",
     "prepare": "python3 py-tools/generate-locales.py",
+    "prebuild": "run-s lint flow",
     "postbuild": "python3 py-tools/generate-version.py",
     "test": "react-scripts test"
   },
