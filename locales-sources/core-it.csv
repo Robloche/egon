@@ -184,3 +184,8 @@ menu.expertises.strategy;
 menu.language.en;UK
 menu.language.fr;FR
 menu.language.it;IT
+newsletter.action.subscribe;
+newsletter.error;
+newsletter.header;
+newsletter.placeholder;
+newsletter.subscribed;

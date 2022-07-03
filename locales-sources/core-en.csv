@@ -184,3 +184,8 @@ menu.expertises.strategy;Strategy
 menu.language.en;UK
 menu.language.fr;FR
 menu.language.it;IT
+newsletter.action.subscribe;I subscribe
+newsletter.error;Please check your e-mail address
+newsletter.header;Subscribe to our newsletter!
+newsletter.placeholder;Your e-mail address
+newsletter.subscribed;You've subscribed!

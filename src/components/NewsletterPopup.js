@@ -2,20 +2,45 @@
 
 import './NewsletterPopup.scss';
 import * as React from 'react';
+import {Localizer} from '../helpers/localizer';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import NewsletterForm from './NewsletterForm';
 import ReactDOM from 'react-dom';
+import {useEffect} from 'react';
+import x from '../assets/svg/x.svg';
 
 const url = 'https://gmail.us17.list-manage.com/subscribe/post?u=84ff514b13118b016ef58f46b&amp;id=b8240a6326';
+
+const formRender = ({subscribe, status, message}) => (
+  <NewsletterForm
+    message={message}
+    status={status}
+    subscribe={subscribe} />
+);
 
 type NewsletterPopupProps = {
   +hide: () => void,
   +isVisible: boolean
 };
 
-const NewsletterPopup = ({hide, isVisible}: NewsletterPopupProps) => {
+const NewsletterPopup = ({hide, isVisible}: NewsletterPopupProps): React.Node => {
   if (!isVisible) {
     return null;
   }
+
+  useEffect(() => {
+    // Allow modal closing via Escape
+    const close = (event) => {
+      if (event.key === 'Escape') {
+        hide();
+      }
+    };
+
+    window.addEventListener('keydown', close, {passive: true});
+    return () => {
+      window.removeEventListener('keydown', close, {passive: true});
+    };
+  }, [hide]);
 
   return ReactDOM.createPortal(
     <>
@@ -27,19 +52,21 @@ const NewsletterPopup = ({hide, isVisible}: NewsletterPopupProps) => {
         role='dialog'
         tabIndex={-1}>
         <div className='modal'>
-          <button
+          <div className='modal__image' />
+          <img
+            alt='Close button'
             aria-label='Close'
             className='modal__close-button'
             data-dismiss='modal'
+            draggable={false}
             onClick={hide}
-            type='button'>
-            <span aria-hidden='true'>&times;</span>
-          </button>
-          <div className='modal__header'>header</div>
+            src={x} />
+          <div className='modal__header'>{Localizer.localize('newsletter.header')}</div>
           <div className='modal__content'>
-            <MailchimpSubscribe url={url} />
+            <MailchimpSubscribe
+              render={formRender}
+              url={url} />
           </div>
-          <div className='modal__footer'>footer</div>
         </div>
       </div>
     </>

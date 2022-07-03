@@ -11,7 +11,6 @@
 
 .modal__wrapper {
   align-items: center;
-  box-sizing: border-box;
   display: flex;
   height: 100%;
   left: 0;
@@ -27,79 +26,46 @@
 
   > .modal {
     align-items: stretch;
-    background: var(--blue);
-    border-radius: var(--border-radius-big);
-    box-sizing: border-box;
+    background: var(--light-blue);
     display: flex;
     flex-direction: column;
     margin: auto;
+    position: relative;
     z-index: 100;
-  }
 
-  .modal__header {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2rem 1rem 2rem;
-  }
-
-  input[type='search'] {
-    background-color: var(--white-transparent-3);
-    border: none;
-    border-radius: var(--border-radius-small);
-    color: var(--white);
-    font-family: Helvetica, sans-serif;
-    font-size: .8rem;
-    padding: .4rem;
-    width: 14rem;
-
-    &:focus {
-      outline: none !important;
-      background-color: var(--red);
+    > .modal__image {
+      background-image: url('../assets/images/creation.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 120px;
+      width: 100%;
     }
-  }
 
-  ::placeholder {
-    color: var(--white-transparent-2);
-  }
+    > .modal__close-button {
+      background-color: rgba(255, 255, 255, .5);
+      border-radius: 50%;
+      cursor: pointer;
+      height: 1.6rem;
+      padding: .2rem;
+      position: absolute;
+      right: -.8rem;
+      top: -.8rem;
+      width: 1.6rem;
 
-  > .modal__content {
-    height: 100%;
-    overflow-y: scroll;
-    padding: 0 2rem 2rem 2rem;
-  }
-
-  > .modal__footer {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-
-    > button {
-      flex-grow: 0;
-      padding: .5rem 2rem;
+      &:hover {
+        background-color: rgba(255, 255, 255, .7);
+      }
     }
-  }
 
-  > .modal__close-button {
-    background-color: transparent;
-    border: none;
-    border-radius: var(--border-radius-big);
-    color: var(--white);
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: .8;
-    opacity: .8;
-    padding: 0 0.2rem;
-    position: absolute;
-    right: .2rem;
-    top: .2rem;
-    z-index: 10;
+    > .modal__header {
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+    }
 
-    &:hover {
-      background-color: var(--white-transparent-4);
-      opacity: 1;
+    > .modal__content {
+      padding: 0 2rem 2rem;
     }
   }
 }

@@ -2,7 +2,7 @@
 
 import {useState} from 'react';
 
-const useNewsletterPopup = () => {
+const useNewsletterPopup = (): {|isVisible: boolean, toggle: () => void|} => {
   const [isVisible, setIsVisible] = useState(false);
 
   function toggle() {
