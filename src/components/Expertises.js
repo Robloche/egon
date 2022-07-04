@@ -14,7 +14,7 @@ const renderSectionStrategy = () => (
       id='strategy'>
       <div className='side-title'>{Localizer.localize('expertises.strategy.side_title')}</div>
       <div className='page-expertises__content'>
-        <div className='page-expertises__title'>{Localizer.localize('expertises.strategy.title')}</div>
+        <div className='page-expertises__title title'>{Localizer.localize('expertises.strategy.title')}</div>
         <div className='page-expertises__description'>
           <div>{Localizer.localize('expertises.strategy.paragraph1')}</div>
           <div>{Localizer.localize('expertises.strategy.paragraph2')}</div>
@@ -54,7 +54,7 @@ const renderSectionCreation = () => (
       id='creation'>
       <div className='side-title'>{Localizer.localize('expertises.creation.side_title')}</div>
       <div className='page-expertises__content'>
-        <div className='page-expertises__title'>{Localizer.localize('expertises.creation.title')}</div>
+        <div className='page-expertises__title title'>{Localizer.localize('expertises.creation.title')}</div>
         <div className='page-expertises__description'>
           <div>{Localizer.localize('expertises.creation.paragraph1')}</div>
           <div>{Localizer.localize('expertises.creation.paragraph2')}</div>
@@ -89,7 +89,7 @@ const renderSectionDigital = () => (
       id='digital'>
       <div className='side-title'>{Localizer.localize('expertises.digital.side_title')}</div>
       <div className='page-expertises__content'>
-        <div className='page-expertises__title'>{Localizer.localize('expertises.digital.title')}</div>
+        <div className='page-expertises__title title'>{Localizer.localize('expertises.digital.title')}</div>
         <div className='page-expertises__description'>
           <div>{Localizer.localize('expertises.digital.paragraph1')}</div>
           <div>{Localizer.localize('expertises.digital.paragraph2')}</div>
@@ -130,7 +130,7 @@ const renderSectionEdition = () => (
       id='edition'>
       <div className='side-title'>{Localizer.localize('expertises.edition.side_title')}</div>
       <div className='page-expertises__content'>
-        <div className='page-expertises__title'>{Localizer.localize('expertises.edition.title')}</div>
+        <div className='page-expertises__title title'>{Localizer.localize('expertises.edition.title')}</div>
         <div className='page-expertises__description'>
           <div>{Localizer.localize('expertises.edition.paragraph1')}</div>
           <div>{Localizer.localize('expertises.edition.paragraph2')}</div>
@@ -172,7 +172,7 @@ const renderSectionProduction = () => (
       id='production'>
       <div className='side-title'>{Localizer.localize('expertises.production.side_title')}</div>
       <div className='page-expertises__content'>
-        <div className='page-expertises__title'>{Localizer.localize('expertises.production.title')}</div>
+        <div className='page-expertises__title title'>{Localizer.localize('expertises.production.title')}</div>
         <div className='page-expertises__description'>
           <div>{Localizer.localize('expertises.production.paragraph1')}</div>
           <div>{Localizer.localize('expertises.production.paragraph2')}</div>

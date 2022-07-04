@@ -31,7 +31,7 @@ const scroll = (el) => el.scrollIntoView({
   block: 'center'
 });
 
-const renderLinks = (language, expandedStates, toggleSection) => (
+const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick) => (
   <nav className='menu__links'>
     <div
       className='menu__item_toggle'
@@ -39,15 +39,19 @@ const renderLinks = (language, expandedStates, toggleSection) => (
       onClick={toggleSection}>{Localizer.localize('menu.agency.label')}</div>
     <div className={`menu__item_accordion ${expandedStates[0] ? 'expanded' : ''}`}>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/home#first-name`}>{Localizer.localize('menu.agency.first_name')}</HashLink>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/home#philosophy`}>{Localizer.localize('menu.agency.philosophy')}</HashLink>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/home#manifest`}>{Localizer.localize('menu.agency.manifest')}</HashLink>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/home#founder`}>{Localizer.localize('menu.agency.founder')}</HashLink>
     </div>
@@ -57,18 +61,23 @@ const renderLinks = (language, expandedStates, toggleSection) => (
       onClick={toggleSection}>{Localizer.localize('menu.expertises.label')}</div>
     <div className={`menu__item_accordion ${expandedStates[1] ? 'expanded' : ''}`}>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/expertises#strategy`}>{Localizer.localize('menu.expertises.strategy')}</HashLink>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/expertises#creation`}>{Localizer.localize('menu.expertises.creation')}</HashLink>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/expertises#digital`}>{Localizer.localize('menu.expertises.digital')}</HashLink>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/expertises#edition`}>{Localizer.localize('menu.expertises.edition')}</HashLink>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/expertises#production`}>{Localizer.localize('menu.expertises.production')}</HashLink>
     </div>
@@ -78,14 +87,17 @@ const renderLinks = (language, expandedStates, toggleSection) => (
       onClick={toggleSection}>{Localizer.localize('menu.creation.label')}</div>
     <div className={`menu__item_accordion ${expandedStates[TWO] ? 'expanded' : ''}`}>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/creation#projects`}>{Localizer.localize('menu.creation.projects')}</HashLink>
       <HashLink
+        onClick={handleCloseOnClick}
         scroll={scroll}
         to={`/${language}/creation#customers`}>{Localizer.localize('menu.creation.customers')}</HashLink>
     </div>
     <Link
       className='menu__item'
+      onClick={handleCloseOnClick}
       to={`/${language}/contact`}>{Localizer.localize('menu.contact.label')}</Link>
   </nav>
 );
@@ -171,7 +183,7 @@ const Menu = (): React.Node => {
   return (
     <div className='menu menu__opened'>
       {renderHeader(handleCloseOnClick)}
-      {renderLinks(language, expandedStates, toggleSection)}
+      {renderLinks(language, expandedStates, toggleSection, handleCloseOnClick)}
       {renderFooter(language, languageOnChange)}
     </div>
   );

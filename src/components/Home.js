@@ -20,9 +20,10 @@ const renderSectionFirstName = () => (
       <img
         alt='Egon by Séverine'
         src={egon} />
+      <div className='first-name__copyright'>&#169; SB</div>
     </div>
     <div className='first-name__content'>
-      <div className='first-name__title'>{Localizer.localize('agency.first_name.why_egon')}</div>
+      <div className='first-name__title title'>{Localizer.localize('agency.first_name.why_egon')}</div>
       <div className='first-name__paragraph'>{Localizer.localize('agency.first_name.paragraph1')}</div>
       <div className='first-name__paragraph paragraph-bold'>{Localizer.localize('agency.first_name.paragraph2')}</div>
       <div className='first-name__paragraph paragraph-bold paragraph-blue'>{Localizer.localize('agency.first_name.paragraph3')}</div>
@@ -46,7 +47,7 @@ const renderSectionPhilosophy = () => (
     id='philosophy'>
     <div className='side-title'>{Localizer.localize('agency.philosophy.side_title')}</div>
     <div className='philosophy__content'>
-      <div className='philosophy__title'>{Localizer.localize('agency.philosophy.title')}</div>
+      <div className='philosophy__title title'>{Localizer.localize('agency.philosophy.title')}</div>
       <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph1_title')}</div>
       <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph1_text')}</div>
       <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph2_title')}</div>
@@ -61,7 +62,7 @@ const renderSectionPhilosophy = () => (
     </div>
     <div className='philosophy__closing'>
       <div className='philosophy__closing-content'>
-        <div className='philosophy__title title-white'>{Localizer.localize('agency.philosophy.closing')}</div>
+        <div className='philosophy__title title title-white'>{Localizer.localize('agency.philosophy.closing')}</div>
         <div className='philosophy__contact'>
           <div>{Localizer.localize('agency.philosophy.contact_us')}</div>
           <a
@@ -80,7 +81,7 @@ const renderSectionManifest = () => (
     id='manifest'>
     <div className='side-title'>{Localizer.localize('agency.manifest.side_title')}</div>
     <div className='manifest__content'>
-      <div className='manifest__title'>
+      <div className='manifest__title title'>
         <div>{Localizer.localize('agency.manifest.paragraph1_title')}</div>
         <div className='manifest__title-line-number'>
           <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph1_number')}</div>
@@ -88,7 +89,7 @@ const renderSectionManifest = () => (
         </div>
       </div>
       <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph1_text')}</div>
-      <div className='manifest__title manifest-right'>
+      <div className='manifest__title title manifest-right'>
         <div className='manifest__title-line-number'>
           <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph2_number')}</div>
           <div className='manifest__title-line' />
@@ -96,7 +97,7 @@ const renderSectionManifest = () => (
         <div>{Localizer.localize('agency.manifest.paragraph2_title')}</div>
       </div>
       <div className='manifest__text manifest-right'>{Localizer.localize('agency.manifest.paragraph2_text')}</div>
-      <div className='manifest__title'>
+      <div className='manifest__title title'>
         <div>{Localizer.localize('agency.manifest.paragraph3_title')}</div>
         <div className='manifest__title-line-number'>
           <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph3_number')}</div>
@@ -122,7 +123,7 @@ const renderSectionFounder = () => (
       alt="Séverine Breton Join-Diéterle, fondatrice d'Egon Paris"
       src={severine} />
     <div className='founder__content'>
-      <div className='founder__title'>Séverine Breton Join-Diéterle</div>
+      <div className='founder__title title'>Séverine Breton Join-Diéterle</div>
       <div className='founder__label'>{Localizer.localize('agency.founder.title')}</div>
       <div className='founder__paragraph paragraph-highlight'>{Localizer.localize('agency.founder.paragraph1')}</div>
       <div className='founder__paragraph'>{Localizer.localize('agency.founder.paragraph2')}</div>

@@ -6,7 +6,7 @@
   }
 
   > .page-agency__name {
-    align-items: flex-start;
+    align-items: baseline;
     background-color: var(--black);
     color: var(--white);
     column-gap: 4rem;
@@ -16,6 +16,7 @@
 
     > .page-agency__egon {
       font-size: 3rem;
+      font-weight: bold;
     }
 
     > .page-agency__tagline {
@@ -41,8 +42,19 @@
     padding: 4rem;
 
     > .first-name__drawing {
+      position: relative;
+
       > img {
         max-height: 800px;
+      }
+
+      > .first-name__copyright {
+        bottom: 180px;
+        font-size: .8rem;
+        position: absolute;
+        right: 90px;
+        transform: rotate(-90deg);
+        transform-origin: left;
       }
     }
 
@@ -50,7 +62,6 @@
       margin: 0 2rem;
 
       > .first-name__title {
-        font: 3rem Bodoni;
         margin-bottom: 6rem;
       }
 
@@ -104,8 +115,6 @@
     flex-direction: column;
 
     .philosophy__title {
-      font: 3rem Bodoni;
-      line-height: 2.8rem;
       margin-bottom: 2rem;
 
       &.title-white {
@@ -175,10 +184,8 @@
       .manifest__title {
         align-items: center;
         display: grid;
-        font: 3rem Bodoni;
         grid-column-gap: 2rem;
         grid-template-columns: auto 1fr;
-        line-height: 2.8rem;
         margin-bottom: 2rem;
 
         &.manifest-right {
@@ -195,7 +202,7 @@
           flex-direction: column;
 
           > .manifest__title-number {
-            font: 1rem 'Helvetica Neue';
+            font: 1rem Helvetica, sans-serif;
             margin-bottom: 1rem;
           }
 
@@ -241,11 +248,6 @@
 
     > .founder__content {
       max-width: 36rem;
-
-      > .founder__title {
-        font: 3rem Bodoni;
-        line-height: 2.8rem;
-      }
 
       > .founder__label {
         font-size: 1.4rem;

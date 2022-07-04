@@ -43,7 +43,6 @@ common.egon;Egon
 contact.address1;71-73 rue de Chézy
 contact.address2;92200 Neuilly-sur-Seine
 contact.side_title;CONTACT
-creation.customers.egon_collective;Egon collective.
 creation.customers.paragraph;
 creation.customers.side_title;
 creation.customers.thanks;
@@ -153,6 +152,28 @@ footer.privacy_policy;
 join_us.paragraph;
 join_us.side_title;
 join_us.title;
+legal_notice.title;
+legal_notice.last_update;
+legal_notice.welcome;
+legal_notice.law;
+legal_notice.owner;
+legal_notice.address;
+legal_notice.publication_director;
+legal_notice.host;
+legal_notice.please_read;
+legal_notice.right_to_update;
+legal_notice.disclaimer_label;
+legal_notice.disclaimer_line1;
+legal_notice.disclaimer_line2;
+legal_notice.disclaimer_line3;
+legal_notice.website_protection;
+legal_notice.copy_forbidden;
+legal_notice.website_copyright;
+legal_notice.photos_copyright;
+legal_notice.data_protection;
+legal_notice.no_data_collect;
+legal_notice.privacy_policy_introduction;
+legal_notice.privacy_policy_link;
 manifest.page1.pre;N°01
 manifest.page1.title;
 manifest.page1.text;

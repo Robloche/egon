@@ -20,7 +20,7 @@ const JoinUs = (): React.Node => {
           alt='Logo Egon'
           src={logo} />
         <div className='page-join-us__info'>
-          <div className='page-join-us__title'>{Localizer.localize('join_us.title')}</div>
+          <div className='page-join-us__title title'>{Localizer.localize('join_us.title')}</div>
           <div className='page-join-us__address'>{Localizer.localize('join_us.paragraph')}</div>
           <a
             href='mailto:egon@egonparis.com'

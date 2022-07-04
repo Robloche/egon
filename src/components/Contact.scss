@@ -4,11 +4,12 @@
   color: var(--white);
   column-gap: 4rem;
   display: flex;
+  flex-grow: 1;
   padding: 6rem 0 6rem 15rem;
   position: relative;
 
   > .page-contact__info {
-    line-height: 1.4rem;
+    font-size: 1.4rem;
 
     > .page-contact__egon {
       font-size: 2rem;
@@ -26,5 +27,5 @@
 
 .page-contact__landscape {
   background-image: url('../assets/images/contact.png');
-  height: 539px;
+  height: 350px;
 }

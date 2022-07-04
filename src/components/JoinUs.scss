@@ -5,6 +5,7 @@
     color: var(--white);
     column-gap: 4rem;
     display: flex;
+    flex-grow: 1;
     padding: 8rem 0 8rem 15rem;
     position: relative;
 
@@ -12,7 +13,6 @@
       line-height: 1.4rem;
 
       > .page-join-us__title {
-        font: 2rem Bodoni;
         margin-bottom: 2rem;
       }
 

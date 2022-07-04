@@ -8,8 +8,8 @@ agency.first_name.why_egon;Pourquoi Egon ?
 agency.founder.side_title;L'AGENCE - La fondatrice
 agency.founder.title;La fondatrice
 agency.founder.paragraph1;Entrepreneuse créative et exigeante, esthète passionnée, experte en communication depuis plus de 20 ans pour le compte de maisons de luxe, avec une affinité particulière pour les arts de vivre.
-agency.founder.paragraph2;Elle a choisi de s'entourer d'un collectif d'indépendants sensibles aux codes du luxe et experts de l'image qu'elle fédère en mode projet : Directeurs Artistiques, Écrivains, Motion Designer, Graphistes, Réalisateurs, Photographes, Développeurs Web…, pour donner vie à son rêve, celui de vous accompagner, avec cœur et engagement.
-agency.founder.contact_me;Contactez-moi :
+agency.founder.paragraph2;Elle a choisi de s'entourer d'un collectif d'indépendants sensibles aux codes du luxe et experts de l'image qu'elle fédère en mode projet : Directeurs Artistiques, Écrivains, Motion Designer, Graphistes, Réalisateurs, Photographes, Développeurs Web…, pour donner vie à son rêve, celui de vous accompagner, avec cœur et engagement.
+agency.founder.contact_me;Contactez-moi :
 agency.manifest.side_title;L'AGENCE - Le manifeste
 agency.manifest.paragraph1_number;N°01
 agency.manifest.paragraph1_text;Expressif et radical, il touche, interpelle, sublime,\ndécrit, réinvente, véritable stratège épi.curieux,\nvoué à l'expression du beau\npar le sens juste et exact, le lien, l'image et le mot,\nil procure le rêve et provoque l'émotion.
@@ -24,7 +24,7 @@ agency.manifest.paragraph4_number;Tour à tour,
 agency.manifest.paragraph4_text;Egon est un électron libre, créatif et engagé.
 agency.manifest.paragraph4_title;Éclaireur et éclairé
 agency.philosophy.closing;Egon, c'est un ensemble de valeurs,\nun collectif d'hommes et de femmes bienheureux,\nconvaincus et indépendants, habités par une envie\nde créer mieux et engagés pour Être plutôt qu'Avoir.
-agency.philosophy.contact_us;Contactez-nous :
+agency.philosophy.contact_us;Contactez-nous :
 agency.philosophy.paragraph1_text;voué à l'expression du beau par le sens juste et exact,\nl'image et le mot.
 agency.philosophy.paragraph1_title;expert des maisons de luxe et amoureaux de l'art de vivre,
 agency.philosophy.paragraph2_text;aussi émotionnelle qu'intemporelle, est fondatrice et fédératrice\net permet à vos équipes, vos clients, vos amis de s'unir dans un idéal,\net de voir loin, pour longtemps.
@@ -37,13 +37,12 @@ agency.philosophy.paragraph5_title;Egon,
 agency.philosophy.side_title;L'AGENCE - La philosophie
 agency.philosophy.title;Egon, un partenaire libre, créatif et engagé\nqui comprend votre marque et ses défis,\navec passion,
 agency.scroll;Scroll
-agency.tagline1;Agence conseil en communication\nvouée à l'Art de Vivre
-agency.tagline2;libre, créative et engagée.
+agency.tagline1;Agence conseil en communication\ndédiée à l'Art de Vivre
+agency.tagline2;libre, créative et engagée
 common.egon;Egon
 contact.address1;71-73 rue de Chézy
 contact.address2;92200 Neuilly-sur-Seine
 contact.side_title;CONTACT
-creation.customers.egon_collective;Egon collective.
 creation.customers.paragraph;chers Clients, que nous existons et que nous avons la capacité aujourd'hui de participer\nà un monde où l'on communique mieux avec créativité, sens et intemporalité.\nAlors Merci à vous. Merci de votre confiance, Merci de nous soutenir dans notre démarche.
 creation.customers.side_title;LA CRÉATION - Les clients
 creation.customers.thanks;Merci !
@@ -126,7 +125,7 @@ expertises.production.paragraph1;Vous avez dit Brand Content ? Photos ? Vidéos 
 expertises.production.paragraph2;Nous produisons sans détruire avec une idée assumée de l'inclusivité, dans le respect d'un budget annoncé, avec une équipe bienveillante, aussi rigoureuse que créative, aussi responsable qu'empathique.
 expertises.production.side_title;LES EXPERTISES - Production
 expertises.production.title;Production\nde contenus
-expertises.strategy.closing;Nous sommes des bâtisseurs éclairés par le sens et la cohérence
+expertises.strategy.closing;Nous sommes des bâtisseurs éclairés, animés par le sens et la cohérence
 expertises.strategy.column1.item1;Audit de marque
 expertises.strategy.column1.item2;Benchmarking
 expertises.strategy.column1.item3;Planning Stratégique
@@ -141,7 +140,7 @@ expertises.strategy.column3.item1;Vision, Mission et Promesse
 expertises.strategy.column3.item2;Piliers, Valeurs et Personnalité
 expertises.strategy.column3.item3;Produits et Savoir-faire
 expertises.strategy.column3.title;Plateforme de marque
-expertises.strategy.paragraph1;Nous pensons l'histoire d'une maison par le prisme d'un concept singulier & propriétaire, dans une logique de sobriété, de durabilité et d'essentialité, pour le plus grand nombre. Écrire, donner le ton, capturer l'essence de votre marque dans un manifeste saillant et mouvant.
+expertises.strategy.paragraph1;Nous pensons l'histoire d'une maison par le prisme d'un concept singulier & propriétaire, dans une logique de sobriété, de durabilité et d'essentialité, pour le plus grand nombre.\nÉcrire, donner le ton, capturer l'essence de votre marque dans un manifeste saillant et mouvant.
 expertises.strategy.paragraph2;Que le Je devienne Jeu !
 expertises.strategy.side_title;LES EXPERTISES - Stratégie
 expertises.strategy.title;Conseil, Stratégie\n& Architecture de marque
@@ -153,6 +152,28 @@ footer.privacy_policy;Politique de confidentialité
 join_us.paragraph;Véritable épi.curieux,\nVous êtes libre, créatif et indépendant,\nVous cultivez le verbe et appréciez les joutes verbales,\nVotre œil est aussi espiègle qu'aiguisé,\nVotre exigence personnelle est redoutable,\nVotre sens de l'humour est reconnu,\nVous êtes sensible aux jeux de la communication durable\net responsable,\nPour vous, la vie ne peut qu'être, belle, drôle et plaisante,\nAlors, rejoignez notre collectif en envoyant votre dossier à
 join_us.side_title;NOUS REJOINDRE
 join_us.title;Participez à l'histoire d'Egon
+legal_notice.title;Mentions légales
+legal_notice.last_update;Date de mise à jour
+legal_notice.welcome;Bienvenue sur notre site egonparis.com
+legal_notice.law;En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique :
+legal_notice.owner;Propriétaire et éditeur : EGON PARIS, SASU au capital de 2000 €
+legal_notice.address;Immatriculée sous le RCS Nanterre B 910 423 185 et TVA : FR21910423185 – 71-73 rue de Chézy – 92200 Neuilly-sur-Seine – France
+legal_notice.publication_director;Directeur de la publication : Séverine Breton – 
+legal_notice.host;Hébergeur : OVH, 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1 – France
+legal_notice.please_read;Veuillez lire attentivement les présentes conditions générales d’utilisation (« CGU ») avant d’utiliser le Site. En utilisant le Site, vous reconnaissez avoir lu les CGU et acceptez d’être lié par l’ensemble de ses dispositions. Si vous ne souhaitez pas être lié par ces CGU, veuillez ne pas utiliser le site.
+legal_notice.right_to_update;Nous nous réservons le droit de modifier ou mettre à jour tout ou partie des CGU à notre discrétion et sans préavis. Nous publierons toujours la version la plus récente sur le Site et indiquerons la date de dernière modification pour refléter la date de mise à jour. Les CGU révisées prendront effet dès leur publication.
+legal_notice.disclaimer_label;EGON PARIS décline toute responsabilité :
+legal_notice.disclaimer_line1;pour toute interruption, suspension ou dysfonctionnement du site,
+legal_notice.disclaimer_line2;survenance de bogues,
+legal_notice.disclaimer_line3;pour toute inexactitude ou omission portant sur des informations disponibles sur le site.
+legal_notice.website_protection;Protection du site Internet
+legal_notice.copy_forbidden;Toute reproduction, même partielle de ce site internet est interdite.\nMarque, modèle, dessins et textes sont réservés, déposés et protégés.
+legal_notice.website_copyright;Le site et la totalité du contenu sont notre propriété et sont protégés par le droit d’auteur, le droit des marques, et autres droits de propriété intellectuelle ainsi que le droit de la concurrence déloyale, qu’ils soient enregistrés ou pas (« Droits de PI »).
+legal_notice.photos_copyright;Les visuels illustrant le manifeste ont été shootés par Marianne Gamet, Lomig, Joel Filipe, et Daniel Genser.
+legal_notice.data_protection;Protection des Données\nPersonnelles et Sécurité
+legal_notice.no_data_collect;Aucune information personnelle n’est collectée à l’insu de l’internaute. Aucune information personnelle n’est cédée à des tiers ou utilisée à des fins non prévues.\nVous disposez d’un droit d’accès, de modification, de rectification et de suppression des données qui vous concernent (art. 34 de la loi « Informatique et Libertés »). Pour l’exercer, adressez-vous à :
+legal_notice.privacy_policy_introduction;Nous vous invitons à lire notre rubrique consacrée à notre
+legal_notice.privacy_policy_link;politique de confidentialité
 manifest.page1.pre;N°01
 manifest.page1.title;Artiste par nature
 manifest.page1.text;Expressif et radical,\nIl touche, interpelle, sublime,\ndécrit, réinvente, véritable stratège épi.curieux,\nvoué à l'expression du beau\npar le sens juste et exact, le lien, l'image et le mot,\nil procure le rêve et provoque l'émotion
@@ -167,7 +188,7 @@ manifest.page4.title;Éclaireur et éclairé
 manifest.page4.text;Egon Paris\nest un électron libre, créatif et engagé.
 menu.label;Menu
 menu.agency.first_name;Le prénom
-menu.agency.founder;Le fondatrice
+menu.agency.founder;La fondatrice
 menu.agency.label;L'agence
 menu.agency.manifest;Le manifeste
 menu.agency.philosophy;La philosophie
@@ -186,6 +207,6 @@ menu.language.fr;FR
 menu.language.it;IT
 newsletter.action.subscribe;Je m'inscris
 newsletter.error;Veuillez vérifier votre adresse e-mail
-newsletter.header;Inscrivez-vous à notre newsletter !
+newsletter.header;Inscrivez-vous à notre newsletter
 newsletter.placeholder;Votre adresse e-mail
 newsletter.subscribed;Vous êtes inscrit !

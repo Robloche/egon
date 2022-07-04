@@ -1,7 +1,7 @@
 import './SplashScreen.scss';
 import * as React from 'react';
 import {useEffect, useRef} from 'react';
-import egon from '../assets/images/egon-animation.gif';
+import logo from '../assets/svg/logo-white.svg';
 import {useNavigate} from 'react-router-dom';
 import {useSelector} from 'react-redux';
 
@@ -28,7 +28,7 @@ const SplashScreen = () => {
       <img
         alt='Logo Egon Paris'
         className='splash-screen__logo'
-        src={egon} />
+        src={logo} />
     </div>
   );
 };

@@ -14,7 +14,6 @@ const Header = (): React.Node => {
     <div className='header'>
       <Link to={`/${language}/home`}><img
         alt='Logo Egon Paris'
-        className='logo'
         draggable={false}
         src={logo} /></Link>
       <Menu />

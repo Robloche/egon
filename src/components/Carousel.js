@@ -4,20 +4,29 @@ import './Carousel.scss';
 import * as React from 'react';
 import {useCallback, useEffect, useRef, useState} from 'react';
 import Bullet from './Bullet';
+import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
 import image1 from '../assets/images/manifest1.png';
 import image2 from '../assets/images/manifest2.png';
 import image3 from '../assets/images/manifest3.png';
 import image4 from '../assets/images/manifest4.png';
+import {useSelector} from 'react-redux';
 
 // Image changes every 5s;
 const IMAGE_SWITCH_TIMEOUT = 5000;
 
 const IMAGES = [image1, image2, image3, image4];
 
+const scroll = (el) => el.scrollIntoView({
+  behavior: 'smooth',
+  block: 'center'
+});
+
 const nextIndex = (index) => (index + 1) % IMAGES.length;
 
 const Carousel = (): React.Node => {
+  const language = useSelector((state) => state.language);
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const imageSwitchTimer = useRef(null);
@@ -64,8 +73,12 @@ const Carousel = (): React.Node => {
         key={img.toString()}
         onClick={handleBulletOnClick} />)}</div>
       <div className='carousel__scroll'>
-        <div className='carousel__scroll-text'>{Localizer.localize('agency.scroll')}</div>
         <div className='carousel__scroll-line' />
+        <HashLink
+          className='carousel__scroll-text'
+          scroll={scroll}
+          smooth
+          to={`/${language}/home#first-name`}>{Localizer.localize('agency.scroll')}</HashLink>
       </div>
     </div>
   );

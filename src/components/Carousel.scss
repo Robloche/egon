@@ -34,18 +34,12 @@
         top: 0;
         width: 100%;
 
-        > .slide__text-pre {
-          // sass-lint:disable-block no-empty-rulesets
-          // TODO
-        }
-
         > .slide__text-title {
-          font: 4rem Bodoni;
-          margin: 3rem 0;
+          font: 4.2rem Bodoni;
+          margin: 1rem 0 3rem;
         }
 
         > .slide__text-content {
-          font-size: 1.1rem;
           line-height: 1.8rem;
           text-align: center;
         }
@@ -65,23 +59,27 @@
   }
 
   > .carousel__scroll {
+    align-items: center;
     bottom: 20px;
+    column-gap: .6rem;
+    display: flex;
     position: absolute;
     left: calc(50% - 2px);
+    transform: rotate(-90deg);
+    transform-origin: left;
+
+    > .carousel__scroll-line {
+      background-color: var(--white);
+      height: 1px;
+      width: 60px;
+    }
 
     > .carousel__scroll-text {
       color: var(--white);
       font-size: .5rem;
       letter-spacing: .2rem;
+      text-decoration: none;
       text-transform: uppercase;
-      transform: rotate(-90deg);
-      transform-origin: left;
-    }
-
-    > .carousel__scroll-line {
-      background-color: var(--white);
-      height: 60px;
-      width: 1px;
     }
   }
 }

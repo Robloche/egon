@@ -18,14 +18,8 @@ const Footer = (): React.Node => {
     <div className='footer'>
       <Social className='footer__social' />
       <div className='footer__links'>
-        <a
-          href=''
-          rel='noopener noreferrer'
-          target='_blank'>{Localizer.localize('footer.legal_notice')}</a>
-        <a
-          href=''
-          rel='noopener noreferrer'
-          target='_blank'>{Localizer.localize('footer.privacy_policy')}</a>
+        <Link to={`/${language}/legal-notice`}>{Localizer.localize('footer.legal_notice')}</Link>
+        <Link to={`/${language}/privacy-policy`}>{Localizer.localize('footer.privacy_policy')}</Link>
         <Link to={`/${language}/join-us`}>{Localizer.localize('footer.join_us')}</Link>
         <Link to={`/${language}/contact`}>{Localizer.localize('footer.contact')}</Link>
         <button

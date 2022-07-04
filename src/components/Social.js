@@ -13,7 +13,7 @@ type SocialProps = {
 const Social = ({className}: SocialProps): React.Node => (
   <div className={`social ${className}`}>
     <a
-      href='https://www.instagram.com/severinebretonjoindieterle'
+      href='https://www.instagram.com/egon.paris/'
       rel='noopener noreferrer'
       target='_blank'>
       <img

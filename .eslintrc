@@ -114,7 +114,7 @@
       2,
       {
         "ignoreComments": true,
-        "ignorePattern": "d='([\\s\\S]*?)'"
+        "ignorePattern": "(d|points)='([\\s\\S]*?)'"
       }
     ],
     "max-lines": "off",

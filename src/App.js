@@ -7,7 +7,9 @@ import Creation from './components/Creation';
 import Expertises from './components/Expertises';
 import Home from './components/Home';
 import JoinUs from './components/JoinUs';
+import LegalNotice from './components/LegalNotice';
 import {Localizer} from './helpers/localizer';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import {Provider} from 'react-redux';
 import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
@@ -42,20 +44,28 @@ const App = (): React.Node => (
           path='/expertises' />
         <Route
           element={<Home />}
-          exact
           path='/:lang/home' />
         <Route
           element={<Home />}
-          exact
           path='/home' />
         <Route
           element={<JoinUs />}
-          exact
           path='/:lang/join-us' />
         <Route
           element={<JoinUs />}
-          exact
           path='/join-us' />
+        <Route
+          element={<LegalNotice />}
+          path='/:lang/legal-notice' />
+        <Route
+          element={<LegalNotice />}
+          path='/legal-notice' />
+        <Route
+          element={<PrivacyPolicy />}
+          path='/:lang/privacy-policy' />
+        <Route
+          element={<PrivacyPolicy />}
+          path='/privacy-policy' />
         <Route
           element={<SplashScreen />}
           exact

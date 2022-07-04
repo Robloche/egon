@@ -19,7 +19,7 @@
 
       &:focus {
         outline: none !important; // sass-lint:disable-line no-important
-        border: 2px solid var(--white);
+        border: 2px solid var(--bright-green);
       }
     }
 
@@ -28,8 +28,8 @@
     }
 
     > button {
-      background-color: var(--black);
-      border: 2px solid var(--black);
+      background-color: var(--bright-green);
+      border: 2px solid var(--bright-green);
       color: var(--white);
       cursor: pointer;
       font-weight: bold;
@@ -38,19 +38,19 @@
 
       &:hover {
         &:not(:disabled) {
-          background-color: rgba(0, 0, 0, .8);
+          background-color: rgba(214, 193, 38, .8);
           border: 2px solid transparent;
         }
       }
 
       &:focus {
-        border: 2px solid var(--white);
+        border: 2px solid var(--blue);
         border-radius: 0;
         outline: none;
       }
 
       &:disabled {
-        opacity: .3;
+        opacity: .5;
       }
     }
   }
@@ -59,11 +59,12 @@
     margin-top: 1rem;
 
     &.status-success {
-      color: var(--white);
+      color: var(--black);
     }
 
     &.status-error {
-      color: darkred;
+      color: var(--black);
+      text-decoration: underline;
     }
   }
 }

@@ -43,7 +43,6 @@ common.egon;Egon
 contact.address1;71-73 rue de Chézy
 contact.address2;92200 Neuilly-sur-Seine
 contact.side_title;CONTACT
-creation.customers.egon_collective;Egon collective.
 creation.customers.paragraph;It is thanks to our cherished Clients that we're able to do what we do and live in a world where we communicate better, with creative, meaningful and timeless messages. So thank you. Thank you for supporting us in our work.
 creation.customers.side_title;CREATION - Clients
 creation.customers.thanks;Thank you!
@@ -141,7 +140,7 @@ expertises.strategy.column3.item1;Vision, Mission and Promise
 expertises.strategy.column3.item2;Pillars, Values and Personality
 expertises.strategy.column3.item3;Products and Know-How
 expertises.strategy.column3.title;Brand Platorm
-expertises.strategy.paragraph1;We see a brand story through the lens of an original, brand-specific concept, adopting an understated, sustainable and fundamental approach for most of our clients. We write, set the tone and capture the essence of your brand in a striking and moving mission statement.
+expertises.strategy.paragraph1;We see a brand story through the lens of an original, brand-specific concept, adopting an understated, sustainable and fundamental approach for most of our clients.\nWe write, set the tone and capture the essence of your brand in a striking and moving mission statement.
 expertises.strategy.paragraph2;Let's make the personal playful!
 expertises.strategy.side_title;EXPERTISE - Strategy
 expertises.strategy.title;Consulting, Strategy & Brand Architecture
@@ -153,6 +152,28 @@ footer.privacy_policy;Privacy Policy
 join_us.paragraph;Truly epi.curious,\nYou're free, creative and independent, \nYou cultivate the spoken word and enjoy verbal sparring,\nYour eye is both sharp and mischievous,\nYour self-discipline is formidable,\nYour sense of humour is renowned,\nYou're sensitive to the challenges of sustainable and responsible communications,\nFor you, life is all about beauty, laughter and pleasure,\nSend your application to egon@egonparis.com to join our community
 join_us.side_title;JOIN US
 join_us.title;Join the Egon story
+legal_notice.title;
+legal_notice.last_update;
+legal_notice.welcome;
+legal_notice.law;
+legal_notice.owner;
+legal_notice.address;
+legal_notice.publication_director;
+legal_notice.host;
+legal_notice.please_read;
+legal_notice.right_to_update;
+legal_notice.disclaimer_label;
+legal_notice.disclaimer_line1;
+legal_notice.disclaimer_line2;
+legal_notice.disclaimer_line3;
+legal_notice.website_protection;
+legal_notice.copy_forbidden;
+legal_notice.website_copyright;
+legal_notice.photos_copyright;
+legal_notice.data_protection;
+legal_notice.no_data_collect;
+legal_notice.privacy_policy_introduction;
+legal_notice.privacy_policy_link;
 manifest.page1.pre;N°01
 manifest.page1.title;Artist by nature
 manifest.page1.text;Meaningful and radical,\nIt touches, beckons, enhances, describes, reinvents, \na truly epi.curious strategist, \nhere to tell stories of beauty \nby capturing true meaning, connections, images and words, \ninspiring dreams and stirring emotion
@@ -186,6 +207,6 @@ menu.language.fr;FR
 menu.language.it;IT
 newsletter.action.subscribe;I subscribe
 newsletter.error;Please check your e-mail address
-newsletter.header;Subscribe to our newsletter!
+newsletter.header;Subscribe to our newsletter
 newsletter.placeholder;Your e-mail address
 newsletter.subscribed;You've subscribed!
