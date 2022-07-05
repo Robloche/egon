@@ -10,17 +10,13 @@ import image1 from '../assets/images/manifest1.png';
 import image2 from '../assets/images/manifest2.png';
 import image3 from '../assets/images/manifest3.png';
 import image4 from '../assets/images/manifest4.png';
+import {scrollCenter} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
 
 // Image changes every 5s;
 const IMAGE_SWITCH_TIMEOUT = 5000;
 
 const IMAGES = [image1, image2, image3, image4];
-
-const scroll = (el) => el.scrollIntoView({
-  behavior: 'smooth',
-  block: 'center'
-});
 
 const nextIndex = (index) => (index + 1) % IMAGES.length;
 
@@ -76,7 +72,7 @@ const Carousel = (): React.Node => {
         <div className='carousel__scroll-line' />
         <HashLink
           className='carousel__scroll-text'
-          scroll={scroll}
+          scroll={scrollCenter}
           smooth
           to={`/${language}/home#first-name`}>{Localizer.localize('agency.scroll')}</HashLink>
       </div>

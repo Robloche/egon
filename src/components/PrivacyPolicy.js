@@ -12,7 +12,9 @@ const PrivacyPolicy = (): React.Node => {
   useSelector((state) => state.language);
 
   return (
-    <div className='page page-legal-notice'>
+    <div
+      className='page page-legal-notice'
+      id='privacy-policy'>
       <Header />
       <div className='legal-notice__container'>
         <img
@@ -20,39 +22,78 @@ const PrivacyPolicy = (): React.Node => {
           draggable={false}
           src={logo} />
         <div className='legal-notice__title title-red'>{Localizer.localize('privacy_policy.title')}</div>
-        <div className='legal-notice__paragraph paragraph-center paragraph-bold'>{Localizer.localize('privacy_policy.last_update')}</div>
-        <div className='legal-notice__paragraph paragraph-center paragraph-date paragraph-margin-v'>15/09/2022</div>
-        <div className='legal-notice__paragraph paragraph-center paragraph-welcome'>{Localizer.localize('privacy_policy.welcome')}</div>
-        <div className='legal-notice__paragraph paragraph-underline paragraph-margin-v'>{Localizer.localize('privacy_policy.law')}</div>
-        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.owner')}</div>
-        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.address')}</div>
-        <div className='legal-notice__paragraph'>
-          <span>{Localizer.localize('privacy_policy.publication_director')}</span>
-          <a
-            href='mailto:sbreton@egonparis.com'
-            rel='noopener noreferrer'
-            target='_blank'>sbreton@egonparis.com</a>
-        </div>
-        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.host')}</div>
-        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.please_read')}</div>
-        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.right_to_update')}</div>
-        <div className='legal-notice__paragraph paragraph-bold'>{Localizer.localize('privacy_policy.disclaimer_label')}</div>
+        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.personal_data_title')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.personal_data_paragraph1')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.personal_data_paragraph2')}</div>
+        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.recipients_title')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.recipients_paragraph')}</div>
+        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.goal_title')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.goal_paragraph1')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.goal_paragraph2')}</div>
         <ul>
-          <li>{Localizer.localize('privacy_policy.disclaimer_line1')}</li>
-          <li>{Localizer.localize('privacy_policy.disclaimer_line2')}</li>
-          <li>{Localizer.localize('privacy_policy.disclaimer_line3')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line01')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line02')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line03')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line04')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line05')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line06')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line07')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line08')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line09')}</li>
+          <li>{Localizer.localize('privacy_policy.goal_line10')}</li>
         </ul>
-        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.website_protection')}</div>
-        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.copy_forbidden')}</div>
-        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.website_copyright')}</div>
-        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.photos_copyright')}</div>
-        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.data_protection')}</div>
-        <div className='legal-notice__paragraph'>
-          <span>{Localizer.localize('privacy_policy.no_data_collect')}</span>
+        <div className='legal-notice__paragraph paragraph-bold'>
+          <span>{Localizer.localize('privacy_policy.goal_paragraph3')}</span>
           <a
             href='mailto:egon@egonparis.com'
             rel='noopener noreferrer'
-            target='_blank'>egon@egonparis.com</a></div>
+            target='_blank'>egon@egonparis.com</a>
+        </div>
+        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.confidentiality_title')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.confidentiality_paragraph1')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.confidentiality_paragraph2')}</div>
+        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.your_rights_title')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.your_rights_paragraph1')}</div>
+        <ul>
+          <li>{Localizer.localize('privacy_policy.your_rights_line1')}</li>
+          <li>{Localizer.localize('privacy_policy.your_rights_line2')}</li>
+          <li>{Localizer.localize('privacy_policy.your_rights_line3')}</li>
+          <li>{Localizer.localize('privacy_policy.your_rights_line4')}</li>
+          <li>{Localizer.localize('privacy_policy.your_rights_line5')}</li>
+        </ul>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.your_rights_paragraph2')}</div>
+        <div className='legal-notice__paragraph paragraph-center paragraph-address'>EGON PARIS</div>
+        <div className='legal-notice__paragraph paragraph-center paragraph-address'>{Localizer.localize('privacy_policy.address1')}</div>
+        <div className='legal-notice__paragraph paragraph-center paragraph-address'>{Localizer.localize('privacy_policy.address2')}</div>
+        <div className='legal-notice__paragraph paragraph-center'><a
+          href='mailto:egon@egonparis.com'
+          rel='noopener noreferrer'
+          target='_blank'>egon@egonparis.com</a></div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.your_rights_paragraph3')}</div>
+        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.cookies_title')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.cookies_paragraph1')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.cookies_paragraph2')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.cookies_paragraph3')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.cookies_paragraph4')}</div>
+        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.security_title')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.security_paragraph')}</div>
+        <div className='legal-notice__title'>{Localizer.localize('privacy_policy.applicable_law_title')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.applicable_law_paragraph1')}</div>
+        <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.applicable_law_paragraph2')}</div>
+        <div className='legal-notice__paragraph paragraph-center paragraph-address'>EGON PARIS</div>
+        <div className='legal-notice__paragraph paragraph-center paragraph-address'>{Localizer.localize('privacy_policy.address1')}</div>
+        <div className='legal-notice__paragraph paragraph-center paragraph-address'>{Localizer.localize('privacy_policy.address2')}</div>
+        <div className='legal-notice__paragraph paragraph-center'><a
+          href='mailto:egon@egonparis.com'
+          rel='noopener noreferrer'
+          target='_blank'>egon@egonparis.com</a></div>
+        <div className='legal-notice__paragraph'>
+          <span>{Localizer.localize('privacy_policy.applicable_law_paragraph3')}</span>
+          <a
+            href='https://www.cnil.fr'
+            rel='noopener noreferrer'
+            target='_blank'>www.cnil.fr</a>
+        </div>
       </div>
       <Footer />
     </div>

@@ -13,7 +13,9 @@ const LegalNotice = (): React.Node => {
   const language = useSelector((state) => state.language);
 
   return (
-    <div className='page page-legal-notice'>
+    <div
+      className='page page-legal-notice'
+      id='legal-notice'>
       <Header />
       <div className='legal-notice__container'>
         <img

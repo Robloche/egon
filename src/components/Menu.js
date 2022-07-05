@@ -7,6 +7,7 @@ import {HashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
 import Social from './Social';
+import {scrollCenter} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
 import x from '../assets/svg/x.svg';
 
@@ -26,11 +27,6 @@ const renderHeader = (handleCloseOnClick) => (
   </div>
 );
 
-const scroll = (el) => el.scrollIntoView({
-  behavior: 'smooth',
-  block: 'center'
-});
-
 const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick) => (
   <nav className='menu__links'>
     <div
@@ -40,19 +36,19 @@ const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick
     <div className={`menu__item_accordion ${expandedStates[0] ? 'expanded' : ''}`}>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/home#first-name`}>{Localizer.localize('menu.agency.first_name')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/home#philosophy`}>{Localizer.localize('menu.agency.philosophy')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/home#manifest`}>{Localizer.localize('menu.agency.manifest')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/home#founder`}>{Localizer.localize('menu.agency.founder')}</HashLink>
     </div>
     <div
@@ -62,23 +58,23 @@ const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick
     <div className={`menu__item_accordion ${expandedStates[1] ? 'expanded' : ''}`}>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/expertises#strategy`}>{Localizer.localize('menu.expertises.strategy')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/expertises#creation`}>{Localizer.localize('menu.expertises.creation')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/expertises#digital`}>{Localizer.localize('menu.expertises.digital')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/expertises#edition`}>{Localizer.localize('menu.expertises.edition')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/expertises#production`}>{Localizer.localize('menu.expertises.production')}</HashLink>
     </div>
     <div
@@ -88,11 +84,11 @@ const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick
     <div className={`menu__item_accordion ${expandedStates[TWO] ? 'expanded' : ''}`}>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/creation#projects`}>{Localizer.localize('menu.creation.projects')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
-        scroll={scroll}
+        scroll={scrollCenter}
         to={`/${language}/creation#customers`}>{Localizer.localize('menu.creation.customers')}</HashLink>
     </div>
     <Link

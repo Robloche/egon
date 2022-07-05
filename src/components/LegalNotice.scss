@@ -49,6 +49,10 @@
         margin: 1rem 0;
       }
 
+      &.paragraph-address {
+        margin-bottom: 0;
+      }
+
       &.paragraph-red {
         color: red;
       }
@@ -60,7 +64,7 @@
 
     > ul {
       list-style-type: '- ';
-      margin: -1rem 0 0;
+      margin: -1rem 0 2rem;
     }
   }
 }

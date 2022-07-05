@@ -2,10 +2,12 @@
 
 import './Footer.scss';
 import * as React from 'react';
+import {HashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
 import NewsletterPopup from './NewsletterPopup';
 import Social from './Social';
+import {scrollTop} from '../helpers/scroll';
 import useNewsletterPopup from '../hooks/useNewsletterPopup';
 import {useSelector} from 'react-redux';
 
@@ -18,8 +20,12 @@ const Footer = (): React.Node => {
     <div className='footer'>
       <Social className='footer__social' />
       <div className='footer__links'>
-        <Link to={`/${language}/legal-notice`}>{Localizer.localize('footer.legal_notice')}</Link>
-        <Link to={`/${language}/privacy-policy`}>{Localizer.localize('footer.privacy_policy')}</Link>
+        <HashLink
+          scroll={scrollTop}
+          to={`/${language}/legal-notice#legal-notice`}>{Localizer.localize('footer.legal_notice')}</HashLink>
+        <HashLink
+          scroll={scrollTop}
+          to={`/${language}/privacy-policy#privacy-policy`}>{Localizer.localize('footer.privacy_policy')}</HashLink>
         <Link to={`/${language}/join-us`}>{Localizer.localize('footer.join_us')}</Link>
         <Link to={`/${language}/contact`}>{Localizer.localize('footer.contact')}</Link>
         <button
