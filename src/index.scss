@@ -82,6 +82,10 @@ html {
         .title {
           font: var(--font-title);
           line-height: 2.8rem;
+
+          &.title-white {
+            color: var(--white);
+          }
         }
       }
     }

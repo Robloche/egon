@@ -5,6 +5,147 @@
     position: relative;
   }
 
+  > .page-agency__grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    > .page-agency__grid-section {
+      position: relative;
+
+      &.section__manifest {
+        background-color: var(--black);
+      }
+
+      &.section__left,
+      &.section__right {
+        height: 100%;
+      }
+
+      &.page-agency__philosophy {
+        align-items: center;
+        flex-direction: column;
+
+        .philosophy__title {
+          margin-bottom: 2rem;
+        }
+
+        > .philosophy__content {
+          margin: 2rem 0;
+
+          > .philosophy__paragraph-title {
+            font-weight: bold;
+            margin-top: 2rem;
+          }
+
+          > .philosophy__paragraph-content {
+            &.spaced {
+              margin: 2rem 0;
+            }
+
+            span {
+              &:first-child {
+                font-weight: bold;
+                margin-right: .2rem;
+              }
+            }
+          }
+        }
+      }
+
+      &.page-agency__manifest {
+        align-items: center;
+        background-color: var(--black);
+        color: var(--white);
+        flex-direction: column;
+        padding: 4rem 0;
+
+        > .manifest__content {
+          display: flex;
+          align-items: stretch;
+          flex-direction: column;
+
+          .manifest__title {
+            align-items: center;
+            display: grid;
+            grid-column-gap: 2rem;
+            grid-template-columns: auto 1fr;
+            margin-bottom: 2rem;
+
+            &.manifest-right {
+              grid-template-columns: 1fr auto;
+
+              > .manifest__title-line-number {
+                align-items: flex-start;
+              }
+            }
+
+            > .manifest__title-line-number {
+              align-items: flex-end;
+              display: flex;
+              flex-direction: column;
+
+              > .manifest__title-number {
+                font: 1rem Helvetica, sans-serif;
+                margin-bottom: 1rem;
+              }
+
+              > .manifest__title-line {
+                background-color: var(--white);
+                height: 1px;
+                width: 100%;
+              }
+            }
+          }
+
+          > .manifest__text {
+            line-height: 1.6rem;
+            margin-bottom: 3rem;
+
+            &.manifest-right {
+              text-align: right;
+            }
+          }
+
+          > .manifest__section {
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column;
+
+            > .manifest__title {
+              display: flex;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    > .philosophy__closing {
+      align-items: center;
+      background-image: url('../assets/images/homepage.png');
+      display: flex;
+      flex-direction: column;
+      grid-column: 1 / span 3;
+      height: 613px;
+      justify-content: center;
+      width: 100%;
+
+      > .philosophy__closing-content {
+        > .philosophy__contact {
+          color: var(--white);
+          display: flex;
+          margin-top: 4rem;
+
+          > a {
+            color: var(--white);
+            margin-left: .4rem;
+          }
+        }
+      }
+    }
+  }
+
   > .page-agency__name {
     align-items: baseline;
     background-color: var(--black);
@@ -106,132 +247,6 @@
       > .first-name__how {
         max-width: 10rem;
         text-align: center;
-      }
-    }
-  }
-
-  > .page-agency__philosophy {
-    align-items: center;
-    flex-direction: column;
-
-    .philosophy__title {
-      margin-bottom: 2rem;
-
-      &.title-white {
-        color: var(--white);
-      }
-    }
-
-    > .philosophy__content {
-      margin: 2rem 0;
-
-      > .philosophy__paragraph-title {
-        font-weight: bold;
-        margin-top: 2rem;
-      }
-
-      > .philosophy__paragraph-content {
-        &.spaced {
-          margin: 2rem 0;
-        }
-
-        span {
-          &:first-child {
-            font-weight: bold;
-            margin-right: .2rem;
-          }
-        }
-      }
-    }
-
-    > .philosophy__closing {
-      align-items: center;
-      background-image: url('../assets/images/homepage.png');
-      display: flex;
-      flex-direction: column;
-      height: 613px;
-      justify-content: center;
-      width: 100%;
-
-      > .philosophy__closing-content {
-        > .philosophy__contact {
-          color: var(--white);
-          display: flex;
-          margin-top: 4rem;
-
-          > a {
-            color: var(--white);
-            margin-left: .4rem;
-          }
-        }
-      }
-    }
-  }
-
-  > .page-agency__manifest {
-    align-items: center;
-    background-color: var(--black);
-    color: var(--white);
-    flex-direction: column;
-    padding: 4rem 0;
-
-    > .manifest__content {
-      display: flex;
-      align-items: stretch;
-      flex-direction: column;
-      width: 60%;
-
-      .manifest__title {
-        align-items: center;
-        display: grid;
-        grid-column-gap: 2rem;
-        grid-template-columns: auto 1fr;
-        margin-bottom: 2rem;
-
-        &.manifest-right {
-          grid-template-columns: 1fr auto;
-
-          > .manifest__title-line-number {
-            align-items: flex-start;
-          }
-        }
-
-        > .manifest__title-line-number {
-          align-items: flex-end;
-          display: flex;
-          flex-direction: column;
-
-          > .manifest__title-number {
-            font: 1rem Helvetica, sans-serif;
-            margin-bottom: 1rem;
-          }
-
-          > .manifest__title-line {
-            background-color: var(--white);
-            height: 1px;
-            width: 100%;
-          }
-        }
-      }
-
-      > .manifest__text {
-        line-height: 1.6rem;
-        margin-bottom: 3rem;
-
-        &.manifest-right {
-          text-align: right;
-        }
-      }
-
-      > .manifest__section {
-        align-items: flex-end;
-        display: flex;
-        flex-direction: column;
-
-        > .manifest__title {
-          display: flex;
-          margin-bottom: 1rem;
-        }
       }
     }
   }
