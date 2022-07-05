@@ -152,28 +152,28 @@ footer.privacy_policy;Privacy Policy
 join_us.paragraph;Truly epi.curious,\nYou're free, creative and independent, \nYou cultivate the spoken word and enjoy verbal sparring,\nYour eye is both sharp and mischievous,\nYour self-discipline is formidable,\nYour sense of humour is renowned,\nYou're sensitive to the challenges of sustainable and responsible communications,\nFor you, life is all about beauty, laughter and pleasure,\nSend your application to egon@egonparis.com to join our community
 join_us.side_title;JOIN US
 join_us.title;Join the Egon story
-legal_notice.title;
-legal_notice.last_update;
-legal_notice.welcome;
-legal_notice.law;
-legal_notice.owner;
-legal_notice.address;
-legal_notice.publication_director;
-legal_notice.host;
-legal_notice.please_read;
-legal_notice.right_to_update;
-legal_notice.disclaimer_label;
-legal_notice.disclaimer_line1;
-legal_notice.disclaimer_line2;
-legal_notice.disclaimer_line3;
-legal_notice.website_protection;
-legal_notice.copy_forbidden;
-legal_notice.website_copyright;
-legal_notice.photos_copyright;
-legal_notice.data_protection;
-legal_notice.no_data_collect;
-legal_notice.privacy_policy_introduction;
-legal_notice.privacy_policy_link;
+legal_notice.title;Legal notices
+legal_notice.last_update;Last update
+legal_notice.welcome;Welcome to our site, egonparis.com
+legal_notice.law;Under article 6 of law no. 2004-575 of 21 June 2004 on confidence in the digital economy:
+legal_notice.owner;Owner and publisher: EGON PARIS, simplified corporation with a sole shareholder, with capital of €2000
+legal_notice.address;Registered on the Trade and Companies Register of Nanterre under number B 910 423 185 / VAT no.: FR21910423185 / Address: 71-73 rue de Chézy – 92200 Neuilly-sur-Seine – France
+legal_notice.publication_director;Publication Director: Séverine Breton – 
+legal_notice.host;Host: OVH, 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1 – France
+legal_notice.please_read;Please read these Terms of Use (“TOU”) thoroughly before using the site. By using the site, you acknowledge having read the TOU and accept all of these provisions as binding. If you do not wish to be bound by these TOU, do not use the site.
+legal_notice.right_to_update;We reserve the right to amend or update all or part of the TOU at our discretion and without prior notice. We will always publish the most recent version on the site and indicate the date of the last amendment to reflect the date of the update. The revised TOU will take effect upon publication.
+legal_notice.disclaimer_label;EGON PARIS disclaims all responsibility for any:
+legal_notice.disclaimer_line1;interruption, suspension or malfunctioning of site services,
+legal_notice.disclaimer_line2;bugs,
+legal_notice.disclaimer_line3;inaccuracies or omissions in the information on the site.
+legal_notice.website_protection;Website protection
+legal_notice.copy_forbidden;Reproduction of all or part of this website is prohibited.\nRegistered trademark. All rights reserved.
+legal_notice.website_copyright;The site and all site content are our property and protected by copyright, trademark law and other intellectual property rights as well as unfair competition law, whether they are registered or not (“IP Rights”).
+legal_notice.photos_copyright;The visuals illustrating the mission statement were shot by Marianne Gamet, Lomig, Joel Filipe and Daniel Genser.
+legal_notice.data_protection;Personal data protection and security
+legal_notice.no_data_collect;No personal data is collected without the web user's knowledge. No personal data is disclosed to third parties or used for purposes other than those specified.\nUnder article 34 of the French data protection act, you have the right to access, amend, rectify and delete your data. To exercise your right, contact us at:
+legal_notice.privacy_policy_introduction;Please consult the section on our
+legal_notice.privacy_policy_link;privacy policy
 manifest.page1.pre;N°01
 manifest.page1.title;Artist by nature
 manifest.page1.text;Meaningful and radical,\nIt touches, beckons, enhances, describes, reinvents, \na truly epi.curious strategist, \nhere to tell stories of beauty \nby capturing true meaning, connections, images and words, \ninspiring dreams and stirring emotion
@@ -210,48 +210,48 @@ newsletter.error;Please check your e-mail address
 newsletter.header;Subscribe to our newsletter
 newsletter.placeholder;Your e-mail address
 newsletter.subscribed;You've subscribed!
-privacy_policy.title;
-privacy_policy.personal_data_title;
-privacy_policy.personal_data_paragraph1;
-privacy_policy.personal_data_paragraph2;
-privacy_policy.recipients_title;
-privacy_policy.recipients_paragraph;
-privacy_policy.goal_title;
-privacy_policy.goal_paragraph1;
-privacy_policy.goal_paragraph2;
-privacy_policy.goal_line01;
-privacy_policy.goal_line02;
-privacy_policy.goal_line03;
-privacy_policy.goal_line04;
-privacy_policy.goal_line05;
-privacy_policy.goal_line06;
-privacy_policy.goal_line07;
-privacy_policy.goal_line08;
-privacy_policy.goal_line09;
-privacy_policy.goal_line10;
-privacy_policy.goal_paragraph3;
-privacy_policy.confidentiality_title;
-privacy_policy.confidentiality_paragraph1;
-privacy_policy.confidentiality_paragraph2;
-privacy_policy.your_rights_title;
-privacy_policy.your_rights_paragraph1;
-privacy_policy.your_rights_line1;
-privacy_policy.your_rights_line2;
-privacy_policy.your_rights_line3;
-privacy_policy.your_rights_line4;
-privacy_policy.your_rights_line5;
-privacy_policy.your_rights_paragraph2;
-privacy_policy.address1;
-privacy_policy.address2;
-privacy_policy.your_rights_paragraph3;
-privacy_policy.cookies_title;
-privacy_policy.cookies_paragraph1;
-privacy_policy.cookies_paragraph2;
-privacy_policy.cookies_paragraph3;
-privacy_policy.cookies_paragraph4;
-privacy_policy.security_title;
-privacy_policy.security_paragraph;
-privacy_policy.applicable_law_title;
-privacy_policy.applicable_law_paragraph1;
-privacy_policy.applicable_law_paragraph2;
-privacy_policy.applicable_law_paragraph3;
+privacy_policy.title;Privacy policy
+privacy_policy.personal_data_title;What is personal data?
+privacy_policy.personal_data_paragraph1;Personal data is information that we collect in order to identify you. Your data includes your first name, surname, address, age, postal and electronic addresses, phone numbers, etc.
+privacy_policy.personal_data_paragraph2;EGON PARIS takes personal data protection extremely seriously and processes your data with the utmost care.
+privacy_policy.recipients_title;The recipients of your data
+privacy_policy.recipients_paragraph;Your personal data is only accessible by our various internal departments.
+privacy_policy.goal_title;The purpose of personal data
+privacy_policy.goal_paragraph1;Personal data processing may involve collecting, saving, organising, archiving, amending, deleting, adding, exporting, consulting, processing and forwarding data.
+privacy_policy.goal_paragraph2;We use your personal data only to the extent necessary, in a number of instances:
+privacy_policy.goal_line01;to contact you,
+privacy_policy.goal_line02;to process your requests,
+privacy_policy.goal_line03;to carry out our services,
+privacy_policy.goal_line04;to send you our news, special offers and various information,
+privacy_policy.goal_line05;to respond to your requests, complaints or disputes,
+privacy_policy.goal_line06;to prevent fraud,
+privacy_policy.goal_line07;to draw up our accounting records,
+privacy_policy.goal_line08;to optimise our products and services,
+privacy_policy.goal_line09;to personalise our offers.
+privacy_policy.goal_line10;etc.
+privacy_policy.goal_paragraph3;If you object to us using your personal data for research or analysis purposes, you can inform us of this at any time by contacting us at
+privacy_policy.confidentiality_title;Privacy
+privacy_policy.confidentiality_paragraph1;We retain your data only for as long as necessary to process this data or to fulfil legal or fiscal obligations.
+privacy_policy.confidentiality_paragraph2;We pledge not to sell, lease, transfer or provide third-party access to your data without your prior consent, unless compelled to do so for a legitimate reason (legal obligation, anti-fraud or anti-abuse processes, the exercise of defence rights, etc.).
+privacy_policy.your_rights_title;Your rights
+privacy_policy.your_rights_paragraph1;However, if you no longer wish to be contacted by us or would like to make a request regarding your personal data, you have the following rights:
+privacy_policy.your_rights_line1;the right to request access to your data,
+privacy_policy.your_rights_line2;the right to rectify or update your data,
+privacy_policy.your_rights_line3;the right to delete or restrict the processing of your data, subject to statutory limitations,
+privacy_policy.your_rights_line4;the right to object to the processing of your data and to direct marketing,
+privacy_policy.your_rights_line5;the right to port your data.
+privacy_policy.your_rights_paragraph2;To exercise these rights, simply contact us at the following address:
+privacy_policy.address1;71-73 rue de Chézy
+privacy_policy.address2;92200 Neuilly-sur-Seine
+privacy_policy.your_rights_paragraph3;We will respond to your request as soon as possible and take all the necessary steps to respect your trust in us.
+privacy_policy.cookies_title;Cookies
+privacy_policy.cookies_paragraph1;We may use cookies on our site in order to improve the quality of our services. Cookies are small text files that your browser places on your computer, mobile phone or tablet when you surf the internet. They are generated by the site you visit and contain data on your session.
+privacy_policy.cookies_paragraph2;The information collected is anonymous and does not identify you. We use this information to optimise our offers, improve our services and your browsing experience, offer relevant, targeted advertising and provide you with additional features. We also use it for statistical purposes, to evaluate site performance, determine numbers of page views and learn about our site's audience.
+privacy_policy.cookies_paragraph3;Consult your web browser's settings to accept or refuse cookies. Cookies may be temporary (session cookies) or permanent. Session cookies are active during your visit to the site only and expire once you close the browser. Permanent cookies are stored on your device's hard disk when you leave the site and remain there until you manually delete them or the browser clears them after a certain amount of time.
+privacy_policy.cookies_paragraph4;To respect your privacy, your cookies are not linked to any of your personally identifiable information. Under no circumstances will cookies reveal your address, date of birth, telephone number or any other personally identifiable information.
+privacy_policy.security_title;Security
+privacy_policy.security_paragraph;We are committed to taking appropriate technical and organisational measures in order to protect your personal data from accidental or unlawful destruction, accidental loss, damage, distribution or unauthorised access.
+privacy_policy.applicable_law_title;Applicable law
+privacy_policy.applicable_law_paragraph1;The EGON PARIS site has been designed and written in French, English and Italian. The Terms of Use are subject to French law. Any dispute shall be referred to the French courts, which shall have exclusive jurisdiction.
+privacy_policy.applicable_law_paragraph2;For any questions about these TOU, or in the event of a request or complaint about your Personal Data, contact us as follows:
+privacy_policy.applicable_law_paragraph3;In the event of a complaint about how we process your data, you also have the right to contact the national commission for information technology and civil liberties (CNIL) at 3 place de Fontenoy – TSA 80715 – 75334 PARIS CEDEX 07, France, Tel.: +33 (0)1 53 73 22 22,
