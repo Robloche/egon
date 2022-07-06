@@ -17,18 +17,16 @@ const renderSectionProjects = () => (
       <div className='side-title'>{Localizer.localize('creation.projects.side_title')}</div>
     </div>
     <div
-      className='page-creation__section'
+      className='page-creation__section section_center'
       id='projects'>
-      <div className='page-creation__content'>
-        <div className='page-creation__paragraph title'>{Localizer.localize('creation.projects.title')}</div>
-        <div className='page-creation__paragraph'>{Localizer.localize('creation.projects.paragraph')}</div>
-        <div className='page-creation__contact'>
-          <div>{Localizer.localize('creation.projects.contact')}</div>
-          <a
-            href='mailto:egon@egonparis.com'
-            rel='noopener noreferrer'
-            target='_blank'>egon@egonparis.com</a>
-        </div>
+      <div className='page-creation__paragraph title'>{Localizer.localize('creation.projects.title')}</div>
+      <div className='page-creation__paragraph'>{Localizer.localize('creation.projects.paragraph')}</div>
+      <div className='page-creation__contact'>
+        <div>{Localizer.localize('creation.projects.contact')}</div>
+        <a
+          href='mailto:egon@egonparis.com'
+          rel='noopener noreferrer'
+          target='_blank'>egon@egonparis.com</a>
       </div>
     </div>
     <div className='page-creation__section section__right' />
@@ -41,13 +39,11 @@ const renderSectionCustomers = () => (
       <div className='side-title'>{Localizer.localize('creation.customers.side_title')}</div>
     </div>
     <div
-      className='page-creation__section section__customers'
+      className='page-creation__section section_center section__customers'
       id='customers'>
-      <div className='page-creation__content'>
-        <div className='page-creation__paragraph title'>{Localizer.localize('creation.customers.title')}</div>
-        <div className='page-creation__paragraph'>{Localizer.localize('creation.customers.paragraph')}</div>
-        <div className='page-creation__paragraph huge'>{Localizer.localize('creation.customers.thanks')}</div>
-      </div>
+      <div className='page-creation__paragraph title'>{Localizer.localize('creation.customers.title')}</div>
+      <div className='page-creation__paragraph'>{Localizer.localize('creation.customers.paragraph')}</div>
+      <div className='page-creation__paragraph huge'>{Localizer.localize('creation.customers.thanks')}</div>
     </div>
     <div className='page-creation__section section__right section__customers' />
   </>

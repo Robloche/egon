@@ -1,22 +1,28 @@
-.page-expertises__introduction {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  > .page-expertises__content {
+.page-expertises {
+  > .page-expertises__container {
     align-items: baseline;
-    display: flex;
-    column-gap: 3.5rem;
-    padding: 6rem 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr 6fr 2fr;
+
+    > .page-expertises__section {
+      position: relative;
+
+      &.section__left,
+      &.section__right {
+        height: 100%;
+      }
+    }
 
     > .page-expertises__title {
+      padding: 6rem 0;
       text-align: right;
     }
 
     > .page-expertises__description {
       line-height: 1.4rem;
+      margin-left: 2rem;
       max-width: 44rem;
+      padding: 6rem 0;
 
       > div {
         &:first-child {
@@ -24,87 +30,97 @@
         }
       }
     }
+
+    > .page-expertises__listing {
+      background-repeat: no-repeat;
+      color: var(--white);
+      column-gap: 8rem;
+      display: flex;
+      grid-column: 1 / span 4;
+      justify-content: center;
+      padding: 4rem;
+
+      &.expertises__image1 {
+        background-image: url('../assets/images/expertises1_1920.png');
+      }
+
+      &.expertises__image2 {
+        background-image: url('../assets/images/expertises2_1920.png');
+      }
+
+      &.expertises__image3 {
+        background-image: url('../assets/images/expertises3_1920.png');
+      }
+
+      &.expertises__image4 {
+        background-image: url('../assets/images/expertises4_1920.png');
+      }
+
+      &.expertises__image5 {
+        background-image: url('../assets/images/expertises5_1920.png');
+      }
+
+      .listing__title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        position: relative;
+
+        &::before {
+          background-color: var(--white);
+          content: '';
+          height: 1px;
+          position: absolute;
+          top: -1rem;
+          width: 2.5rem;
+        }
+
+        &:not(:first-child) {
+          margin-top: 2rem;
+        }
+      }
+
+      .listing__item {
+        font-size: .9rem;
+        line-height: 1.4rem;
+      }
+    }
+
+    > .page-expertises__closing {
+      align-items: center;
+      color: var(--white);
+      display: flex;
+      font: 2rem Bodoni;
+      grid-column: 1 / span 4;
+      justify-content: center;
+      padding: 4rem;
+
+      &.closing1 {
+        background-color: var(--khaki);
+      }
+
+      &.closing2 {
+        background-color: var(--blue);
+      }
+
+      &.closing3 {
+        background-color: var(--bright-green);
+      }
+
+      &.closing4 {
+        background-color: var(--maroon);
+      }
+
+      &.closing5 {
+        background-color: var(--light-blue);
+      }
+    }
   }
 }
 
-.page-expertises__listing {
-  background-repeat: no-repeat;
-  color: var(--white);
-  column-gap: 8rem;
-  display: flex;
-  justify-content: center;
-  padding: 4rem;
-
-  &.expertises__image1 {
-    background-image: url('../assets/images/expertises1_1920.png');
-  }
-
-  &.expertises__image2 {
-    background-image: url('../assets/images/expertises2_1920.png');
-  }
-
-  &.expertises__image3 {
-    background-image: url('../assets/images/expertises3_1920.png');
-  }
-
-  &.expertises__image4 {
-    background-image: url('../assets/images/expertises4_1920.png');
-  }
-
-  &.expertises__image5 {
-    background-image: url('../assets/images/expertises5_1920.png');
-  }
-
-  .listing__title {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    position: relative;
-
-    &::before {
-      background-color: var(--white);
-      content: '';
-      height: 1px;
-      position: absolute;
-      top: -1rem;
-      width: 2.5rem;
+@media (max-width: 1000px) {
+  .page-expertises {
+    > .page-expertises__container {
+      grid-template-columns: 1fr 4fr 6fr 1fr;
     }
-
-    &:not(:first-child) {
-      margin-top: 2rem;
-    }
-  }
-
-  .listing__item {
-    font-size: .9rem;
-    line-height: 1.4rem;
-  }
-}
-
-.page-expertises__closing {
-  align-items: center;
-  color: var(--white);
-  display: flex;
-  font: 2rem Bodoni;
-  justify-content: center;
-  padding: 4rem;
-
-  &.closing1 {
-    background-color: var(--khaki);
-  }
-
-  &.closing2 {
-    background-color: var(--blue);
-  }
-
-  &.closing3 {
-    background-color: var(--bright-green);
-  }
-
-  &.closing4 {
-    background-color: var(--maroon);
-  }
-
-  &.closing5 {
-    background-color: var(--light-blue);
   }
 }

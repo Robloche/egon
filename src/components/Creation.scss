@@ -1,56 +1,61 @@
-.page-creation__container {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+.page-creation {
+  > .page-creation__container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
 
-  > .page-creation__section {
-    position: relative;
+    > .page-creation__section {
+      position: relative;
 
-    &.section__customers {
-      background-color: var(--bright-green);
-    }
-
-    &.section__left,
-    &.section__right {
-      height: 100%;
-    }
-
-    > .page-creation__content {
-      padding: 6rem 0;
-
-      > .page-creation__paragraph {
-        margin-bottom: 2rem;
-
-        &:not(.title) {
-          line-height: 1.4rem;
-        }
-
-        &.huge {
-          font-size: 5rem;
-          font-weight: bold;
-          margin-top: 6rem;
-        }
+      &.section__customers {
+        background-color: var(--bright-green);
       }
 
-      > .page-creation__contact {
-        display: flex;
-        margin-top: 4rem;
+      &.section__left,
+      &.section__right {
+        height: 100%;
+      }
 
-        > a {
-          color: var(--black);
-          margin-left: .4rem;
+      &.section_center {
+        padding: 6rem 0;
+
+        > .page-creation__paragraph {
+          margin-bottom: 2rem;
+
+          &:not(.title) {
+            line-height: 1.4rem;
+          }
+
+          &.huge {
+            font-size: 5rem;
+            font-weight: bold;
+            margin-top: 6rem;
+          }
+        }
+
+        > .page-creation__contact {
+          display: flex;
+          margin-top: 4rem;
+
+          > a {
+            color: var(--black);
+            margin-left: .4rem;
+          }
         }
       }
     }
-  }
 
-  > img {
-    grid-column: 1 / span 3;
+    > img {
+      grid-column: 1 / span 3;
+    }
   }
 }
 
 @media (max-width: 1000px) {
-  .page-creation__container {
-    grid-template-columns: 6rem 1fr 2rem;
+  .page-creation {
+    > .page-creation__container {
+      grid-template-columns: 6rem 1fr 2rem;
+    }
   }
 }
+
