@@ -5,7 +5,10 @@ import * as React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
-import creation from '../assets/images/creation_1920.png';
+import creation1400 from '../assets/images/creation_1400.png';
+import creation1920 from '../assets/images/creation_1920.png';
+import creation400 from '../assets/images/creation_400.png';
+import creation900 from '../assets/images/creation_900.png';
 import {useSelector} from 'react-redux';
 
 const renderSectionProjects = () => (
@@ -60,7 +63,9 @@ const Creation = (): React.Node => {
         {renderSectionProjects()}
         <img
           alt='Dessin'
-          src={creation} />
+          sizes='(max-width: 400px) 400px, (max-width: 900px) 900px, (max-width: 1400px) 1400px, 1920px'
+          src={creation1920}
+          srcSet={`${creation400} 400px, ${creation900} 900w, ${creation1400} 1400w, ${creation1920} 1920w`} />
         {renderSectionCustomers()}
       </div>
       <Footer />
