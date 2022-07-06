@@ -48,3 +48,9 @@
     grid-column: 1 / span 3;
   }
 }
+
+@media (max-width: 1000px) {
+  .page-creation__container {
+    grid-template-columns: 6rem 1fr 2rem;
+  }
+}
