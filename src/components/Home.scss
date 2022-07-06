@@ -8,13 +8,17 @@
   > .page-agency__grid {
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1.5fr;
 
     > .page-agency__grid-section {
       position: relative;
 
       &.section__manifest {
         background-color: var(--black);
+
+        > .title-white {
+          color: var(--white);
+        }
       }
 
       &.section__left,
@@ -123,7 +127,8 @@
 
     > .philosophy__closing {
       align-items: center;
-      background-image: url('../assets/images/homepage.png');
+      background-image: url('../assets/images/homepage_1920.png');
+      background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       grid-column: 1 / span 3;

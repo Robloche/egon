@@ -1,6 +1,7 @@
 .splash-screen {
   align-items: center;
-  background: url('../assets/images/manifest1.png');
+  background: url('../assets/images/manifest1_1920.png');
+  background-size: cover;
   display: flex;
   height: 100%;
   justify-content: center;
@@ -9,5 +10,21 @@
 
   > img {
     height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .splash-screen {
+    > img {
+      height: 130px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .splash-screen {
+    > img {
+      height: 120px;
+    }
   }
 }

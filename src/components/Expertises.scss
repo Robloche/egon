@@ -28,6 +28,7 @@
 }
 
 .page-expertises__listing {
+  background-repeat: no-repeat;
   color: var(--white);
   column-gap: 8rem;
   display: flex;
@@ -35,23 +36,23 @@
   padding: 4rem;
 
   &.expertises__image1 {
-    background-image: url('../assets/images/expertises1.png');
+    background-image: url('../assets/images/expertises1_1920.png');
   }
 
   &.expertises__image2 {
-    background-image: url('../assets/images/expertises2.png');
+    background-image: url('../assets/images/expertises2_1920.png');
   }
 
   &.expertises__image3 {
-    background-image: url('../assets/images/expertises3.png');
+    background-image: url('../assets/images/expertises3_1920.png');
   }
 
   &.expertises__image4 {
-    background-image: url('../assets/images/expertises4.png');
+    background-image: url('../assets/images/expertises4_1920.png');
   }
 
   &.expertises__image5 {
-    background-image: url('../assets/images/expertises5.png');
+    background-image: url('../assets/images/expertises5_1920.png');
   }
 
   .listing__title {

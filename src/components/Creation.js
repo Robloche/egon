@@ -5,7 +5,7 @@ import * as React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
-import creation from '../assets/images/creation.png';
+import creation from '../assets/images/creation_1920.png';
 import {useSelector} from 'react-redux';
 
 const renderSectionProjects = () => (

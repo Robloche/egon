@@ -5,7 +5,8 @@ import * as React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
-import logo from '../assets/images/logo.png';
+import logoLarge from '../assets/images/logo_400.png';
+import logoSmall from '../assets/images/logo_200.png';
 import {useSelector} from 'react-redux';
 
 const JoinUs = (): React.Node => {
@@ -18,7 +19,9 @@ const JoinUs = (): React.Node => {
         <div className='side-title'>{Localizer.localize('join_us.side_title')}</div>
         <img
           alt='Logo Egon'
-          src={logo} />
+          sizes='(max-width: 1200px) 200px, 400px'
+          src={logoLarge}
+          srcSet={`${logoSmall} 200w, ${logoLarge} 400w`} />
         <div className='page-join-us__info'>
           <div className='page-join-us__title title'>{Localizer.localize('join_us.title')}</div>
           <div className='page-join-us__address'>{Localizer.localize('join_us.paragraph')}</div>

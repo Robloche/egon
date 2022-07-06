@@ -19,3 +19,51 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .social {
+    > a {
+      &:not(:last-child) {
+        margin-right: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .social {
+    > a {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .social {
+    > a {
+      &:not(:last-child) {
+        margin-right: .6rem;
+      }
+
+      > img {
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .social {
+    > a {
+      &:not(:last-child) {
+        margin-right: .4rem;
+      }
+
+      > img {
+        height: 18px;
+      }
+    }
+  }
+}

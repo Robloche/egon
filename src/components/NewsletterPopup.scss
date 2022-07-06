@@ -34,7 +34,7 @@
     z-index: 100;
 
     > .modal__image {
-      background-image: url('../assets/images/creation.png');
+      background-image: url('../assets/images/newsletter_510.png');
       background-repeat: no-repeat;
       background-size: cover;
       height: 120px;
@@ -67,6 +67,31 @@
 
     > .modal__content {
       padding: 0 2rem 2rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .modal__wrapper {
+    > .modal {
+      > .modal__header {
+        font: 1.4rem Bodoni;
+        padding: 1rem;
+      }
+
+      > .modal__content {
+        padding: 0 1rem 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .modal__wrapper {
+    > .modal {
+      > .modal__image {
+        background-image: url('../assets/images/newsletter_320.png');
+      }
     }
   }
 }

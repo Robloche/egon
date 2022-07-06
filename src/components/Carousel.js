@@ -6,10 +6,10 @@ import {useCallback, useEffect, useRef, useState} from 'react';
 import Bullet from './Bullet';
 import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
-import image1 from '../assets/images/manifest1.png';
-import image2 from '../assets/images/manifest2.png';
-import image3 from '../assets/images/manifest3.png';
-import image4 from '../assets/images/manifest4.png';
+import image1 from '../assets/images/manifest1_1920.png';
+import image2 from '../assets/images/manifest2_1920.png';
+import image3 from '../assets/images/manifest3_1920.png';
+import image4 from '../assets/images/manifest4_1920.png';
 import {scrollCenter} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
 

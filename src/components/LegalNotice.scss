@@ -6,19 +6,14 @@
     margin: 0 auto;
     max-width: 60%;
 
-    > img {
-      height: 40px;
-      margin: 0 auto;
-    }
-
     > .legal-notice__title {
       align-self: center;
       font-size: 2.5rem;
       font-weight: bold;
       margin: 2rem 0;
 
-      &.title-red {
-        color: red;
+      &.page-title {
+        text-decoration: underline;
       }
     }
 

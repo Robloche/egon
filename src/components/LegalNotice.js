@@ -6,7 +6,6 @@ import Footer from './Footer';
 import Header from './Header';
 import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
-import logo from '../assets/svg/logo.svg';
 import {useSelector} from 'react-redux';
 
 const LegalNotice = (): React.Node => {
@@ -18,11 +17,7 @@ const LegalNotice = (): React.Node => {
       id='legal-notice'>
       <Header />
       <div className='legal-notice__container'>
-        <img
-          alt='Logo Egon Paris'
-          draggable={false}
-          src={logo} />
-        <div className='legal-notice__title title-red'>{Localizer.localize('legal_notice.title')}</div>
+        <div className='legal-notice__title page-title'>{Localizer.localize('legal_notice.title')}</div>
         <div className='legal-notice__paragraph paragraph-center paragraph-bold'>{Localizer.localize('legal_notice.last_update')}</div>
         <div className='legal-notice__paragraph paragraph-center paragraph-date paragraph-margin-v'>15/09/2022</div>
         <div className='legal-notice__paragraph paragraph-center paragraph-welcome'>{Localizer.localize('legal_notice.welcome')}</div>

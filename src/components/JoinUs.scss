@@ -6,7 +6,7 @@
     column-gap: 4rem;
     display: flex;
     flex-grow: 1;
-    padding: 8rem 0 8rem 15rem;
+    padding: 8rem 2rem 8rem 15rem;
     position: relative;
 
     > .page-join-us__info {
@@ -21,6 +21,27 @@
         display: block;
         margin-top: 2rem;
       }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .page-join-us {
+    > .page-join-us__content {
+      flex-direction: column;
+      padding: 3rem 10% 3rem 20%;
+
+      > .page-join-us__info {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .page-join-us {
+    > .page-join-us__content {
+      padding: 3rem 10% 3rem 15%;
     }
   }
 }

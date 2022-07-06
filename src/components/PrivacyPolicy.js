@@ -5,7 +5,6 @@ import * as React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
-import logo from '../assets/svg/logo.svg';
 import {useSelector} from 'react-redux';
 
 const PrivacyPolicy = (): React.Node => {
@@ -17,11 +16,7 @@ const PrivacyPolicy = (): React.Node => {
       id='privacy-policy'>
       <Header />
       <div className='legal-notice__container'>
-        <img
-          alt='Logo Egon Paris'
-          draggable={false}
-          src={logo} />
-        <div className='legal-notice__title title-red'>{Localizer.localize('privacy_policy.title')}</div>
+        <div className='legal-notice__title page-title'>{Localizer.localize('privacy_policy.title')}</div>
         <div className='legal-notice__title'>{Localizer.localize('privacy_policy.personal_data_title')}</div>
         <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.personal_data_paragraph1')}</div>
         <div className='legal-notice__paragraph'>{Localizer.localize('privacy_policy.personal_data_paragraph2')}</div>

@@ -12,8 +12,7 @@
       border: 2px solid var(--blue);
       box-sizing: border-box;
       color: var(--white);
-      font-family: Helvetica, sans-serif;
-      font-size: 1rem;
+      font: 1rem Helvetica, sans-serif;
       padding: 1rem;
       width: 20rem;
 
@@ -32,6 +31,7 @@
       border: 2px solid var(--bright-green);
       color: var(--white);
       cursor: pointer;
+      font: 1rem Helvetica, sans-serif;
       font-weight: bold;
       padding: 1rem;
       text-transform: uppercase;
@@ -65,6 +65,27 @@
     &.status-error {
       color: var(--black);
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .newsletter-form {
+    > .newsletter-form__row {
+      > input[type='email'],
+      > button {
+        padding: .4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .newsletter-form {
+    > .newsletter-form__row {
+      > input[type='email'] {
+        width: initial;
+      }
     }
   }
 }

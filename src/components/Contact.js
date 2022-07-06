@@ -5,7 +5,8 @@ import * as React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
-import logo from '../assets/images/logo.png';
+import logoLarge from '../assets/images/logo_400.png';
+import logoSmall from '../assets/images/logo_200.png';
 import {useSelector} from 'react-redux';
 
 const Contact = (): React.Node => {
@@ -18,7 +19,9 @@ const Contact = (): React.Node => {
         <div className='side-title'>{Localizer.localize('contact.side_title')}</div>
         <img
           alt='Logo Egon'
-          src={logo} />
+          sizes='(max-width: 999px) 200px, 400px'
+          src={logoLarge}
+          srcSet={`${logoSmall} 200w, ${logoLarge} 400w`} />
         <div className='page-contact__info'>
           <div className='page-contact__egon'>Egon</div>
           <div className='page-contact__address'>{Localizer.localize('contact.address1')}</div>

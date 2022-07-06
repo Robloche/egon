@@ -43,8 +43,7 @@ html {
     color: var(--black);
     display: flex;
     flex-direction: column;
-    font-family: Helvetica, sans-serif;
-    font-size: 1rem;
+    font: 1rem Helvetica, sans-serif;
     height: 100%;
     justify-content: stretch;
     margin: 0;
@@ -58,6 +57,7 @@ html {
       flex-direction: column;
       height: 100%;
       justify-content: stretch;
+      min-width: 320px;
       overflow: hidden auto;
       width: 100%;
 
@@ -89,5 +89,17 @@ html {
         }
       }
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --font-size: 12px;
   }
 }

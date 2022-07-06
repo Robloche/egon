@@ -6,9 +6,9 @@ import Carousel from './Carousel';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
-import egon from '../assets/images/egon-by-severine.png';
+import egon from '../assets/images/egon-by-severine_773.png';
 import qrCode from '../assets/svg/qr-code.svg';
-import severine from '../assets/images/severine.png';
+import severine from '../assets/images/severine_1080.png';
 import {useSelector} from 'react-redux';
 
 const renderSectionFirstName = () => (
@@ -71,7 +71,7 @@ const renderSectionPhilosophy = () => (
 const renderSectionManifest = () => (
   <>
     <div className='page-agency__grid-section section__left section__manifest'>
-      <div className='side-title'>{Localizer.localize('agency.philosophy.side_title')}</div>
+      <div className='side-title title-white'>{Localizer.localize('agency.philosophy.side_title')}</div>
     </div>
     <div
       className='page-agency__manifest page-agency__grid-section'

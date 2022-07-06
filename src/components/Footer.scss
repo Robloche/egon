@@ -7,6 +7,9 @@
   padding: 0 40px;
 
   > .footer__links {
+    align-items: center;
+    display: flex;
+
     > a {
       border-bottom: 1px solid var(--black);
       color: var(--black);
@@ -30,12 +33,76 @@
       border: 0;
       color: var(--white);
       cursor: pointer;
+      font: .8rem Helvetica, sans-serif;
       font-weight: bold;
       padding: .5rem 1rem;
       text-transform: uppercase;
 
       &:hover {
         background-color: rgba(0, 0, 0, .8);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    > .footer__links {
+      > a {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    padding: 0 20px;
+
+    > .footer__links {
+      > a {
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 0 10px;
+
+    > .footer__links {
+      > a {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .footer {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+
+    > .footer__links {
+      flex-direction: column;
+      margin: 1rem 0;
+
+      > a {
+        &:not(:last-child) {
+          margin: 0 0 1rem 0;
+        }
+      }
+
+      > button {
+        margin-bottom: 2rem;
       }
     }
   }

@@ -118,5 +118,12 @@
       }
     }
   }
+}
 
+@media (max-width: 400px) {
+  .menu {
+    &.menu__opened {
+      width: 100%;
+    }
+  }
 }
