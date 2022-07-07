@@ -6,22 +6,21 @@ import {useCallback, useEffect, useRef, useState} from 'react';
 import Bullet from './Bullet';
 import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
-import image1 from '../assets/images/manifest1_1920.png';
-import image2 from '../assets/images/manifest2_1920.png';
-import image3 from '../assets/images/manifest3_1920.png';
-import image4 from '../assets/images/manifest4_1920.png';
 import {scrollCenter} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
+import useWindowSize from '../hooks/useWindowSize';
 
 // Image changes every 5s;
 const IMAGE_SWITCH_TIMEOUT = 5000;
 
-const IMAGES = [image1, image2, image3, image4];
+const IMAGES = ['image1', 'image2', 'image3', 'image4'];
 
 const nextIndex = (index) => (index + 1) % IMAGES.length;
 
 const Carousel = (): React.Node => {
   const language = useSelector((state) => state.language);
+
+  const {height: windowHeight, width: windowWidth} = useWindowSize();
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -47,14 +46,18 @@ const Carousel = (): React.Node => {
   }, [currentIndex]);
 
   return (
-    <div className='carousel'>
+    <div
+      className='carousel'
+      style={{
+        height: `${windowHeight}px`,
+        width: `${windowWidth}px`
+      }}>
       <div className='carousel__slider'>
         {IMAGES.map((img, index) => (
           <div
-            className={`carousel__slide ${index === currentIndex ? 'visible' : ''}`}
+            className={`carousel__slide image${index + 1} ${index === currentIndex ? 'visible' : ''}`}
             data-index={index}
-            key={img.toString()}
-            style={{backgroundImage: `url(${img})`}}>
+            key={img.toString()}>
             <div className='slide__text-container'>
               <div className='slide__text-pre'>{Localizer.localize(`manifest.page${index + 1}.pre`)}</div>
               <div className='slide__text-title'>{Localizer.localize(`manifest.page${index + 1}.title`)}</div>

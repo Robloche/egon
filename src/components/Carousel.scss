@@ -1,8 +1,4 @@
 .carousel {
-  display: flex;
-  flex: 1 0 auto;
-  // DEBUG
-  height: 1007px;
   position: relative;
 
   > .carousel__slider {
@@ -12,6 +8,8 @@
     width: 100%;
 
     > .carousel__slide {
+      background-repeat: no-repeat;
+      background-size: cover;
       height: 100%;
       opacity: 0;
       position: absolute;
@@ -22,14 +20,30 @@
         opacity: 1;
       }
 
+      &.image1 {
+        background-image: url('../assets/images/manifest1_1920.png');
+      }
+
+      &.image2 {
+        background-image: url('../assets/images/manifest2_1920.png');
+      }
+
+      &.image3 {
+        background-image: url('../assets/images/manifest3_1920.png');
+      }
+
+      &.image4 {
+        background-image: url('../assets/images/manifest4_1920.png');
+      }
+
       > .slide__text-container {
         align-items: center;
         color: var(--white);
         display: flex;
         flex-direction: column;
         height: 100%;
-        justify-content: center;
         left: 0;
+        padding-top: 20rem;
         position: absolute;
         top: 0;
         width: 100%;
@@ -80,6 +94,88 @@
       letter-spacing: .2rem;
       text-decoration: none;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .carousel {
+    > .carousel__slider {
+      > .carousel__slide {
+        &.image1 {
+          background-image: url('../assets/images/manifest1_1400.png');
+        }
+
+        &.image2 {
+          background-image: url('../assets/images/manifest2_1400.png');
+        }
+
+        &.image3 {
+          background-image: url('../assets/images/manifest3_1400.png');
+        }
+
+        &.image4 {
+          background-image: url('../assets/images/manifest4_1400.png');
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .carousel {
+    > .carousel__buttons {
+      bottom: 20%;
+      left: calc(50% - 40px);
+      top: unset;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .carousel {
+    > .carousel__slider {
+      > .carousel__slide {
+        &.image1 {
+          background-image: url('../assets/images/manifest1_900.png');
+        }
+
+        &.image2 {
+          background-image: url('../assets/images/manifest2_900.png');
+        }
+
+        &.image3 {
+          background-image: url('../assets/images/manifest3_900.png');
+        }
+
+        &.image4 {
+          background-image: url('../assets/images/manifest4_900.png');
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel {
+    > .carousel__slider {
+      > .carousel__slide {
+        &.image1 {
+          background-image: url('../assets/images/manifest1_400.png');
+        }
+
+        &.image2 {
+          background-image: url('../assets/images/manifest2_400.png');
+        }
+
+        &.image3 {
+          background-image: url('../assets/images/manifest3_400.png');
+        }
+
+        &.image4 {
+          background-image: url('../assets/images/manifest4_400.png');
+        }
+      }
     }
   }
 }
