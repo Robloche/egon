@@ -27,11 +27,11 @@ const Carousel = (): React.Node => {
   const {onMouseDown, ref} = useSwipeable({
     onSwipedLeft: () => {
       clearTimeout(imageSwitchTimer.current);
-      setCurrentIndex(previousIndex);
+      setCurrentIndex(nextIndex);
     },
     onSwipedRight: () => {
       clearTimeout(imageSwitchTimer.current);
-      setCurrentIndex(nextIndex);
+      setCurrentIndex(previousIndex);
     },
     trackMouse: true
   });
