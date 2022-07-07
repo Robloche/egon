@@ -470,5 +470,18 @@
         }
       }
     }
+
+    > .page-agency__first-name {
+      align-items: center;
+      flex-direction: column;
+
+      > .first-name__content {
+        margin-top: 2rem;
+      }
+
+      > .first-name__pronunciation {
+        display: none;
+      }
+    }
   }
 }

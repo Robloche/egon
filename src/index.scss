@@ -101,5 +101,18 @@ html {
 @media (max-width: 600px) {
   :root {
     --font-size: 12px;
+    --font-title: 2rem Bodoni;
+  }
+
+  html {
+    body {
+      > .root {
+        > .page {
+          .title {
+            line-height: 2rem;
+          }
+        }
+      }
+    }
   }
 }
