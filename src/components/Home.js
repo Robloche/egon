@@ -6,9 +6,15 @@ import Carousel from './Carousel';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
-import egon from '../assets/images/egon-by-severine_773.png';
+import egon1 from '../assets/images/egon-by-severine_144.png';
+import egon2 from '../assets/images/egon-by-severine_287.png';
+import egon3 from '../assets/images/egon-by-severine_430.png';
+import egon4 from '../assets/images/egon-by-severine_573.png';
 import qrCode from '../assets/svg/qr-code.svg';
-import severine from '../assets/images/severine_1080.png';
+import severine1 from '../assets/images/severine_200.png';
+import severine2 from '../assets/images/severine_400.png';
+import severine3 from '../assets/images/severine_600.png';
+import severine4 from '../assets/images/severine_800.png';
 import {useSelector} from 'react-redux';
 
 const renderSectionFirstName = () => (
@@ -19,7 +25,9 @@ const renderSectionFirstName = () => (
     <div className='first-name__drawing'>
       <img
         alt='Egon by Séverine'
-        src={egon} />
+        sizes='(max-width: 900px) 144px, (max-width: 1200px) 287px, (max-width: 1400px) 430px, 573px'
+        src={egon4}
+        srcSet={`${egon1} 144w, ${egon2} 287w, ${egon3} 430w, ${egon4} 573w`} />
       <div className='first-name__copyright'>&#169; SB</div>
     </div>
     <div className='first-name__content'>
@@ -39,7 +47,6 @@ const renderSectionFirstName = () => (
     </div>
   </div>
 );
-
 
 const renderSectionPhilosophy = () => (
   <>
@@ -119,7 +126,9 @@ const renderSectionFounder = () => (
     <div className='side-title'>{Localizer.localize('agency.founder.side_title')}</div>
     <img
       alt="Séverine Breton Join-Diéterle, fondatrice d'Egon Paris"
-      src={severine} />
+      sizes='(max-width: 600px) 200px, (max-width: 900px) 400px, (max-width: 1400px) 600px, 800px'
+      src={severine4}
+      srcSet={`${severine1} 200w, ${severine2} 400w, ${severine3} 600w, ${severine4} 800w`} />
     <div className='founder__content'>
       <div className='founder__title title'>Séverine Breton Join-Diéterle</div>
       <div className='founder__label'>{Localizer.localize('agency.founder.title')}</div>
