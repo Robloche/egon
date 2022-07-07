@@ -46,7 +46,7 @@ jobs:
       - name: Deploy via ssh
         uses: easingthemes/ssh-deploy@v2.2.11
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: /home/qwozxtp/dev-test/
