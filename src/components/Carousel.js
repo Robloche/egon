@@ -8,6 +8,7 @@ import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
 import {scrollCenter} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
+import {useSwipeable} from 'react-swipeable';
 import useWindowSize from '../hooks/useWindowSize';
 
 // Image changes every 5s;
@@ -15,12 +16,25 @@ const IMAGE_SWITCH_TIMEOUT = 5000;
 
 const IMAGES = ['image1', 'image2', 'image3', 'image4'];
 
+const previousIndex = (index) => (index - 1 + IMAGES.length) % IMAGES.length;
 const nextIndex = (index) => (index + 1) % IMAGES.length;
 
 const Carousel = (): React.Node => {
   const language = useSelector((state) => state.language);
 
   const {height: windowHeight, width: windowWidth} = useWindowSize();
+
+  const {onMouseDown, ref} = useSwipeable({
+    onSwipedLeft: () => {
+      clearTimeout(imageSwitchTimer.current);
+      setCurrentIndex(previousIndex);
+    },
+    onSwipedRight: () => {
+      clearTimeout(imageSwitchTimer.current);
+      setCurrentIndex(nextIndex);
+    },
+    trackMouse: true
+  });
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -52,7 +66,10 @@ const Carousel = (): React.Node => {
         height: `${windowHeight}px`,
         width: `${windowWidth}px`
       }}>
-      <div className='carousel__slider'>
+      <div
+        className='carousel__slider'
+        onMouseDown={onMouseDown}
+        ref={ref}>
         {IMAGES.map((img, index) => (
           <div
             className={`carousel__slide image${index + 1} ${index === currentIndex ? 'visible' : ''}`}
