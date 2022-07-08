@@ -124,3 +124,13 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .page-expertises {
+    > .page-expertises__container {
+      > .page-expertises__listing {
+        column-gap: 4rem;
+      }
+    }
+  }
+}

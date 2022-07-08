@@ -35,7 +35,7 @@
         }
 
         > .philosophy__content {
-          margin: 2rem 0;
+          margin: 4rem 0;
 
           > .philosophy__paragraph-title {
             font-weight: bold;
@@ -132,7 +132,7 @@
       display: flex;
       flex-direction: column;
       grid-column: 1 / span 3;
-      height: 613px;
+      height: 448px;
       justify-content: center;
       padding: 0 2rem;
       width: 100%;
@@ -305,6 +305,11 @@
   .page-agency {
     > .page-agency__grid {
       grid-template-columns: 1fr 70% 1fr;
+
+      > .philosophy__closing {
+        background-image: url('../assets/images/homepage_1400.png');
+        height: 327px;
+      }
     }
 
     > .page-agency__first-name {
@@ -357,6 +362,17 @@
   .page-agency {
     > .page-agency__grid {
       grid-template-columns: 1fr 80% 1fr;
+
+      > .philosophy__closing {
+        background-image: url('../assets/images/homepage_900.png');
+        height: 210px;
+
+        > .philosophy__closing-content {
+          > .philosophy__contact {
+            margin-top: 2rem;
+          }
+        }
+      }
     }
 
     > .page-agency__first-name {
@@ -436,6 +452,15 @@
 
 @media (max-width: 600px) {
   .page-agency {
+    > .page-agency__grid {
+      grid-template-columns: 1fr 75% 1fr;
+    }
+
+    > .page-agency__name {
+      column-gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
     > .page-agency__founder {
       flex-direction: column;
       max-height: unset;
@@ -477,10 +502,49 @@
 
       > .first-name__content {
         margin-top: 2rem;
+
+        > .first-name__title {
+          margin-bottom: 3rem;
+        }
       }
 
       > .first-name__pronunciation {
         display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .page-agency {
+    > .page-agency__founder {
+      > .founder__content {
+        > .founder__title {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .page-agency {
+    > .page-agency__grid {
+      > .philosophy__closing {
+        background-image: url('../assets/images/homepage_400.png');
+        height: 93px;
+
+        > .philosophy__closing-content {
+          > .philosophy__title {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+          }
+
+          > .philosophy__contact {
+            font-size: .9rem;
+            margin-top: .6rem;
+          }
+        }
       }
     }
   }

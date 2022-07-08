@@ -92,9 +92,34 @@ html {
   }
 }
 
+@media (max-width: 1200px) {
+  :root {
+    --font-size: 15px;
+  }
+}
+
 @media (max-width: 1000px) {
   :root {
     --font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --font-size: 13px;
+  }
+
+  html {
+    > body {
+      > .root {
+        > .page {
+          .title {
+            font-size: 2rem;
+            line-height: 2.2rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -110,6 +135,26 @@ html {
         > .page {
           .title {
             line-height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --font-size: 11px;
+    --font-title: 2rem Bodoni;
+  }
+
+  html {
+    body {
+      > .root {
+        > .page {
+          .title {
+            font-size: 1.8rem;
+            line-height: 1.8rem;
           }
         }
       }
