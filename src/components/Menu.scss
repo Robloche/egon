@@ -1,4 +1,6 @@
 .menu {
+  position: relative;
+
   &.menu__label,
   > .menu__label {
     font-weight: bold;
@@ -7,10 +9,19 @@
   }
 
   &.menu__closed {
-    border-bottom: 1px solid var(--black);
     color: var(--black);
     cursor: pointer;
     text-transform: uppercase;
+
+    &::after {
+      border-bottom: 1px solid var(--black);
+      bottom: -1px;
+      content: '';
+      display: block;
+      left: 0;
+      position: absolute;
+      right: .2rem;
+    }
   }
 
   &.menu__opened {

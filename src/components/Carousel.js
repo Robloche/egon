@@ -6,6 +6,7 @@ import {useCallback, useEffect, useRef, useState} from 'react';
 import Bullet from './Bullet';
 import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
+import Menu from './Menu';
 import {scrollCenter} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
 import {useSwipeable} from 'react-swipeable';
@@ -96,6 +97,7 @@ const Carousel = (): React.Node => {
           smooth
           to={`/${language}/home#first-name`}>{Localizer.localize('agency.scroll')}</HashLink>
       </div>
+      <Menu />
     </div>
   );
 };

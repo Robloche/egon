@@ -94,6 +94,17 @@
       text-transform: uppercase;
     }
   }
+
+  > .menu__closed {
+    color: var(--white);
+    position: absolute;
+    right: 2.1rem;
+    top: 2.9rem;
+
+    &::after {
+      border-color: var(--white);
+    }
+  }
 }
 
 @media (max-width: 1400px) {
