@@ -32,7 +32,7 @@ jobs:
     - name: Write version file
       run: |
         touch build/version.json
-        echo '{\n\t"version": "${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}",\n\t"date": "$(date +'%Y-%m-%d %H:%M:%S')"\n}' > build/version.json
+        printf "{\n\t\"version\": \"${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}\",\n\t\"date\": \"$(date +'%Y-%m-%d %H:%M:%S')\"\n}" > build/version.json
       shell: bash
 
     - run: npm test
