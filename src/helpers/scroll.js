@@ -1,16 +1,22 @@
 /* @flow */
 
-const scrollCenter = (el: HTMLElement): void => el.scrollIntoView({
-  behavior: 'smooth',
-  block: 'center'
-});
+const scrollTop = (el: HTMLElement): void => {
+  const root = el.closest('.root');
+  if (!root) {
+    return;
+  }
 
-const scrollTop = (el: HTMLElement): void => el.scrollIntoView({
-  behavior: 'smooth',
-  block: 'start'
-});
+  // Take header height into account
+  const header = document.querySelector('.header');
+  const yOffset = header?.offsetHeight ?? 0;
+
+  const yTarget = el.getBoundingClientRect().top + root.scrollTop;
+  root.scrollTo({
+    behavior: 'smooth',
+    top: yTarget - yOffset
+  });
+};
 
 export {
-  scrollCenter,
   scrollTop
 };
