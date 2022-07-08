@@ -93,7 +93,7 @@ rules:
     - length: 150
   max-file-line-count:
     - 2
-    - length: 500
+    - length: 600
   nesting-depth:
     - 2
     - max-depth: 7
