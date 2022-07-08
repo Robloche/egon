@@ -28,7 +28,7 @@ jobs:
     - name: Write version file
       run: |
         touch build/version.json
-        printf "{\n\t\"version\": \"${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}\",\n\t\"date\": \"$(date +'%Y-%m-%d %H:%M:%S')\"\n}" > build/version.json
+        printf "{\n\t\"version\": \"${{github.ref_name}}.${{ github.run_attempt }}\",\n\t\"date\": \"$(date +'%Y-%m-%d %H:%M:%S')\"\n}" > build/version.json
       shell: bash
 
     - name: Upload artifact for deployment job
@@ -54,4 +54,4 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: /home/qwozxtp/fakeprod/
+          TARGET: /home/qwozxtp/www/
