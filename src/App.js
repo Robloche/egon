@@ -1,7 +1,7 @@
 /* @flow */
 
 import * as React from 'react';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';
 import Creation from './components/Creation';
 import Expertises from './components/Expertises';
@@ -22,7 +22,7 @@ Localizer.setDispatch(store.dispatch);
 
 const App = (): React.Node => (
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           element={<Contact />}
@@ -75,7 +75,7 @@ const App = (): React.Node => (
           exact
           path='/' />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 );
 
