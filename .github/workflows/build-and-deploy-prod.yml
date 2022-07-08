@@ -1,10 +1,9 @@
-name: Node.js CI DEV
+name: Node.js CI PROD
 
 on:
   push:
-    branches: [ "dev" ]
-  pull_request:
-    branches: [ "dev" ]
+    tags:
+      - '*'
 
 jobs:
   build:
@@ -32,8 +31,6 @@ jobs:
         printf "{\n\t\"version\": \"${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}\",\n\t\"date\": \"$(date +'%Y-%m-%d %H:%M:%S')\"\n}" > build/version.json
       shell: bash
 
-    - run: npm test
-    
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3.1.0
       with:
@@ -57,4 +54,4 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: /home/qwozxtp/dev-test/
+          TARGET: /home/qwozxtp/fakeprod/
