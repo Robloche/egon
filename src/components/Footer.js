@@ -2,6 +2,7 @@
 
 import './Footer.scss';
 import * as React from 'react';
+import {useEffect, useState} from 'react';
 import {HashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
@@ -11,10 +12,25 @@ import {scrollTop} from '../helpers/scroll';
 import useNewsletterPopup from '../hooks/useNewsletterPopup';
 import {useSelector} from 'react-redux';
 
+const fetchVersion = async(setVersion): Promise<void> => {
+  try {
+    const response = await fetch('/version.json');
+    const json = await response.json();
+    setVersion(json.version);
+  } catch (error) {
+    setVersion('');
+  }
+};
+
 const Footer = (): React.Node => {
   const language = useSelector((state) => state.language);
 
   const {isVisible, toggle} = useNewsletterPopup();
+  const [version, setVersion] = useState('');
+
+  useEffect(() => {
+    fetchVersion(setVersion);
+  }, [setVersion]);
 
   return (
     <div className='footer'>
@@ -32,6 +48,7 @@ const Footer = (): React.Node => {
           onClick={toggle}
           type='button'>{Localizer.localize('footer.newsletter')}</button>
       </div>
+      <div className='footer__version'>{version}</div>
       <NewsletterPopup
         hide={toggle}
         isVisible={isVisible} />
