@@ -153,7 +153,9 @@ const Home = (): React.Node => {
       className='page page-agency'
       id='carousel'>
       <Carousel />
-      <div className='page-agency__name'>
+      <div
+        className='page-agency__name'
+        id='egon'>
         <div className='page-agency__egon'>{Localizer.localize('common.egon')}</div>
         <div className='page-agency__tagline'>
           <div>{Localizer.localize('agency.tagline1')}</div>
