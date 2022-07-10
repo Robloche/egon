@@ -3,14 +3,14 @@ agency.first_name.paragraph1;Starting a business is like having a child, naming 
 agency.first_name.paragraph2;Egon: four potent letters that speak of wanderlust.\nIndependent, creative and committed.\nEgon Paris is an advertising agency dedicated to the art of living. 
 agency.first_name.paragraph3;Because Living is an Art
 agency.first_name.pronunciation;How do you say my name?
-agency.first_name.side_title;OUR AGENCY - Our name
+agency.first_name.side_title;EGON - Name
 agency.first_name.why_egon;Why Egon?
-agency.founder.side_title;OUR AGENCY - Our founder
+agency.founder.side_title;EGON - Founder
 agency.founder.title;Founder
 agency.founder.paragraph1;A creative and exacting entrepreneur, Séverine is a passionate aesthete with 20 years' experience as a communications expert for luxury houses, and a particular affinity for the arts of living.
 agency.founder.paragraph2;She chose to surround herself with a community of independent workers sensitive to luxury codes with branding expertise. Artistic Directors, Writers, Motion Designers, Graphic Designers, Film-makers, Photographers and Web Developers have helped make her dream a reality: working alongside you with commitment and determination.
 agency.founder.contact_me;Contact me
-agency.manifest.side_title;OUR AGENCY - Manifesto
+agency.manifest.side_title;EGON - Manifesto
 agency.manifest.paragraph1_number;N°01
 agency.manifest.paragraph1_text;meaningful and radical, it touches, beckons, enhances, describes, reinvents,\n a truly epi.curious strategist,\n here to tell stories of beauty \nby capturing true meaning, connections, images and words,\ninspiring dreams and stirring emotion
 agency.manifest.paragraph1_title;Artist by nature
@@ -34,7 +34,7 @@ agency.philosophy.paragraph3_title;Egon is committed to responsible Artistic Dir
 agency.philosophy.paragraph4_title;Egon's creative approach will ensure the sustainable performance of your brand.
 agency.philosophy.paragraph5_text;With a humble grasp of the world we live in, Egon is committed to embracing tomorrow's world\nwhere we communicate better,\nwith creative, meaningful and timeless messages.
 agency.philosophy.paragraph5_title;Egon,
-agency.philosophy.side_title;OUR AGENCY - Philosophy
+agency.philosophy.side_title;EGON - Philosophy
 agency.philosophy.title;Egon is an independent, creative and committed partner who understands your brand and its challenges and brings a passion to its work.
 agency.scroll;Scroll
 agency.tagline1;Advertising agency\ndedicated to the Art of Living
@@ -63,7 +63,7 @@ expertises.creation.column4.title;360 Campaign
 expertises.creation.column5.title;Illustration
 expertises.creation.paragraph1;The long-term success of your brand is built on creation, innovation, the crafting of a real identity and unique, original and signed Artistic Direction.
 expertises.creation.paragraph2;We create differently to innovate without exploitation, to surprise in a meaningful and coherent way, and to conceive on a grand and inventive scale within an eco-design approach.
-expertises.creation.side_title;EXPERTISE - Creation
+expertises.creation.side_title;SKILLS - Creation
 expertises.creation.title;Artistic Direction
 expertises.digital.closing;We capture the spirit of the times as dreams of the future stir within us
 expertises.digital.column1.item1;UX & UI design
@@ -83,7 +83,7 @@ expertises.digital.column3.item4;Guidelines
 expertises.digital.column3.title;Social Media
 expertises.digital.paragraph1;We believe in simplicity and digital relevance.\nOnline content should be useful.\nOur creativity is guided by functional simplicity and we champion accessibility for all.
 expertises.digital.paragraph2;Communications bring about instant, direct and global conversation.\nWe believe in the connection between women and men.\nWe inspire dreams but our words are true and verified.\nWe create and produce without overwhelming our audiences.
-expertises.digital.side_title;EXPERTISE - Digital
+expertises.digital.side_title;SKILLS - Digital
 expertises.digital.title;Site Web\n& Social Media
 expertises.edition.closing;We start at the root to better embrace the future
 expertises.edition.column1.item1;Story-telling
@@ -104,7 +104,7 @@ expertises.edition.column3.item7;Monitoring and Follow-up
 expertises.edition.column3.title;Print Management
 expertises.edition.paragraph1;Make your mark, print and distribute. As editorial writers, we love beautiful, well conceived books that are skilfully and distinctively crafted.
 expertises.edition.paragraph2;We advocate timeless creations and sustainable production methods. We prioritise recycled paper and embellishments rooted in creativity.We select responsible printers and we're proud to include them in our value chain.
-expertises.edition.side_title;EXPERTISE - Publishing
+expertises.edition.side_title;SKILLS - Publishing
 expertises.edition.title;Publishing
 expertises.production.closing;We advocate instrumental, well-argued and self-reflective communications
 expertises.production.column1.item1;Intentions
@@ -123,7 +123,7 @@ expertises.production.column4.item5;Sound-design
 expertises.production.column4.title;Photo Production\nFilm production
 expertises.production.paragraph1;Did you say Brand Content? Photos? Videos?\nWe produce our ideas from A to Z, with attention to detail, precision, creativity and methodology.
 expertises.production.paragraph2;Nothing is destroyed in our production process. We work with an inclusive idea, within the budget and with a friendly team that is exacting and creative, responsible and empathetic. 
-expertises.production.side_title;EXPERTISE - Production
+expertises.production.side_title;SKILLS - Production
 expertises.production.title;Brand Content
 expertises.strategy.closing;We are builders guided by meaning and coherence
 expertises.strategy.column1.item1;Brand auditing
@@ -142,7 +142,7 @@ expertises.strategy.column3.item3;Products and Know-How
 expertises.strategy.column3.title;Brand Platorm
 expertises.strategy.paragraph1;We see a brand story through the lens of an original, brand-specific concept, adopting an understated, sustainable and fundamental approach for most of our clients.\nWe write, set the tone and capture the essence of your brand in a striking and moving mission statement.
 expertises.strategy.paragraph2;Let's make the personal playful!
-expertises.strategy.side_title;EXPERTISE - Strategy
+expertises.strategy.side_title;SKILLS - Strategy
 expertises.strategy.title;Consulting, Strategy & Brand Architecture
 footer.contact;Contact
 footer.join_us;Join us
@@ -187,19 +187,19 @@ manifest.page4.pre;Both
 manifest.page4.title;Enlightener and enlightened
 manifest.page4.text;Egon Paris\nis a creative and committed free spirit.
 menu.label;Menu
-menu.agency.first_name;Our name
-menu.agency.founder;Our founder
-menu.agency.label;Our agency
+menu.agency.first_name;Name
+menu.agency.founder;Founder
+menu.agency.label;Egon
 menu.agency.manifest;Manifesto
 menu.agency.philosophy;Philosophy
 menu.contact.label;Contact
-menu.creation.customers;Clients
+menu.creation.customers;Who?
 menu.creation.label;Creation
-menu.creation.projects;Projects
+menu.creation.projects;How?
 menu.expertises.creation;Creation
 menu.expertises.digital;Digital
 menu.expertises.edition;Publishing
-menu.expertises.label;The expertises
+menu.expertises.label;Skills
 menu.expertises.production;Production
 menu.expertises.strategy;Strategy
 menu.language.en;UK

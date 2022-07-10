@@ -3,14 +3,14 @@ agency.first_name.paragraph1;Se lancer dans l'entreprenariat, c'est avoir un enf
 agency.first_name.paragraph2;Egon, 4 lettres puissantes qui ont le goût du voyage.\nEgon, c'est aujourd'hui une agence conseil en communication\ndédiée à l'art de vivre, libre, créative et engagée.
 agency.first_name.paragraph3;Car Vivre est un Art.
 agency.first_name.pronunciation;Comment prononcer mon prénom ?
-agency.first_name.side_title;L'AGENCE - Le prénom
+agency.first_name.side_title;EGON - Prénom
 agency.first_name.why_egon;Pourquoi Egon ?
-agency.founder.side_title;L'AGENCE - La fondatrice
+agency.founder.side_title;EGON - Fondatrice
 agency.founder.title;La fondatrice
 agency.founder.paragraph1;Entrepreneuse créative et exigeante, esthète passionnée, experte en communication depuis plus de 20 ans pour le compte de maisons de luxe, avec une affinité particulière pour les arts de vivre.
 agency.founder.paragraph2;Elle a choisi de s'entourer d'un collectif d'indépendants sensibles aux codes du luxe et experts de l'image qu'elle fédère en mode projet : Directeurs Artistiques, Écrivains, Motion Designer, Graphistes, Réalisateurs, Photographes, Développeurs Web…, pour donner vie à son rêve, celui de vous accompagner, avec cœur et engagement.
 agency.founder.contact_me;Contactez-moi :
-agency.manifest.side_title;L'AGENCE - Le manifeste
+agency.manifest.side_title;EGON - Manifeste
 agency.manifest.paragraph1_number;N°01
 agency.manifest.paragraph1_text;Expressif et radical, il touche, interpelle, sublime,\ndécrit, réinvente, véritable stratège épi.curieux,\nvoué à l'expression du beau\npar le sens juste et exact, le lien, l'image et le mot,\nil procure le rêve et provoque l'émotion.
 agency.manifest.paragraph1_title;Artiste par nature
@@ -34,7 +34,7 @@ agency.philosophy.paragraph3_title;Un acolyte qui a la détermination de penser 
 agency.philosophy.paragraph4_title;Egon vous offre une création au service d'une performance durable.
 agency.philosophy.paragraph5_text;c'est une humble prise de conscience du monde actuel\net une volonté d'appartenir au monde de demain, un monde où\nl'on communique mieux avec créativité, sens et intemporalité.
 agency.philosophy.paragraph5_title;Egon,
-agency.philosophy.side_title;L'AGENCE - La philosophie
+agency.philosophy.side_title;EGON - Philosophie
 agency.philosophy.title;Egon, un partenaire libre, créatif et engagé qui comprend votre marque et ses défis, avec passion,
 agency.scroll;Scroll
 agency.tagline1;Agence conseil en communication\ndédiée à l'Art de Vivre
@@ -44,12 +44,12 @@ contact.address1;71-73 rue de Chézy
 contact.address2;92200 Neuilly-sur-Seine
 contact.side_title;CONTACT
 creation.customers.paragraph;chers Clients, que nous existons et que nous avons la capacité aujourd'hui de participer\nà un monde où l'on communique mieux avec créativité, sens et intemporalité.\nAlors Merci à vous. Merci de votre confiance, Merci de nous soutenir dans notre démarche.
-creation.customers.side_title;LA CRÉATION - Les clients
+creation.customers.side_title;CREATION - Les clients
 creation.customers.thanks;Merci !
 creation.customers.title;C'est grâce à vous,
 creation.projects.contact;Et si on s'en parlait ?
 creation.projects.paragraph;Nous aimons ce que vous aimez à travers vos yeux, votre histoire, votre sens, vos sens.\nNotre inspiration naît d'ailleurs, d'ici, de votre héritage, de vos mots surtout qui nous guident\nà chaque pas de notre réflexion.\nNous revendiquons la justesse, la cohérence, la longévité.
-creation.projects.side_title;LA CRÉATION - Les projets
+creation.projects.side_title;CREATION - Les projets
 creation.projects.title;La création est un parcours.\nUn parcours de sens, de culture, d'imaginaire.\nL'issue est plurielle, protéiforme.
 expertises.creation.closing;Nous croyons que vivre reste un art en quête de perpétuité
 expertises.creation.column1.item1;Direction de Création
@@ -63,7 +63,7 @@ expertises.creation.column4.title;Campagne d'activation\nglobale
 expertises.creation.column5.title;Illustration
 expertises.creation.paragraph1;Créer, innover, donner une véritable identité à votre maison,\nlui offrir une Direction Artistique singulière,\nunique et signée sont autant de gages de réussites, pour longtemps.
 expertises.creation.paragraph2;Nous créons autrement, pour innover sans exploiter.\nSurprendre avec sens et cohérence.\nImaginer avec grandeur et inventivité\ndans une démarche éco-conceptuelle.
-expertises.creation.side_title;LES EXPERTISES - Création
+expertises.creation.side_title;SKILLS - Création
 expertises.creation.title;Direction Artistique
 expertises.digital.closing;Nous captons l'air du temps et rêvons à des souffles nouveaux
 expertises.digital.column1.item1;UX & UI design
@@ -83,7 +83,7 @@ expertises.digital.column3.item4;Guidelines
 expertises.digital.column3.title;Social Media
 expertises.digital.paragraph1;Nous croyons à la simplicité et à la pertinence digitale.\nCe qui est en ligne doit être utile.\nNous créons en intégrant le principe de sobriété fonctionnelle\net défendons l'accessibilité à tous.
 expertises.digital.paragraph2;La communication devient conversation, instantanée, directe et universelle.\nNous croyons au lien entre les femmes et les hommes.\nNous faisons rêver mais nos dires sont vrais et vérifiés.\nNous créons, produisons mais ne saturons pas nos audiences.
-expertises.digital.side_title;LES EXPERTISES - Digital
+expertises.digital.side_title;SKILLS - Digital
 expertises.digital.title;Site Web\n& Social Media
 expertises.edition.closing;Nous avons la culture de la racine pour mieux appartenir à demain
 expertises.edition.column1.item1;Story-telling
@@ -104,7 +104,7 @@ expertises.edition.column3.item7;Pilotage et Suivi
 expertises.edition.column3.title;Print Management
 expertises.edition.paragraph1;Marquer l'histoire, graver et transmettre. Nous sommes des éditorialistes amoureux des beaux livres bien pensés et créés avec finesse et caractère.
 expertises.edition.paragraph2;Nous défendons l'intemporalité dans nos créations et la production raisonnée. Nous favorisons les papiers recyclés et les embellissements par la création. Nous sélectionnons des imprimeurs responsables et sommes fiers de les intégrer dans notre chaine de valeurs.
-expertises.edition.side_title;LES EXPERTISES - Édition
+expertises.edition.side_title;SKILLS - Édition
 expertises.edition.title;Édition
 expertises.production.closing;Nous revendiquons une communication instrumentale raisonnée qui s'interroge
 expertises.production.column1.item1;Intentions
@@ -123,7 +123,7 @@ expertises.production.column4.item5;Sound-design
 expertises.production.column4.title;Production photo\nproduction film
 expertises.production.paragraph1;Vous avez dit Brand Content ? Photos ? Vidéos ?\nNos idées, nous les produisons de A jusqu'à Z, avec un souci du détail, de la minutie,\nde la créativité et de l'ordre.
 expertises.production.paragraph2;Nous produisons sans détruire avec une idée assumée de l'inclusivité, dans le respect d'un budget annoncé, avec une équipe bienveillante, aussi rigoureuse que créative, aussi responsable qu'empathique.
-expertises.production.side_title;LES EXPERTISES - Production
+expertises.production.side_title;SKILLS - Production
 expertises.production.title;Production\nde contenus
 expertises.strategy.closing;Nous sommes des bâtisseurs éclairés, animés par le sens et la cohérence
 expertises.strategy.column1.item1;Audit de marque
@@ -142,7 +142,7 @@ expertises.strategy.column3.item3;Produits et Savoir-faire
 expertises.strategy.column3.title;Plateforme de marque
 expertises.strategy.paragraph1;Nous pensons l'histoire d'une maison par le prisme d'un concept singulier & propriétaire, dans une logique de sobriété, de durabilité et d'essentialité, pour le plus grand nombre.\nÉcrire, donner le ton, capturer l'essence de votre marque dans un manifeste saillant et mouvant.
 expertises.strategy.paragraph2;Que le Je devienne Jeu !
-expertises.strategy.side_title;LES EXPERTISES - Stratégie
+expertises.strategy.side_title;SKILLS - Stratégie
 expertises.strategy.title;Conseil, Stratégie\n& Architecture de marque
 footer.contact;Contact
 footer.join_us;Nous rejoindre
@@ -187,19 +187,19 @@ manifest.page4.pre;Tour à tour,
 manifest.page4.title;Éclaireur et éclairé
 manifest.page4.text;Egon Paris\nest un électron libre, créatif et engagé.
 menu.label;Menu
-menu.agency.first_name;Le prénom
-menu.agency.founder;La fondatrice
-menu.agency.label;L'agence
-menu.agency.manifest;Le manifeste
-menu.agency.philosophy;La philosophie
+menu.agency.first_name;Prénom
+menu.agency.founder;Fondatrice
+menu.agency.label;Egon
+menu.agency.manifest;Manifeste
+menu.agency.philosophy;Philosophie
 menu.contact.label;Contact
-menu.creation.customers;Les clients
-menu.creation.label;La création
-menu.creation.projects;Les projets
+menu.creation.customers;Qui ?
+menu.creation.label;Creation
+menu.creation.projects;Comment ?
 menu.expertises.creation;Création
 menu.expertises.digital;Digital
 menu.expertises.edition;Édition
-menu.expertises.label;Les expertises
+menu.expertises.label;Skills
 menu.expertises.production;Production
 menu.expertises.strategy;Stratégie
 menu.language.en;UK
