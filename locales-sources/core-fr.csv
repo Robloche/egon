@@ -7,7 +7,7 @@ agency.first_name.side_title;EGON - Prénom
 agency.first_name.why_egon;Pourquoi Egon ?
 agency.founder.side_title;EGON - Fondatrice
 agency.founder.title;La fondatrice
-agency.founder.paragraph1;Entrepreneuse créative et exigeante, esthète passionnée, experte en communication depuis plus de 20 ans pour le compte de maisons de luxe, avec une affinité particulière pour les arts de vivre.
+agency.founder.paragraph1;Bâtisseuse créative et exigeante, hédoniste passionnée, amoureuse du dialogue et des correspondances, experte en communication depuis plus de 20 ans pour le compte de maisons de luxe, avec une sensibilité particulière pour les arts de vivre.
 agency.founder.paragraph2;Elle a choisi de s'entourer d'un collectif d'indépendants sensibles aux codes du luxe et experts de l'image qu'elle fédère en mode projet : Directeurs Artistiques, Écrivains, Motion Designer, Graphistes, Réalisateurs, Photographes, Développeurs Web…, pour donner vie à son rêve, celui de vous accompagner, avec cœur et engagement.
 agency.founder.contact_me;Contactez-moi :
 agency.manifest.side_title;EGON - Manifeste
@@ -37,13 +37,13 @@ agency.philosophy.paragraph5_title;Egon,
 agency.philosophy.side_title;EGON - Philosophie
 agency.philosophy.title;Egon, un partenaire libre, créatif et engagé qui comprend votre marque et ses défis, avec passion,
 agency.scroll;Scroll
-agency.tagline1;Agence conseil en communication\ndédiée à l'Art de Vivre
+agency.tagline1;Agence conseil en communication\nconsacrée à l'Art de Vivre
 agency.tagline2;libre, créative et engagée
 common.egon;Egon
 contact.address1;71-73 rue de Chézy
-contact.address2;92200 Neuilly-sur-Seine
+contact.address2;92200 Neuilly-sur-Seine – France
 contact.side_title;CONTACT
-creation.customers.paragraph;chers Clients, que nous existons et que nous avons la capacité aujourd'hui de participer\nà un monde où l'on communique mieux avec créativité, sens et intemporalité.\nAlors Merci à vous. Merci de votre confiance, Merci de nous soutenir dans notre démarche.
+creation.customers.paragraph;chers Clients, que nous existons et que nous avons la capacité aujourd'hui de participer\nà un monde où l'on communique mieux avec créativité, sens et intemporalité.\nAlors Merci à vous. Merci de votre confiance.
 creation.customers.side_title;CREATION - Les clients
 creation.customers.thanks;Merci !
 creation.customers.title;C'est grâce à vous,
@@ -242,7 +242,7 @@ privacy_policy.your_rights_line4;le droit de vous opposer au traitement de vos d
 privacy_policy.your_rights_line5;le droit à la portabilité de vos données.
 privacy_policy.your_rights_paragraph2;Pour exercer ces droits, il vous suffit simplement de nous le signaler à l'adresse suivante :
 privacy_policy.address1;71-73 rue de Chézy
-privacy_policy.address2;92200 Neuilly-sur-Seine
+privacy_policy.address2;92200 Neuilly-sur-Seine – France
 privacy_policy.your_rights_paragraph3;Nous répondrons dans les meilleurs délais à votre demande et ferons le nécessaire afin d'être respectueux de la confiance que vous nous accordez.
 privacy_policy.cookies_title;Les cookies
 privacy_policy.cookies_paragraph1;Afin d'améliorer la qualité de nos services, nous sommes susceptibles d'utiliser des cookies sur notre site. Les cookies sont de petits fichiers textes que votre navigateur dépose sur votre ordinateur, votre mobile ou votre tablette lorsque vous surfez sur Internet. Ils sont générés par le site que vous visitez et contiennent quelques données relatives à votre connexion.
