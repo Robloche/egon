@@ -37,8 +37,6 @@ agency.philosophy.paragraph5_title;Egon,
 agency.philosophy.side_title;EGON - Philosophie
 agency.philosophy.title;Egon, un partenaire libre, créatif et engagé qui comprend votre marque et ses défis, avec passion,
 agency.scroll;Scroll
-agency.tagline1;Agence conseil en communication consacrée à l'Art de Vivre
-agency.tagline2;libre, créative et engagée
 common.egon;Egon
 contact.address1;71-73 rue de Chézy
 contact.address2;92200 Neuilly-sur-Seine – France
@@ -186,6 +184,9 @@ manifest.page3.text;Il évolue dans un environnement créatif\nà géométrie va
 manifest.page4.pre;Tour à tour,
 manifest.page4.title;Éclaireur et éclairé
 manifest.page4.text;Egon Paris\nest un électron libre, créatif et engagé.
+manifest.page5.pre;
+manifest.page5.title;
+manifest.page5.text;Agence conseil en communication consacrée à l'Art de Vivre
 menu.label;Menu
 menu.agency.first_name;Prénom
 menu.agency.founder;Fondatrice

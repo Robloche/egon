@@ -27,7 +27,6 @@ const SplashScreen = () => {
     <div className='splash-screen'>
       <img
         alt='Logo Egon Paris'
-        className='splash-screen__logo'
         src={logo} />
     </div>
   );

@@ -20,7 +20,8 @@
         opacity: 1;
       }
 
-      &.image1 {
+      &.image1,
+      &.image5 {
         background-image: url('../assets/images/manifest1_1920.png');
       }
 
@@ -55,6 +56,11 @@
         > .slide__text-content {
           line-height: 1.8rem;
           text-align: center;
+        }
+
+        > .slide__logo {
+          height: 4.2rem;
+          margin-bottom: 3rem;
         }
       }
     }
@@ -112,7 +118,8 @@
   .carousel {
     > .carousel__slider {
       > .carousel__slide {
-        &.image1 {
+        &.image1,
+        &.image5 {
           background-image: url('../assets/images/manifest1_1400.png');
         }
 
@@ -146,7 +153,8 @@
   .carousel {
     > .carousel__slider {
       > .carousel__slide {
-        &.image1 {
+        &.image1,
+        &.image5 {
           background-image: url('../assets/images/manifest1_900.png');
         }
 
@@ -170,7 +178,8 @@
   .carousel {
     > .carousel__slider {
       > .carousel__slide {
-        &.image1 {
+        &.image1,
+        &.image5 {
           background-image: url('../assets/images/manifest1_400.png');
         }
 

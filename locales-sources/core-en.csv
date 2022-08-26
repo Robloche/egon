@@ -37,8 +37,6 @@ agency.philosophy.paragraph5_title;Egon,
 agency.philosophy.side_title;EGON - Philosophy
 agency.philosophy.title;Egon is an independent, creative and committed partner who understands your brand and its challenges and brings a passion to its work.
 agency.scroll;Scroll
-agency.tagline1;Advertising agency devoted to the Art of Living
-agency.tagline2;independent, creative and committed
 common.egon;Egon
 contact.address1;71-73 rue de Chézy
 contact.address2;92200 Neuilly-sur-Seine – France
@@ -182,10 +180,13 @@ manifest.page2.title;Rooted in the earth
 manifest.page2.text;A wandering spirit,\nIt learns from the past to enlighten the future,\npragmatic, active and inspired,\nIt approaches the Arts of Living from a place of \nawareness, passion and precision
 manifest.page3.pre;N°03
 manifest.page3.title;Unconventional philanthropist
-manifest.page3.text;It functions within the creative, shapeshifting \nenvironment it chose for itself
+manifest.page3.text;It functions within the creative, shapeshifting\nenvironment it chose for itself
 manifest.page4.pre;Both
 manifest.page4.title;Enlightener and enlightened
 manifest.page4.text;Egon Paris\nis a creative and committed free spirit.
+manifest.page5.pre;
+manifest.page5.title;
+manifest.page5.text;Advertising agency devoted to the Art of Living
 menu.label;Menu
 menu.agency.first_name;Name
 menu.agency.founder;Founder

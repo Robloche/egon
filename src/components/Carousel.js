@@ -7,6 +7,7 @@ import Bullet from './Bullet';
 import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
 import Menu from './Menu';
+import logo from '../assets/svg/logo-white.svg';
 import {scrollTop} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
 import {useSwipeable} from 'react-swipeable';
@@ -15,10 +16,28 @@ import useWindowSize from '../hooks/useWindowSize';
 // Image changes every 5s;
 const IMAGE_SWITCH_TIMEOUT = 5000;
 
-const IMAGES = ['image1', 'image2', 'image3', 'image4'];
+const LAST_SLIDE_INDEX = 4;
+
+const IMAGES = ['image1', 'image2', 'image3', 'image4', 'image5'];
 
 const previousIndex = (index) => (index - 1 + IMAGES.length) % IMAGES.length;
 const nextIndex = (index) => (index + 1) % IMAGES.length;
+
+const renderSlideContent = (index: number): React.Element<*> => {
+  if (index < LAST_SLIDE_INDEX) {
+    return (
+      <>
+        <div className='slide__text-pre'>{Localizer.localize(`manifest.page${index + 1}.pre`)}</div>
+        <div className='slide__text-title'>{Localizer.localize(`manifest.page${index + 1}.title`)}</div>
+      </>
+    );
+  }
+
+  return <img
+    alt='Logo Egon Paris'
+    className='slide__logo'
+    src={logo} />;
+};
 
 const Carousel = (): React.Node => {
   const language = useSelector((state) => state.language);
@@ -77,8 +96,7 @@ const Carousel = (): React.Node => {
             data-index={index}
             key={img.toString()}>
             <div className='slide__text-container'>
-              <div className='slide__text-pre'>{Localizer.localize(`manifest.page${index + 1}.pre`)}</div>
-              <div className='slide__text-title'>{Localizer.localize(`manifest.page${index + 1}.title`)}</div>
+              {renderSlideContent(index)}
               <div className='slide__text-content'>{Localizer.localize(`manifest.page${index + 1}.text`)}</div>
             </div>
           </div>

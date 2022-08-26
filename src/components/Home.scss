@@ -154,37 +154,6 @@
     }
   }
 
-  > .page-agency__name {
-    align-items: baseline;
-    background-color: var(--black);
-    color: var(--white);
-    column-gap: 4rem;
-    display: flex;
-    justify-content: center;
-    padding: 6rem 0;
-
-    > .page-agency__egon {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-
-    > .page-agency__tagline {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-
-      > div {
-        &:first-child {
-          font: 2rem Bodoni;
-        }
-
-        &:last-child {
-          margin-top: 2rem;
-        }
-      }
-    }
-  }
-
   > .page-agency__first-name {
     background-color: var(--whitish);
     justify-content: space-evenly;
