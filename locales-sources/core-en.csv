@@ -147,7 +147,7 @@ footer.join_us;Join us
 footer.legal_notice;Legal notices
 footer.newsletter;Newsletter
 footer.privacy_policy;Privacy Policy
-join_us.paragraph;Truly epi.curious, You're free, creative and independent,  You cultivate the spoken word and enjoy verbal sparring, Your eye is both sharp and mischievous, Your self-discipline is formidable, Your sense of humour is renowned, You're sensitive to the challenges of sustainable and responsible communications, For you, life is all about beauty, laughter and pleasure, To join our community, send your application to
+join_us.paragraph;Truly epi.curious,\nYou're free, creative and independent, \nYou cultivate the spoken word and enjoy verbal sparring,\nYour eye is both sharp and mischievous,\nYour self-discipline is formidable,\nYour sense of humour is renowned,\nYou're sensitive to the challenges of sustainable and responsible communications,\nFor you, life is all about beauty, laughter and pleasure,\nTo join our community, send your application to
 join_us.side_title;JOIN US
 join_us.title;Join the Egon story
 legal_notice.title;Legal notices
@@ -174,10 +174,10 @@ legal_notice.privacy_policy_introduction;Please consult the section on our
 legal_notice.privacy_policy_link;privacy policy
 manifest.page1.pre;N°01
 manifest.page1.title;Artist by nature
-manifest.page1.text;Meaningful and radical,\nIt touches, beckons, enhances, describes, reinvents, \na truly epi.curious strategist, \nhere to tell stories of beauty \nby capturing true meaning, connections, images and words, \ninspiring dreams and stirring emotion
+manifest.page1.text;Meaningful and radical,\nIt touches, beckons, enhances, describes, reinvents,\na truly epi.curious strategist,\nhere to tell stories of beauty\nby capturing true meaning, connections, images and words,\ninspiring dreams and stirring emotion
 manifest.page2.pre;N°02
 manifest.page2.title;Rooted in the earth
-manifest.page2.text;A wandering spirit,\nIt learns from the past to enlighten the future,\npragmatic, active and inspired,\nIt approaches the Arts of Living from a place of \nawareness, passion and precision
+manifest.page2.text;A wandering spirit,\nIt learns from the past to enlighten the future,\npragmatic, active and inspired,\nIt approaches the Arts of Living from a place of\nawareness, passion and precision
 manifest.page3.pre;N°03
 manifest.page3.title;Unconventional philanthropist
 manifest.page3.text;It functions within the creative, shapeshifting\nenvironment it chose for itself
@@ -186,7 +186,7 @@ manifest.page4.title;Enlightener and enlightened
 manifest.page4.text;Egon Paris\nis a creative and committed free spirit.
 manifest.page5.pre;
 manifest.page5.title;
-manifest.page5.text;Advertising agency devoted to the Art of Living
+manifest.page5.text;Advertising agency\ndevoted to the Art of Living
 menu.label;Menu
 menu.agency.first_name;Name
 menu.agency.founder;Founder

@@ -224,6 +224,10 @@
             font-size: 4rem;
             margin-bottom: 2rem;
           }
+
+          > .slide__text-content {
+            font-size: 4rem;
+          }
         }
       }
     }
@@ -266,6 +270,32 @@
 
       > .carousel__scroll-line {
         width: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    > .carousel__slider {
+      > .carousel__slide {
+        > .slide__text-container {
+          > .slide__text-content {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+    > .carousel__buttons {
+      bottom: 25%;
+    }
+
+    > .carousel__scroll {
+      bottom: 15px;
+
+      > .carousel__scroll-line {
+        width: 40px;
       }
     }
   }
