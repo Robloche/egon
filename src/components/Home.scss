@@ -105,8 +105,10 @@
           > .manifest__text {
             line-height: 1.6rem;
             margin-bottom: 3rem;
+            max-width: 50%;
 
             &.manifest-right {
+              align-self: flex-end;
               text-align: right;
             }
           }
