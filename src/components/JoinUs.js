@@ -16,7 +16,9 @@ const JoinUs = (): React.Node => {
     <div className='page page-join-us'>
       <Header />
       <div className='page-join-us__content'>
-        <div className='side-title'>{Localizer.localize('join_us.side_title')}</div>
+        <div className='section__left'>
+          <div className='side-title'>{Localizer.localize('join_us.side_title')}</div>
+        </div>
         <img
           alt='Logo Egon'
           sizes='(max-width: 1200px) 200px, 400px'

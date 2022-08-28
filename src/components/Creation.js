@@ -29,7 +29,6 @@ const renderSectionProjects = () => (
           target='_blank'>egon@egonparis.com</a>
       </div>
     </div>
-    <div className='page-creation__section section__right' />
   </>
 );
 

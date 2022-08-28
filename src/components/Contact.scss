@@ -5,8 +5,13 @@
   column-gap: 4rem;
   display: flex;
   flex-grow: 1;
-  padding: 6rem 0 6rem 12%;
+  padding: 6rem 0;
   position: relative;
+
+  > .section__left {
+    padding-left: 2rem;
+    width: 10%;
+  }
 
   > .page-contact__info {
     font-size: 1.4rem;
@@ -49,11 +54,19 @@
 
 @media (max-width: 600px) {
   .page-contact__content {
-    flex-direction: column;
-    padding: 4rem 20%;
+    display: grid;
+    grid-template: 'title logo' 120px
+                   '.     content'
+                   / 4rem 1fr;
+    padding: 4rem 0;
+
+    > img {
+      grid-area: logo;
+    }
 
     > .page-contact__info {
-      margin-top: 3rem;
+      grid-area: content;
+      margin-right: 1rem;
     }
   }
 }

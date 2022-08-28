@@ -16,7 +16,9 @@ const Contact = (): React.Node => {
     <div className='page page-contact'>
       <Header />
       <div className='page-contact__content'>
-        <div className='side-title'>{Localizer.localize('contact.side_title')}</div>
+        <div className='section__left'>
+          <div className='side-title'>{Localizer.localize('contact.side_title')}</div>
+        </div>
         <img
           alt='Logo Egon'
           sizes='(max-width: 1000px) 200px, 400px'

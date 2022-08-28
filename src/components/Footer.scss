@@ -99,20 +99,16 @@
     align-items: center;
     flex-direction: column;
     height: auto;
-    padding-top: 1rem;
+    padding: 3rem 1rem;
 
     > .footer__links {
       flex-direction: column;
-      margin: 1rem 0;
+      margin: 1rem 0 0;
 
       > a {
         &:not(:last-child) {
           margin: 0 0 1rem;
         }
-      }
-
-      > button {
-        margin-bottom: 2rem;
       }
     }
   }

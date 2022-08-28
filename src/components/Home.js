@@ -39,9 +39,14 @@ const renderSectionFirstName = () => (
       <div className='first-name__founder'>{Localizer.localize('agency.first_name.founder')}</div>
     </div>
     <div className='first-name__pronunciation'>
-      <img
-        alt='QR code pointant vers la prononciation du prénom Egon'
-        src={qrCode} />
+      <a
+        href='https://www.youtube.com/watch?v=H5kkx2Lk5x4'
+        rel='noopener noreferrer'
+        target='_blank'>
+        <img
+          alt='QR code pointant vers la prononciation du prénom Egon'
+          src={qrCode} />
+      </a>
       <div className='first-name__line' />
       <div className='first-name__how'>{Localizer.localize('agency.first_name.pronunciation')}</div>
     </div>
@@ -123,7 +128,6 @@ const renderSectionFounder = () => (
   <div
     className='page-agency__founder page-agency__section'
     id='founder'>
-    <div className='side-title'>{Localizer.localize('agency.founder.side_title')}</div>
     <img
       alt="Séverine Breton Join-Diéterle, fondatrice d'Egon Paris"
       sizes='(max-width: 600px) 200px, (max-width: 900px) 400px, (max-width: 1400px) 600px, 800px'
