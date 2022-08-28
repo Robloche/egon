@@ -5,6 +5,24 @@
     position: relative;
   }
 
+  .section__closing {
+    align-items: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 448px;
+    justify-content: center;
+    padding: 0 2rem;
+    width: 100%;
+
+    &.first-name__closing {
+      background-image: url('../assets/images/homepage1_1920.png');
+    }
+
+    &.philosophy__closing {
+      background-image: url('../assets/images/homepage2_1920.png');
+    }
+  }
+
   > .page-agency__grid {
     align-items: center;
     display: grid;
@@ -135,16 +153,8 @@
     }
 
     > .philosophy__closing {
-      align-items: center;
-      background-image: url('../assets/images/homepage_1920.png');
-      background-repeat: no-repeat;
-      display: flex;
       flex-direction: column;
       grid-column: 1 / span 3;
-      height: 448px;
-      justify-content: center;
-      padding: 0 2rem;
-      width: 100%;
 
       > .philosophy__closing-content {
         > .philosophy__contact {
@@ -192,10 +202,6 @@
 
         &.paragraph-bold {
           font-weight: bold;
-        }
-
-        &.paragraph-blue {
-          color: var(--blue);
         }
       }
 
@@ -287,13 +293,20 @@
 
 @media (max-width: 1400px) {
   .page-agency {
+    .section__closing {
+      height: 327px;
+
+      &.first-name__closing {
+        background-image: url('../assets/images/homepage1_1400.png');
+      }
+
+      &.philosophy__closing {
+        background-image: url('../assets/images/homepage2_1400.png');
+      }
+    }
+
     > .page-agency__grid {
       grid-template-columns: 1fr 70% 1fr;
-
-      > .philosophy__closing {
-        background-image: url('../assets/images/homepage_1400.png');
-        height: 327px;
-      }
     }
 
     > .page-agency__first-name {
@@ -348,6 +361,18 @@
 
 @media (max-width: 900px) {
   .page-agency {
+    .section__closing {
+      height: 210px;
+
+      &.first-name__closing {
+        background-image: url('../assets/images/homepage1_900.png');
+      }
+
+      &.philosophy__closing {
+        background-image: url('../assets/images/homepage2_900.png');
+      }
+    }
+
     > .page-agency__grid {
       grid-template-columns: 1fr 80% 1fr;
 
@@ -360,9 +385,6 @@
       }
 
       > .philosophy__closing {
-        background-image: url('../assets/images/homepage_900.png');
-        height: 210px;
-
         > .philosophy__closing-content {
           > .philosophy__contact {
             margin-top: 2rem;
@@ -554,11 +576,20 @@
 
 @media (max-width: 400px) {
   .page-agency {
+    .section__closing {
+      height: 93px;
+
+      &.first-name__closing {
+        background-image: url('../assets/images/homepage1_400.png');
+      }
+
+      &.philosophy__closing {
+        background-image: url('../assets/images/homepage2_400.png');
+      }
+    }
+
     > .page-agency__grid {
       > .philosophy__closing {
-        background-image: url('../assets/images/homepage_400.png');
-        height: 93px;
-
         > .philosophy__closing-content {
           > .philosophy__title {
             font-size: 1.2rem;

@@ -18,39 +18,45 @@ import severine4 from '../assets/images/severine_800.png';
 import {useSelector} from 'react-redux';
 
 const renderSectionFirstName = () => (
-  <div
-    className='page-agency__first-name page-agency__section'
-    id='first-name'>
-    <div className='side-title'>{Localizer.localize('agency.first_name.side_title')}</div>
-    <div className='first-name__drawing'>
-      <img
-        alt='Egon by Séverine'
-        sizes='(max-width: 900px) 144px, (max-width: 1200px) 287px, (max-width: 1400px) 430px, 573px'
-        src={egon4}
-        srcSet={`${egon1} 144w, ${egon2} 287w, ${egon3} 430w, ${egon4} 573w`} />
-      <div className='first-name__copyright'>&#169; SB</div>
-    </div>
-    <div className='first-name__content'>
-      <div className='first-name__title title'>{Localizer.localize('agency.first_name.why_egon')}</div>
-      <div className='first-name__paragraph'>{Localizer.localize('agency.first_name.paragraph1')}</div>
-      <div className='first-name__paragraph paragraph-bold'>{Localizer.localize('agency.first_name.paragraph2')}</div>
-      <div className='first-name__paragraph paragraph-bold paragraph-blue'>{Localizer.localize('agency.first_name.paragraph3')}</div>
-      <div className='first-name__severine'>Séverine Breton Join-Diéterle</div>
-      <div className='first-name__founder'>{Localizer.localize('agency.first_name.founder')}</div>
-    </div>
-    <div className='first-name__pronunciation'>
-      <a
-        href='https://www.youtube.com/watch?v=H5kkx2Lk5x4'
-        rel='noopener noreferrer'
-        target='_blank'>
+  <>
+    <div
+      className='page-agency__first-name page-agency__section'
+      id='first-name'>
+      <div className='side-title'>{Localizer.localize('agency.first_name.side_title')}</div>
+      <div className='first-name__drawing'>
         <img
-          alt='QR code pointant vers la prononciation du prénom Egon'
-          src={qrCode} />
-      </a>
-      <div className='first-name__line' />
-      <div className='first-name__how'>{Localizer.localize('agency.first_name.pronunciation')}</div>
+          alt='Egon by Séverine'
+          sizes='(max-width: 900px) 144px, (max-width: 1200px) 287px, (max-width: 1400px) 430px, 573px'
+          src={egon4}
+          srcSet={`${egon1} 144w, ${egon2} 287w, ${egon3} 430w, ${egon4} 573w`} />
+        <div className='first-name__copyright'>&#169; SB</div>
+      </div>
+      <div className='first-name__content'>
+        <div className='first-name__title title'>{Localizer.localize('agency.first_name.why_egon')}</div>
+        <div className='first-name__paragraph'>{Localizer.localize('agency.first_name.paragraph1')}</div>
+        <div className='first-name__paragraph paragraph-bold'>{Localizer.localize('agency.first_name.paragraph2')}</div>
+        <div className='first-name__severine'>Séverine Breton Join-Diéterle</div>
+        <div className='first-name__founder'>{Localizer.localize('agency.first_name.founder')}</div>
+      </div>
+      <div className='first-name__pronunciation'>
+        <a
+          href='https://www.youtube.com/watch?v=H5kkx2Lk5x4'
+          rel='noopener noreferrer'
+          target='_blank'>
+          <img
+            alt='QR code pointant vers la prononciation du prénom Egon'
+            src={qrCode} />
+        </a>
+        <div className='first-name__line' />
+        <div className='first-name__how'>{Localizer.localize('agency.first_name.pronunciation')}</div>
+      </div>
     </div>
-  </div>
+    <div className='section__closing first-name__closing'>
+      <div className='first-name__closing-content'>
+        <div className='first-name__title title title-white'>{Localizer.localize('agency.first_name.closing')}</div>
+      </div>
+    </div>
+  </>
 );
 
 const renderSectionPhilosophy = () => (
@@ -77,6 +83,18 @@ const renderSectionPhilosophy = () => (
       </div>
     </div>
     <div className='page-agency__grid-section section__right' />
+    <div className='section__closing philosophy__closing'>
+      <div className='philosophy__closing-content'>
+        <div className='philosophy__title title title-white'>{Localizer.localize('agency.philosophy.closing')}</div>
+        <div className='philosophy__contact'>
+          <div>{Localizer.localize('agency.philosophy.contact_us')}</div>
+          <a
+            href='mailto:egon@egonparis.com'
+            rel='noopener noreferrer'
+            target='_blank'>egon@egonparis.com</a>
+        </div>
+      </div>
+    </div>
   </>
 );
 
@@ -161,18 +179,6 @@ const Home = (): React.Node => {
       {renderSectionFirstName()}
       <div className='page-agency__grid'>
         {renderSectionPhilosophy()}
-        <div className='philosophy__closing'>
-          <div className='philosophy__closing-content'>
-            <div className='philosophy__title title title-white'>{Localizer.localize('agency.philosophy.closing')}</div>
-            <div className='philosophy__contact'>
-              <div>{Localizer.localize('agency.philosophy.contact_us')}</div>
-              <a
-                href='mailto:egon@egonparis.com'
-                rel='noopener noreferrer'
-                target='_blank'>egon@egonparis.com</a>
-            </div>
-          </div>
-        </div>
         {renderSectionManifest()}
       </div>
       {renderSectionFounder()}
