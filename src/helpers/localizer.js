@@ -5,6 +5,8 @@ import i18nInstance from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import {setLanguage} from '../redux/actions';
 
+const TWO = 2;
+
 export class Localizer {
 
   static dispatch: any;
@@ -73,17 +75,17 @@ export class Localizer {
         .then(() => {
           Localizer.dispatch(setLanguage(language));
 
-          const {location: {href, pathname}} = window;
-          const regex = new RegExp(`/(${Localizer.supportedLanguages.join('|')})/`, 'ui');
+          const {location: {href, hash}} = window;
+          const regex = new RegExp(`#/(${Localizer.supportedLanguages.join('|')})/`, 'ui');
           const newUrl = new URL(href);
 
-          const ma = pathname.match(regex);
+          const ma = hash.match(regex);
           if (ma) {
             // Replace
-            newUrl.pathname = pathname.replace(ma[0], `/${language}/`);
+            newUrl.hash = hash.replace(ma[0], `#/${language}/`);
           } else {
             // Add
-            newUrl.pathname = `/${language}${pathname}`;
+            newUrl.hash = `#/${language}/${hash.substring(TWO)}`;
           }
 
           // Check replace vs navigate
