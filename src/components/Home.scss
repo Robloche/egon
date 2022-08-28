@@ -376,10 +376,12 @@
     > .page-agency__grid {
       grid-template-columns: 1fr 80% 1fr;
 
-      > .page-agency__manifest {
-        > .manifest__content {
-          > .manifest__text {
-            max-width: 75%;
+      > .page-agency__grid-section {
+        &.page-agency__manifest {
+          > .manifest__content {
+            > .manifest__text {
+              max-width: 75%;
+            }
           }
         }
       }
