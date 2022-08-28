@@ -47,9 +47,10 @@
   .page-join-us {
     > .page-join-us__content {
       display: grid;
+      // sass-lint:disable-block indentation
       grid-template: 'title logo' 120px
-                   '.     content'
-                   / 4rem 1fr;
+                     '.     content'
+                     / 4rem 1fr;
       padding: 4rem 0;
 
       > img {

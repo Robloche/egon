@@ -274,18 +274,3 @@
     }
   }
 }
-
-@media (max-width: 600px) {
-  .carousel {
-    > .carousel__slider {
-      > .carousel__slide {
-        > .slide__text-container {
-          > .slide__text-pre,
-          > .slide__text-content {
-            //font-size: 1.3rem;
-          }
-        }
-      }
-    }
-  }
-}

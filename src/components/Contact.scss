@@ -54,6 +54,7 @@
 
 @media (max-width: 600px) {
   .page-contact__content {
+    // sass-lint:disable-block indentation
     display: grid;
     grid-template: 'title logo' 120px
                    '.     content'
