@@ -13,8 +13,8 @@ import {useSelector} from 'react-redux';
 import {useSwipeable} from 'react-swipeable';
 import useWindowSize from '../hooks/useWindowSize';
 
-// Image changes every 5s;
-const IMAGE_SWITCH_TIMEOUT = 5000;
+// Image changes every 15s (in ms);
+const IMAGE_SWITCH_TIMEOUT = 15000;
 
 const LAST_SLIDE_INDEX = 4;
 
