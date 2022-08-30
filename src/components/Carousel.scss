@@ -59,7 +59,7 @@
         }
 
         > .slide__logo {
-          height: 4.2rem;
+          height: 8rem;
           margin-bottom: 3rem;
         }
       }
@@ -174,9 +174,29 @@
   }
 }
 
+@media (max-width: 600px) {
+  .carousel {
+    > .carousel__slider {
+      > .carousel__slide {
+        > .slide__text-container {
+          > .slide__logo {
+            height: 6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 400px) {
   .carousel {
     > .carousel__slider {
+      > .slide__text-container {
+        > .slide__logo {
+          height: 4rem;
+        }
+      }
+
       > .carousel__slide {
         &.image1,
         &.image5 {
