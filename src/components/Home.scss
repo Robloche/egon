@@ -562,6 +562,13 @@
         display: none;
       }
     }
+
+    .section__closing {
+      &.philosophy__closing {
+        background-image: url('../assets/images/homepage2_600.png');
+        height: 260px;
+      }
+    }
   }
 }
 
@@ -588,22 +595,7 @@
 
       &.philosophy__closing {
         background-image: url('../assets/images/homepage2_400.png');
-      }
-    }
-
-    > .page-agency__grid {
-      > .philosophy__closing {
-        > .philosophy__closing-content {
-          > .philosophy__title {
-            font-size: 1.2rem;
-            line-height: 1.4rem;
-          }
-
-          > .philosophy__contact {
-            font-size: .9rem;
-            margin-top: .6rem;
-          }
-        }
+        height: 160px;
       }
     }
   }
