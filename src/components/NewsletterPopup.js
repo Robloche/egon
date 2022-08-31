@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 import {useEffect} from 'react';
 import x from '../assets/svg/x.svg';
 
-const url = 'https://gmail.us17.list-manage.com/subscribe/post?u=84ff514b13118b016ef58f46b&amp;id=b8240a6326';
+const url = 'https://egonparis.us10.list-manage.com/subscribe/post?u=68d12add1d548738f018f906c&amp;id=55752b85ec';
 
 const formRender = ({subscribe, status, message}) => (
   <NewsletterForm
