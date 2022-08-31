@@ -61,7 +61,7 @@
       align-items: stretch;
       display: flex;
       flex-direction: column;
-      font: 2rem Bodoni;
+      font: 2rem var(--font-family-title);
       padding: 2rem;
     }
 
@@ -75,7 +75,7 @@
   .modal__wrapper {
     > .modal {
       > .modal__header {
-        font: 1.4rem Bodoni;
+        font: 1.4rem var(--font-family-title);
         padding: 1rem;
       }
 

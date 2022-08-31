@@ -1,40 +1,23 @@
-// sass-lint:disable no-duplicate-properties
-
-// Formats:
-//  - eot          IE9
-//  - eot?#iefix   IE6-IE8
-//  - woff, woff2  Chrome, Firefox
-//  - ttf          Chrome, Firefox, Opera, Safari, Android, iOS 4.2+
-//  - svg          iOS 4.1-
+// sass-lint:disable no-url-domains, no-url-protocols
+@import url('https://fast.fonts.net/lt/1.css?apiType=css&c=143ef290-3acc-4dbb-80d1-2533fff53313&fontids=1488906,1488882');
 
 @font-face {
   font-display: swap;
-  font-family: 'Helvetica Neue';
-  src: url('./assets/fonts/HelveticaNeueRegular.eot');
-  src: url('./assets/fonts/HelveticaNeueRegular.eot?#iefix') format('embedded-opentype'),
-  url('./assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-  url('./assets/fonts/HelveticaNeueRegular.woff') format('woff'),
-  url('./assets/fonts/HelveticaNeueRegular.ttf') format('truetype'),
-  url('./assets/fonts/HelveticaNeueRegular.svg#Helvetica Neue Regular') format('svg');
+  font-family: Helvetica;
+  src: url('./assets/fonts/1488882/f20b86ad-a3dc-4459-92b7-456b456d015a.woff2') format('woff2'),
+  url('./assets/fonts/1488882/ca003289-5ee3-45c2-94ad-36c743c35fc1.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Helvetica Neue Bold';
-  src: url('./assets/fonts/HelveticaNeueBold.eot');
-  src: url('./assets/fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'),
-  url('./assets/fonts/HelveticaNeueBold.woff2') format('woff2'),
-  url('./assets/fonts/HelveticaNeueBold.woff') format('woff'),
-  url('./assets/fonts/HelveticaNeueBold.ttf') format('truetype');
+  font-family: HelveticaBold;
+  src: url('./assets/fonts/1488906/e535ec76-8fc8-4985-94e6-9246a2c6b245.woff2') format('woff2'),
+  url('./assets/fonts/1488906/67da9da8-4b53-4407-9184-abce69bfc8b5.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Bodoni';
-  src: url('./assets/fonts/Bodoni.eot');
-  src: url('./assets/fonts/Bodoni.eot?#iefix') format('embedded-opentype'),
-  url('./assets/fonts/Bodoni.woff2') format('woff2'),
-  url('./assets/fonts/Bodoni.woff') format('woff'),
-  url('./assets/fonts/Bodoni72Book.ttf') format('truetype'),
-  url('./assets/fonts/Bodoni.svg#Bodoni') format('svg');
+  font-family: Bodoni;
+  src: url('./assets/fonts/1557468/5d60805f-567f-4ccb-920d-fefe77577fd5.woff2') format('woff2'),
+  url('./assets/fonts/1557468/c2dcad27-a62d-40b0-88a4-fd4b1126d0cc.woff') format('woff');
 }

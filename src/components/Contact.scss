@@ -17,9 +17,7 @@
     font-size: 1.4rem;
 
     > .page-contact__egon {
-      font-size: 2rem;
-      font-weight: bold;
-      line-height: 2.8rem;
+      font: 2rem/2.8rem var(--font-family-body-bold);
     }
 
     > a {

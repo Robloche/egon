@@ -63,7 +63,7 @@
           margin: 4rem 0;
 
           > .philosophy__paragraph-title {
-            font-weight: bold;
+            font-family: var(--font-family-body-bold);
             margin-top: 2rem;
           }
 
@@ -74,7 +74,7 @@
 
             span {
               &:first-child {
-                font-weight: bold;
+                font-family: var(--font-family-body-bold);
                 margin-right: .2rem;
               }
             }
@@ -115,7 +115,7 @@
               flex-direction: column;
 
               > .manifest__title-number {
-                font: 1rem Helvetica, sans-serif;
+                font: 1rem var(--font-family-body-regular);
                 margin-bottom: 1rem;
               }
 
@@ -201,16 +201,16 @@
         margin-bottom: 2rem;
 
         &.paragraph-bold {
-          font-weight: bold;
+          font-family: var(--font-family-body-bold);
         }
       }
 
       > .first-name__severine {
-        font: 1.2rem Bodoni;
+        font: 1.2rem var(--font-family-body-regular);
       }
 
       > .first-name__founder {
-        font-weight: bold;
+        font-family: var(--font-family-body-bold);
       }
     }
 
@@ -265,7 +265,7 @@
         margin-bottom: 1.6rem;
 
         &.paragraph-highlight {
-          font: 1.4rem Bodoni;
+          font: 1.4rem var(--font-family-title);
         }
       }
 
@@ -520,7 +520,7 @@
           margin-bottom: 1.6rem;
 
           &.paragraph-highlight {
-            font: 1.4rem Bodoni;
+            font: 1.4rem var(--font-family-title);
           }
         }
 

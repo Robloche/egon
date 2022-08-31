@@ -14,8 +14,7 @@
     > a {
       border-bottom: 1px solid var(--black);
       color: var(--black);
-      font-size: .8rem;
-      font-weight: bold;
+      font: .8rem var(--font-family-body-bold);
       padding-bottom: .2rem;
       text-decoration: none;
       text-transform: uppercase;
@@ -34,8 +33,7 @@
       border: 0;
       color: var(--white);
       cursor: pointer;
-      font: .8rem Helvetica, sans-serif;
-      font-weight: bold;
+      font: .8rem var(--font-family-body);
       padding: .5rem 1rem;
       text-transform: uppercase;
 

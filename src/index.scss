@@ -13,8 +13,14 @@
 
   --border-radius-small: .2rem;
   --border-radius-big: .5rem;
+
+  --font-family-title: Bodoni; //, serif;
+  --font-family-body-regular: Helvetica, sans-serif;
+  --font-family-body-bold: HelveticaBold, sans-serif;
+
   --font-size: 16px;
-  --font-title: 3rem Bodoni;
+  --font-size-title: 3rem;
+
   --header-height: 7rem;
   --footer-height: 7rem;
   --short-transition: 200ms;
@@ -43,7 +49,7 @@ html {
     color: var(--black);
     display: flex;
     flex-direction: column;
-    font: 1rem Helvetica, sans-serif;
+    font: 1rem var(--font-family-body-regular);
     height: 100%;
     justify-content: stretch;
     margin: 0;
@@ -71,14 +77,13 @@ html {
         width: 100%;
 
         .side-title {
-          font-weight: bold;
+          font-family: var(--font-family-body-bold);
           transform: scale(-1);
           writing-mode: vertical-lr;
         }
 
         .title {
-          font: var(--font-title);
-          line-height: 2.8rem;
+          font: var(--font-size-title) / 3rem var(--font-family-title);
 
           &.title-white {
             color: var(--white);
@@ -123,7 +128,7 @@ html {
 @media (max-width: 600px) {
   :root {
     --font-size: 14px;
-    --font-title: 2rem Bodoni;
+    --font-title: 2rem var(--font-family-title);
     --header-height: 5rem;
   }
 
@@ -143,7 +148,7 @@ html {
 @media (max-width: 400px) {
   :root {
     --font-size: 11px;
-    --font-title: 2rem Bodoni;
+    --font-title: 2rem var(--font-family-title);
   }
 
   html {

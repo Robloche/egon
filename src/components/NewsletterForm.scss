@@ -12,7 +12,7 @@
       border: 2px solid var(--blue);
       box-sizing: border-box;
       color: var(--white);
-      font: 1rem Helvetica, sans-serif;
+      font: 1rem var(--font-family-body-regular);
       padding: 1rem;
       width: 20rem;
 
@@ -31,8 +31,7 @@
       border: 2px solid var(--bright-green);
       color: var(--white);
       cursor: pointer;
-      font: 1rem Helvetica, sans-serif;
-      font-weight: bold;
+      font: 1rem var(--font-family-body);
       padding: 1rem;
       text-transform: uppercase;
 
