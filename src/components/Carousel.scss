@@ -8,9 +8,12 @@
     width: 100%;
 
     > .carousel__slide {
+      align-items: center;
       background-repeat: no-repeat;
       background-size: cover;
+      display: flex;
       height: 100%;
+      justify-content: center;
       opacity: 0;
       position: absolute;
       transition: opacity var(--short-transition) ease-out;
@@ -42,24 +45,25 @@
         color: var(--white);
         display: flex;
         flex-direction: column;
-        left: 0;
-        position: absolute;
-        top: 23%;
-        width: 100%;
+
+        > .slide__text-pre {
+          font-size: 1.2rem;
+        }
 
         > .slide__text-title {
           font: 4.2rem var(--font-family-title);
-          margin: 1rem 0 3rem;
+          margin: 1rem 5.2rem 3rem;
           text-align: center;
         }
 
         > .slide__text-content {
+          font-size: 1.2rem;
           line-height: 1.8rem;
           text-align: center;
         }
 
         > .slide__logo {
-          height: 8rem;
+          height: 7.2rem;
           margin-bottom: 3rem;
         }
       }
@@ -83,7 +87,7 @@
     column-gap: .6rem;
     display: flex;
     position: absolute;
-    left: calc(50% - 2px);
+    left: 50%;
     transform: rotate(-90deg);
     transform-origin: left;
 
@@ -141,9 +145,17 @@
 
 @media (max-width: 1000px) {
   .carousel {
+    > .carousel__slider {
+      > .carousel__slide {
+        > .slide__text-container {
+          margin-top: -20%;
+        }
+      }
+    }
+
     > .carousel__buttons {
       bottom: 20%;
-      left: calc(50% - 40px);
+      left: calc(50% - 52px);
       top: unset;
     }
   }
@@ -182,6 +194,13 @@
           > .slide__logo {
             height: 6rem;
           }
+
+          > .slide__text-pre,
+          > .slide__text-content {
+            font-size: 1.2rem;
+            //max-width: 250px;
+            padding-inline: 1rem;
+          }
         }
       }
     }
@@ -191,13 +210,13 @@
 @media (max-width: 400px) {
   .carousel {
     > .carousel__slider {
-      > .slide__text-container {
-        > .slide__logo {
-          height: 4rem;
-        }
-      }
-
       > .carousel__slide {
+        > .slide__text-container {
+          > .slide__logo {
+            height: 4rem;
+          }
+        }
+
         &.image1,
         &.image5 {
           background-image: url('../assets/images/manifest1_400.png');
@@ -221,10 +240,6 @@
 
 @media (max-height: 800px) {
   .carousel {
-    > .carousel__buttons {
-      bottom: 25%;
-    }
-
     > .carousel__scroll {
       > .carousel__scroll-line {
         width: 40px;
@@ -238,22 +253,19 @@
     > .carousel__slider {
       > .carousel__slide {
         > .slide__text-container {
-          top: 10%;
-
           > .slide__text-title {
             font-size: 4rem;
             margin-bottom: 2rem;
+            max-width: 220px;
+            line-height: 3.7rem;
           }
 
+          > .slide__text-pre,
           > .slide__text-content {
-            font-size: 4rem;
+            font-size: 1.4rem;
           }
         }
       }
-    }
-
-    > .carousel__buttons {
-      bottom: 25%;
     }
 
     > .carousel__scroll {
@@ -271,18 +283,12 @@
     > .carousel__slider {
       > .carousel__slide {
         > .slide__text-container {
-          top: 5%;
-
           > .slide__text-title {
             font-size: 3rem;
             margin-bottom: 1rem;
           }
         }
       }
-    }
-
-    > .carousel__buttons {
-      bottom: 30%;
     }
 
     > .carousel__scroll {
