@@ -22,9 +22,9 @@
     "react-scripts": "^5.0.1",
     "react-swipeable": "^7.0.0",
     "redux": "^4.2.0",
-    "sass": "^1.53.0",
+    "sass": "^1.54.8",
     "sass-lint": "^1.13.1",
-    "web-vitals": "^3.0.0"
+    "web-vitals": "^3.0.1"
   },
   "scripts": {
     "lint:es": "eslint . --ext .js,.jsx --cache",
@@ -77,6 +77,6 @@
     "eslint": "^8.22.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-react": "^7.31.1",
-    "flow-bin": "^0.185.2"
+    "flow-bin": "^0.186.0"
   }
 }
