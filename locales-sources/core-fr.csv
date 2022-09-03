@@ -1,7 +1,7 @@
 agency.first_name.closing;Car Vivre est un Art
 agency.first_name.founder;La fondatrice
 agency.first_name.paragraph1;Se lancer dans l'entreprenariat, c'est avoir un enfant, lui donner un prénom, l'armer pour la vie, l'inspirer et le faire grandir. J'ai choisi Egon, un prénom autrichien. Egon, comme Egon Schiele, le grand Expressionniste. Une figure inspirante à l'œuvre prolifique, où le Je devient Jeu, Un phare dans mes imaginaires qui a exacerbé mes premières émotions.
-agency.first_name.paragraph2;Egon, 4 lettres puissantes qui ont le goût du voyage. Egon, c'est aujourd'hui une agence conseil en communication dédiée à l'art de vivre, libre, créative et engagée.
+agency.first_name.paragraph2;Egon, 4 lettres puissantes qui ont le goût du voyage. Egon, c'est aujourd'hui une agence conseil en communication consacrée à l'art de vivre, libre, créative et engagée.
 agency.first_name.pronunciation;Comment prononcer mon prénom ?
 agency.first_name.side_title;EGON - Prénom
 agency.first_name.why_egon;Pourquoi Egon ?
@@ -26,13 +26,11 @@ agency.philosophy.closing;Egon, c'est un ensemble de valeurs, un collectif d'hom
 agency.philosophy.contact_us;Contactez-nous :
 agency.philosophy.paragraph1_text;voué à l'expression du beau par le sens juste et exact, l'image et le mot.
 agency.philosophy.paragraph1_title;expert des maisons de luxe et amoureux de l'art de vivre,
-agency.philosophy.paragraph2_text;aussi émotionnelle qu'intemporelle, est fondatrice et fédératrice et permet à vos équipes, vos clients, vos amis de s'unir dans un idéal, et de voir loin, pour longtemps.
-agency.philosophy.paragraph2_title;Un complice convaincu qu'une Direction Artistique singulière,
-agency.philosophy.paragraph3_text;parce qu'aujourd'hui communiquer différemment n'est plus une question mais une mission pour projeter un futur désirable cohérent. L'authenticité des messages, la transparence, le respect, la communication directe, franche et collaborative sont autant d'actes positifs générateurs de confiance, de véritables enjeux éthiques auxquels nous croyons fondamentalement.
-agency.philosophy.paragraph3_title;Un acolyte qui a la détermination de penser une Direction Artistique responsable
-agency.philosophy.paragraph4_title;Egon vous offre une création au service d'une performance durable.
-agency.philosophy.paragraph5_text;c'est une humble prise de conscience du monde actuel et une volonté d'appartenir au monde de demain, un monde où l'on communique mieux avec créativité, sens et intemporalité.
-agency.philosophy.paragraph5_title;Egon,
+agency.philosophy.paragraph2_text;parce qu'aujourd'hui communiquer différemment n'est plus une question mais une mission pour projeter un futur désirable cohérent. L'authenticité des messages, la transparence, le respect, la communication directe, franche et collaborative sont autant d'actes positifs générateurs de confiance, de véritables enjeux éthiques auxquels nous croyons fondamentalement.
+agency.philosophy.paragraph2_title;Un complice qui a la détermination de penser une Direction Artistique singulière, fondatrice, fédératrice et responsable
+agency.philosophy.paragraph3_title;Egon vous offre une création au service d'une performance durable.
+agency.philosophy.paragraph4_text;c'est une humble prise de conscience du monde actuel et une volonté d'appartenir au monde de demain, un monde où l'on communique mieux avec créativité, sens et intemporalité.
+agency.philosophy.paragraph4_title;Egon,
 agency.philosophy.side_title;EGON - Philosophie
 agency.philosophy.title;Egon, un partenaire libre, créatif et engagé qui comprend votre marque et ses défis, avec passion,
 agency.scroll;Scroll
@@ -179,13 +177,13 @@ manifest.page2.title;Enraciné dans la terre
 manifest.page2.text;L'esprit nomade,\nIl se nourrit d'hier pour mieux appréhender demain,\npragmatique, actif et inspiré,\nIl pense les arts de Vivre avec conscience,\npassion et rigueur
 manifest.page3.pre;N°03
 manifest.page3.title;Philanthrope décomplexé
-manifest.page3.text;Il évolue dans un environnement créatif\nà géométrie variable, qu'il s'est choisi
+manifest.page3.text;Il évolue\ndans un environnement créatif\nà géométrie variable,\nqu'il s'est choisi
 manifest.page4.pre;Tour à tour,
 manifest.page4.title;Éclaireur et éclairé
 manifest.page4.text;Egon Paris\nest un électron libre, créatif et engagé.
 manifest.page5.pre;
 manifest.page5.title;
-manifest.page5.text;Agence conseil en communication
+manifest.page5.text;agence conseil en communication
 menu.label;Menu
 menu.agency.first_name;Prénom
 menu.agency.founder;Fondatrice
