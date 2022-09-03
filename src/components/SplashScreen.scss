@@ -1,3 +1,13 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .splash-screen {
   align-items: center;
   background: url('../assets/images/manifest1_1920.png');
@@ -8,8 +18,35 @@
   width: 100%;
   z-index: 100;
 
-  > img {
-    height: 150px;
+  > .image-container {
+    --animation-start: 300ms;
+    --animation-shift: 200ms;
+    --animation-duration: 800ms;
+    --img-height: 140px;
+    --img-width: 310px;
+
+    height: var(--img-height);
+    position: relative;
+    width: var(--img-width);
+
+    > img {
+      animation-duration: var(--animation-duration);
+      animation-name: appear;
+      height: var(--img-height);
+      opacity: 0;
+      position: absolute;
+      width: var(--img-width);
+
+      &:last-child {
+        animation-fill-mode: forwards;
+      }
+
+      @for $i from 1 through 8 {
+        &:nth-child(#{$i}) {
+          animation-delay: calc(var(--animation-start) + $i * var(--animation-shift));
+        }
+      }
+    }
   }
 }
 
