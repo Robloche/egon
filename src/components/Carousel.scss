@@ -45,6 +45,7 @@
         color: var(--white);
         display: flex;
         flex-direction: column;
+        margin-top: -5rem;
 
         > .slide__text-pre {
           font-size: 1.2rem;
@@ -63,8 +64,8 @@
         }
 
         > .slide__logo {
-          height: 7.2rem;
           margin-bottom: 3rem;
+          width: 290px;
         }
       }
     }
@@ -192,13 +193,12 @@
       > .carousel__slide {
         > .slide__text-container {
           > .slide__logo {
-            height: 6rem;
+            width: 216px;
           }
 
           > .slide__text-pre,
           > .slide__text-content {
             font-size: 1.2rem;
-            //max-width: 250px;
             padding-inline: 1rem;
           }
         }
@@ -213,7 +213,7 @@
       > .carousel__slide {
         > .slide__text-container {
           > .slide__logo {
-            height: 4rem;
+            width: 120px;
           }
         }
 
