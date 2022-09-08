@@ -300,3 +300,29 @@
     }
   }
 }
+
+/* Phones */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .carousel {
+    > .carousel__slider {
+      > .carousel__slide {
+        &.image1,
+        &.image5 {
+          background-image: url('../assets/images/manifest1_1920.png');
+        }
+
+        &.image2 {
+          background-image: url('../assets/images/manifest2_1920.png');
+        }
+
+        &.image3 {
+          background-image: url('../assets/images/manifest3_1920.png');
+        }
+
+        &.image4 {
+          background-image: url('../assets/images/manifest4_1920.png');
+        }
+      }
+    }
+  }
+}
