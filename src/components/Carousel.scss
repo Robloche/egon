@@ -257,7 +257,6 @@
           > .slide__text-title {
             font-size: 4rem;
             margin-bottom: 2rem;
-            max-width: 220px;
             line-height: 3.7rem;
           }
 
@@ -284,6 +283,8 @@
     > .carousel__slider {
       > .carousel__slide {
         > .slide__text-container {
+          margin-top: -15%;
+
           > .slide__text-title {
             font-size: 3rem;
             margin-bottom: 1rem;
@@ -292,11 +293,27 @@
       }
     }
 
+    > .carousel__buttons {
+      bottom: 25%;
+    }
+
     > .carousel__scroll {
       bottom: 10px;
 
       > .carousel__scroll-line {
         width: 30px;
+      }
+    }
+  }
+}
+
+@media (max-height: 400px) {
+  .carousel {
+    > .carousel__scroll {
+      bottom: 15px;
+
+      > .carousel__scroll-line {
+        width: 20px;
       }
     }
   }
