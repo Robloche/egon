@@ -6,6 +6,7 @@ import Carousel from './Carousel';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
+import {delayedSetIds} from '../helpers/scroll';
 import egon1 from '../assets/images/egon-by-severine_144.png';
 import egon2 from '../assets/images/egon-by-severine_287.png';
 import egon3 from '../assets/images/egon-by-severine_430.png';
@@ -15,13 +16,14 @@ import severine1 from '../assets/images/severine_200.png';
 import severine2 from '../assets/images/severine_400.png';
 import severine3 from '../assets/images/severine_600.png';
 import severine4 from '../assets/images/severine_800.png';
+import {useEffect} from 'react';
 import {useSelector} from 'react-redux';
 
 const renderSectionFirstName = () => (
   <>
     <div
       className='page-agency__first-name page-agency__section'
-      id='first-name'>
+      data-id='first-name'>
       <div className='side-title'>{Localizer.localize('agency.first_name.side_title')}</div>
       <div className='first-name__drawing'>
         <img
@@ -66,7 +68,7 @@ const renderSectionPhilosophy = () => (
     </div>
     <div
       className='page-agency__philosophy page-agency__grid-section'
-      id='philosophy'>
+      data-id='philosophy'>
       <div className='philosophy__content'>
         <div className='philosophy__title title'>{Localizer.localize('agency.philosophy.title')}</div>
         <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph1_title')}</div>
@@ -99,11 +101,11 @@ const renderSectionPhilosophy = () => (
 const renderSectionManifest = () => (
   <>
     <div className='page-agency__grid-section section__left section__manifest'>
-      <div className='side-title title-white'>{Localizer.localize('agency.philosophy.side_title')}</div>
+      <div className='side-title title-white'>{Localizer.localize('agency.manifest.side_title')}</div>
     </div>
     <div
       className='page-agency__manifest page-agency__grid-section'
-      id='manifest'>
+      data-id='manifest'>
       <div className='manifest__content'>
         <div className='manifest__title title'>
           <div>{Localizer.localize('agency.manifest.paragraph1_title')}</div>
@@ -143,7 +145,7 @@ const renderSectionManifest = () => (
 const renderSectionFounder = () => (
   <div
     className='page-agency__founder page-agency__section'
-    id='founder'>
+    data-id='founder'>
     <img
       alt="Séverine Breton Join-Diéterle, fondatrice d'Egon Paris"
       sizes='(max-width: 600px) 200px, (max-width: 900px) 400px, (max-width: 1400px) 600px, 800px'
@@ -168,10 +170,19 @@ const renderSectionFounder = () => (
 const Home = (): React.Node => {
   useSelector((state) => state.language);
 
+  // Initialization
+  useEffect(() => {
+    /*
+     * Wait until everything (especially the carousel) is loaded before setting Ids.
+     * This prevents the bug where react-router-hash-link doesn't scroll to the correct location
+     */
+    delayedSetIds();
+  }, []);
+
   return (
     <div
       className='page page-agency'
-      id='carousel'>
+      data-id='carousel'>
       <Carousel />
       <Header />
       {renderSectionFirstName()}
