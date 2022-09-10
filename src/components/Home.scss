@@ -12,7 +12,7 @@
     display: flex;
     height: 448px;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 0 8rem;
     width: 100%;
 
     &.first-name__closing {
@@ -356,6 +356,10 @@
           margin-top: 2rem;
         }
       }
+    }
+
+    .section__closing {
+      padding: 0 2rem;
     }
   }
 }
