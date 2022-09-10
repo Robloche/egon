@@ -117,7 +117,6 @@ const Carousel = (): React.Node => {
           to={`/${language}/home#egon`}>{Localizer.localize('agency.scroll')}</HashLink>
       </div>
       <Menu />
-      <div className='debug__overlay'>{windowWidth} x {windowHeight}</div>
     </div>
   );
 };
