@@ -3,9 +3,10 @@
 import './LegalNotice.scss';
 import * as React from 'react';
 import Footer from './Footer';
+import {HashLink} from 'react-router-hash-link';
 import Header from './Header';
-import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
+import {scrollTop} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
 
 const LegalNotice = (): React.Node => {
@@ -14,7 +15,7 @@ const LegalNotice = (): React.Node => {
   return (
     <div
       className='page page-legal-notice'
-      id='legal-notice'>
+      id='top'>
       <Header />
       <div className='legal-notice__container'>
         <div className='legal-notice__title page-title'>{Localizer.localize('legal_notice.title')}</div>
@@ -53,7 +54,9 @@ const LegalNotice = (): React.Node => {
             target='_blank'>egon@egonparis.com</a></div>
         <div className='legal-notice__paragraph'>
           <span>{Localizer.localize('legal_notice.privacy_policy_introduction')}</span>
-          <Link to={`/${language}/privacy-policy`}>{Localizer.localize('legal_notice.privacy_policy_link')}</Link>
+          <HashLink
+            scroll={scrollTop}
+            to={`/${language}/privacy-policy#top`}>{Localizer.localize('legal_notice.privacy_policy_link')}</HashLink>
         </div>
       </div>
       <Footer />

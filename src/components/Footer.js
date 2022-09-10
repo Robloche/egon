@@ -4,7 +4,6 @@ import './Footer.scss';
 import * as React from 'react';
 import {useEffect, useState} from 'react';
 import {HashLink} from 'react-router-hash-link';
-import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
 import NewsletterPopup from './NewsletterPopup';
 import Social from './Social';
@@ -38,12 +37,16 @@ const Footer = (): React.Node => {
       <div className='footer__links'>
         <HashLink
           scroll={scrollTop}
-          to={`/${language}/legal-notice#legal-notice`}>{Localizer.localize('footer.legal_notice')}</HashLink>
+          to={`/${language}/legal-notice#top`}>{Localizer.localize('footer.legal_notice')}</HashLink>
         <HashLink
           scroll={scrollTop}
-          to={`/${language}/privacy-policy#privacy-policy`}>{Localizer.localize('footer.privacy_policy')}</HashLink>
-        <Link to={`/${language}/join-us`}>{Localizer.localize('footer.join_us')}</Link>
-        <Link to={`/${language}/contact`}>{Localizer.localize('footer.contact')}</Link>
+          to={`/${language}/privacy-policy#top`}>{Localizer.localize('footer.privacy_policy')}</HashLink>
+        <HashLink
+          scroll={scrollTop}
+          to={`/${language}/join-us#top`}>{Localizer.localize('footer.join_us')}</HashLink>
+        <HashLink
+          scroll={scrollTop}
+          to={`/${language}/contact#top`}>{Localizer.localize('footer.contact')}</HashLink>
         <button
           onClick={toggle}
           type='button'>{Localizer.localize('footer.newsletter')}</button>

@@ -13,7 +13,7 @@ const PrivacyPolicy = (): React.Node => {
   return (
     <div
       className='page page-legal-notice'
-      id='privacy-policy'>
+      id='top'>
       <Header />
       <div className='legal-notice__container'>
         <div className='legal-notice__title page-title'>{Localizer.localize('privacy_policy.title')}</div>

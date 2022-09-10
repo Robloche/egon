@@ -4,7 +4,6 @@ import './Menu.scss';
 import * as React from 'react';
 import {useCallback, useEffect, useState} from 'react';
 import {HashLink} from 'react-router-hash-link';
-import {Link} from 'react-router-dom';
 import {Localizer} from '../helpers/localizer';
 import Social from './Social';
 import {scrollTop} from '../helpers/scroll';
@@ -91,10 +90,11 @@ const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick
         scroll={scrollTop}
         to={`/${language}/creation#customers`}>{Localizer.localize('menu.creation.customers')}</HashLink>
     </div>
-    <Link
+    <HashLink
       className='menu__item'
       onClick={handleCloseOnClick}
-      to={`/${language}/contact`}>{Localizer.localize('menu.contact.label')}</Link>
+      scroll={scrollTop}
+      to={`/${language}/contact#top`}>{Localizer.localize('menu.contact.label')}</HashLink>
   </nav>
 );
 

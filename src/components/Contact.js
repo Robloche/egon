@@ -13,7 +13,9 @@ const Contact = (): React.Node => {
   useSelector((state) => state.language);
 
   return (
-    <div className='page page-contact'>
+    <div
+      className='page page-contact'
+      id='top'>
       <Header />
       <div className='page-contact__content'>
         <div className='section__left'>

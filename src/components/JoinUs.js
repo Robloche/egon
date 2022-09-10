@@ -13,7 +13,9 @@ const JoinUs = (): React.Node => {
   useSelector((state) => state.language);
 
   return (
-    <div className='page page-join-us'>
+    <div
+      className='page page-join-us'
+      id='top'>
       <Header />
       <div className='page-join-us__content'>
         <div className='section__left'>
