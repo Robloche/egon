@@ -18,10 +18,11 @@ const IMAGE_SWITCH_TIMEOUT = 15000;
 
 const LAST_SLIDE_INDEX = 4;
 
-const IMAGES = ['image1', 'image2', 'image3', 'image4', 'image5'];
+export const IMAGE_COUNT = 5;
+const IMAGES = [...new Array(IMAGE_COUNT)].map((_, i) => (i + 1).toString());
 
-const previousIndex = (index) => (index - 1 + IMAGES.length) % IMAGES.length;
-const nextIndex = (index) => (index + 1) % IMAGES.length;
+const previousIndex = (index) => (index - 1 + IMAGE_COUNT) % IMAGE_COUNT;
+const nextIndex = (index) => (index + 1) % IMAGE_COUNT;
 
 const renderSlideContent = (index: number): React.Element<*> => {
   if (index < LAST_SLIDE_INDEX) {
@@ -94,7 +95,7 @@ const Carousel = (): React.Node => {
           <div
             className={`carousel__slide image${index + 1} ${index === currentIndex ? 'visible' : ''}`}
             data-index={index}
-            key={img.toString()}>
+            key={`image${img}`}>
             <div className='slide__text-container'>
               {renderSlideContent(index)}
               <div className='slide__text-content'>{Localizer.localize(`manifest.page${index + 1}.text`)}</div>
@@ -105,7 +106,7 @@ const Carousel = (): React.Node => {
       <div className='carousel__buttons'>{IMAGES.map((img, index) => <Bullet
         index={index}
         isFull={index <= currentIndex}
-        key={img.toString()}
+        key={`image${img}`}
         onClick={handleBulletOnClick} />)}</div>
       <div className='carousel__scroll'>
         <div className='carousel__scroll-line' />

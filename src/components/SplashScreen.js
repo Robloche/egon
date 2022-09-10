@@ -9,6 +9,7 @@ import frame5 from '../assets/images/egon-frame5.png';
 import frame6 from '../assets/images/egon-frame6.png';
 import frame7 from '../assets/images/egon-frame7.png';
 import frame8 from '../assets/images/egon-frame8.png';
+import {preloadCarouselImages} from '../helpers/preload';
 import {useNavigate} from 'react-router-dom';
 import {useSelector} from 'react-redux';
 
@@ -27,6 +28,8 @@ const SplashScreen = () => {
     const splashScreenTimer = setTimeout(() => {
       navigate(`/${languageRef.current}/home`);
     }, SPLASH_SCREEN_TIMEOUT);
+
+    preloadCarouselImages();
 
     return () => {
       clearTimeout(splashScreenTimer);
