@@ -38,43 +38,51 @@
 }
 
 @media (max-width: 1400px) {
-  .page-contact__landscape {
-    background-image: url('../assets/images/contact_1400.png');
+  .page-contact {
+    > .page-contact__landscape {
+      background-image: url('../assets/images/contact_1400.png');
+    }
   }
 }
 
 @media (max-width: 900px) {
-  .page-contact__content {
-    height: 100%;
-  }
+  .page-contact {
+    > .page-contact__content {
+      height: 100%;
+    }
 
-  .page-contact__landscape {
-    background-image: url('../assets/images/contact_900.png');
+    > .page-contact__landscape {
+      background-image: url('../assets/images/contact_900.png');
+    }
   }
 }
 
 @media (max-width: 600px) {
-  .page-contact__content {
-    // sass-lint:disable-block indentation
-    display: grid;
-    grid-template: 'title logo' 120px
+  .page-contact {
+    > .page-contact__content {
+      // sass-lint:disable-block indentation
+      display: grid;
+      grid-template: 'title logo' 120px
                    '.     content'
                    / 4rem 1fr;
-    padding: 4rem 0;
+      padding: 4rem 0;
 
-    > img {
-      grid-area: logo;
-    }
+      > img {
+        grid-area: logo;
+      }
 
-    > .page-contact__info {
-      grid-area: content;
-      margin-right: 1rem;
+      > .page-contact__info {
+        grid-area: content;
+        margin-right: 1rem;
+      }
     }
   }
 }
 
 @media (max-width: 400px) {
-  .page-contact__landscape {
-    background-image: url('../assets/images/contact_400.png');
+  .page-contact {
+    > .page-contact__landscape {
+      background-image: url('../assets/images/contact_400.png');
+    }
   }
 }
