@@ -114,7 +114,7 @@ const Carousel = (): React.Node => {
           className='carousel__scroll-text'
           scroll={scrollTop}
           smooth
-          to={`/${language}/home#egon`}>{Localizer.localize('agency.scroll')}</HashLink>
+          to={`/${language}/home#first-name`}>{Localizer.localize('agency.scroll')}</HashLink>
       </div>
       <Menu />
     </div>
