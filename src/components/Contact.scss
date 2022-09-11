@@ -63,8 +63,8 @@
       // sass-lint:disable-block indentation
       display: grid;
       grid-template: 'title logo' 120px
-                   '.     content'
-                   / 4rem 1fr;
+                     '.     content'
+                     / 4rem 1fr;
       padding: 4rem 0;
 
       > img {
@@ -81,6 +81,13 @@
 
 @media (max-width: 400px) {
   .page-contact {
+    > .page-contact__content {
+      // sass-lint:disable-block indentation
+      grid-template: 'title logo' 120px
+                     '.     content'
+                     / 2rem 1fr;
+    }
+
     > .page-contact__landscape {
       background-image: url('../assets/images/contact_400.png');
     }

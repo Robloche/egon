@@ -16,6 +16,7 @@
 
     > .page-join-us__info {
       line-height: 1.4rem;
+      margin-right: 2rem;
 
       > .page-join-us__title {
         margin-bottom: 2rem;
@@ -30,20 +31,7 @@
   }
 }
 
-@media (max-width: 900px) {
-  .page-join-us {
-    > .page-join-us__content {
-      flex-direction: column;
-      padding: 3rem 10% 3rem 20%;
-
-      > .page-join-us__info {
-        margin-top: 3rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .page-join-us {
     > .page-join-us__content {
       display: grid;
@@ -61,6 +49,17 @@
         grid-area: content;
         margin-right: 1rem;
       }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .page-join-us {
+    > .page-join-us__content {
+      // sass-lint:disable-block indentation
+      grid-template: 'title logo' 120px
+                     '.     content'
+                     / 2rem 1fr;
     }
   }
 }
