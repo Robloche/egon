@@ -93,7 +93,6 @@ const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick
     <HashLink
       className='menu__item'
       onClick={handleCloseOnClick}
-      scroll={scrollTop}
       to={`/${language}/contact#top`}>{Localizer.localize('menu.contact.label')}</HashLink>
   </nav>
 );

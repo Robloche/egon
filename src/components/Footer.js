@@ -7,7 +7,6 @@ import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
 import NewsletterPopup from './NewsletterPopup';
 import Social from './Social';
-import {scrollTop} from '../helpers/scroll';
 import useNewsletterPopup from '../hooks/useNewsletterPopup';
 import {useSelector} from 'react-redux';
 
@@ -35,18 +34,10 @@ const Footer = (): React.Node => {
     <div className='footer'>
       <Social className='footer__social' />
       <div className='footer__links'>
-        <HashLink
-          scroll={scrollTop}
-          to={`/${language}/legal-notice#top`}>{Localizer.localize('footer.legal_notice')}</HashLink>
-        <HashLink
-          scroll={scrollTop}
-          to={`/${language}/privacy-policy#top`}>{Localizer.localize('footer.privacy_policy')}</HashLink>
-        <HashLink
-          scroll={scrollTop}
-          to={`/${language}/join-us#top`}>{Localizer.localize('footer.join_us')}</HashLink>
-        <HashLink
-          scroll={scrollTop}
-          to={`/${language}/contact#top`}>{Localizer.localize('footer.contact')}</HashLink>
+        <HashLink to={`/${language}/legal-notice#top`}>{Localizer.localize('footer.legal_notice')}</HashLink>
+        <HashLink to={`/${language}/privacy-policy#top`}>{Localizer.localize('footer.privacy_policy')}</HashLink>
+        <HashLink to={`/${language}/join-us#top`}>{Localizer.localize('footer.join_us')}</HashLink>
+        <HashLink to={`/${language}/contact#top`}>{Localizer.localize('footer.contact')}</HashLink>
         <button
           onClick={toggle}
           type='button'>{Localizer.localize('footer.newsletter')}</button>

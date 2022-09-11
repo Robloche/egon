@@ -5,7 +5,6 @@ import * as React from 'react';
 import {HashLink} from 'react-router-hash-link';
 import Menu from './Menu';
 import logo from '../assets/svg/logo.svg';
-import {scrollTop} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
 
 const Header = (): React.Node => {
@@ -13,9 +12,7 @@ const Header = (): React.Node => {
 
   return (
     <div className='header'>
-      <HashLink
-        scroll={scrollTop}
-        to={`/${language}/home#carousel`}>
+      <HashLink to={`/${language}/home#carousel`}>
         <img
           alt='Logo Egon Paris'
           draggable={false}
