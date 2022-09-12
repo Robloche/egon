@@ -9,6 +9,7 @@ import {Localizer} from '../helpers/localizer';
 import Menu from './Menu';
 import logo from '../assets/svg/logo-white.svg';
 import {scrollTop} from '../helpers/scroll';
+import {useInView} from 'react-intersection-observer';
 import {useSelector} from 'react-redux';
 import {useSwipeable} from 'react-swipeable';
 import useWindowSize from '../hooks/useWindowSize';
@@ -42,6 +43,8 @@ const renderSlideContent = (index: number): React.Element<*> => {
 
 const Carousel = (): React.Node => {
   const language = useSelector((state) => state.language);
+
+  const {inView, ref: refInView} = useInView();
 
   const {height: windowHeight, width: windowWidth} = useWindowSize();
 
@@ -109,7 +112,9 @@ const Carousel = (): React.Node => {
         key={`image${img}`}
         onClick={handleBulletOnClick} />)}</div>
       <div className='carousel__scroll'>
-        <div className='carousel__scroll-line' />
+        <div
+          className={`carousel__scroll-line ${inView ? 'visible' : ''}`}
+          ref={refInView} />
         <HashLink
           className='carousel__scroll-text'
           scroll={scrollTop}

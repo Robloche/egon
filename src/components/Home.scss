@@ -9,7 +9,7 @@
 }
 
 .page-agency {
-  animation: .5s fade-in forwards;
+  animation: 500ms fade-in forwards;
   opacity: 0;
 
   > .page-agency__section {
@@ -136,7 +136,21 @@
               > .manifest__title-line {
                 background-color: var(--white);
                 height: 1px;
+                transform: scaleX(0);
+                transition: transform 500ms ease-out;
                 width: 100%;
+
+                &.left {
+                  transform-origin: left;
+                }
+
+                &.right {
+                  transform-origin: right;
+                }
+
+                &.visible {
+                  transform: scaleX(1);
+                }
               }
             }
           }

@@ -96,7 +96,14 @@
     > .carousel__scroll-line {
       background-color: var(--white);
       height: 1px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 1s ease-out;
       width: 60px;
+
+      &.visible {
+        transform: scaleX(1);
+      }
     }
 
     > .carousel__scroll-text {

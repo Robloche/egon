@@ -2,6 +2,7 @@
 
 import './Expertises.scss';
 import * as React from 'react';
+import AnimatedText from './AnimatedText';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
@@ -42,7 +43,11 @@ const renderSectionStrategy = () => (
         <div className='listing__item'>{Localizer.localize('expertises.strategy.column3.item3')}</div>
       </div>
     </div>
-    <div className='page-expertises__closing title closing1'>{Localizer.localize('expertises.strategy.closing')}</div>
+    <div className='page-expertises__closing closing1'>
+      <AnimatedText
+        classList='title'
+        stringKey='expertises.strategy.closing' />
+    </div>
   </>
 );
 
@@ -76,7 +81,11 @@ const renderSectionCreation = () => (
         <div className='listing__title'>{Localizer.localize('expertises.creation.column5.title')}</div>
       </div>
     </div>
-    <div className='page-expertises__closing title closing2'>{Localizer.localize('expertises.creation.closing')}</div>
+    <div className='page-expertises__closing closing2'>
+      <AnimatedText
+        classList='title'
+        stringKey='expertises.creation.closing' />
+    </div>
   </>
 );
 
@@ -116,7 +125,11 @@ const renderSectionDigital = () => (
         <div className='listing__item'>{Localizer.localize('expertises.digital.column3.item4')}</div>
       </div>
     </div>
-    <div className='page-expertises__closing title closing3'>{Localizer.localize('expertises.digital.closing')}</div>
+    <div className='page-expertises__closing closing3'>
+      <AnimatedText
+        classList='title'
+        stringKey='expertises.digital.closing' />
+    </div>
   </>
 );
 
@@ -157,7 +170,11 @@ const renderSectionEdition = () => (
         <div className='listing__item'>{Localizer.localize('expertises.edition.column3.item7')}</div>
       </div>
     </div>
-    <div className='page-expertises__closing title closing4'>{Localizer.localize('expertises.edition.closing')}</div>
+    <div className='page-expertises__closing closing4'>
+      <AnimatedText
+        classList='title'
+        stringKey='expertises.edition.closing' />
+    </div>
   </>
 );
 
@@ -196,7 +213,11 @@ const renderSectionProduction = () => (
         <div className='listing__item'>{Localizer.localize('expertises.production.column4.item5')}</div>
       </div>
     </div>
-    <div className='page-expertises__closing title closing5'>{Localizer.localize('expertises.production.closing')}</div>
+    <div className='page-expertises__closing closing5'>
+      <AnimatedText
+        classList='title'
+        stringKey='expertises.production.closing' />
+    </div>
   </>
 );
 

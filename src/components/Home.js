@@ -2,6 +2,7 @@
 
 import './Home.scss';
 import * as React from 'react';
+import AnimatedText from './AnimatedText';
 import Carousel from './Carousel';
 import Footer from './Footer';
 import Header from './Header';
@@ -17,6 +18,7 @@ import severine2 from '../assets/images/severine_400.png';
 import severine3 from '../assets/images/severine_600.png';
 import severine4 from '../assets/images/severine_800.png';
 import {useEffect} from 'react';
+import {useInView} from 'react-intersection-observer';
 import {useSelector} from 'react-redux';
 
 const renderSectionFirstName = () => (
@@ -55,7 +57,10 @@ const renderSectionFirstName = () => (
     </div>
     <div className='section__closing first-name__closing'>
       <div className='first-name__closing-content'>
-        <div className='first-name__title title title-white'>{Localizer.localize('agency.first_name.closing')}</div>
+        <AnimatedText
+          classList='first-name__title title title-white'
+          stringKey='agency.first_name.closing'
+          useRootMargin />
       </div>
     </div>
   </>
@@ -85,7 +90,9 @@ const renderSectionPhilosophy = () => (
     <div className='page-agency__grid-section section__right' />
     <div className='section__closing philosophy__closing'>
       <div className='philosophy__closing-content'>
-        <div className='philosophy__title title title-white'>{Localizer.localize('agency.philosophy.closing')}</div>
+        <AnimatedText
+          classList='philosophy__title title title-white'
+          stringKey='agency.philosophy.closing' />
         <div className='philosophy__contact'>
           <div>{Localizer.localize('agency.philosophy.contact_us')}</div>
           <a
@@ -98,49 +105,55 @@ const renderSectionPhilosophy = () => (
   </>
 );
 
-const renderSectionManifest = () => (
-  <>
-    <div className='page-agency__grid-section section__left section__manifest'>
-      <div className='side-title title-white'>{Localizer.localize('agency.manifest.side_title')}</div>
-    </div>
-    <div
-      className='page-agency__manifest page-agency__grid-section'
-      data-id='manifest'>
-      <div className='manifest__content'>
-        <div className='manifest__title title'>
-          <div>{Localizer.localize('agency.manifest.paragraph1_title')}</div>
-          <div className='manifest__title-line-number'>
-            <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph1_number')}</div>
-            <div className='manifest__title-line' />
+const renderSectionManifest = () => {
+  const {inView, ref} = useInView();
+
+  return (
+    <>
+      <div className='page-agency__grid-section section__left section__manifest'>
+        <div className='side-title title-white'>{Localizer.localize('agency.manifest.side_title')}</div>
+      </div>
+      <div
+        className='page-agency__manifest page-agency__grid-section'
+        data-id='manifest'>
+        <div className='manifest__content'>
+          <div className='manifest__title title'>
+            <div>{Localizer.localize('agency.manifest.paragraph1_title')}</div>
+            <div className='manifest__title-line-number'>
+              <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph1_number')}</div>
+              <div className={`manifest__title-line right ${inView ? 'visible' : ''}`} />
+            </div>
           </div>
-        </div>
-        <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph1_text')}</div>
-        <div className='manifest__title title manifest-right'>
-          <div className='manifest__title-line-number'>
-            <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph2_number')}</div>
-            <div className='manifest__title-line' />
+          <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph1_text')}</div>
+          <div className='manifest__title title manifest-right'>
+            <div className='manifest__title-line-number'>
+              <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph2_number')}</div>
+              <div className={`manifest__title-line left ${inView ? 'visible' : ''}`} />
+            </div>
+            <div>{Localizer.localize('agency.manifest.paragraph2_title')}</div>
           </div>
-          <div>{Localizer.localize('agency.manifest.paragraph2_title')}</div>
-        </div>
-        <div className='manifest__text manifest-right'>{Localizer.localize('agency.manifest.paragraph2_text')}</div>
-        <div className='manifest__title title'>
-          <div>{Localizer.localize('agency.manifest.paragraph3_title')}</div>
-          <div className='manifest__title-line-number'>
-            <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph3_number')}</div>
-            <div className='manifest__title-line' />
+          <div className='manifest__text manifest-right'>{Localizer.localize('agency.manifest.paragraph2_text')}</div>
+          <div className='manifest__title title'>
+            <div>{Localizer.localize('agency.manifest.paragraph3_title')}</div>
+            <div className='manifest__title-line-number'>
+              <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph3_number')}</div>
+              <div
+                className={`manifest__title-line right ${inView ? 'visible' : ''}`}
+                ref={ref} />
+            </div>
           </div>
-        </div>
-        <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph3_text')}</div>
-        <div className='manifest__section'>
-          <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph4_number')}</div>
-          <div className='manifest__title'>{Localizer.localize('agency.manifest.paragraph4_title')}</div>
-          <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph4_text')}</div>
+          <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph3_text')}</div>
+          <div className='manifest__section'>
+            <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph4_number')}</div>
+            <div className='manifest__title'>{Localizer.localize('agency.manifest.paragraph4_title')}</div>
+            <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph4_text')}</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div className='page-agency__grid-section section__right section__manifest' />
-  </>
-);
+      <div className='page-agency__grid-section section__right section__manifest' />
+    </>
+  );
+};
 
 const renderSectionFounder = () => (
   <div
