@@ -1,4 +1,17 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .page-agency {
+  animation: .5s fade-in forwards;
+  opacity: 0;
+
   > .page-agency__section {
     align-items: flex-start;
     display: flex;

@@ -15,8 +15,13 @@
   display: flex;
   height: 100%;
   justify-content: center;
+  transition: opacity var(--short-transition) ease-out;
   width: 100%;
   z-index: 100;
+
+  &.fade-out {
+    opacity: 0;
+  }
 
   > .image-container {
     --animation-start: 300ms;
