@@ -14,7 +14,7 @@ import {useNavigate} from 'react-router-dom';
 import {useSelector} from 'react-redux';
 
 // Duration splash screen stays visible (in ms)
-const SPLASH_SCREEN_TIMEOUT = 3500;
+const SPLASH_SCREEN_TIMEOUT = 3000;
 
 const frames = Object.freeze([frame1, frame2, frame3, frame4, frame5, frame6, frame7, frame8]);
 
