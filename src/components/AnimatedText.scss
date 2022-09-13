@@ -1,5 +1,5 @@
 .animated-text {
-  transition: opacity .5s ease-out, transform .5s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
 
   &.visible {
     opacity: 1;
@@ -8,6 +8,13 @@
 
   &.hidden {
     opacity: 0;
-    transform: translateY(100%);
+
+    &.down {
+      transform: translateY(-100%);
+    }
+
+    &.up {
+      transform: translateY(100%);
+    }
   }
 }

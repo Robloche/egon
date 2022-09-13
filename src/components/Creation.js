@@ -2,6 +2,7 @@
 
 import './Creation.scss';
 import * as React from 'react';
+import AnimatedText from './AnimatedText';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
@@ -42,7 +43,10 @@ const renderSectionCustomers = () => (
       id='customers'>
       <div className='page-creation__paragraph title'>{Localizer.localize('creation.customers.title')}</div>
       <div className='page-creation__paragraph'>{Localizer.localize('creation.customers.paragraph')}</div>
-      <div className='page-creation__paragraph huge'>{Localizer.localize('creation.customers.thanks')}</div>
+      <AnimatedText
+        classList='page-creation__paragraph huge'
+        direction='down'
+        stringKey='creation.customers.thanks' />
     </div>
     <div className='page-creation__section section__right section__customers' />
   </>

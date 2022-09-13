@@ -7,15 +7,16 @@ import {useInView} from 'react-intersection-observer';
 
 type AnimatedTextProps = {
   +classList: string,
+  +direction: 'down' | 'up',
   +stringKey: string
 };
 
-const AnimatedText = ({classList, stringKey}: AnimatedTextProps): React.Node => {
+const AnimatedText = ({classList, direction, stringKey}: AnimatedTextProps): React.Node => {
   const {inView, ref} = useInView();
 
   return (
     <div
-      className={`${classList} animated-text ${inView ? 'visible' : 'hidden'}`}
+      className={`${classList} animated-text ${direction} ${inView ? 'visible' : 'hidden'}`}
       ref={ref}>{Localizer.localize(stringKey)}</div>
   );
 };
