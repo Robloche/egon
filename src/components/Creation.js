@@ -14,12 +14,12 @@ import {useSelector} from 'react-redux';
 
 const renderSectionProjects = () => (
   <>
-    <div className='page-creation__section section__left'>
+    <div
+      className='page-creation__section section__left'
+      id='projects'>
       <div className='side-title'>{Localizer.localize('creation.projects.side_title')}</div>
     </div>
-    <div
-      className='page-creation__section section_center'
-      id='projects'>
+    <div className='page-creation__section section_center'>
       <div className='page-creation__paragraph title'>{Localizer.localize('creation.projects.title')}</div>
       <div className='page-creation__paragraph'>{Localizer.localize('creation.projects.paragraph')}</div>
       <div className='page-creation__contact'>
@@ -35,12 +35,12 @@ const renderSectionProjects = () => (
 
 const renderSectionCustomers = () => (
   <>
-    <div className='page-creation__section section__left section__customers'>
+    <div
+      className='page-creation__section section__left section__customers'
+      id='customers'>
       <div className='side-title'>{Localizer.localize('creation.customers.side_title')}</div>
     </div>
-    <div
-      className='page-creation__section section_center section__customers'
-      id='customers'>
+    <div className='page-creation__section section_center section__customers'>
       <div className='page-creation__paragraph title'>{Localizer.localize('creation.customers.title')}</div>
       <div className='page-creation__paragraph'>{Localizer.localize('creation.customers.paragraph')}</div>
       <AnimatedText
