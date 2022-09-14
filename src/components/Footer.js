@@ -2,6 +2,7 @@
 
 import './Footer.scss';
 import * as React from 'react';
+import {logError, logInfo} from '../helpers/debug';
 import {useEffect, useState} from 'react';
 import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
@@ -10,13 +11,15 @@ import Social from './Social';
 import useNewsletterPopup from '../hooks/useNewsletterPopup';
 import {useSelector} from 'react-redux';
 
-const fetchVersion = async(setVersion): Promise<void> => {
+const fetchVersion = async(): Promise<string> => {
   try {
     const response = await fetch('/version.json');
     const json = await response.json();
-    setVersion(json.version);
+    return json.version;
   } catch (error) {
-    setVersion('');
+    logInfo('Error fetching version');
+    logError(error);
+    return '';
   }
 };
 
@@ -27,7 +30,8 @@ const Footer = (): React.Node => {
   const [version, setVersion] = useState('');
 
   useEffect(() => {
-    fetchVersion(setVersion);
+    fetchVersion()
+      .then((v) => setVersion(v));
   }, [setVersion]);
 
   return (
