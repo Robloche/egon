@@ -14,11 +14,17 @@ import {Provider} from 'react-redux';
 import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
 import {configureStore} from '@reduxjs/toolkit';
+import {fetchVersion} from './helpers/version';
+import {setVersion} from './redux/actions';
 
 const store = configureStore({reducer: appReducer});
 
 // Pass dispatch function to Localizer so that it can update store whenever language changes
 Localizer.setDispatch(store.dispatch);
+
+// Read version in JSON file (cannot throw error)
+fetchVersion()
+  .then((v) => setVersion(v));
 
 const App = (): React.Node => (
   <Provider store={store}>

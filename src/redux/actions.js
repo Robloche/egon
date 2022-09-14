@@ -1,7 +1,7 @@
 /* @flow */
 
+import {REDUX_TYPE_SET_LANGUAGE, REDUX_TYPE_SET_VERSION} from './constants';
 import type {AppAction} from './types';
-import {REDUX_TYPE_SET_LANGUAGE} from './constants';
 
 const setLanguage: (language: string) => AppAction =
   (language) => {
@@ -11,6 +11,15 @@ const setLanguage: (language: string) => AppAction =
     };
   };
 
+const setVersion: (version: string) => AppAction =
+  (version) => {
+    return {
+      type: REDUX_TYPE_SET_VERSION,
+      version
+    };
+  };
+
 export {
-  setLanguage
+  setLanguage,
+  setVersion
 };

@@ -2,8 +2,6 @@
 
 import './Footer.scss';
 import * as React from 'react';
-import {logError, logInfo} from '../helpers/debug';
-import {useEffect, useState} from 'react';
 import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
 import NewsletterPopup from './NewsletterPopup';
@@ -11,28 +9,11 @@ import Social from './Social';
 import useNewsletterPopup from '../hooks/useNewsletterPopup';
 import {useSelector} from 'react-redux';
 
-const fetchVersion = async(): Promise<string> => {
-  try {
-    const response = await fetch('/version.json');
-    const json = await response.json();
-    return json.version;
-  } catch (error) {
-    logInfo('Error fetching version');
-    logError(error);
-    return '';
-  }
-};
-
 const Footer = (): React.Node => {
   const language = useSelector((state) => state.language);
+  const version = useSelector((state) => state.version);
 
   const {isVisible, toggle} = useNewsletterPopup();
-  const [version, setVersion] = useState('');
-
-  useEffect(() => {
-    fetchVersion()
-      .then((v) => setVersion(v));
-  }, [setVersion]);
 
   return (
     <div className='footer'>

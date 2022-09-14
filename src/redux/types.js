@@ -1,9 +1,10 @@
 /* @flow */
 
-import {REDUX_TYPE_SET_LANGUAGE} from './constants';
+import {REDUX_TYPE_SET_LANGUAGE, REDUX_TYPE_SET_VERSION} from './constants';
 
 export type AppState = {|
-  language: string
+  language: string,
+  version: string
 |};
 
 export type AppAction =
@@ -13,4 +14,9 @@ export type AppAction =
   {|
     language: string,
     type: typeof REDUX_TYPE_SET_LANGUAGE
+  |} |
+// Set version
+  {|
+    type: typeof REDUX_TYPE_SET_VERSION,
+    version: string
   |};
