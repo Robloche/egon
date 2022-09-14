@@ -24,7 +24,7 @@ Localizer.setDispatch(store.dispatch);
 
 // Read version in JSON file (cannot throw error)
 fetchVersion()
-  .then((v) => setVersion(v));
+  .then((v) => store.dispatch(setVersion(v)));
 
 const App = (): React.Node => (
   <Provider store={store}>
