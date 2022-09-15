@@ -25,7 +25,19 @@
     "redux": "^4.2.0",
     "sass": "^1.54.9",
     "sass-lint": "^1.13.1",
-    "web-vitals": "^3.0.1"
+    "web-vitals": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "@babel/preset-flow": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "eslint": "^8.22.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-react": "^7.31.8",
+    "flow-bin": "^0.187.0"
   },
   "scripts": {
     "lint:es": "eslint . --ext .js,.jsx --cache",
@@ -67,17 +79,5 @@
       "@babel/preset-flow",
       "@babel/preset-react"
     ]
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.19.0",
-    "@babel/eslint-parser": "^7.18.9",
-    "@babel/preset-env": "^7.19.0",
-    "@babel/preset-flow": "^7.18.6",
-    "@babel/preset-react": "^7.18.6",
-    "eslint": "^8.22.0",
-    "eslint-plugin-flowtype": "^8.0.3",
-    "eslint-plugin-react": "^7.31.8",
-    "flow-bin": "^0.186.0"
   }
 }
