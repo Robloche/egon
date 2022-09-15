@@ -22,7 +22,7 @@ const Social = ({className}: SocialProps): React.Node => (
         src={instagram} />
     </a>
     <a
-      href='https://www.linkedin.com/in/s%C3%A9verine-breton-join-di%C3%A9terle-64888b8'
+      href='https://www.linkedin.com/company/egon-paris/'
       rel='noopener noreferrer'
       target='_blank'>
       <img
