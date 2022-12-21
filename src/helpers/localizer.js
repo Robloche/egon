@@ -5,6 +5,10 @@ import i18nInstance from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import {setLanguage} from '../redux/actions';
 
+type ResourcesI18Next = {|
+  [string]: {| translation: string |}
+|};
+
 export class Localizer {
 
   static dispatch: any;
@@ -15,13 +19,13 @@ export class Localizer {
 
   static supportedLanguages: Array<string>;
 
-  static initialize: (supportedLanguages: Array<string>, translations: {[string]: any}) => Promise<*> =
+  static initialize: (supportedLanguages: Array<string>, translations: { [string]: any }) => Promise<*> =
     (supportedLanguages, translations) => {
       if (Localizer.#instance) {
         return Promise.resolve(Localizer.#instance);
       }
 
-      const resources = {};
+      const resources: ResourcesI18Next = {};
       Object.entries(translations).forEach(([lang, file]) => {
         resources[lang] = {translation: file};
       });

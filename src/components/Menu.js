@@ -12,7 +12,7 @@ import x from '../assets/svg/x.svg';
 
 const TWO = 2;
 
-const renderHeader = (handleCloseOnClick) => (
+const renderHeader = (handleCloseOnClick: (event: SyntheticMouseEvent<HTMLElement> | SyntheticTouchEvent<HTMLElement>) => void) => (
   <div className='menu__header'>
     <img
       alt='Close button'
@@ -26,7 +26,12 @@ const renderHeader = (handleCloseOnClick) => (
   </div>
 );
 
-const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick) => (
+const renderLinks = (
+  language: string,
+  expandedStates: Array<boolean>,
+  toggleSection: (event: SyntheticMouseEvent<HTMLElement> | SyntheticTouchEvent<HTMLElement>) => void,
+  handleCloseOnClick: () => void
+) => (
   <nav className='menu__links'>
     <div
       className='menu__item_toggle'
@@ -49,6 +54,10 @@ const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick
         onClick={handleCloseOnClick}
         scroll={scrollTop}
         to={`/${language}/home#founder`}>{Localizer.localize('menu.agency.founder')}</HashLink>
+      <HashLink
+        onClick={handleCloseOnClick}
+        scroll={scrollTop}
+        to={`/${language}/home#creative-director`}>{Localizer.localize('menu.agency.creative_director')}</HashLink>
     </div>
     <div
       className='menu__item_toggle'
@@ -97,7 +106,7 @@ const renderLinks = (language, expandedStates, toggleSection, handleCloseOnClick
   </nav>
 );
 
-const renderFooter = (language, languageOnChange) => (
+const renderFooter = (language: string, languageOnChange: (event: SyntheticInputEvent<HTMLElement>) => void) => (
   <div className='menu__footer'>
     <Social className='menu__social' />
     <div className='menu__languages'>{Localizer.supportedLanguages.map((lang) => {
@@ -143,7 +152,7 @@ const Menu = (): React.Node => {
   // Initialization
   useEffect(() => {
     // Close menu when user clicks outside it
-    const onMouseUp = (event: MouseEvent) => {
+    const onMouseUp = (event: SyntheticMouseEvent<HTMLElement> | SyntheticTouchEvent<HTMLElement>) => {
       const {target} = event;
 
       if (target instanceof HTMLElement && !target.closest('.menu')) {
@@ -151,10 +160,10 @@ const Menu = (): React.Node => {
       }
     };
 
-    document.addEventListener('mouseup', onMouseUp);
+    window.addEventListener('mouseup', onMouseUp);
 
     return () => {
-      document.removeEventListener('mouseup', onMouseUp);
+      window.removeEventListener('mouseup', onMouseUp);
     };
   }, []);
 

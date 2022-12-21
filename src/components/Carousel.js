@@ -22,8 +22,8 @@ const LAST_SLIDE_INDEX = 4;
 export const IMAGE_COUNT = 5;
 const IMAGES = [...new Array(IMAGE_COUNT)].map((_, i) => (i + 1).toString());
 
-const previousIndex = (index) => (index - 1 + IMAGE_COUNT) % IMAGE_COUNT;
-const nextIndex = (index) => (index + 1) % IMAGE_COUNT;
+const previousIndex = (index: number) => (index - 1 + IMAGE_COUNT) % IMAGE_COUNT;
+const nextIndex = (index: number) => (index + 1) % IMAGE_COUNT;
 
 const renderSlideContent = (index: number): React.Element<*> => {
   if (index < LAST_SLIDE_INDEX) {

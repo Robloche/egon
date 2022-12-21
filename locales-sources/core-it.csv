@@ -1,3 +1,6 @@
+agency.creative_director.title;Direttore Creativo
+agency.creative_director.paragraph1;Direttore Creativo, direttore artistico, artista-designer, illustratore, ballerino. Questo "jack of all-trades" made in Roma è il braccio creativo di Egon. Ipersensibile ai codici del lusso, porta in sé un universo unico, ricco e colto al tempo stesso, che ci conduce lungo percorsi tanto creativi quanto distintivi, che firma con fascino e umiltà.
+agency.creative_director.paragraph2;Insieme, propongono un modus operandi creativo e agile ampliando la sfera de possibile.
 agency.first_name.closing;Perché vivere é un'arte
 agency.first_name.founder;Fondatrice
 agency.first_name.paragraph1;Diventare imprenditore è come avere un figlio, dargli un nome, amarlo per la vita, farlo crescere ispirandolo ogni giorno. Ho scelto Egon, un nome austriaco. Egon, come Egon Schiele, il grande espressionista. Una figura ispirante dall'opera prolifica, dove l'uomo è spazio d'ispirazione, un faro nel mio immaginario che ha accompagnato le mie prime emozioni.
@@ -185,6 +188,7 @@ manifest.page5.pre;
 manifest.page5.title;
 manifest.page5.text;agenzia di consulenza in comunicazione
 menu.label;Menù
+menu.agency.creative_director;Direttore Creativo
 menu.agency.first_name;Nome
 menu.agency.founder;Fondatrice
 menu.agency.label;Egon

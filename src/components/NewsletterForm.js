@@ -5,12 +5,18 @@ import * as React from 'react';
 import {useCallback, useRef} from 'react';
 import {Localizer} from '../helpers/localizer';
 
-type NewsletterFormProps = {
-  +status: string,
-  +subscribe: ({|EMAIL: string|}) => void
-};
+type DefaultProps = {|
+  // eslint-disable-next-line react/require-default-props
+  +message?: string,
+|};
 
-const renderStatus = (status) => {
+export type NewsletterFormProps = {|
+  ...DefaultProps,
+  +status: string,
+  +subscribe: ({| EMAIL: string |}) => void
+|};
+
+const renderStatus = (status: string) => {
   if (status === 'success') {
     // Subscribed
     return <div className='newsletter-form__status status-success'>{Localizer.localize('newsletter.subscribed')}</div>;
@@ -22,7 +28,8 @@ const renderStatus = (status) => {
   return null;
 };
 
-const NewsletterForm = ({status, subscribe}: NewsletterFormProps): React.Node => {
+// eslint-disable-next-line no-unused-vars
+const NewsletterForm = ({message = '', status, subscribe}: NewsletterFormProps): React.Node => {
   const inputRef = useRef();
 
   const submit = useCallback(() => {

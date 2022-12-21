@@ -1,3 +1,6 @@
+agency.creative_director.title;Creative Director
+agency.creative_director.paragraph1;Creative Director, artist-designer, illustrator and dancer, the Rome-born all-rounder is the Egon's creative spearhead. Michele is keenly attuned to luxury codes with a uniquely rich and cultured inner world, leading us, time and time again, down distinctive, creative paths with his characteristic charm and humility.
+agency.creative_director.paragraph2;Together, they propose a creative and agile operating mode that allows all possibilities.
 agency.first_name.closing;Because Living is an Art
 agency.first_name.founder;Founder
 agency.first_name.paragraph1;Starting a business is like having a child, naming them, preparing them for life, inspiring and nourishing them. I chose Egon, an Austrian first name. Egon like Egon Schiele, the celebrated Expressionist. An inspiring figure with a prolific body of work, he made the personal playful. A star of my imagination, he intensified my first emotions.
@@ -185,6 +188,7 @@ manifest.page5.pre;
 manifest.page5.title;
 manifest.page5.text;Advertising agency
 menu.label;Menu
+menu.agency.creative_director;Creative Director
 menu.agency.first_name;Name
 menu.agency.founder;Founder
 menu.agency.label;Egon

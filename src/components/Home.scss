@@ -278,23 +278,38 @@
     }
   }
 
-  > .page-agency__founder {
+  > .page-agency__team {
     align-items: center;
-    background-color: var(--blue);
     color: var(--white);
     justify-content: space-evenly;
 
-    > .founder__content {
-      margin-left: -2rem;
-      max-width: 40rem;
-      padding: 2rem 2rem 2rem 0;
+    &.founder {
+      background-color: var(--blue);
+    }
 
-      > .founder__label {
+    &.creative-director {
+      background-color: var(--khaki);
+    }
+
+    > .team__content {
+      max-width: 40rem;
+
+      &.founder {
+        margin-left: -2rem;
+        padding: 2rem 2rem 2rem 0;
+      }
+
+      &.creative-director {
+        margin-right: -2rem;
+        padding: 2rem 0 2rem 2rem;
+      }
+
+      > .team__label {
         font-size: 1.4rem;
         margin-bottom: 3rem;
       }
 
-      > .founder__paragraph {
+      > .team__paragraph {
         font-size: 1rem;
         line-height: 1.6rem;
         margin-bottom: 1.6rem;
@@ -361,7 +376,7 @@
       max-height: 600px;
 
       > .founder__content {
-        > .founder__paragraph {
+        > .team__paragraph {
           line-height: 1.5rem;
         }
       }
@@ -382,7 +397,7 @@
 
     > .page-agency__founder {
       > .founder__content {
-        > .founder__label {
+        > .team__label {
           margin-bottom: 2rem;
         }
 
@@ -453,17 +468,17 @@
       > .founder__content {
         margin-left: -1rem;
 
-        > .founder__title {
+        > .team__title {
           font-size: 2rem;
           line-height: 2rem;
         }
 
-        > .founder__label {
+        > .team__label {
           font-size: 1.2rem;
           margin-bottom: .6rem;
         }
 
-        > .founder__paragraph {
+        > .team__paragraph {
           line-height: 1.3rem;
           margin-bottom: 1rem;
 
@@ -485,17 +500,17 @@
   .page-agency {
     > .page-agency__founder {
       > .founder__content {
-        > .founder__title {
+        > .team__title {
           font-size: 1.4rem;
           line-height: 1.4rem;
         }
 
-        > .founder__label {
+        > .team__label {
           font-size: 1rem;
           margin-bottom: .4rem;
         }
 
-        > .founder__paragraph {
+        > .team__paragraph {
           font-size: .9rem;
           line-height: 1.2rem;
           margin-bottom: .8rem;
@@ -543,17 +558,17 @@
         max-width: unset;
         padding: 2rem;
 
-        > .founder__title {
+        > .team__title {
           font-size: 3rem;
           line-height: 2.8rem;
         }
 
-        > .founder__label {
+        > .team__label {
           font-size: 1.4rem;
           margin-bottom: 3rem;
         }
 
-        > .founder__paragraph {
+        > .team__paragraph {
           font-size: 1rem;
           line-height: 1.6rem;
           margin-bottom: 1.6rem;
@@ -615,7 +630,7 @@
   .page-agency {
     > .page-agency__founder {
       > .founder__content {
-        > .founder__title {
+        > .team__title {
           font-size: 2rem;
         }
       }

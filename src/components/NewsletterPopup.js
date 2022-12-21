@@ -2,16 +2,16 @@
 
 import './NewsletterPopup.scss';
 import * as React from 'react';
+import NewsletterForm, {type NewsletterFormProps} from './NewsletterForm';
 import {Localizer} from '../helpers/localizer';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-import NewsletterForm from './NewsletterForm';
 import ReactDOM from 'react-dom';
 import {useEffect} from 'react';
 import x from '../assets/svg/x.svg';
 
 const url = 'https://egonparis.us10.list-manage.com/subscribe/post?u=68d12add1d548738f018f906c&amp;id=55752b85ec';
 
-const formRender = ({subscribe, status, message}) => (
+const formRender = ({message, status, subscribe}: NewsletterFormProps) => (
   <NewsletterForm
     message={message}
     status={status}
@@ -30,7 +30,7 @@ const NewsletterPopup = ({hide, isVisible}: NewsletterPopupProps): React.Node =>
 
   useEffect(() => {
     // Allow modal closing via Escape
-    const close = (event) => {
+    const close = (event: SyntheticKeyboardEvent<HTMLElement>) => {
       if (event.key === 'Escape') {
         hide();
       }
@@ -69,8 +69,7 @@ const NewsletterPopup = ({hide, isVisible}: NewsletterPopupProps): React.Node =>
           </div>
         </div>
       </div>
-    </>
-    ,
+    </>,
     document.body
   );
 };

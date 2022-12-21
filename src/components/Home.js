@@ -12,6 +12,10 @@ import egon1 from '../assets/images/egon-by-severine_144.png';
 import egon2 from '../assets/images/egon-by-severine_287.png';
 import egon3 from '../assets/images/egon-by-severine_430.png';
 import egon4 from '../assets/images/egon-by-severine_573.png';
+import michele1 from '../assets/images/michele_200.png';
+import michele2 from '../assets/images/michele_400.png';
+import michele3 from '../assets/images/michele_600.png';
+import michele4 from '../assets/images/michele_800.png';
 import qrCode from '../assets/svg/qr-code.svg';
 import severine1 from '../assets/images/severine_200.png';
 import severine2 from '../assets/images/severine_400.png';
@@ -41,7 +45,8 @@ const renderSectionFirstName = () => {
         <div className='first-name__content'>
           <div className='first-name__title title'>{Localizer.localize('agency.first_name.why_egon')}</div>
           <div className='first-name__paragraph'>{Localizer.localize('agency.first_name.paragraph1')}</div>
-          <div className='first-name__paragraph paragraph-bold'>{Localizer.localize('agency.first_name.paragraph2')}</div>
+          <div
+            className='first-name__paragraph paragraph-bold'>{Localizer.localize('agency.first_name.paragraph2')}</div>
           <div className='first-name__severine'>Séverine Breton Join-Diéterle</div>
           <div className='first-name__founder'>{Localizer.localize('agency.first_name.founder')}</div>
         </div>
@@ -164,18 +169,18 @@ const renderSectionManifest = () => {
 
 const renderSectionFounder = () => (
   <div
-    className='page-agency__founder page-agency__section'
+    className='page-agency__team founder page-agency__section'
     data-id='founder'>
     <img
       alt="Séverine Breton Join-Diéterle, fondatrice d'Egon Paris"
       sizes='(max-width: 600px) 200px, (max-width: 900px) 400px, (max-width: 1400px) 600px, 800px'
       src={severine4}
       srcSet={`${severine1} 200w, ${severine2} 400w, ${severine3} 600w, ${severine4} 800w`} />
-    <div className='founder__content'>
-      <div className='founder__title title'>Séverine Breton Join-Diéterle</div>
-      <div className='founder__label'>{Localizer.localize('agency.founder.title')}</div>
-      <div className='founder__paragraph paragraph-highlight'>{Localizer.localize('agency.founder.paragraph1')}</div>
-      <div className='founder__paragraph'>{Localizer.localize('agency.founder.paragraph2')}</div>
+    <div className='team__content founder'>
+      <div className='team__title title'>Séverine Breton Join-Diéterle</div>
+      <div className='team__label'>{Localizer.localize('agency.founder.title')}</div>
+      <div className='team__paragraph paragraph-highlight'>{Localizer.localize('agency.founder.paragraph1')}</div>
+      <div className='team__paragraph'>{Localizer.localize('agency.founder.paragraph2')}</div>
       <div className='founder__contact'>
         <div>{Localizer.localize('agency.founder.contact_me')}</div>
         <a
@@ -184,6 +189,25 @@ const renderSectionFounder = () => (
           target='_blank'>sbreton@egonparis.com</a>
       </div>
     </div>
+  </div>
+);
+
+const renderSectionCreativeDirector = () => (
+  <div
+    className='page-agency__team creative-director page-agency__section'
+    data-id='creative-director'>
+    <div className='team__content creative-director'>
+      <div className='team__title title'>Michele Bulgherini</div>
+      <div className='team__label'>{Localizer.localize('agency.creative_director.title')}</div>
+      <div
+        className='team__paragraph paragraph-highlight'>{Localizer.localize('agency.creative_director.paragraph1')}</div>
+      <div className='team__paragraph'>{Localizer.localize('agency.creative_director.paragraph2')}</div>
+    </div>
+    <img
+      alt="Michele Bulgherini, directeur de création d'Egon Paris"
+      sizes='(max-width: 600px) 200px, (max-width: 900px) 400px, (max-width: 1400px) 600px, 800px'
+      src={michele4}
+      srcSet={`${michele1} 200w, ${michele2} 400w, ${michele3} 600w, ${michele4} 800w`} />
   </div>
 );
 
@@ -211,6 +235,7 @@ const Home = (): React.Node => {
         {renderSectionManifest()}
       </div>
       {renderSectionFounder()}
+      {renderSectionCreativeDirector()}
       <Footer />
     </div>
   );

@@ -1,3 +1,6 @@
+agency.creative_director.title;Le directeur de Création
+agency.creative_director.paragraph1;Directeur de Création, Directeur Artistique, artiste-designer, illustrateur, danseur. Ce touche-à-tout made in Roma est le bras armé créatif d'Egon. Hypersensible aux codes du luxe, il porte en lui un univers singulier foisonnant et cultivé qui nous emmène à chaque fois sur des chemins aussi créatifs que distinctifs qu'il signe avec charme et humilité.
+agency.creative_director.paragraph2;Ensemble, ils proposent un mode opératoire créatif et agile qui permet tous les possibles.
 agency.first_name.closing;Car Vivre est un Art
 agency.first_name.founder;La fondatrice
 agency.first_name.paragraph1;Se lancer dans l'entreprenariat, c'est avoir un enfant, lui donner un prénom, l'armer pour la vie, l'inspirer et le faire grandir. J'ai choisi Egon, un prénom autrichien. Egon, comme Egon Schiele, le grand Expressionniste. Une figure inspirante à l'œuvre prolifique, où le Je devient Jeu, un phare dans mes imaginaires qui a exacerbé mes premières émotions.
@@ -185,6 +188,7 @@ manifest.page5.pre;
 manifest.page5.title;
 manifest.page5.text;agence conseil en communication
 menu.label;Menu
+menu.agency.creative_director;Directeur de Création
 menu.agency.first_name;Prénom
 menu.agency.founder;Fondatrice
 menu.agency.label;Egon
