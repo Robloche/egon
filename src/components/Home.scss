@@ -372,10 +372,10 @@
       }
     }
 
-    > .page-agency__founder {
+    > .page-agency__team {
       max-height: 600px;
 
-      > .founder__content {
+      > .team__content {
         > .team__paragraph {
           line-height: 1.5rem;
         }
@@ -395,8 +395,8 @@
       }
     }
 
-    > .page-agency__founder {
-      > .founder__content {
+    > .page-agency__team {
+      > .team__content {
         > .team__label {
           margin-bottom: 2rem;
         }
@@ -462,10 +462,10 @@
       }
     }
 
-    > .page-agency__founder {
+    > .page-agency__team {
       max-height: 400px;
 
-      > .founder__content {
+      > .team__content {
         margin-left: -1rem;
 
         > .team__title {
@@ -498,8 +498,8 @@
 
 @media (max-width: 720px) {
   .page-agency {
-    > .page-agency__founder {
-      > .founder__content {
+    > .page-agency__team {
+      > .team__content {
         > .team__title {
           font-size: 1.4rem;
           line-height: 1.4rem;
@@ -549,14 +549,18 @@
       padding: 4rem 2rem;
     }
 
-    > .page-agency__founder {
+    > .page-agency__team {
       flex-direction: column;
       max-height: unset;
 
-      > .founder__content {
-        margin: 0;
+      > .team__content {
         max-width: unset;
-        padding: 2rem;
+
+        &.founder,
+        &.creative-director {
+          margin: 0;
+          padding: 2rem;
+        }
 
         > .team__title {
           font-size: 3rem;
@@ -628,8 +632,8 @@
 
 @media (max-width: 450px) {
   .page-agency {
-    > .page-agency__founder {
-      > .founder__content {
+    > .page-agency__team {
+      > .team__content {
         > .team__title {
           font-size: 2rem;
         }
