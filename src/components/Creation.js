@@ -42,7 +42,20 @@ const renderSectionCustomers = () => (
     </div>
     <div className='page-creation__section section_center section__customers'>
       <div className='page-creation__paragraph title'>{Localizer.localize('creation.customers.title')}</div>
-      <div className='page-creation__paragraph'>{Localizer.localize('creation.customers.paragraph')}</div>
+      <div className='page-creation__paragraph'>{Localizer.localize('creation.customers.paragraph1')}</div>
+      <div className='page-creation__paragraph'>
+        <span>{Localizer.localize('creation.customers.paragraph2-part1')}</span>
+        <a
+          href='https://www.instagram.com/egon.paris/'
+          rel='noopener noreferrer'
+          target='_blank'>egon.paris</a>
+        <span>{Localizer.localize('creation.customers.paragraph2-part2')}</span>
+        <a
+          href='https://www.linkedin.com/company/egon-paris/'
+          rel='noopener noreferrer'
+          target='_blank'>Egon Paris
+        </a>
+      </div>
       <AnimatedText
         classList='page-creation__paragraph huge'
         direction='down'

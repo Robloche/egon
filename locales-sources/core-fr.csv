@@ -41,7 +41,9 @@ common.egon;Egon
 contact.address1;71-73 rue de Chézy
 contact.address2;92200 Neuilly-sur-Seine – France
 contact.side_title;CONTACT
-creation.customers.paragraph;chers Clients, que nous existons et que nous avons la capacité aujourd'hui de participer à un monde où l'on communique mieux avec créativité, sens et intemporalité. Alors Merci à vous. Merci de votre confiance.
+creation.customers.paragraph1;chers Clients, que nous existons et que nous avons la capacité aujourd'hui de participer à un monde où l'on communique mieux avec créativité, sens et intemporalité. Alors Merci à vous. Merci de votre confiance.
+creation.customers.paragraph2-part1;Pour découvrir nos réalisations, suivez-nous sur Instagram
+creation.customers.paragraph2-part2;et sur LinkedIn
 creation.customers.side_title;CREATION - Les clients
 creation.customers.thanks;Merci !
 creation.customers.title;C'est grâce à vous,
