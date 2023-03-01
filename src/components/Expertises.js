@@ -75,11 +75,12 @@ const renderSectionCreation = () => (
         <div className='listing__title'>{Localizer.localize('expertises.creation.column2.title')}</div>
         <div className='listing__item'>{Localizer.localize('expertises.creation.column2.item1')}</div>
         <div className='listing__item'>{Localizer.localize('expertises.creation.column2.item2')}</div>
+        <div className='listing__title'>{Localizer.localize('expertises.creation.column3.title')}</div>
       </div>
       <div>
-        <div className='listing__title'>{Localizer.localize('expertises.creation.column3.title')}</div>
         <div className='listing__title'>{Localizer.localize('expertises.creation.column4.title')}</div>
         <div className='listing__title'>{Localizer.localize('expertises.creation.column5.title')}</div>
+        <div className='listing__title'>{Localizer.localize('expertises.creation.column6.title')}</div>
       </div>
     </div>
     <div className='page-expertises__closing closing2'>
