@@ -23,8 +23,7 @@ const frames = Object.freeze([frame1, frame2, frame3, frame4, frame5, frame6, fr
 
 const SplashScreen = () => {
   const navigate = useNavigate();
-  const languageRef = useRef();
-  languageRef.current = useSelector((state) => state.language);
+  const languageRef = useRef(useSelector((state) => state.language));
 
   const [fadeOut, setFadeOut] = useState(false);
 

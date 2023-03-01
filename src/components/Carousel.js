@@ -46,7 +46,7 @@ const Carousel = (): React.Node => {
 
   const {inView, ref: refInView} = useInView();
 
-  const {height: windowHeight, width: windowWidth} = useWindowSize();
+  const [windowHeight, windowWidth] = useWindowSize();
 
   const {onMouseDown, ref} = useSwipeable({
     onSwipedLeft: () => {

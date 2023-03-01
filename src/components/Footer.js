@@ -13,7 +13,7 @@ const Footer = (): React.Node => {
   const language = useSelector((state) => state.language);
   const version = useSelector((state) => state.version);
 
-  const {isVisible, toggle} = useNewsletterPopup();
+  const [isVisible, toggle] = useNewsletterPopup();
 
   return (
     <div className='footer'>
