@@ -5,10 +5,10 @@ import * as React from 'react';
 import Carousel from './Carousel';
 import {Localizer} from '../helpers/localizer';
 
-export const IMAGE_COUNT = 6;
+export const PAGE_COUNT = 6;
 
 const renderSlideContent = (index: number): React.Element<any> | null => {
-  if (index < IMAGE_COUNT - 1) {
+  if (index < PAGE_COUNT - 1) {
     return null;
   }
 
@@ -21,8 +21,8 @@ const CarouselClients = (): React.Node => (
   <Carousel
     className='clients'
     id='carousel-clients'
-    imageCount={IMAGE_COUNT}
     logo
+    pageCount={PAGE_COUNT}
     scrollLink='carousel-manifest'
     slideContentRenderer={renderSlideContent} />
 );

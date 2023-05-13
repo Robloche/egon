@@ -28,15 +28,15 @@ type CarouselProps = {
   ...DefaultProps,
   +className: string,
   +id: string,
-  +imageCount: number,
+  +pageCount: number,
   +scrollLink: string
 };
 
 const Carousel = ({
   className,
   id,
-  imageCount,
   logo = false,
+  pageCount,
   scrollLink,
   slideContentRenderer
 }: CarouselProps): React.Node => {
@@ -45,13 +45,13 @@ const Carousel = ({
   const [windowHeight, windowWidth] = useWindowSize();
 
   const images = [];
-  for (let i = 1; i <= imageCount; ++i) {
+  for (let i = 1; i <= pageCount; ++i) {
     images.push(i);
   }
 
-  const previousIndex = (index: number) => (index - 1 + imageCount) % imageCount;
+  const previousIndex = (index: number) => (index - 1 + pageCount) % pageCount;
 
-  const nextIndex = useCallback((index: number) => (index + 1) % imageCount, [imageCount]);
+  const nextIndex = useCallback((index: number) => (index + 1) % pageCount, [pageCount]);
 
   const {onMouseDown, ref} = useSwipeable({
     onSwipedLeft: () => {

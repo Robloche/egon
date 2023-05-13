@@ -6,10 +6,10 @@ import Carousel from './Carousel';
 import {Localizer} from '../helpers/localizer';
 import egonLogo from '../assets/svg/logo-white.svg';
 
-export const IMAGE_COUNT = 5;
+export const PAGE_COUNT = 5;
 
 const renderSlideContent = (index: number): React.Element<any> => {
-  if (index < IMAGE_COUNT - 1) {
+  if (index < PAGE_COUNT - 1) {
     return (
       <>
         <div className='slide__text-pre'>{Localizer.localize(`manifest.page${index + 1}.pre`)}</div>
@@ -34,7 +34,7 @@ const CarouselManifest = (): React.Node => (
   <Carousel
     className='manifest'
     id='carousel-manifest'
-    imageCount={IMAGE_COUNT}
+    pageCount={PAGE_COUNT}
     scrollLink='first-name'
     slideContentRenderer={renderSlideContent} />
 );

@@ -1,8 +1,8 @@
 import './SplashScreen.scss';
 import * as React from 'react';
 import {useEffect, useRef, useState} from 'react';
-import {IMAGE_COUNT as CLIENTS_IMAGE_COUNT} from './CarouselClients';
-import {IMAGE_COUNT as MANIFEST_IMAGE_COUNT} from './CarouselManifest';
+import {PAGE_COUNT as CLIENTS_PAGE_COUNT} from './CarouselClients';
+import {PAGE_COUNT as MANIFEST_PAGE_COUNT} from './CarouselManifest';
 import frame1 from '../assets/images/egon-frame1.png';
 import frame2 from '../assets/images/egon-frame2.png';
 import frame3 from '../assets/images/egon-frame3.png';
@@ -14,6 +14,10 @@ import frame8 from '../assets/images/egon-frame8.png';
 import {preloadCarouselImages} from '../helpers/preload';
 import {useNavigate} from 'react-router-dom';
 import {useSelector} from 'react-redux';
+
+// Preload carousel images during startup animation
+preloadCarouselImages('manifest', MANIFEST_PAGE_COUNT - 1);
+preloadCarouselImages('clients', CLIENTS_PAGE_COUNT - 1);
 
 // Duration splash screen stays visible (in ms)
 const SPLASH_SCREEN_TIMEOUT = 3000;
@@ -38,9 +42,6 @@ const SplashScreen = () => {
         navigate(`/${languageRef.current}/home`);
       }, SPLASH_SCREEN_FADE_TIMEOUT);
     }, SPLASH_SCREEN_TIMEOUT);
-
-    preloadCarouselImages('manifest', MANIFEST_IMAGE_COUNT);
-    preloadCarouselImages('clients', CLIENTS_IMAGE_COUNT);
 
     return () => {
       clearTimeout(splashScreenTimer);
