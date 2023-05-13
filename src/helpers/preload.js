@@ -1,7 +1,5 @@
 /* @flow */
 
-import {IMAGE_COUNT as CAROUSEL_IMAGE_COUNT} from '../components/Carousel';
-
 /* eslint-disable no-magic-numbers */
 const getImageWidth = (): number => {
   const width = document.body?.offsetWidth;
@@ -20,12 +18,15 @@ const getImageWidth = (): number => {
 };
 /* eslint-enable no-magic-numbers */
 
-const preloadCarouselImages = (): void => {
+const preloadCarouselImages = (name: string, count: number): void => {
   const width = getImageWidth();
 
-  for (let i = 1; i < CAROUSEL_IMAGE_COUNT + 1; ++i) {
+  for (let i = 1; i <= count; ++i) {
     const imageElement = new Image();
-    imageElement.src = `../assets/images/manifest${i}_${width}.png`;
+    imageElement.src = `../assets/images/${name}${i}_${width}.png`;
+    /* eslint-disable no-console */
+    console.log(`preloading ${imageElement.src}`);
+    /* eslint-enable no-console */
   }
 };
 

@@ -5,7 +5,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.2.1",
     "core-js": "^3.25.1",
     "eslint-plugin-jest": "^27.0.4",
@@ -37,7 +37,7 @@
     "eslint": "^8.22.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-react": "^7.31.8",
-    "flow-bin": "^0.199.1"
+    "flow-bin": "^0.206.0"
   },
   "scripts": {
     "lint:es": "eslint . --ext .js,.jsx --cache",

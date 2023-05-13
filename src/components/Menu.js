@@ -46,10 +46,10 @@ const renderLinks = (
         onClick={handleCloseOnClick}
         scroll={scrollTop}
         to={`/${language}/home#philosophy`}>{Localizer.localize('menu.agency.philosophy')}</HashLink>
-      <HashLink
-        onClick={handleCloseOnClick}
-        scroll={scrollTop}
-        to={`/${language}/home#manifest`}>{Localizer.localize('menu.agency.manifest')}</HashLink>
+      {/* <HashLink */}
+      {/* DEBUG onClick={handleCloseOnClick} */}
+      {/* DEBUG  scroll={scrollTop} */}
+      {/* DEBUG  to={`/${language}/home#manifest`}>{Localizer.localize('menu.agency.manifest')}</HashLink> */}
       <HashLink
         onClick={handleCloseOnClick}
         scroll={scrollTop}
@@ -132,7 +132,7 @@ const Menu = (): React.Node => {
   const [isOpen, setIsOpen] = useState(false);
   const [expandedStates, setExpandedStates] = useState([false, false, false]);
 
-  const toggleSection = useCallback((event) => {
+  const toggleSection = useCallback((event: SyntheticMouseEvent<HTMLElement> | SyntheticTouchEvent<HTMLElement>) => {
     const {target} = event;
 
     if (!(target instanceof HTMLElement)) {
@@ -167,7 +167,7 @@ const Menu = (): React.Node => {
     };
   }, []);
 
-  const languageOnChange = useCallback((event) => {
+  const languageOnChange = useCallback((event: SyntheticInputEvent<HTMLElement>) => {
     const {target: {value}} = event;
     Localizer.changeLanguage(value);
   }, []);

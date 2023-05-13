@@ -3,7 +3,8 @@
 import './Home.scss';
 import * as React from 'react';
 import AnimatedText from './AnimatedText';
-import Carousel from './Carousel';
+import CarouselClients from './CarouselClients';
+import CarouselManifest from './CarouselManifest';
 import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
@@ -117,6 +118,7 @@ const renderSectionPhilosophy = () => (
   </>
 );
 
+// eslint-disable-next-line no-unused-vars
 const renderSectionManifest = () => {
   const {inView, ref} = useInView();
 
@@ -224,15 +226,14 @@ const Home = (): React.Node => {
   }, []);
 
   return (
-    <div
-      className='page page-agency'
-      data-id='carousel'>
-      <Carousel />
+    <div className='page page-agency'>
+      <CarouselClients />
+      <CarouselManifest />
       <Header />
       {renderSectionFirstName()}
       <div className='page-agency__grid'>
         {renderSectionPhilosophy()}
-        {renderSectionManifest()}
+        {/* {renderSectionManifest()} */}
       </div>
       {renderSectionFounder()}
       {renderSectionCreativeDirector()}

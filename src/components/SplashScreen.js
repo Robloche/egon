@@ -1,6 +1,8 @@
 import './SplashScreen.scss';
 import * as React from 'react';
 import {useEffect, useRef, useState} from 'react';
+import {IMAGE_COUNT as CLIENTS_IMAGE_COUNT} from './CarouselClients';
+import {IMAGE_COUNT as MANIFEST_IMAGE_COUNT} from './CarouselManifest';
 import frame1 from '../assets/images/egon-frame1.png';
 import frame2 from '../assets/images/egon-frame2.png';
 import frame3 from '../assets/images/egon-frame3.png';
@@ -37,7 +39,8 @@ const SplashScreen = () => {
       }, SPLASH_SCREEN_FADE_TIMEOUT);
     }, SPLASH_SCREEN_TIMEOUT);
 
-    preloadCarouselImages();
+    preloadCarouselImages('manifest', MANIFEST_IMAGE_COUNT);
+    preloadCarouselImages('clients', CLIENTS_IMAGE_COUNT);
 
     return () => {
       clearTimeout(splashScreenTimer);

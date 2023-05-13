@@ -30,10 +30,10 @@ const renderStatus = (status: string) => {
 
 // eslint-disable-next-line no-unused-vars
 const NewsletterForm = ({message = '', status, subscribe}: NewsletterFormProps): React.Node => {
-  const inputRef = useRef();
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   const submit = useCallback(() => {
-    if (!inputRef || !inputRef.current) {
+    if (!inputRef.current) {
       return;
     }
 
@@ -48,7 +48,7 @@ const NewsletterForm = ({message = '', status, subscribe}: NewsletterFormProps):
   }, [inputRef, subscribe]);
 
 
-  const handleInputOnKeyUp = useCallback((event) => {
+  const handleInputOnKeyUp = useCallback((event: SyntheticKeyboardEvent<HTMLElement>) => {
     const {key} = event;
 
     if (key === 'Enter') {

@@ -1,0 +1,158 @@
+.carousel {
+  &.clients {
+    > .carousel__slider {
+      > .carousel__slide {
+        &.image1 {
+          background-image: url('../assets/images/clients1_1920.png');
+        }
+
+        &.image2 {
+          background-image: url('../assets/images/clients2_1920.png');
+        }
+
+        &.image3 {
+          background-image: url('../assets/images/clients3_1920.png');
+        }
+
+        &.image4 {
+          background-image: url('../assets/images/clients4_1920.png');
+        }
+
+        &.image5 {
+          background-image: url('../assets/images/clients5_1920.png');
+        }
+
+        &.image6 {
+          background: var(--black);
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 1400px) {
+  .carousel {
+    &.clients {
+      > .carousel__slider {
+        > .carousel__slide {
+          &.image1 {
+            background-image: url('../assets/images/clients1_1400.png');
+          }
+
+          &.image2 {
+            background-image: url('../assets/images/clients2_1400.png');
+          }
+
+          &.image3 {
+            background-image: url('../assets/images/clients3_1400.png');
+          }
+
+          &.image4 {
+            background-image: url('../assets/images/clients4_1400.png');
+          }
+
+          &.image5 {
+            background-image: url('../assets/images/clients5_1400.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 900px) {
+  .carousel {
+    &.clients {
+      > .carousel__slider {
+        > .carousel__slide {
+          &.image1 {
+            background-image: url('../assets/images/clients1_900.png');
+          }
+
+          &.image2 {
+            background-image: url('../assets/images/clients2_900.png');
+          }
+
+          &.image3 {
+            background-image: url('../assets/images/clients3_900.png');
+          }
+
+          &.image4 {
+            background-image: url('../assets/images/clients4_900.png');
+          }
+
+          &.image5 {
+            background-image: url('../assets/images/clients5_900.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 400px) {
+  .carousel {
+    &.clients {
+      > .carousel__slider {
+        > .carousel__slide {
+          > .slide__text-container {
+            > .slide__logo {
+              width: 120px;
+            }
+          }
+
+          &.image1 {
+            background-image: url('../assets/images/clients1_400.png');
+          }
+
+          &.image2 {
+            background-image: url('../assets/images/clients2_400.png');
+          }
+
+          &.image3 {
+            background-image: url('../assets/images/clients3_400.png');
+          }
+
+          &.image4 {
+            background-image: url('../assets/images/clients4_400.png');
+          }
+
+          &.image5 {
+            background-image: url('../assets/images/clients5_400.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+// Phones
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .carousel {
+    &.clients {
+      > .carousel__slider {
+        > .carousel__slide {
+          &.image1 {
+            background-image: url('../assets/images/clients1_1920.png');
+          }
+
+          &.image2 {
+            background-image: url('../assets/images/clients2_1920.png');
+          }
+
+          &.image3 {
+            background-image: url('../assets/images/clients3_1920.png');
+          }
+
+          &.image4 {
+            background-image: url('../assets/images/clients4_1920.png');
+          }
+
+          &.image5 {
+            background-image: url('../assets/images/clients5_1920.png');
+          }
+        }
+      }
+    }
+  }
+}

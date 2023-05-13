@@ -7,7 +7,7 @@ import Bullet from './Bullet';
 import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
 import Menu from './Menu';
-import logo from '../assets/svg/logo-white.svg';
+import egonLogo from '../assets/svg/logo-white.svg';
 import {scrollTop} from '../helpers/scroll';
 import {useInView} from 'react-intersection-observer';
 import {useSelector} from 'react-redux';
@@ -15,46 +15,51 @@ import {useSwipeable} from 'react-swipeable';
 import useWindowSize from '../hooks/useWindowSize';
 
 // Image changes every 15s (in ms);
-const IMAGE_SWITCH_TIMEOUT = 15000;
+const IMAGE_SWITCH_TIMEOUT = 15_000;
 
-const LAST_SLIDE_INDEX = 4;
+type DefaultProps = {|
+  // eslint-disable-next-line react/require-default-props
+  +logo?: boolean,
+  // eslint-disable-next-line react/require-default-props
+  +slideContentRenderer?: (index: number) => React.Element<any> | null
+|};
 
-export const IMAGE_COUNT = 5;
-const IMAGES = [...new Array(IMAGE_COUNT)].map((_, i) => (i + 1).toString());
-
-const previousIndex = (index: number) => (index - 1 + IMAGE_COUNT) % IMAGE_COUNT;
-const nextIndex = (index: number) => (index + 1) % IMAGE_COUNT;
-
-const renderSlideContent = (index: number): React.Element<*> => {
-  if (index < LAST_SLIDE_INDEX) {
-    return (
-      <>
-        <div className='slide__text-pre'>{Localizer.localize(`manifest.page${index + 1}.pre`)}</div>
-        <div className='slide__text-title'>{Localizer.localize(`manifest.page${index + 1}.title`)}</div>
-      </>
-    );
-  }
-
-  return <img
-    alt='Logo Egon Paris'
-    className='slide__logo'
-    src={logo} />;
+type CarouselProps = {
+  ...DefaultProps,
+  +className: string,
+  +id: string,
+  +imageCount: number,
+  +scrollLink: string
 };
 
-const Carousel = (): React.Node => {
+const Carousel = ({
+  className,
+  id,
+  imageCount,
+  logo = false,
+  scrollLink,
+  slideContentRenderer
+}: CarouselProps): React.Node => {
   const language = useSelector((state) => state.language);
-
   const {inView, ref: refInView} = useInView();
-
   const [windowHeight, windowWidth] = useWindowSize();
+
+  const images = [];
+  for (let i = 1; i <= imageCount; ++i) {
+    images.push(i);
+  }
+
+  const previousIndex = (index: number) => (index - 1 + imageCount) % imageCount;
+
+  const nextIndex = useCallback((index: number) => (index + 1) % imageCount, [imageCount]);
 
   const {onMouseDown, ref} = useSwipeable({
     onSwipedLeft: () => {
-      clearTimeout(imageSwitchTimer.current);
+      clearTimeout(imageSwitchTimerRef.current);
       setCurrentIndex(nextIndex);
     },
     onSwipedRight: () => {
-      clearTimeout(imageSwitchTimer.current);
+      clearTimeout(imageSwitchTimerRef.current);
       setCurrentIndex(previousIndex);
     },
     trackMouse: true
@@ -62,30 +67,31 @@ const Carousel = (): React.Node => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const imageSwitchTimer = useRef(null);
+  const imageSwitchTimerRef = useRef<TimeoutID | null>(null);
 
   useEffect(() => {
-    imageSwitchTimer.current = setTimeout(() => {
+    imageSwitchTimerRef.current = setTimeout(() => {
       setCurrentIndex(nextIndex);
     }, IMAGE_SWITCH_TIMEOUT);
 
     return () => {
-      clearTimeout(imageSwitchTimer.current);
+      clearTimeout(imageSwitchTimerRef.current);
     };
-  }, [currentIndex]);
+  }, [currentIndex, nextIndex]);
 
-  const handleBulletOnClick = useCallback((index) => {
+  const handleBulletOnClick = useCallback((index: number) => {
     if (index === currentIndex) {
       return;
     }
 
-    clearTimeout(imageSwitchTimer.current);
+    clearTimeout(imageSwitchTimerRef.current);
     setCurrentIndex(index);
   }, [currentIndex]);
 
   return (
     <div
-      className='carousel'
+      className={`carousel ${className}`}
+      data-id={id}
       style={{
         height: `${windowHeight}px`,
         width: `${windowWidth}px`
@@ -94,19 +100,20 @@ const Carousel = (): React.Node => {
         className='carousel__slider'
         onMouseDown={onMouseDown}
         ref={ref}>
-        {IMAGES.map((img, index) => (
+        {images.map((img, index) => (
           <div
             className={`carousel__slide image${index + 1} ${index === currentIndex ? 'visible' : ''}`}
             data-index={index}
             key={`image${img}`}>
-            <div className='slide__text-container'>
-              {renderSlideContent(index)}
-              <div className='slide__text-content'>{Localizer.localize(`manifest.page${index + 1}.text`)}</div>
-            </div>
+            {slideContentRenderer ? (
+              <div className='slide__text-container'>
+                {slideContentRenderer(index)}
+              </div>
+            ) : null}
           </div>
         ))}
       </div>
-      <div className='carousel__buttons'>{IMAGES.map((img, index) => <Bullet
+      <div className='carousel__buttons'>{images.map((img, index) => <Bullet
         index={index}
         isFull={index <= currentIndex}
         key={`image${img}`}
@@ -119,9 +126,16 @@ const Carousel = (): React.Node => {
           className='carousel__scroll-text'
           scroll={scrollTop}
           smooth
-          to={`/${language}/home#first-name`}>{Localizer.localize('agency.scroll')}</HashLink>
+          to={`/${language}/home#${scrollLink}`}>{Localizer.localize('agency.scroll')}</HashLink>
       </div>
       <Menu />
+      {logo ? (
+        <img
+          alt='Logo Egon Paris'
+          className='logo'
+          draggable={false}
+          src={egonLogo} />
+      ) : null}
     </div>
   );
 };

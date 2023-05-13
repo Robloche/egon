@@ -24,23 +24,6 @@
         opacity: 1;
       }
 
-      &.image1,
-      &.image5 {
-        background-image: url('../assets/images/manifest1_1920.png');
-      }
-
-      &.image2 {
-        background-image: url('../assets/images/manifest2_1920.png');
-      }
-
-      &.image3 {
-        background-image: url('../assets/images/manifest3_1920.png');
-      }
-
-      &.image4 {
-        background-image: url('../assets/images/manifest4_1920.png');
-      }
-
       > .slide__text-container {
         align-items: center;
         color: var(--white);
@@ -125,34 +108,18 @@
       border-color: var(--white);
     }
   }
-}
 
-@media (max-width: 1400px) {
-  .carousel {
-    > .carousel__slider {
-      > .carousel__slide {
-        &.image1,
-        &.image5 {
-          background-image: url('../assets/images/manifest1_1400.png');
-        }
-
-        &.image2 {
-          background-image: url('../assets/images/manifest2_1400.png');
-        }
-
-        &.image3 {
-          background-image: url('../assets/images/manifest3_1400.png');
-        }
-
-        &.image4 {
-          background-image: url('../assets/images/manifest4_1400.png');
-        }
-      }
+  > img {
+    &.logo {
+      position: absolute;
+      height: calc(var(--header-height) * .6);
+      left: 20px;
+      top: calc(var(--header-height) * .2);
     }
   }
 }
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
   .carousel {
     > .carousel__slider {
       > .carousel__slide {
@@ -170,32 +137,7 @@
   }
 }
 
-@media (max-width: 900px) {
-  .carousel {
-    > .carousel__slider {
-      > .carousel__slide {
-        &.image1,
-        &.image5 {
-          background-image: url('../assets/images/manifest1_900.png');
-        }
-
-        &.image2 {
-          background-image: url('../assets/images/manifest2_900.png');
-        }
-
-        &.image3 {
-          background-image: url('../assets/images/manifest3_900.png');
-        }
-
-        &.image4 {
-          background-image: url('../assets/images/manifest4_900.png');
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .carousel {
     > .carousel__slider {
       > .carousel__slide {
@@ -215,7 +157,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .carousel {
     > .carousel__slider {
       > .carousel__slide {
@@ -224,29 +166,12 @@
             width: 120px;
           }
         }
-
-        &.image1,
-        &.image5 {
-          background-image: url('../assets/images/manifest1_400.png');
-        }
-
-        &.image2 {
-          background-image: url('../assets/images/manifest2_400.png');
-        }
-
-        &.image3 {
-          background-image: url('../assets/images/manifest3_400.png');
-        }
-
-        &.image4 {
-          background-image: url('../assets/images/manifest4_400.png');
-        }
       }
     }
   }
 }
 
-@media (max-height: 800px) {
+@media (height <= 800px) {
   .carousel {
     > .carousel__scroll {
       > .carousel__scroll-line {
@@ -256,7 +181,7 @@
   }
 }
 
-@media (max-height: 600px) {
+@media (height <= 600px) {
   .carousel {
     > .carousel__slider {
       > .carousel__slide {
@@ -285,7 +210,7 @@
   }
 }
 
-@media (max-height: 500px) {
+@media (height <= 500px) {
   .carousel {
     > .carousel__slider {
       > .carousel__slide {
@@ -314,39 +239,13 @@
   }
 }
 
-@media (max-height: 400px) {
+@media (height <= 400px) {
   .carousel {
     > .carousel__scroll {
       bottom: 15px;
 
       > .carousel__scroll-line {
         width: 20px;
-      }
-    }
-  }
-}
-
-// Phones
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .carousel {
-    > .carousel__slider {
-      > .carousel__slide {
-        &.image1,
-        &.image5 {
-          background-image: url('../assets/images/manifest1_1920.png');
-        }
-
-        &.image2 {
-          background-image: url('../assets/images/manifest2_1920.png');
-        }
-
-        &.image3 {
-          background-image: url('../assets/images/manifest3_1920.png');
-        }
-
-        &.image4 {
-          background-image: url('../assets/images/manifest4_1920.png');
-        }
       }
     }
   }

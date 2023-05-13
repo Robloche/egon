@@ -12,7 +12,7 @@ const Header = (): React.Node => {
 
   return (
     <div className='header'>
-      <HashLink to={`/${language}/home#carousel`}>
+      <HashLink to={`/${language}/home#carousel-clients`}>
         <img
           alt='Logo Egon Paris'
           draggable={false}
