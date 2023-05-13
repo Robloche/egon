@@ -22,11 +22,7 @@ const preloadCarouselImages = (name: string, count: number): void => {
   const width = getImageWidth();
 
   for (let i = 1; i <= count; ++i) {
-    const imageElement = new Image();
-    imageElement.src = `../assets/images/${name}${i}_${width}.png`;
-    /* eslint-disable no-console */
-    console.log(`preloading ${imageElement.src}`);
-    /* eslint-enable no-console */
+    new Image().src = `../assets/images/${name}${i}_${width}.png`;
   }
 };
 
