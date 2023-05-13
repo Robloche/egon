@@ -2,7 +2,7 @@
 
 import './NewsletterForm.scss';
 import * as React from 'react';
-import {useCallback, useRef} from 'react';
+import {useCallback, useEffect, useRef} from 'react';
 import {Localizer} from '../helpers/localizer';
 
 type DefaultProps = {|
@@ -31,6 +31,10 @@ const renderStatus = (status: string) => {
 // eslint-disable-next-line no-unused-vars
 const NewsletterForm = ({message = '', status, subscribe}: NewsletterFormProps): React.Node => {
   const inputRef = useRef<HTMLInputElement | null>(null);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
 
   const submit = useCallback(() => {
     if (!inputRef.current) {

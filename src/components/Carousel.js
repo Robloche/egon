@@ -12,7 +12,7 @@ import {scrollTop} from '../helpers/scroll';
 import {useInView} from 'react-intersection-observer';
 import {useSelector} from 'react-redux';
 import {useSwipeable} from 'react-swipeable';
-import useWindowSize from '../hooks/useWindowSize';
+import useWindowSize from '../hooks/use-window-size';
 
 // Image changes every 15s (in ms);
 const IMAGE_SWITCH_TIMEOUT = 15_000;

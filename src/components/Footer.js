@@ -6,7 +6,7 @@ import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
 import NewsletterPopup from './NewsletterPopup';
 import Social from './Social';
-import useNewsletterPopup from '../hooks/useNewsletterPopup';
+import useNewsletterPopup from '../hooks/use-newsletter-popup';
 import {useSelector} from 'react-redux';
 
 const Footer = (): React.Node => {

@@ -3,10 +3,12 @@
 import './NewsletterPopup.scss';
 import * as React from 'react';
 import NewsletterForm, {type NewsletterFormProps} from './NewsletterForm';
+import FocusLock from 'react-focus-lock';
 import {Localizer} from '../helpers/localizer';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-import ReactDOM from 'react-dom';
-import {useEffect} from 'react';
+import Portal from './Portal';
+import {RemoveScroll} from 'react-remove-scroll';
+import useKeyUp from '../hooks/use-key-up';
 import x from '../assets/svg/x.svg';
 
 const url = 'https://egonparis.us10.list-manage.com/subscribe/post?u=68d12add1d548738f018f906c&amp;id=55752b85ec';
@@ -24,53 +26,49 @@ type NewsletterPopupProps = {
 };
 
 const NewsletterPopup = ({hide, isVisible}: NewsletterPopupProps): React.Node => {
+  useKeyUp('Escape', hide);
+
   if (!isVisible) {
     return null;
   }
 
-  useEffect(() => {
-    // Allow modal closing via Escape
-    const close = (event: SyntheticKeyboardEvent<HTMLElement>) => {
-      if (event.key === 'Escape') {
-        hide();
-      }
-    };
-
-    window.addEventListener('keydown', close, {passive: true});
-    return () => {
-      window.removeEventListener('keydown', close, {passive: true});
-    };
-  }, [hide]);
-
-  return ReactDOM.createPortal(
-    <>
-      <div className='modal__overlay' />
-      <div
-        aria-hidden
-        aria-modal
-        className='modal__wrapper'
-        role='dialog'
-        tabIndex={-1}>
-        <div className='modal'>
-          <div className='modal__image' />
-          <img
-            alt='Close button'
-            aria-label='Close'
-            className='modal__close-button'
-            data-dismiss='modal'
-            draggable={false}
-            onClick={hide}
-            src={x} />
-          <div className='modal__header'>{Localizer.localize('newsletter.header')}</div>
-          <div className='modal__content'>
-            <MailchimpSubscribe
-              render={formRender}
-              url={url} />
+  return (
+    <Portal>
+      <FocusLock returnFocus>
+        <RemoveScroll>
+          <div className='modal__wrapper'>
+            <div
+              className='modal__overlay'
+              onClick={hide} />
+            <div
+              aria-hidden
+              aria-modal
+              className='modal'
+              role='dialog'
+              tabIndex={-1}>
+              <div className='modal__image' />
+              <button
+                aria-label='Close'
+                className='modal__close-button'
+                data-dismiss='modal'
+                onClick={hide}
+                type='button'>
+                <img
+                  alt='Close button'
+                  draggable={false}
+                  src={x} />
+              </button>
+              <div className='modal__header'>{Localizer.localize('newsletter.header')}</div>
+              <div className='modal__content'>
+                <MailchimpSubscribe
+                  render={formRender}
+                  url={url} />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </>,
-    document.body
+        </RemoveScroll>
+      </FocusLock>
+    </Portal>
   );
 };
 
