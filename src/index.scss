@@ -10,6 +10,8 @@
   --whitish: #F8F8F8;
   --white: #FFF;
   --black: #000;
+  --white-transparent-10: rgb(255 255 255 / 10%);
+  --modal-overlay-background: rgb(0 0 0 / 40%);
 
   --border-radius-small: .2rem;
   --border-radius-big: .5rem;
@@ -41,6 +43,10 @@ html {
   * {
     box-sizing: border-box;
     white-space: pre-line;
+  }
+
+  button {
+    font-size: inherit;
   }
 
   body {
@@ -89,6 +95,15 @@ html {
             color: var(--white);
           }
         }
+      }
+
+      .no-style-button {
+        align-items: center;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
       }
     }
   }

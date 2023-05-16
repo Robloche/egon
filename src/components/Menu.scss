@@ -1,5 +1,32 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+.menu__wrapper {
+  inset: 0;
+  position: fixed;
+  z-index: 600;
+
+  .menu__overlay {
+    animation: fadeIn 850ms cubic-bezier(.14, .78, .36, 1);
+    background: var(--modal-overlay-background);
+    inset: 0;
+    position: absolute;
+    z-index: 610;
+  }
+}
+
 .menu {
   position: relative;
+  z-index: 620;
 
   &.menu__label,
   > .menu__label {
@@ -25,6 +52,7 @@
   }
 
   &.menu__opened {
+    animation: slideIn 500ms cubic-bezier(.14, .78, .36, 1);
     background-color: var(--green);
     color: var(--white);
     min-width: 25rem;
@@ -32,7 +60,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 550;
+    z-index: 630;
 
     > .menu__header,
     > .menu__footer {
@@ -44,8 +72,11 @@
 
     > .menu__header {
       > .close {
-        cursor: pointer;
-        height: 1.1rem;
+        padding: .3rem;
+
+        > img {
+          height: 1.1rem;
+        }
       }
     }
 
