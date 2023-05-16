@@ -1,8 +1,11 @@
+/* @flow */
+
 import {useEffect} from 'react';
 
-const useKeyUp = (key, callback) => {
+const useKeyUp = (key: string, callback: (SyntheticKeyboardEvent<HTMLElement>) => void) => {
   useEffect(() => {
-    const handleKeyUp = (event) => {
+    const handleKeyUp = (event: SyntheticKeyboardEvent<HTMLElement>) => {
+      // $FlowFixMe: Flow doesn't know "code"
       const {code} = event;
 
       if (code === key) {
