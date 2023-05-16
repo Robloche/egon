@@ -13,6 +13,7 @@ import {useSelector} from 'react-redux';
 import x from '../assets/svg/x.svg';
 
 const TWO = 2;
+const LANGUAGE_TAB_INDEX_START = 50;
 
 const renderHeader = (handleCloseOnClick: (event: SyntheticMouseEvent<HTMLElement> | SyntheticTouchEvent<HTMLElement>) => void) => (
   <div className='menu__header'>
@@ -129,26 +130,6 @@ const renderLinks = (
   </nav>
 );
 
-const renderFooter = (language: string, languageOnChange: (event: SyntheticInputEvent<HTMLElement>) => void) => (
-  <div className='menu__footer'>
-    <Social className='menu__social' />
-    <div className='menu__languages'>{Localizer.supportedLanguages.map((lang) => {
-      const id = `lang-${lang}`;
-
-      return <React.Fragment key={id}>
-        <input
-          checked={language === lang}
-          id={id}
-          name='language'
-          onChange={languageOnChange}
-          type='radio'
-          value={lang} />
-        <label htmlFor={id}>{Localizer.localize(`menu.language.${lang}`)}</label>
-      </React.Fragment>;
-    })}</div>
-  </div>
-);
-
 const Menu = (): React.Node => {
   const language = useSelector((state) => state.language);
 
@@ -196,6 +177,17 @@ const Menu = (): React.Node => {
     Localizer.changeLanguage(value);
   }, []);
 
+  const selectLanguage = useCallback((event: SyntheticKeyboardEvent<HTMLElement>) => {
+    // $FlowFixMe: Flow doesn't know "code"
+    const {code, currentTarget} = event;
+    const radioBtn = currentTarget.previousSibling;
+
+    if (radioBtn instanceof HTMLInputElement && ['Enter', 'NumpadEnter', 'Space'].includes(code)) {
+      // CurrentTarget.previousElementSibling?.click();
+      Localizer.changeLanguage(radioBtn.value);
+    }
+  }, []);
+
   const menuOnClick = useCallback(() => {
     setIsOpen(true);
   }, []);
@@ -207,6 +199,29 @@ const Menu = (): React.Node => {
         onClick={menuOnClick}>{Localizer.localize('menu.label')}</div>
     );
   }
+
+  const footerElt = (
+    <div className='menu__footer'>
+      <Social className='menu__social' />
+      <div className='menu__languages'>{Localizer.supportedLanguages.map((lang, i) => {
+        const id = `lang-${lang}`;
+
+        return <React.Fragment key={id}>
+          <input
+            checked={language === lang}
+            id={id}
+            name='language'
+            onChange={languageOnChange}
+            type='radio'
+            value={lang} />
+          <label
+            htmlFor={id}
+            onKeyUp={selectLanguage}
+            tabIndex={LANGUAGE_TAB_INDEX_START + i}>{Localizer.localize(`menu.language.${lang}`)}</label>
+        </React.Fragment>;
+      })}</div>
+    </div>
+  );
 
   return (
     <FocusLock returnFocus>
@@ -222,7 +237,7 @@ const Menu = (): React.Node => {
             role='dialog'>
             {renderHeader(handleCloseOnClick)}
             {renderLinks(language, expandedStates, toggleSection, handleCloseOnClick, handleOnFocus, handleCloseAll)}
-            {renderFooter(language, languageOnChange)}
+            {footerElt}
           </div>
         </div>
       </RemoveScroll>
