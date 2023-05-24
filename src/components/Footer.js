@@ -13,7 +13,7 @@ const Footer = (): React.Node => {
   const language = useSelector((state) => state.language);
   const version = useSelector((state) => state.version);
 
-  const [isVisible, toggle] = useNewsletterPopup();
+  const [isVisible, show, hide] = useNewsletterPopup();
 
   return (
     <div className='footer'>
@@ -24,12 +24,12 @@ const Footer = (): React.Node => {
         <HashLink to={`/${language}/join-us#top`}>{Localizer.localize('footer.join_us')}</HashLink>
         <HashLink to={`/${language}/contact#top`}>{Localizer.localize('footer.contact')}</HashLink>
         <button
-          onClick={toggle}
+          onClick={show}
           type='button'>{Localizer.localize('footer.newsletter')}</button>
       </div>
       <div className='footer__version'>{version}</div>
       <NewsletterPopup
-        hide={toggle}
+        hide={hide}
         isVisible={isVisible} />
     </div>
   );

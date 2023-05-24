@@ -2,14 +2,18 @@
 
 import {useState} from 'react';
 
-const useNewsletterPopup = (): [boolean, () => void] => {
+const useNewsletterPopup = (): [boolean, () => void, () => void] => {
   const [isVisible, setIsVisible] = useState(false);
 
-  function toggle() {
-    setIsVisible(!isVisible);
-  }
+  const show = () => {
+    setIsVisible(true);
+  };
 
-  return [isVisible, toggle];
+  const hide = () => {
+    setIsVisible(false);
+  };
+
+  return [isVisible, show, hide];
 };
 
 export default useNewsletterPopup;
