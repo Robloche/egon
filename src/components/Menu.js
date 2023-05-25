@@ -8,7 +8,7 @@ import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
 import {RemoveScroll} from 'react-remove-scroll';
 import Social from './Social';
-import {scrollTop} from '../helpers/scroll';
+import {scrollTopWithHeader} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
 import x from '../assets/svg/x.svg';
 
@@ -53,26 +53,26 @@ const renderLinks = (
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/home#first-name`}>{Localizer.localize('menu.agency.first_name')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/home#philosophy`}>{Localizer.localize('menu.agency.philosophy')}</HashLink>
       {/* <HashLink */}
       {/* DEBUG onClick={handleCloseOnClick} */}
-      {/* DEBUG  scroll={scrollTop} */}
+      {/* DEBUG  scroll={scrollTopWithHeader} */}
       {/* DEBUG  to={`/${language}/home#manifest`}>{Localizer.localize('menu.agency.manifest')}</HashLink> */}
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/home#founder`}>{Localizer.localize('menu.agency.founder')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/home#creative-director`}>{Localizer.localize('menu.agency.creative_director')}</HashLink>
     </div>
     <div
@@ -83,27 +83,27 @@ const renderLinks = (
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/expertises#strategy`}>{Localizer.localize('menu.expertises.strategy')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/expertises#creation`}>{Localizer.localize('menu.expertises.creation')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/expertises#digital`}>{Localizer.localize('menu.expertises.digital')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/expertises#edition`}>{Localizer.localize('menu.expertises.edition')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/expertises#production`}>{Localizer.localize('menu.expertises.production')}</HashLink>
     </div>
     <div
@@ -114,12 +114,12 @@ const renderLinks = (
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/creation#projects`}>{Localizer.localize('menu.creation.projects')}</HashLink>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
-        scroll={scrollTop}
+        scroll={scrollTopWithHeader}
         to={`/${language}/creation#customers`}>{Localizer.localize('menu.creation.customers')}</HashLink>
     </div>
     <HashLink

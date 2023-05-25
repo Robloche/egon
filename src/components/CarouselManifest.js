@@ -34,8 +34,9 @@ const CarouselManifest = (): React.Node => (
   <Carousel
     className='manifest'
     id='carousel-manifest'
+    menu
     pageCount={PAGE_COUNT}
-    scrollLink='first-name'
+    scrollLink='carousel-clients'
     slideContentRenderer={renderSlideContent} />
 );
 

@@ -227,9 +227,9 @@ const Home = (): React.Node => {
 
   return (
     <div className='page page-agency'>
-      <CarouselClients />
       <CarouselManifest />
       <Header />
+      <CarouselClients />
       {renderSectionFirstName()}
       <div className='page-agency__grid'>
         {renderSectionPhilosophy()}

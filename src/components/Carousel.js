@@ -2,13 +2,13 @@
 
 import './Carousel.scss';
 import * as React from 'react';
+import {scrollTopNoHeader, scrollTopWithHeader} from '../helpers/scroll';
 import {useCallback, useEffect, useRef, useState} from 'react';
 import Bullet from './Bullet';
 import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
 import Menu from './Menu';
 import egonLogo from '../assets/svg/logo-white.svg';
-import {scrollTop} from '../helpers/scroll';
 import {useInView} from 'react-intersection-observer';
 import {useSelector} from 'react-redux';
 import {useSwipeable} from 'react-swipeable';
@@ -17,12 +17,13 @@ import useWindowSize from '../hooks/use-window-size';
 // Image changes every 15s (in ms);
 const IMAGE_SWITCH_TIMEOUT = 15_000;
 
+/* eslint-disable react/require-default-props */
 type DefaultProps = {|
-  // eslint-disable-next-line react/require-default-props
   +logo?: boolean,
-  // eslint-disable-next-line react/require-default-props
+  +menu?: boolean,
   +slideContentRenderer?: (index: number) => React.Element<any> | null
 |};
+/* eslint-enable react/require-default-props */
 
 type CarouselProps = {
   ...DefaultProps,
@@ -36,6 +37,7 @@ const Carousel = ({
   className,
   id,
   logo = false,
+  menu = false,
   pageCount,
   scrollLink,
   slideContentRenderer
@@ -70,14 +72,17 @@ const Carousel = ({
   const imageSwitchTimerRef = useRef<TimeoutID | null>(null);
 
   useEffect(() => {
-    imageSwitchTimerRef.current = setTimeout(() => {
-      setCurrentIndex(nextIndex);
-    }, IMAGE_SWITCH_TIMEOUT);
+    if (inView) {
+      imageSwitchTimerRef.current = setTimeout(() => {
+        setCurrentIndex(nextIndex);
+      }, IMAGE_SWITCH_TIMEOUT);
+    }
 
     return () => {
       clearTimeout(imageSwitchTimerRef.current);
+      imageSwitchTimerRef.current = null;
     };
-  }, [currentIndex, nextIndex]);
+  }, [currentIndex, inView, nextIndex]);
 
   const handleBulletOnClick = useCallback((index: number) => {
     if (index === currentIndex) {
@@ -124,11 +129,11 @@ const Carousel = ({
           ref={refInView} />
         <HashLink
           className='carousel__scroll-text'
-          scroll={scrollTop}
+          scroll={menu ? scrollTopNoHeader : scrollTopWithHeader}
           smooth
           to={`/${language}/home#${scrollLink}`}>{Localizer.localize('agency.scroll')}</HashLink>
       </div>
-      <Menu />
+      {menu ? <Menu /> : null}
       {logo ? (
         <img
           alt='Logo Egon Paris'

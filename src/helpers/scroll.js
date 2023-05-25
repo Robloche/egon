@@ -15,15 +15,15 @@ const delayedSetIds = (): void => {
   }, ID_DELAY);
 };
 
-const scrollTop = (el: HTMLElement): void => {
+const scrollTop = (el: HTMLElement, withHeader: boolean): void => {
   const root = el.closest('.root');
   if (!root) {
     return;
   }
 
   // Take header height into account
-  const header = document.querySelector('.header');
-  const yOffset = header?.offsetHeight ?? 0;
+  const headerHeight = document.querySelector('.header')?.offsetHeight ?? 0;
+  const yOffset = withHeader ? headerHeight : 0;
 
   const yTarget = el.getBoundingClientRect().top + root.scrollTop;
   root.scrollTo({
@@ -32,7 +32,12 @@ const scrollTop = (el: HTMLElement): void => {
   });
 };
 
+const scrollTopWithHeader = (el: HTMLElement): void => scrollTop(el, true);
+
+const scrollTopNoHeader = (el: HTMLElement): void => scrollTop(el, false);
+
 export {
   delayedSetIds,
-  scrollTop
+  scrollTopWithHeader,
+  scrollTopNoHeader
 };

@@ -6,7 +6,7 @@ import Footer from './Footer';
 import {HashLink} from 'react-router-hash-link';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
-import {scrollTop} from '../helpers/scroll';
+import {scrollTopWithHeader} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
 
 const LegalNotice = (): React.Node => {
@@ -55,7 +55,7 @@ const LegalNotice = (): React.Node => {
         <div className='legal-notice__paragraph'>
           <span>{Localizer.localize('legal_notice.privacy_policy_introduction')}</span>
           <HashLink
-            scroll={scrollTop}
+            scroll={scrollTopWithHeader}
             to={`/${language}/privacy-policy#top`}>{Localizer.localize('legal_notice.privacy_policy_link')}</HashLink>
         </div>
       </div>
