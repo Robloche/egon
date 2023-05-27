@@ -6,7 +6,6 @@ import {useCallback, useState} from 'react';
 import FocusLock from 'react-focus-lock';
 import {HashLink} from 'react-router-hash-link';
 import {Localizer} from '../helpers/localizer';
-import {RemoveScroll} from 'react-remove-scroll';
 import Social from './Social';
 import {scrollTopWithHeader} from '../helpers/scroll';
 import {useSelector} from 'react-redux';
@@ -225,22 +224,20 @@ const Menu = (): React.Node => {
 
   return (
     <FocusLock returnFocus>
-      <RemoveScroll>
-        <div className='menu__wrapper'>
-          <div
-            className='menu__overlay'
-            onClick={handleCloseOnClick} />
-          <div
-            aria-label='menu'
-            aria-modal='true'
-            className='menu menu__opened'
-            role='dialog'>
-            {renderHeader(handleCloseOnClick)}
-            {renderLinks(language, expandedStates, toggleSection, handleCloseOnClick, handleOnFocus, handleCloseAll)}
-            {footerElt}
-          </div>
+      <div className='menu__wrapper'>
+        <div
+          className='menu__overlay'
+          onClick={handleCloseOnClick} />
+        <div
+          aria-label='menu'
+          aria-modal='true'
+          className='menu menu__opened'
+          role='dialog'>
+          {renderHeader(handleCloseOnClick)}
+          {renderLinks(language, expandedStates, toggleSection, handleCloseOnClick, handleOnFocus, handleCloseAll)}
+          {footerElt}
         </div>
-      </RemoveScroll>
+      </div>
     </FocusLock>
   );
 };
