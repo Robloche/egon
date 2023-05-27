@@ -7,7 +7,6 @@ import FocusLock from 'react-focus-lock';
 import {Localizer} from '../helpers/localizer';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import Portal from './Portal';
-import {RemoveScroll} from 'react-remove-scroll';
 import useKeyUp from '../hooks/use-key-up';
 import x from '../assets/svg/x.svg';
 
@@ -35,38 +34,36 @@ const NewsletterPopup = ({hide, isVisible}: NewsletterPopupProps): React.Node =>
   return (
     <Portal>
       <FocusLock returnFocus>
-        <RemoveScroll>
-          <div className='modal__wrapper'>
-            <div
-              className='modal__overlay'
-              onClick={hide} />
-            <div
-              aria-hidden
-              aria-modal
-              className='modal'
-              role='dialog'
-              tabIndex={-1}>
-              <div className='modal__image' />
-              <button
-                aria-label='Close'
-                className='modal__close-button'
-                data-dismiss='modal'
-                onClick={hide}
-                type='button'>
-                <img
-                  alt='Close button'
-                  draggable={false}
-                  src={x} />
-              </button>
-              <div className='modal__header'>{Localizer.localize('newsletter.header')}</div>
-              <div className='modal__content'>
-                <MailchimpSubscribe
-                  render={formRender}
-                  url={url} />
-              </div>
+        <div className='modal__wrapper'>
+          <div
+            className='modal__overlay'
+            onClick={hide} />
+          <div
+            aria-hidden
+            aria-modal
+            className='modal'
+            role='dialog'
+            tabIndex={-1}>
+            <div className='modal__image' />
+            <button
+              aria-label='Close'
+              className='modal__close-button'
+              data-dismiss='modal'
+              onClick={hide}
+              type='button'>
+              <img
+                alt='Close button'
+                draggable={false}
+                src={x} />
+            </button>
+            <div className='modal__header'>{Localizer.localize('newsletter.header')}</div>
+            <div className='modal__content'>
+              <MailchimpSubscribe
+                render={formRender}
+                url={url} />
             </div>
           </div>
-        </RemoveScroll>
+        </div>
       </FocusLock>
     </Portal>
   );
