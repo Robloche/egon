@@ -133,23 +133,113 @@
       > .carousel__slider {
         > .carousel__slide {
           &.image1 {
-            background-image: url('../assets/images/clients1_1920.png');
+            background-image: url('../assets/images/clients1_1920_portrait.png');
           }
 
           &.image2 {
-            background-image: url('../assets/images/clients2_1920.png');
+            background-image: url('../assets/images/clients2_1920_portrait.png');
           }
 
           &.image3 {
-            background-image: url('../assets/images/clients3_1920.png');
+            background-image: url('../assets/images/clients3_1920_portrait.png');
           }
 
           &.image4 {
-            background-image: url('../assets/images/clients4_1920.png');
+            background-image: url('../assets/images/clients4_1920_portrait.png');
           }
 
           &.image5 {
-            background-image: url('../assets/images/clients5_1920.png');
+            background-image: url('../assets/images/clients5_1920_portrait.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) and (height <= 1400px) {
+  .carousel {
+    &.clients {
+      > .carousel__slider {
+        > .carousel__slide {
+          &.image1 {
+            background-image: url('../assets/images/clients1_1400_portrait.png');
+          }
+
+          &.image2 {
+            background-image: url('../assets/images/clients2_1400_portrait.png');
+          }
+
+          &.image3 {
+            background-image: url('../assets/images/clients3_1400_portrait.png');
+          }
+
+          &.image4 {
+            background-image: url('../assets/images/clients4_1400_portrait.png');
+          }
+
+          &.image5 {
+            background-image: url('../assets/images/clients5_1400_portrait.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) and (height <= 900px) {
+  .carousel {
+    &.clients {
+      > .carousel__slider {
+        > .carousel__slide {
+          &.image1 {
+            background-image: url('../assets/images/clients1_900_portrait.png');
+          }
+
+          &.image2 {
+            background-image: url('../assets/images/clients2_900_portrait.png');
+          }
+
+          &.image3 {
+            background-image: url('../assets/images/clients3_900_portrait.png');
+          }
+
+          &.image4 {
+            background-image: url('../assets/images/clients4_900_portrait.png');
+          }
+
+          &.image5 {
+            background-image: url('../assets/images/clients5_900_portrait.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) and (height <= 400px) {
+  .carousel {
+    &.clients {
+      > .carousel__slider {
+        > .carousel__slide {
+          &.image1 {
+            background-image: url('../assets/images/clients1_400_portrait.png');
+          }
+
+          &.image2 {
+            background-image: url('../assets/images/clients2_400_portrait.png');
+          }
+
+          &.image3 {
+            background-image: url('../assets/images/clients3_400_portrait.png');
+          }
+
+          &.image4 {
+            background-image: url('../assets/images/clients4_400_portrait.png');
+          }
+
+          &.image5 {
+            background-image: url('../assets/images/clients5_400_portrait.png');
           }
         }
       }
