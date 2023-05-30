@@ -11,6 +11,7 @@ import LegalNotice from './components/LegalNotice';
 import {Localizer} from './helpers/localizer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import {Provider} from 'react-redux';
+import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
 import {configureStore} from '@reduxjs/toolkit';
 import {fetchVersion} from './helpers/version';
@@ -72,11 +73,11 @@ const App = (): React.Node => (
           element={<PrivacyPolicy />}
           path='/privacy-policy' />
         <Route
-          element={<Home />}
+          element={<SplashScreen />}
           exact
           path='/:lang' />
         <Route
-          element={<Home />}
+          element={<SplashScreen />}
           exact
           path='/' />
       </Routes>
