@@ -43,14 +43,16 @@ const renderSectionFirstName = () => {
             srcSet={`${egon1} 144w, ${egon2} 287w, ${egon3} 430w, ${egon4} 573w`} />
           <div className='first-name__copyright'>&#169; SB</div>
         </div>
-        <div className='first-name__content'>
+        <AnimatedText
+          classList='first-name__content'
+          direction='up'>
           <div className='first-name__title title'>{Localizer.localize('agency.first_name.why_egon')}</div>
           <div className='first-name__paragraph'>{Localizer.localize('agency.first_name.paragraph1')}</div>
           <div
             className='first-name__paragraph paragraph-bold'>{Localizer.localize('agency.first_name.paragraph2')}</div>
           <div className='first-name__severine'>Séverine Breton Join-Diéterle</div>
           <div className='first-name__founder'>{Localizer.localize('agency.first_name.founder')}</div>
-        </div>
+        </AnimatedText>
         <div className='first-name__pronunciation'>
           <a
             href='https://www.youtube.com/watch?v=H5kkx2Lk5x4'
@@ -86,7 +88,9 @@ const renderSectionPhilosophy = () => (
     <div
       className='page-agency__philosophy page-agency__grid-section'
       data-id='philosophy'>
-      <div className='philosophy__content'>
+      <AnimatedText
+        classList='philosophy__content'
+        direction='up'>
         <div className='philosophy__title title'>{Localizer.localize('agency.philosophy.title')}</div>
         <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph1_title')}</div>
         <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph1_text')}</div>
@@ -97,7 +101,7 @@ const renderSectionPhilosophy = () => (
           <span>{Localizer.localize('agency.philosophy.paragraph4_title')}</span>
           <span>{Localizer.localize('agency.philosophy.paragraph4_text')}</span>
         </div>
-      </div>
+      </AnimatedText>
     </div>
     <div className='page-agency__grid-section section__right' />
     <div className='section__closing philosophy__closing'>
