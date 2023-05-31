@@ -4,11 +4,11 @@ import './Bullet.scss';
 import * as React from 'react';
 import {useCallback} from 'react';
 
-type BulletProps = {
+type BulletProps = {|
   +index: number,
   +isFull: boolean,
   +onClick: (index: number) => void
-};
+|};
 
 const Bullet = ({index, isFull, onClick}: BulletProps): React.Node => {
   const handleOnClick = useCallback(() => onClick(index), [index, onClick]);

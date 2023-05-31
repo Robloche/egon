@@ -6,9 +6,9 @@ import instagram from '../assets/svg/instagram.svg';
 import linkedIn from '../assets/svg/linkedin.svg';
 import mail from '../assets/svg/mail.svg';
 
-type SocialProps = {
+type SocialProps = {|
   +className: string
-};
+|};
 
 const Social = ({className}: SocialProps): React.Node => (
   <div className={`social ${className}`}>

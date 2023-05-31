@@ -19,10 +19,10 @@ const formRender = ({message, status, subscribe}: NewsletterFormProps) => (
     subscribe={subscribe} />
 );
 
-type NewsletterPopupProps = {
+type NewsletterPopupProps = {|
   +hide: () => void,
   +isVisible: boolean
-};
+|};
 
 const NewsletterPopup = ({hide, isVisible}: NewsletterPopupProps): React.Node => {
   useKeyUp('Escape', hide);

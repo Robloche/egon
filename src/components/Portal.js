@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {createPortal} from 'react-dom';
 
-type PortalProps = {
+type PortalProps = {|
   +children: React.Node
-};
+|};
 
 function Portal({children}: PortalProps): React.Node {
   const [portalElt, setPortalElt] = React.useState(null);

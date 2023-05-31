@@ -25,13 +25,13 @@ type DefaultProps = {|
 |};
 /* eslint-enable react/require-default-props */
 
-type CarouselProps = {
+type CarouselProps = {|
   ...DefaultProps,
   +className: string,
   +id: string,
   +pageCount: number,
   +scrollLink: string
-};
+|};
 
 const Carousel = ({
   className,
