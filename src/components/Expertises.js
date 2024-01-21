@@ -45,7 +45,7 @@ const renderSectionStrategy = () => (
     </div>
     <div className='page-expertises__closing closing1'>
       <AnimatedText
-        classList='title'
+        classList='title verbatim'
         direction='up'
         stringKey='expertises.strategy.closing' />
     </div>
@@ -85,7 +85,7 @@ const renderSectionCreation = () => (
     </div>
     <div className='page-expertises__closing closing2'>
       <AnimatedText
-        classList='title'
+        classList='title verbatim'
         direction='up'
         stringKey='expertises.creation.closing' />
     </div>
@@ -130,7 +130,7 @@ const renderSectionDigital = () => (
     </div>
     <div className='page-expertises__closing closing3'>
       <AnimatedText
-        classList='title'
+        classList='title verbatim'
         direction='up'
         stringKey='expertises.digital.closing' />
     </div>
@@ -176,7 +176,7 @@ const renderSectionEdition = () => (
     </div>
     <div className='page-expertises__closing closing4'>
       <AnimatedText
-        classList='title'
+        classList='title verbatim'
         direction='up'
         stringKey='expertises.edition.closing' />
     </div>
@@ -220,7 +220,7 @@ const renderSectionProduction = () => (
     </div>
     <div className='page-expertises__closing closing5'>
       <AnimatedText
-        classList='title'
+        classList='title verbatim'
         direction='up'
         stringKey='expertises.production.closing' />
     </div>

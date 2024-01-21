@@ -19,10 +19,18 @@ const Footer = (): React.Node => {
     <div className='footer'>
       <Social className='footer__social' />
       <div className='footer__links'>
-        <HashLink to={`/${language}/legal-notice#top`}>{Localizer.localize('footer.legal_notice')}</HashLink>
-        <HashLink to={`/${language}/privacy-policy#top`}>{Localizer.localize('footer.privacy_policy')}</HashLink>
-        <HashLink to={`/${language}/join-us#top`}>{Localizer.localize('footer.join_us')}</HashLink>
-        <HashLink to={`/${language}/contact#top`}>{Localizer.localize('footer.contact')}</HashLink>
+        <HashLink
+          className='underlined'
+          to={`/${language}/legal-notice#top`}>{Localizer.localize('footer.legal_notice')}</HashLink>
+        <HashLink
+          className='underlined'
+          to={`/${language}/privacy-policy#top`}>{Localizer.localize('footer.privacy_policy')}</HashLink>
+        <HashLink
+          className='underlined'
+          to={`/${language}/join-us#top`}>{Localizer.localize('footer.join_us')}</HashLink>
+        <HashLink
+          className='underlined'
+          to={`/${language}/contact#top`}>{Localizer.localize('footer.contact')}</HashLink>
         <button
           onClick={show}
           type='button'>{Localizer.localize('footer.newsletter')}</button>

@@ -12,19 +12,8 @@
     display: flex;
 
     > a {
-      border-bottom: 1px solid var(--black);
-      color: var(--black);
-      font: .8rem var(--font-family-body-bold);
-      padding-bottom: .2rem;
-      text-decoration: none;
-      text-transform: uppercase;
-
       &:not(:last-child) {
         margin-right: 40px;
-      }
-
-      &:hover {
-        color: rgba(0, 0, 0, .8);
       }
     }
 

@@ -30,7 +30,7 @@
   }
 
   > .page-contact__landscape {
-    background-image: url('../assets/images/contact_1920.png');
+    background-image: url('../assets/images/contact/contact_1920.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
@@ -40,7 +40,7 @@
 @media (max-width: 1400px) {
   .page-contact {
     > .page-contact__landscape {
-      background-image: url('../assets/images/contact_1400.png');
+      background-image: url('../assets/images/contact/contact_1400.png');
     }
   }
 }
@@ -52,7 +52,7 @@
     }
 
     > .page-contact__landscape {
-      background-image: url('../assets/images/contact_900.png');
+      background-image: url('../assets/images/contact/contact_900.png');
     }
   }
 }
@@ -89,7 +89,7 @@
     }
 
     > .page-contact__landscape {
-      background-image: url('../assets/images/contact_400.png');
+      background-image: url('../assets/images/contact/contact_400.png');
     }
   }
 }

@@ -9,19 +9,19 @@ import Footer from './Footer';
 import Header from './Header';
 import {Localizer} from '../helpers/localizer';
 import {delayedSetIds} from '../helpers/scroll';
-import egon1 from '../assets/images/egon-by-severine_144.png';
-import egon2 from '../assets/images/egon-by-severine_287.png';
-import egon3 from '../assets/images/egon-by-severine_430.png';
-import egon4 from '../assets/images/egon-by-severine_573.png';
-import michele1 from '../assets/images/michele_200.png';
-import michele2 from '../assets/images/michele_400.png';
-import michele3 from '../assets/images/michele_600.png';
-import michele4 from '../assets/images/michele_800.png';
+import egon1 from '../assets/images/homepage/egon-by-severine_144.png';
+import egon2 from '../assets/images/homepage/egon-by-severine_287.png';
+import egon3 from '../assets/images/homepage/egon-by-severine_430.png';
+import egon4 from '../assets/images/homepage/egon-by-severine_573.png';
+import michele1 from '../assets/images/homepage/michele_200.png';
+import michele2 from '../assets/images/homepage/michele_400.png';
+import michele3 from '../assets/images/homepage/michele_600.png';
+import michele4 from '../assets/images/homepage/michele_800.png';
 import qrCode from '../assets/svg/qr-code.svg';
-import severine1 from '../assets/images/severine_200.png';
-import severine2 from '../assets/images/severine_400.png';
-import severine3 from '../assets/images/severine_600.png';
-import severine4 from '../assets/images/severine_800.png';
+import severine1 from '../assets/images/homepage/severine_200.png';
+import severine2 from '../assets/images/homepage/severine_400.png';
+import severine3 from '../assets/images/homepage/severine_600.png';
+import severine4 from '../assets/images/homepage/severine_800.png';
 import {useEffect} from 'react';
 import {useInView} from 'react-intersection-observer';
 import {useSelector} from 'react-redux';
@@ -71,7 +71,7 @@ const renderSectionFirstName = () => {
       <div className='section__closing first-name__closing'>
         <div className='first-name__closing-content'>
           <AnimatedText
-            classList='first-name__title title title-white'
+            classList='first-name__title title verbatim title-white'
             direction='up'
             stringKey='agency.first_name.closing' />
         </div>
@@ -92,8 +92,10 @@ const renderSectionPhilosophy = () => (
         classList='philosophy__content'
         direction='up'>
         <div className='philosophy__title title'>{Localizer.localize('agency.philosophy.title')}</div>
-        <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph1_title')}</div>
-        <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph1_text')}</div>
+        <div className='exergue'>
+          <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph1_title')}</div>
+          <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph1_text')}</div>
+        </div>
         <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph2_title')}</div>
         <div className='philosophy__paragraph-content'>{Localizer.localize('agency.philosophy.paragraph2_text')}</div>
         <div className='philosophy__paragraph-title'>{Localizer.localize('agency.philosophy.paragraph3_title')}</div>
@@ -107,7 +109,7 @@ const renderSectionPhilosophy = () => (
     <div className='section__closing philosophy__closing'>
       <div className='philosophy__closing-content'>
         <AnimatedText
-          classList='philosophy__title title title-white'
+          classList='philosophy__title title verbatim title-white'
           direction='up'
           stringKey='agency.philosophy.closing' />
         <div className='philosophy__contact'>

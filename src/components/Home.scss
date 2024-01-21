@@ -29,11 +29,11 @@
     width: 100%;
 
     &.first-name__closing {
-      background-image: url('../assets/images/homepage1_1920.png');
+      background-image: url('../assets/images/homepage/homepage1_1920.png');
     }
 
     &.philosophy__closing {
-      background-image: url('../assets/images/homepage2_1920.png');
+      background-image: url('../assets/images/homepage/homepage2_1920.png');
     }
   }
 
@@ -76,12 +76,12 @@
         > .philosophy__content {
           margin: 4rem 0;
 
-          > .philosophy__paragraph-title {
+          .philosophy__paragraph-title {
             font-family: var(--font-family-body-bold);
             margin-top: 2rem;
           }
 
-          > .philosophy__paragraph-content {
+          .philosophy__paragraph-content {
             &.spaced {
               margin: 2rem 0;
             }
@@ -315,7 +315,7 @@
         margin-bottom: 1.6rem;
 
         &.paragraph-highlight {
-          font: 1.4rem var(--font-family-title);
+          font: 1.4rem var(--font-family-verbatim);
         }
       }
 
@@ -347,11 +347,11 @@
       height: 327px;
 
       &.first-name__closing {
-        background-image: url('../assets/images/homepage1_1400.png');
+        background-image: url('../assets/images/homepage/homepage1_1400.png');
       }
 
       &.philosophy__closing {
-        background-image: url('../assets/images/homepage2_1400.png');
+        background-image: url('../assets/images/homepage/homepage2_1400.png');
       }
     }
 
@@ -419,11 +419,11 @@
       height: 210px;
 
       &.first-name__closing {
-        background-image: url('../assets/images/homepage1_900.png');
+        background-image: url('../assets/images/homepage/homepage1_900.png');
       }
 
       &.philosophy__closing {
-        background-image: url('../assets/images/homepage2_900.png');
+        background-image: url('../assets/images/homepage/homepage2_900.png');
       }
     }
 
@@ -627,7 +627,7 @@
 
     .section__closing {
       &.philosophy__closing {
-        background-image: url('../assets/images/homepage2_600.png');
+        background-image: url('../assets/images/homepage/homepage2_600.png');
         height: 260px;
       }
     }
@@ -652,11 +652,11 @@
       height: 93px;
 
       &.first-name__closing {
-        background-image: url('../assets/images/homepage1_400.png');
+        background-image: url('../assets/images/homepage/homepage1_400.png');
       }
 
       &.philosophy__closing {
-        background-image: url('../assets/images/homepage2_400.png');
+        background-image: url('../assets/images/homepage/homepage2_400.png');
         height: 160px;
       }
     }

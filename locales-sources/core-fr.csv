@@ -47,7 +47,40 @@ creation.customers.paragraph2-part2;et sur LinkedIn
 creation.customers.side_title;CREATION - Les clients
 creation.customers.thanks;Merci !
 creation.customers.title;C'est grâce à vous,
+creation.introduction.contact;Et si on s'en parlait ?
+creation.introduction.paragraph1;Nous aimons ce que vous aimez à travers vos yeux, votre histoire, votre sens, vos sens. Notre inspiration naît d'ailleurs, d'ici, de votre héritage, de vos mots surtout, qui nous guident à chaque pas de notre réflexion.\nNous revendiquons la justesse, la cohérence, la longévité.
+creation.introduction.paragraph2;Ce que nous partageons ici... n'est qu'une partie des projets qui nous tiennent à cœur. Une sélection d'études de cas qui peuvent donner une idée de nos domaines d'action. Ce ne sont ni nos préférés (même si nous les aimons tous évidemment) ni les plus prestigieux.\nSeulement ceux qui peuvent vous donner une meilleure idée de notre portefeuille de possibilités.\nN'hésitez pas à nous contacter pour étudier votre projet.
+creation.introduction.side_title;CREATION - Introduction
+creation.introduction.title;Ce que nous partageons ici...
+creation.projects.closing;D'autres aventures à venir ! Stay TUNED !
+creation.projects.common.client;Client
+creation.projects.common.contact_us;Contactez-nous
+creation.projects.common.discover_all_projects;Découvrir tous les projets
+creation.projects.common.photographer;Photographe
+creation.projects.common.post_production;Post-Production
+creation.projects.common.styling;Stylisme
+creation.projects.common.thanks;Merci !
 creation.projects.contact;Et si on s'en parlait ?
+creation.projects.condesa.description;Une nouvelle adresse pour La Condesa d'Indra Carrillo Perea. Une histoire racontée et imagée par EGON PARIS. Le nouveau restaurant d'Indra Carrillo Perea compte dorénavant 34 couverts dans une ambiance entièrement repensée par le chef et son architecte, Camille Flammarion.
+creation.projects.condesa.subtitle;Creation, copy-writing, dossier de presse, production de contenus, social media
+creation.projects.condesa.title;Egon x La Condesa
+creation.projects.moet.bullet1;production de contenus
+creation.projects.moet.bullet2;direction artistique
+creation.projects.moet.bullet3;photographie
+creation.projects.moet.description1;Un nouveau chapitre dans la collection des Grands Vintages de la maison Moët & Chandon signé EGON Paris.
+creation.projects.moet.description2;Une scénographie florale imaginée et produite par EGON Paris. Un terrain de jeu créatif et joyeux de la Création à la Production, pour l'agence consacrée à un nouvel art de vivre le luxe.
+creation.projects.moet.stake_description;Éduquer les consommateurs sur la notion de Champagne millésimé en racontant les qualités organoleptiques et leur évolution à travers les années.
+creation.projects.moet.stake_title;L'enjeu
+creation.projects.moet.subtitle;Creation & production de contenus
+creation.projects.moet.title;Egon x Moët & Chandon
+creation.projects.moet.vintage_2015;Une histoire extraordinaire. Millésime expressif, tendre et enveloppant.
+creation.projects.moet.vintage_2015_rose;Point du jour, un millésime rosé, expressif, puissant, épicé.
+creation.projects.moet.vintage_1999;Un millésime mature, puissant, expansif.
+creation.projects.moet.vintage_2006;Un millésime floral, expansif, succulent.
+creation.projects.more;Découvrir plus
+creation.projects.rothschild.description;Barons de Rothschild champagne, créateur de Grands Vins de Champagne, est porté par un souffle nouveau : plateforme de marque, identité visuelle, habillage, coffret... il ne lui restait plus qu'une campagne publicitaire signifiante pour son brut Concordia et son blanc de blancs, pour marquer une étape significative dans sa vie.
+creation.projects.rothschild.subtitle;Création & production
+creation.projects.rothschild.title;Egon x Barons de Rothschild Champagne
 creation.projects.paragraph;Nous aimons ce que vous aimez à travers vos yeux, votre histoire, votre sens, vos sens. Notre inspiration naît d'ailleurs, d'ici, de votre héritage, de vos mots surtout qui nous guident à chaque pas de notre réflexion. Nous revendiquons la justesse, la cohérence, la longévité.
 creation.projects.side_title;CREATION - Les projets
 creation.projects.title;La création est un parcours. Un parcours de sens, de culture, d'imaginaire. L'issue est plurielle, protéiforme.
@@ -199,6 +232,7 @@ menu.agency.manifest;Manifeste
 menu.agency.philosophy;Philosophie
 menu.contact.label;Contact
 menu.creation.customers;Qui ?
+menu.creation.introduction;Introduction
 menu.creation.label;Creation
 menu.creation.projects;Comment ?
 menu.expertises.creation;Création

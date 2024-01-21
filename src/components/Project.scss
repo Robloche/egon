@@ -1,0 +1,191 @@
+.page-project {
+  --margin-block: 4rem;
+  --margin-inline: 5rem;
+
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+
+  > .page-project__header {
+    align-items: baseline;
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: 20rem auto;
+    margin: 0 var(--margin-inline) var(--margin-block);
+
+    > .project__bullets {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      grid-row-gap: 2rem;
+
+      > div {
+        text-decoration: underline;
+      }
+    }
+
+    > .project__introduction {
+      > .project__title {
+        font: 2rem var(--font-family-title);
+        text-decoration: underline;
+      }
+
+      > .project__description-huge {
+        font: 3rem var(--font-family-title);
+        margin-block: 2rem;
+      }
+    }
+  }
+
+  > img {
+    &.project__image-full-width {
+      margin-inline: var(--margin-inline);
+    }
+  }
+
+  > .project__stake {
+    align-items: baseline;
+    display: grid;
+    column-gap: var(--margin-inline);
+    grid-template-columns: 1fr 1fr;
+    margin: var(--margin-block) 20%;
+
+    > .project__stake-title {
+      font: 2rem var(--font-family-title);
+      text-align: right;
+    }
+  }
+
+  > .project__four-shots {
+    align-items: center;
+    column-gap: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 var(--margin-inline) var(--margin-block);
+  }
+
+  > .project__vintages-presentation {
+    align-items: center;
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    > .project__vintages-list {
+      align-items: stretch;
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-inline: var(--margin-inline);
+      grid-row-gap: 1rem;
+
+      > div {
+        text-align: center;
+      }
+
+      > .project__vintages-year {
+        font: 2rem var(--font-family-verbatim);
+        padding-top: 1rem;
+
+        &:not(:first-child) {
+          border-top: 1px solid var(--white);
+        }
+      }
+    }
+  }
+
+  > .project__screens {
+    align-items: center;
+    background-color: var(--maroon);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    // sass-lint:disable no-empty-rulesets
+    > .project__screens-computer {
+    }
+
+    > .project__screens-phones {
+      align-items: center;
+      column-gap: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: stretch;
+    }
+  }
+
+  > .project__end {
+    align-items: baseline;
+    column-gap: 2rem;
+    display: flex;
+    // sass-lint:disable  shorthand-values
+    margin: var(--margin-block) var(--margin-inline);
+
+    > .project__thanks {
+      font: 2rem var(--font-family-title);
+    }
+
+    > .project__cast {
+      --cast-margin: .5rem;
+
+      display: flex;
+      column-gap: var(--cast-margin);
+
+      > span {
+        &:not(:first-child) {
+          border-left: 1px solid var(--black);
+          padding-left: var(--cast-margin);
+        }
+      }
+    }
+
+    > .project__contact {
+      border: 1px solid var(--black);
+      color: var(--black);
+      font-family: var(--font-family-body-bold);
+      margin-left: auto;
+      padding: .5rem;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: rgb(0 0 0 / 10%);
+      }
+    }
+  }
+
+  > .project__making-of {
+    align-items: center;
+    column-gap: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 var(--margin-inline) var(--margin-block);
+  }
+
+  > a {
+    align-self: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  // sass-lint:disable no-empty-rulesets
+  .page-project {
+  }
+}
+
+@media (max-width: 900px) {
+  // sass-lint:disable no-empty-rulesets
+  .page-project {
+  }
+}
+
+@media (max-width: 600px) {
+  // sass-lint:disable no-empty-rulesets
+  .page-project {
+  }
+}
+
+@media (max-width: 400px) {
+  // sass-lint:disable no-empty-rulesets
+  .page-project {
+  }
+}

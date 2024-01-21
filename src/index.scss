@@ -16,12 +16,17 @@
   --border-radius-small: .2rem;
   --border-radius-big: .5rem;
 
-  --font-family-title: Bodoni, serif;
+  --font-family-title: HelveticaBold, serif;
+  --font-family-verbatim: Bodoni, serif;
   --font-family-body-regular: Helvetica, sans-serif;
   --font-family-body-bold: HelveticaBold, sans-serif;
 
-  --font-size: 16px;
-  --font-size-title: 3rem;
+  --font-size: normal;
+  --font-size-title: 2.8rem;
+
+  --exergue-length: 140px;
+  --exergue-margin: 20px;
+  --exergue-length-with-margin: calc(var(--exergue-length) + var(--exergue-margin));
 
   --header-height: 7rem;
   --footer-height: 7rem;
@@ -91,8 +96,32 @@ html {
         .title {
           font: var(--font-size-title) / 3rem var(--font-family-title);
 
+          &.verbatim {
+            font-family: var(--font-family-verbatim);
+          }
+
           &.title-white {
             color: var(--white);
+          }
+
+          &.normal-line-height {
+            line-height: normal;
+          }
+        }
+
+        .exergue {
+          margin-left: var(--exergue-length-with-margin);
+          position: relative;
+
+          &::before {
+            background-color: var(--black);
+            content: '';
+            height: 1px;
+            left: calc(var(--exergue-length-with-margin) * -1);
+            margin-right: 20px;
+            position: absolute;
+            top: 10px;
+            width: var(--exergue-length);
           }
         }
       }
@@ -105,25 +134,40 @@ html {
         display: flex;
         justify-content: center;
       }
+
+      a {
+        &.underlined {
+          border-bottom: 1px solid var(--black);
+          color: var(--black);
+          font: .8rem var(--font-family-body-bold);
+          padding-bottom: .2rem;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            color: rgba(0, 0, 0, .8);
+          }
+        }
+      }
     }
   }
 }
 
 @media (max-width: 1200px) {
   :root {
-    --font-size: 15px;
+    --font-size: .93rem;
   }
 }
 
 @media (max-width: 1000px) {
   :root {
-    --font-size: 14px;
+    --font-size: .87rem;
   }
 }
 
 @media (max-width: 900px) {
   :root {
-    --font-size: 13px;
+    --font-size: .81rem;
   }
 
   html {
@@ -142,9 +186,11 @@ html {
 
 @media (max-width: 600px) {
   :root {
-    --font-size: 14px;
+    --font-size: .87rem;
     --font-title: 2rem var(--font-family-title);
     --header-height: 5rem;
+    --exergue-length: 100px;
+    --exergue-margin: 15px;
   }
 
   html {
@@ -162,8 +208,10 @@ html {
 
 @media (max-width: 400px) {
   :root {
-    --font-size: 11px;
+    --font-size: .68rem;
     --font-title: 2rem var(--font-family-title);
+    --exergue-length: 60px;
+    --exergue-margin: 10px;
   }
 
   html {

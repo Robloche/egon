@@ -47,7 +47,40 @@ creation.customers.paragraph2-part2;and on LinkedIn
 creation.customers.side_title;CREATION - Clients
 creation.customers.thanks;Thank you!
 creation.customers.title;It is thanks to our
+creation.introduction.contact;Let's talk
+creation.introduction.paragraph1;We love what you love through your eyes, your history, your meaning, your senses. Our inspiration comes from elsewhere, here, from your heritage, and above all from your words, which guide us every step of the way.\nWe demand accuracy, consistency and longevity.
+creation.introduction.paragraph2;What we share here... is just a selection of the projects that are close to our hearts. A selection of case studies that may give an idea of our fields of action. These are neither our favorites (although we obviously love them all) nor the most prestigious.\nJust the ones that might give you a better idea of our portfolio of possibilities.\nDon't hesitate to contact us to discuss your project.
+creation.introduction.side_title;CREATION - Introduction
+creation.introduction.title;What we share here...
+creation.projects.closing;More adventures to come! Stay TUNED!
+creation.projects.common.client;Client
+creation.projects.common.contact_us;Contact us
+creation.projects.common.discover_all_projects;Discover all projects
+creation.projects.common.photographer;Photographer
+creation.projects.common.post_production;Post-Production
+creation.projects.common.styling;Styling
+creation.projects.common.thanks;Thanks!
 creation.projects.contact;Let's talk
+creation.projects.condesa.description;
+creation.projects.condesa.subtitle;
+creation.projects.condesa.title;Egon x La Condesa
+creation.projects.moet.bullet1;
+creation.projects.moet.bullet2;
+creation.projects.moet.bullet3;
+creation.projects.moet.description1;
+creation.projects.moet.description2;
+creation.projects.moet.stake_description;
+creation.projects.moet.stake_title;
+creation.projects.moet.subtitle;
+creation.projects.moet.title;Egon x Moët & Chandon
+creation.projects.moet.vintage_2015;
+creation.projects.moet.vintage_2015_rose;
+creation.projects.moet.vintage_1999;
+creation.projects.moet.vintage_2006;
+creation.projects.more;Discover more
+creation.projects.rothschild.description;
+creation.projects.rothschild.subtitle;
+creation.projects.rothschild.title;Egon x Barons de Rothschild Champagne
 creation.projects.paragraph;We love what you love through your eyes, your story, your meaning and your senses. We are inspired by faraway places, here, your heritage and, most of all, your words which guide every step of the creative process. We advocate precision, coherence and longevity.
 creation.projects.side_title;CREATION - Projects
 creation.projects.title;Design is a journey. A journey of meaning, culture and imagination. The outcome is multi-faceted and shapeshifting.
@@ -199,6 +232,7 @@ menu.agency.manifest;Manifesto
 menu.agency.philosophy;Philosophy
 menu.contact.label;Contact
 menu.creation.customers;Who?
+menu.creation.introduction;Introduction
 menu.creation.label;Creation
 menu.creation.projects;How?
 menu.expertises.creation;Creation

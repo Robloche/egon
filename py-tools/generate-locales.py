@@ -39,14 +39,18 @@ def createFolderIfNotExist(path):
 def readFile(file, jsonObj):
     with open(file, encoding='utf-8') as f:
         for line in f:
-            [key, value] = line.strip().split(CSV_SEPARATOR)
-            keys = key.split(KEY_SEPARATOR)
-            subObj = jsonObj
-            for k in keys[:-1]:
-                if k not in subObj:
-                    subObj[k] = {}
-                subObj = subObj[k]
-            subObj[keys[-1]] = value.replace(r'\n', '\n')
+            try:
+                [key, value] = line.strip().split(CSV_SEPARATOR)
+                keys = key.split(KEY_SEPARATOR)
+                subObj = jsonObj
+                for k in keys[:-1]:
+                    if k not in subObj:
+                        subObj[k] = {}
+                    subObj = subObj[k]
+                subObj[keys[-1]] = value.replace(r'\n', '\n')
+            except ValueError:
+                print('Missing CSV separator in file {} on line "{}"'.format(os.path.basename(file), line))
+                raise
     return jsonObj
 
 # Parse command line
@@ -82,7 +86,11 @@ for lang in languages:
         print('Reading "{}"...'.format(file))
 
         # Read file and build JSON object
-        jsonObj = readFile(file, jsonObj)
+        try:
+            jsonObj = readFile(file, jsonObj)
+        except:
+            print('Aborting')
+            sys.exit(1)
 
     # Write JSON file
     target = os.path.join(localesTargetPath, '{}{}'.format(lang, LOCALES_TARGET_EXTENSION))

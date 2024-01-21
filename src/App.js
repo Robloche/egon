@@ -10,6 +10,7 @@ import JoinUs from './components/JoinUs';
 import LegalNotice from './components/LegalNotice';
 import {Localizer} from './helpers/localizer';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Project from './components/Project';
 import {Provider} from 'react-redux';
 import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
@@ -42,6 +43,12 @@ const App = (): React.Node => (
         <Route
           element={<Creation />}
           path='/creation' />
+        <Route
+          element={<Project />}
+          path='/:lang/projects/:name' />
+        <Route
+          element={<Project />}
+          path='/projects/:name' />
         <Route
           element={<Expertises />}
           path='/:lang/expertises' />
