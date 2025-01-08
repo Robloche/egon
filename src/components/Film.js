@@ -20,6 +20,7 @@ const Film = (): React.Node => {
     <div className='film'>
       <video
         autoPlay
+        muted
         onEnded={goToHome}
         playsInline
         src={film} />
