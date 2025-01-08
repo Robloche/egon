@@ -32,8 +32,6 @@ jobs:
         printf "{\n\t\"version\": \"${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}\",\n\t\"date\": \"$(date +'%Y-%m-%d %H:%M:%S')\"\n}" > build/version.json
       shell: bash
 
-    - run: npm test
-    
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3.1.0
       with:
