@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';
 import Creation from './components/Creation';
 import Expertises from './components/Expertises';
+import Film from './components/Film';
 import Home from './components/Home';
 import JoinUs from './components/JoinUs';
 import LegalNotice from './components/LegalNotice';
@@ -82,9 +83,16 @@ const App = (): React.Node => (
         <Route
           element={<SplashScreen />}
           exact
-          path='/:lang' />
+          path='/:lang/splash-screen' />
         <Route
           element={<SplashScreen />}
+          path='/splash-screen' />
+        <Route
+          element={<Film />}
+          exact
+          path='/:lang' />
+        <Route
+          element={<Film />}
           exact
           path='/' />
       </Routes>
