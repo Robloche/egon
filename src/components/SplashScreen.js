@@ -1,3 +1,5 @@
+/* @flow */
+
 import './SplashScreen.scss';
 import * as React from 'react';
 import {useEffect, useRef, useState} from 'react';
@@ -27,7 +29,7 @@ const SPLASH_SCREEN_FADE_TIMEOUT = 200;
 
 const frames = Object.freeze([frame1, frame2, frame3, frame4, frame5, frame6, frame7, frame8]);
 
-const SplashScreen = () => {
+const SplashScreen = (): React.Node => {
   const navigate = useNavigate();
   const languageRef = useRef(useSelector((state) => state.language));
 

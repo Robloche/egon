@@ -1,3 +1,5 @@
+/* @flow */
+
 import * as React from 'react';
 import {createPortal} from 'react-dom';
 
@@ -6,11 +8,11 @@ type PortalProps = {|
 |};
 
 function Portal({children}: PortalProps): React.Node {
-  const [portalElt, setPortalElt] = React.useState(null);
+  const [portalElt, setPortalElt] = React.useState<HTMLDivElement | null>(null);
 
   React.useEffect(() => {
     const newElt = document.createElement('div');
-    document.querySelector('body').append(newElt);
+    document.querySelector('body')?.append(newElt);
     setPortalElt(newElt);
 
     return () => {
