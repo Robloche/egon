@@ -97,7 +97,7 @@ expertises.creation.column5.title;Campagne d'activation globale
 expertises.creation.column6.title;Illustration
 expertises.creation.paragraph1;Créer, innover, donner une véritable identité à votre maison, lui offrir une Direction Artistique singulière, unique et signée sont autant de gages de réussites, pour longtemps.
 expertises.creation.paragraph2;Nous créons autrement, pour innover sans exploiter. Surprendre avec sens et cohérence. Imaginer avec grandeur et inventivité dans une démarche éco-conceptuelle.
-expertises.creation.side_title;SKILLS - Création
+expertises.creation.side_title;EXPERTISES - Création
 expertises.creation.title;Direction Artistique
 expertises.digital.closing;Nous captons l'air du temps et rêvons à des souffles nouveaux
 expertises.digital.column1.item1;UX & UI design
@@ -117,7 +117,7 @@ expertises.digital.column3.item4;Guidelines
 expertises.digital.column3.title;Social Media
 expertises.digital.paragraph1;Nous croyons à la simplicité et à la pertinence digitale. Ce qui est en ligne doit être utile. Nous créons en intégrant le principe de sobriété fonctionnelle et défendons l'accessibilité à tous.
 expertises.digital.paragraph2;La communication devient conversation, instantanée, directe et universelle. Nous croyons au lien entre les femmes et les hommes. Nous faisons rêver mais nos dires sont vrais et vérifiés. Nous créons, produisons mais ne saturons pas nos audiences.
-expertises.digital.side_title;SKILLS - Digital
+expertises.digital.side_title;EXPERTISES - Digital
 expertises.digital.title;Site Web & Social Media
 expertises.edition.closing;Nous avons la culture de la racine pour mieux appartenir à demain
 expertises.edition.column1.item1;Story-telling
@@ -138,7 +138,7 @@ expertises.edition.column3.item7;Pilotage et Suivi
 expertises.edition.column3.title;Print Management
 expertises.edition.paragraph1;Marquer l'histoire, graver et transmettre. Nous sommes des éditorialistes amoureux des beaux livres bien pensés et créés avec finesse et caractère.
 expertises.edition.paragraph2;Nous défendons l'intemporalité dans nos créations et la production raisonnée. Nous favorisons les papiers recyclés et les embellissements par la création. Nous sélectionnons des imprimeurs responsables et sommes fiers de les intégrer dans notre chaîne de valeurs.
-expertises.edition.side_title;SKILLS - Édition
+expertises.edition.side_title;EXPERTISES - Édition
 expertises.edition.title;Édition
 expertises.production.closing;Nous revendiquons une communication instrumentale raisonnée qui s'interroge
 expertises.production.column1.item1;Intentions
@@ -157,7 +157,7 @@ expertises.production.column4.item5;Sound-design
 expertises.production.column4.title;Production photo/film
 expertises.production.paragraph1;Vous avez dit Brand Content ? Photos ? Vidéos ? Nos idées, nous les produisons de A jusqu'à Z, avec un souci du détail, de la minutie, de la créativité et de l'ordre.
 expertises.production.paragraph2;Nous produisons sans détruire avec une idée assumée de l'inclusivité, dans le respect d'un budget annoncé, avec une équipe bienveillante, aussi rigoureuse que créative, aussi responsable qu'empathique.
-expertises.production.side_title;SKILLS - Production
+expertises.production.side_title;EXPERTISES - Production
 expertises.production.title;Production de contenus
 expertises.strategy.closing;Nous sommes des bâtisseurs éclairés, animés par le sens et la cohérence
 expertises.strategy.column1.item1;Audit de marque
@@ -176,7 +176,7 @@ expertises.strategy.column3.item3;Produits et Savoir-faire
 expertises.strategy.column3.title;Plateforme de marque
 expertises.strategy.paragraph1;Nous pensons l'histoire d'une maison par le prisme d'un concept singulier & propriétaire, dans une logique de sobriété, de durabilité et d'essentialité, pour le plus grand nombre. Écrire, donner le ton, capturer l'essence de votre marque.
 expertises.strategy.paragraph2;Que le Je devienne Jeu !
-expertises.strategy.side_title;SKILLS - Stratégie
+expertises.strategy.side_title;EXPERTISES - Stratégie
 expertises.strategy.title;Conseil, Stratégie & Architecture de marque
 film.skip_intro;SKIP INTRO
 footer.contact;Contact
@@ -239,7 +239,7 @@ menu.creation.projects;Comment ?
 menu.expertises.creation;Création
 menu.expertises.digital;Digital
 menu.expertises.edition;Édition
-menu.expertises.label;Skills
+menu.expertises.label;Expertises
 menu.expertises.production;Production
 menu.expertises.strategy;Stratégie
 menu.language.en;UK
