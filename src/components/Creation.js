@@ -1,5 +1,7 @@
 /* @flow */
 
+/* eslint-disable */
+
 import './Creation.scss';
 import * as React from 'react';
 import AnimatedText from './AnimatedText';
@@ -156,7 +158,7 @@ const Creation = (): React.Node => {
         sizes='(max-width: 400px) 400px, (max-width: 900px) 900px, (max-width: 1400px) 1400px, 1920px'
         src={creationGarden1920}
         srcSet={`${creationGarden400} 400w, ${creationGarden900} 900w, ${creationGarden1400} 1400w, ${creationGarden1920} 1920w`} />
-      {renderSectionProjects(language)}
+      {/*{renderSectionProjects(language)}*/}
       <div className='page-creation__closing'>
         <AnimatedText
           classList='title verbatim'
