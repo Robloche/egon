@@ -19,24 +19,50 @@
   }
 
   > button {
-    background-color: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
-    cursor: pointer;
-    display: none;
-    font: .8rem var(--font-family-body);
-    letter-spacing: .08rem;
-    padding: .5rem 1rem;
-    position: absolute;
-    text-transform: uppercase;
-    z-index: 1000;
+    &.skip {
+      background-color: transparent;
+      border: 1px solid var(--white);
+      color: var(--white);
+      cursor: pointer;
+      display: none;
+      font: .8rem var(--font-family-body);
+      letter-spacing: .08rem;
+      padding: .5rem 1rem;
+      position: absolute;
+      text-transform: uppercase;
+      z-index: 1000;
 
-    &.visible {
-      display: revert;
+      &.visible {
+        display: revert;
+      }
+
+      &:hover {
+        background-color: var(--black-transparent-30);
+      }
     }
 
-    &:hover {
-      background-color: rgba(0, 0, 0, .3);
+    &.sound {
+      background-color: var(--black-transparent-10);
+      border: 0;
+      border-radius: .2em;
+      cursor: pointer;
+      left: 2em;
+      padding: .1em .4em;
+      position: absolute;
+      top: 2em;
+      z-index: 1000;
+
+      &:hover {
+        > img {
+          opacity: 1;
+        }
+      }
+
+      > img {
+        height: 32px;
+        opacity: .8;
+        width: 32px;
+      }
     }
   }
 }

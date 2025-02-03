@@ -75,6 +75,11 @@
           flex-direction: row-reverse;
         }
 
+        > video {
+          max-width: 848px;
+          width: 50%;
+        }
+
         > .page-creation__project-content {
           padding: 2rem;
 

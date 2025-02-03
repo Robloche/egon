@@ -3,20 +3,23 @@
 import './Project.scss';
 import * as React from 'react';
 import Footer from './Footer';
-import {HashLink} from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import Header from './Header';
-import {Localizer} from '../helpers/localizer';
+import { Localizer } from '../helpers/localizer';
 import ProjectMoet from './ProjectMoet';
-import {useParams} from 'react-router-dom';
-import {useSelector} from 'react-redux';
+import ProjectRelaisChateaux from './ProjectRelaisChateaux';
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Projects = Object.freeze({
-  moet: <ProjectMoet />
+  moet: <ProjectMoet />,
+  // eslint-disable-next-line camelcase
+  relais_chateaux: <ProjectRelaisChateaux />,
 });
 
 const Project = (): React.Node => {
   const language = useSelector((state) => state.language);
-  const {name} = useParams();
+  const { name } = useParams();
 
   return (
     <div
