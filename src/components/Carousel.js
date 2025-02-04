@@ -21,7 +21,7 @@ const IMAGE_SWITCH_TIMEOUT = 15_000;
 type DefaultProps = {|
   +logo?: boolean,
   +menu?: boolean,
-  +slideContentRenderer?: (index: number) => React.Element<any> | null
+  +slideContentRenderer?: (index: number) => React.Node | null
 |};
 /* eslint-enable react/require-default-props */
 

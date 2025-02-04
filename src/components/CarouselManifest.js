@@ -8,7 +8,7 @@ import egonLogo from '../assets/svg/logo-white.svg';
 
 export const PAGE_COUNT = 5;
 
-const renderSlideContent = (index: number): React.Element<any> => {
+const renderSlideContent = (index: number): React.Node => {
   if (index < PAGE_COUNT - 1) {
     return (
       <>

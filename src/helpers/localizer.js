@@ -17,9 +17,9 @@ export class Localizer {
 
   static language: string;
 
-  static supportedLanguages: Array<string>;
+  static supportedLanguages: $ReadOnlyArray<string>;
 
-  static initialize: (supportedLanguages: Array<string>, translations: { [string]: any }) => Promise<any> =
+  static initialize: (supportedLanguages: $ReadOnlyArray<string>, translations: {| +[string]: any |}) => Promise<any> =
     (supportedLanguages, translations) => {
       if (Localizer.#instance) {
         return Promise.resolve(Localizer.#instance);
