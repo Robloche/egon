@@ -44,7 +44,7 @@ const renderProject = ({
     const [imageXXS, imageXS, imageS, image] = images;
 
     const illustrationElt = video ?
-      <video autoPlay loop muted src={video} />
+      <video autoPlay loop muted preload='auto' src={video} />
       :
       <img
         alt={imageAltText}

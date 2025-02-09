@@ -3,29 +3,31 @@
 import './CarouselManifest.scss';
 import * as React from 'react';
 import Carousel from './Carousel';
-import {Localizer} from '../helpers/localizer';
+import { Localizer } from '../helpers/localizer';
 import egonLogo from '../assets/svg/logo-white.svg';
 
 export const PAGE_COUNT = 5;
 
 const renderSlideContent = (index: number): React.Node => {
-  if (index < PAGE_COUNT - 1) {
+  if (index === 0 || index >= PAGE_COUNT) {
+    // First slide
     return (
       <>
-        <div className='slide__text-pre'>{Localizer.localize(`manifest.page${index + 1}.pre`)}</div>
-        <div className='slide__text-title'>{Localizer.localize(`manifest.page${index + 1}.title`)}</div>
-        <div className='slide__text-content'>{Localizer.localize(`manifest.page${index + 1}.text`)}</div>
+        <img
+          alt='Logo Egon Paris'
+          className='slide__logo'
+          src={egonLogo} />
+        <div className='slide__text-content'>{Localizer.localize(`manifest.page${index}.text`)}</div>
       </>
     );
   }
 
+  // Other slides
   return (
     <>
-      <img
-        alt='Logo Egon Paris'
-        className='slide__logo'
-        src={egonLogo} />
-      <div className='slide__text-content'>{Localizer.localize(`manifest.page${index + 1}.text`)}</div>
+      <div className='slide__text-pre'>{Localizer.localize(`manifest.page${index}.pre`)}</div>
+      <div className='slide__text-title'>{Localizer.localize(`manifest.page${index}.title`)}</div>
+      <div className='slide__text-content'>{Localizer.localize(`manifest.page${index}.text`)}</div>
     </>
   );
 };

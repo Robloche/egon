@@ -106,6 +106,7 @@ const ProjectRelaisChateaux = (): React.Node => {
       <figure>
         <video
           loop
+          preload='auto'
           ref={videoRef}
           src={projectRelaisChateaux} />
         <div
