@@ -2,7 +2,7 @@
 
 import './Project.scss';
 import * as React from 'react';
-import {Localizer} from '../helpers/localizer';
+import { Localizer } from '../helpers/localizer';
 import fullWidthLabel1288 from '../assets/images/projects/moet/full-width-label_1288.png';
 import fullWidthLabel1768 from '../assets/images/projects/moet/full-width-label_1768.png';
 import fullWidthLabel368 from '../assets/images/projects/moet/full-width-label_368.png';
@@ -12,7 +12,11 @@ import making2Of296 from '../assets/images/projects/moet/making-of2_296.png';
 import making3Of296 from '../assets/images/projects/moet/making-of3_296.png';
 import making4Of296 from '../assets/images/projects/moet/making-of4_296.png';
 import making5Of296 from '../assets/images/projects/moet/making-of5_296.png';
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
+import vintage1999Cropped336 from '../assets/images/projects/moet/vintage-1999-cropped_336.png';
+import vintage1999Cropped400 from '../assets/images/projects/moet/vintage-1999-cropped_400.png';
+import vintage1999Cropped600 from '../assets/images/projects/moet/vintage-1999-cropped_600.png';
+import vintage1999Cropped800 from '../assets/images/projects/moet/vintage-1999-cropped_800.png';
 import vintage1999Cropped960 from '../assets/images/projects/moet/vintage-1999-cropped_960.png';
 import vintage1999L336 from '../assets/images/projects/moet/vintage-1999_336.png';
 import vintage2006L336 from '../assets/images/projects/moet/vintage-2006_336.png';
@@ -21,11 +25,11 @@ import vintage2015RoseL336 from '../assets/images/projects/moet/vintage-2015-ros
 
 const renderHeader = () => (
   <div className='page-project__header'>
-    <div className='project__bullets'>
-      <div>{Localizer.localize('creation.projects.moet.bullet1')}</div>
-      <div>{Localizer.localize('creation.projects.moet.bullet2')}</div>
-      <div>{Localizer.localize('creation.projects.moet.bullet3')}</div>
-    </div>
+    {/*<div className='project__bullets'>*/}
+    {/*  <div>{Localizer.localize('creation.projects.moet.bullet1')}</div>*/}
+    {/*  <div>{Localizer.localize('creation.projects.moet.bullet2')}</div>*/}
+    {/*  <div>{Localizer.localize('creation.projects.moet.bullet3')}</div>*/}
+    {/*</div>*/}
     <div className='project__introduction'>
       <div className='project__title'>{Localizer.localize('creation.projects.moet.title')}</div>
       <div className='project__description-huge'>{Localizer.localize('creation.projects.moet.description1')}</div>
@@ -70,9 +74,10 @@ const renderVintages = () => (
   <div className='project__vintages-presentation'>
     <img
       alt=''
-      sizes='960px'
+      sizes='(max-width: 700px) 336px, (max-width: 900px) 400px, (max-width: 1400px) 600px, (max-width: 1700px) 800px, 960px'
       src={vintage1999Cropped960}
-      srcSet={`${vintage1999Cropped960} 960w`} />
+      srcSet={`${vintage1999Cropped336} 336w, ${vintage1999Cropped400} 400w, ${vintage1999Cropped600} 600w, ${vintage1999Cropped800} 800w, ${vintage1999Cropped960} 960w`} />
+
     <div className='project__vintages-list'>
       <div className='project__vintages-year'>2015</div>
       <div>{Localizer.localize('creation.projects.moet.vintage_2015')}</div>

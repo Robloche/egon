@@ -48,7 +48,7 @@ const renderProject = ({
       :
       <img
         alt={imageAltText}
-        sizes='(max-width: 400px) 168px, (max-width: 900px) 384px, (max-width: 1400px) 600px, 848px'
+        sizes='(max-width: 800px) 168px, (max-width: 1100px) 384px, (max-width: 1400px) 600px, 848px'
         src={image}
         srcSet={`${imageXXS} 168w, ${imageXS} 384w, ${imageS} 600w, ${image} 848w`} />;
 

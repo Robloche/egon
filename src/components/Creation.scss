@@ -75,7 +75,12 @@
           flex-direction: row-reverse;
         }
 
+        > img {
+          object-fit: cover;
+        }
+
         > video {
+          align-self: center;
           max-width: 848px;
           width: 50%;
         }
@@ -120,10 +125,118 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .page-creation {
+    > .page-creation__container {
+      grid-template-columns: 6rem 1fr 2rem;
+
+      > .section_project {
+        .page-creation__project {
+          > .page-creation__project-content {
+            padding: 1rem;
+          }
+        }
+      }
+
+      > .page-creation__closing {
+        padding: 3.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-creation {
+    > .page-creation__container {
+      > .section_project {
+        .page-creation__project {
+          > .page-creation__project-content {
+            > .project__title {
+              font-size: 1.6rem;
+            }
+
+            > .project__subtitle {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      > .page-creation__closing {
+        padding: 3.2rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   .page-creation {
     > .page-creation__container {
       grid-template-columns: 6rem 1fr 2rem;
+
+      > .page-creation__closing {
+        padding: 2.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .page-creation {
+    > .page-creation__container {
+      > .section_project {
+        .page-creation__project {
+          column-gap: 1.4rem;
+
+          > .page-creation__project-content {
+            > .project__title {
+              font-size: 1.2rem;
+            }
+
+            > .project__subtitle {
+              font-size: .9rem;
+            }
+
+            > .project__description {
+              margin-block: 1rem 2rem;
+            }
+          }
+        }
+      }
+
+      > .page-creation__closing {
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .page-creation {
+    > .page-creation__container {
+      > .section_project {
+        .page-creation__project {
+          flex-direction: column-reverse;
+
+          &.reversed {
+            flex-direction: column-reverse;
+          }
+
+          > .page-creation__project-content {
+            > .project__title {
+              font-size: 1rem;
+            }
+
+            > .project__subtitle {
+              font-size: .8rem;
+            }
+
+            > .project__description {
+              margin-block: .8rem;
+            }
+          }
+        }
+      }
     }
   }
 }
