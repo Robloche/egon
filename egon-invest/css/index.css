@@ -1,0 +1,49 @@
+* {
+	-webkit-touch-callout: none;
+	box-sizing: border-box;
+	font: inherit;
+	outline: 0;
+	overflow: hidden;
+	transition-duration: 0s;
+	transition-property: none;
+	user-select: none;
+}
+
+html {
+	background-color: #fff;
+	height: 100vh;
+	width: 100vw;
+}
+
+body {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	height: 100%;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+main {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+article {
+	line-height: 1.5rem;
+	max-width: 685px;
+	min-width: 250px;
+	width: 80%
+}
+
+img {
+	margin-bottom: 3rem;
+	min-width: 200px;
+	width: 20%
+}
