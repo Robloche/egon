@@ -2,13 +2,14 @@
 
 import './Menu.scss';
 import * as React from 'react';
-import {useCallback, useState} from 'react';
+import { useCallback, useState } from 'react';
 import FocusLock from 'react-focus-lock';
-import {HashLink} from 'react-router-hash-link';
-import {Localizer} from '../helpers/localizer';
+import { HashLink } from 'react-router-hash-link';
+import { Localizer } from '../helpers/localizer';
 import Social from './Social';
-import {scrollTopWithHeader} from '../helpers/scroll';
-import {useSelector} from 'react-redux';
+import clsx from 'clsx';
+import { scrollTopWithHeader } from '../helpers/scroll';
+import { useSelector } from 'react-redux';
 import x from '../assets/svg/x.svg';
 
 const TWO = 2;
@@ -48,7 +49,7 @@ const renderLinks = (
       className='menu__item_toggle'
       data-index={0}
       onClick={toggleSection}>{Localizer.localize('menu.agency.label')}</div>
-    <div className={`menu__item_accordion ${expandedStates[0] ? 'expanded' : ''}`}>
+    <div className={clsx('menu__item_accordion', expandedStates[0] && 'expanded')}>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
@@ -78,7 +79,7 @@ const renderLinks = (
       className='menu__item_toggle'
       data-index={1}
       onClick={toggleSection}>{Localizer.localize('menu.expertises.label')}</div>
-    <div className={`menu__item_accordion ${expandedStates[1] ? 'expanded' : ''}`}>
+    <div className={clsx('menu__item_accordion', expandedStates[1] && 'expanded')}>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
@@ -109,7 +110,7 @@ const renderLinks = (
       className='menu__item_toggle'
       data-index={2}
       onClick={toggleSection}>{Localizer.localize('menu.creation.label')}</div>
-    <div className={`menu__item_accordion ${expandedStates[TWO] ? 'expanded' : ''}`}>
+    <div className={clsx('menu__item_accordion', expandedStates[TWO] && 'expanded')}>
       <HashLink
         onClick={handleCloseOnClick}
         onFocus={handleOnFocus}
@@ -141,7 +142,7 @@ const Menu = (): React.Node => {
   const [expandedStates, setExpandedStates] = useState([false, false, false]);
 
   const toggleSection = useCallback((event: SyntheticMouseEvent<HTMLElement> | SyntheticTouchEvent<HTMLElement>) => {
-    const {target} = event;
+    const { target } = event;
 
     if (!(target instanceof HTMLElement)) {
       return;
@@ -177,13 +178,13 @@ const Menu = (): React.Node => {
   }, []);
 
   const languageOnChange = useCallback((event: SyntheticInputEvent<HTMLElement>) => {
-    const {target: {value}} = event;
+    const { target: { value } } = event;
     Localizer.changeLanguage(value);
   }, []);
 
   const selectLanguage = useCallback((event: SyntheticKeyboardEvent<HTMLElement>) => {
     // $FlowFixMe: Flow doesn't know "code"
-    const {code, currentTarget} = event;
+    const { code, currentTarget } = event;
     const radioBtn = currentTarget.previousSibling;
 
     if (radioBtn instanceof HTMLInputElement && ['Enter', 'NumpadEnter', 'Space'].includes(code)) {

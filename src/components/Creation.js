@@ -23,6 +23,7 @@ import projectMoet600 from '../assets/images/projects/moet/label_600.png';
 import projectMoet848 from '../assets/images/projects/moet/label_848.png';
 import projectRelaisChateaux from '../assets/videos/projects/relais-et-chateaux/video_1920_1080.mp4';
 import { useSelector } from 'react-redux';
+import clsx from 'clsx';
 
 type ProjectDataType = {|
   isReversed?: boolean,
@@ -53,7 +54,7 @@ const renderProject = ({
         srcSet={`${imageXXS} 168w, ${imageXS} 384w, ${imageS} 600w, ${image} 848w`} />;
 
     return (
-      <div className={`page-creation__project ${isReversed ? 'reversed' : ''}`}>
+      <div className={clsx('page-creation__project', isReversed && 'reversed')}>
         {illustrationElt}
         <div className='page-creation__project-content'>
           <div className='project__title'>{Localizer.localize(`creation.projects.${name}.title`)}</div>

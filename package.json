@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
+    "clsx": "^2.1.1",
     "core-js": "^3.25.1",
     "i18next": "^23.7.16",
     "i18next-browser-languagedetector": "^7.0.1",

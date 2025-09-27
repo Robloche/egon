@@ -4,6 +4,7 @@ import './Project.scss';
 import * as React from 'react';
 import { useCallback, useRef, useState } from 'react';
 import { Localizer } from '../helpers/localizer';
+import clsx from 'clsx';
 import image1 from '../assets/images/projects/relais-et-chateaux/1-project-relais-chateaux.png';
 import image2 from '../assets/images/projects/relais-et-chateaux/2-project-relais-chateaux.png';
 import image3 from '../assets/images/projects/relais-et-chateaux/3-project-relais-chateaux.png';
@@ -110,7 +111,7 @@ const ProjectRelaisChateaux = (): React.Node => {
           ref={videoRef}
           src={projectRelaisChateaux} />
         <div
-          className={`video__overlay ${isPaused ? '' : 'video__overlay-clickable'}`}
+          className={clsx('video__overlay', !isPaused && 'video__overlay-clickable')}
           onClick={handleOverlayOnClick}>
           {isPaused ? (
             <button

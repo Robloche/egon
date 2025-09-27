@@ -7,8 +7,9 @@ import CarouselClients from './CarouselClients';
 import CarouselManifest from './CarouselManifest';
 import Footer from './Footer';
 import Header from './Header';
-import {Localizer} from '../helpers/localizer';
-import {delayedSetIds} from '../helpers/scroll';
+import { Localizer } from '../helpers/localizer';
+import clsx from 'clsx';
+import { delayedSetIds } from '../helpers/scroll';
 import egon1 from '../assets/images/homepage/egon-by-severine_144.png';
 import egon2 from '../assets/images/homepage/egon-by-severine_287.png';
 import egon3 from '../assets/images/homepage/egon-by-severine_430.png';
@@ -22,12 +23,12 @@ import severine1 from '../assets/images/homepage/severine_200.png';
 import severine2 from '../assets/images/homepage/severine_400.png';
 import severine3 from '../assets/images/homepage/severine_600.png';
 import severine4 from '../assets/images/homepage/severine_800.png';
-import {useEffect} from 'react';
-import {useInView} from 'react-intersection-observer';
-import {useSelector} from 'react-redux';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useSelector } from 'react-redux';
 
 const renderSectionFirstName = () => {
-  const {inView, ref} = useInView();
+  const { inView, ref } = useInView();
 
   return (
     <>
@@ -63,7 +64,7 @@ const renderSectionFirstName = () => {
               src={qrCode} />
           </a>
           <div
-            className={`first-name__line ${inView ? 'visible' : ''}`}
+            className={clsx('first-name__line', inView && 'visible')}
             ref={ref} />
           <div className='first-name__how'>{Localizer.localize('agency.first_name.pronunciation')}</div>
         </div>
@@ -126,7 +127,7 @@ const renderSectionPhilosophy = () => (
 
 // eslint-disable-next-line no-unused-vars
 const renderSectionManifest = () => {
-  const {inView, ref} = useInView();
+  const { inView, ref } = useInView();
 
   return (
     <>
@@ -141,14 +142,14 @@ const renderSectionManifest = () => {
             <div>{Localizer.localize('agency.manifest.paragraph1_title')}</div>
             <div className='manifest__title-line-number'>
               <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph1_number')}</div>
-              <div className={`manifest__title-line right ${inView ? 'visible' : ''}`} />
+              <div className={clsx('manifest__title-line', 'right', inView && 'visible')} />
             </div>
           </div>
           <div className='manifest__text'>{Localizer.localize('agency.manifest.paragraph1_text')}</div>
           <div className='manifest__title title manifest-right'>
             <div className='manifest__title-line-number'>
               <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph2_number')}</div>
-              <div className={`manifest__title-line left ${inView ? 'visible' : ''}`} />
+              <div className={clsx('manifest__title-line', 'left', inView && 'visible')} />
             </div>
             <div>{Localizer.localize('agency.manifest.paragraph2_title')}</div>
           </div>
@@ -158,7 +159,7 @@ const renderSectionManifest = () => {
             <div className='manifest__title-line-number'>
               <div className='manifest__title-number'>{Localizer.localize('agency.manifest.paragraph3_number')}</div>
               <div
-                className={`manifest__title-line right ${inView ? 'visible' : ''}`}
+                className={clsx('manifest__title-line', 'right', inView && 'visible')}
                 ref={ref} />
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import './Social.scss';
 import * as React from 'react';
+import clsx from 'clsx';
 import instagram from '../assets/svg/instagram.svg';
 import linkedIn from '../assets/svg/linkedin.svg';
 import mail from '../assets/svg/mail.svg';
@@ -10,8 +11,8 @@ type SocialProps = {|
   +className: string
 |};
 
-const Social = ({className}: SocialProps): React.Node => (
-  <div className={`social ${className}`}>
+const Social = ({ className }: SocialProps): React.Node => (
+  <div className={clsx('social', className)}>
     <a
       href='https://www.instagram.com/egon.paris/'
       rel='noopener noreferrer'

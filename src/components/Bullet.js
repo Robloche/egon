@@ -2,7 +2,8 @@
 
 import './Bullet.scss';
 import * as React from 'react';
-import {useCallback} from 'react';
+import clsx from 'clsx';
+import { useCallback } from 'react';
 
 type BulletProps = {|
   +index: number,
@@ -10,12 +11,12 @@ type BulletProps = {|
   +onClick: (index: number) => void
 |};
 
-const Bullet = ({index, isFull, onClick}: BulletProps): React.Node => {
+const Bullet = ({ index, isFull, onClick }: BulletProps): React.Node => {
   const handleOnClick = useCallback(() => onClick(index), [index, onClick]);
 
   return (
     <svg
-      className={`bullet ${isFull ? 'full' : ''}`}
+      className={clsx('bullet', isFull && 'full')}
       onClick={handleOnClick}
       viewBox='0 0 100 100'
       xmlns='http://www.w3.org/2000/svg'>

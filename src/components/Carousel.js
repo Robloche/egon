@@ -8,6 +8,7 @@ import Bullet from './Bullet';
 import { HashLink } from 'react-router-hash-link';
 import { Localizer } from '../helpers/localizer';
 import Menu from './Menu';
+import clsx from 'clsx';
 import egonLogo from '../assets/svg/logo-white.svg';
 import { useInView } from 'react-intersection-observer';
 import { useSelector } from 'react-redux';
@@ -90,7 +91,7 @@ const Carousel = ({
   /* eslint-disable react/no-array-index-key */
   return (
     <div
-      className={`carousel ${className}`}
+      className={clsx('carousel', className)}
       data-id={id}
       style={{
         height: `${windowHeight}px`,
@@ -102,7 +103,7 @@ const Carousel = ({
         ref={ref}>
         {images.map((_, index) => (
           <div
-            className={`carousel__slide image${index + 1} ${index === currentIndex ? 'visible' : ''}`}
+            className={clsx('carousel__slide', `image${index + 1}`, (index === currentIndex) && 'visible')}
             data-index={index}
             key={`image${index}`}>
             {slideContentRenderer ? (
@@ -120,7 +121,7 @@ const Carousel = ({
         onClick={handleBulletOnClick} />)}</div>
       <div className='carousel__scroll'>
         <div
-          className={`carousel__scroll-line ${inView ? 'visible' : ''}`}
+          className={clsx('carousel__scroll-line', inView && 'visible')}
           ref={refInView} />
         <HashLink
           className='carousel__scroll-text'

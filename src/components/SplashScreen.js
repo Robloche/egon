@@ -2,9 +2,10 @@
 
 import './SplashScreen.scss';
 import * as React from 'react';
-import {useEffect, useRef, useState} from 'react';
-import {PAGE_COUNT as CLIENTS_PAGE_COUNT} from './CarouselClients';
-import {PAGE_COUNT as MANIFEST_PAGE_COUNT} from './CarouselManifest';
+import { useEffect, useRef, useState } from 'react';
+import { PAGE_COUNT as CLIENTS_PAGE_COUNT } from './CarouselClients';
+import { PAGE_COUNT as MANIFEST_PAGE_COUNT } from './CarouselManifest';
+import clsx from 'clsx';
 import frame1 from '../assets/images/splashscreen/egon-frame1.png';
 import frame2 from '../assets/images/splashscreen/egon-frame2.png';
 import frame3 from '../assets/images/splashscreen/egon-frame3.png';
@@ -13,9 +14,9 @@ import frame5 from '../assets/images/splashscreen/egon-frame5.png';
 import frame6 from '../assets/images/splashscreen/egon-frame6.png';
 import frame7 from '../assets/images/splashscreen/egon-frame7.png';
 import frame8 from '../assets/images/splashscreen/egon-frame8.png';
-import {preloadCarouselImages} from '../helpers/preload';
-import {useNavigate} from 'react-router-dom';
-import {useSelector} from 'react-redux';
+import { preloadCarouselImages } from '../helpers/preload';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 // Preload carousel images during startup animation
 preloadCarouselImages('manifest', MANIFEST_PAGE_COUNT - 1);
@@ -53,7 +54,7 @@ const SplashScreen = (): React.Node => {
 
   /* eslint-disable react/no-array-index-key */
   return (
-    <div className={`splash-screen ${fadeOut ? 'fade-out' : ''}`}>
+    <div className={clsx('splash-screen', fadeOut && 'fade-out')}>
       <div className='image-container'>
         {frames.map((frame, index) => <img
           alt='Logo Egon Paris'
