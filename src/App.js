@@ -13,6 +13,7 @@ import {Localizer} from './helpers/localizer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Project from './components/Project';
 import {Provider} from 'react-redux';
+import Shop from './components/Shop';
 import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
 import {configureStore} from '@reduxjs/toolkit';
@@ -87,6 +88,14 @@ const App = (): React.Node => (
         <Route
           element={<SplashScreen />}
           path='/splash-screen' />
+        <Route
+          element={<Shop />}
+          exact
+          path='/:lang/shop' />
+        <Route
+          element={<Shop />}
+          exact
+          path='/shop' />
         <Route
           element={<Film />}
           exact

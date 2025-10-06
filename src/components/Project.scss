@@ -21,8 +21,8 @@
       background-color: var(--black-transparent-10);
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
       grid-row-gap: 2rem;
+      justify-content: space-evenly;
       padding: 1rem;
     }
 
@@ -128,9 +128,9 @@
       color: var(--white);
       display: flex;
       flex-direction: column;
+      grid-row-gap: 1rem;
       justify-content: center;
       padding-inline: var(--margin-inline);
-      grid-row-gap: 1rem;
 
       > div {
         text-align: center;
