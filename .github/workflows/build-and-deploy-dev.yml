@@ -24,8 +24,11 @@ jobs:
       - name: Output run ID, number and attempt
         run: echo 'Build ${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}'
 
-      - run: REACT_APP_STRIPE_BUY_BUTTON_ID=${{vars.STRIPE_BUY_BUTTON_ID}}
-          REACT_APP_STRIPE_PUBLIC_KEY=${{ vars.STRIPE_PUBLIC_KEY}} npm run build --if-present
+      - name: Build
+        run: npm run build --if-present
+        env:
+          REACT_APP_STRIPE_BUY_BUTTON_ID: ${{ vars.STRIPE_BUY_BUTTON_ID }}
+          REACT_APP_STRIPE_PUBLIC_KEY: ${{ vars.STRIPE_PUBLIC_KEY }}
 
       - name: Write version file
         run: |
