@@ -11,33 +11,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16.x
-        cache: 'npm'
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: 'npm'
 
-    - run: npm ci
+      - run: npm ci
 
-    - name: Output run ID, number and attempt
-      run: echo 'Build ${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}'
+      - name: Output run ID, number and attempt
+        run: echo 'Build ${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}'
 
-    - run: npm run build --if-present
+      - run: REACT_APP_STRIPE_BUY_BUTTON_ID=${{vars.STRIPE_BUY_BUTTON_ID}}
+          REACT_APP_STRIPE_PUBLIC_KEY=${{ vars.STRIPE_PUBLIC_KEY}} npm run build --if-present
 
-    - name: Write version file
-      run: |
-        touch build/version.json
-        printf "{\n\t\"version\": \"${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}\",\n\t\"date\": \"$(date +'%Y-%m-%d %H:%M:%S')\"\n}" > build/version.json
-      shell: bash
+      - name: Write version file
+        run: |
+          touch build/version.json
+          printf "{\n\t\"version\": \"${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}\",\n\t\"date\": \"$(date +'%Y-%m-%d %H:%M:%S')\"\n}" > build/version.json
+        shell: bash
 
-    - name: Upload artifact for deployment job
-      uses: actions/upload-artifact@v4.6.0
-      with:
-        name: egon-artifact
-        path: build/
-        if-no-files-found: error
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: egon-artifact
+          path: build/
+          if-no-files-found: error
 
   deploy:
     runs-on: ubuntu-latest
