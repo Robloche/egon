@@ -14,7 +14,11 @@ const ShopConfirmation = (): React.Node => {
       className='page page-shop-confirmation'
       id='top'>
       <Header />
-      <div>Merci !</div>
+
+      <div className='page-shop-confirmation__content'>
+        <div>Merci !</div>
+      </div>
+
       <Footer />
     </div>
   );
