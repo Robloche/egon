@@ -13,10 +13,10 @@ jobs:
     environment: Test
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7
         with:
           node-version: 24.x
           cache: 'npm'
@@ -39,7 +39,7 @@ jobs:
         shell: bash
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v4.6.0
+        uses: actions/upload-artifact@v7
         with:
           name: egon-artifact
           path: build/
@@ -51,12 +51,12 @@ jobs:
     
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v8
         with:
           name: egon-artifact
 
       - name: Deploy via ssh
-        uses: easingthemes/ssh-deploy@v2.2.11
+        uses: easingthemes/ssh-deploy@v6.0.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
