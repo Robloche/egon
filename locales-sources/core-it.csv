@@ -253,6 +253,7 @@ menu.expertises.strategy;Strategia
 menu.language.en;UK
 menu.language.fr;FR
 menu.language.it;IT
+menu.shop.label;Shop
 newsletter.action.subscribe;Mi inscrivo
 newsletter.error;Verifica il tuo indirizzo mail
 newsletter.header;Iscriviti alla nostra news letter
@@ -302,4 +303,22 @@ privacy_policy.security_paragraph;We are committed to taking appropriate technic
 privacy_policy.applicable_law_title;Applicable law
 privacy_policy.applicable_law_paragraph1;The EGON PARIS site has been designed and written in French, English and Italian. The Terms of Use are subject to French law. Any dispute shall be referred to the French courts, which shall have exclusive jurisdiction.
 privacy_policy.applicable_law_paragraph2;For any questions about these TOU, or in the event of a request or complaint about your Personal Data, contact us as follows:
-privacy_policy.applicable_law_paragraph3;In the event of a complaint about how we process your data, you also have the right to contact the national commission for information technology and civil liberties (CNIL) at 3 place de Fontenoy – TSA 80715 – 75334 PARIS CEDEX 07, France, Tel.: +33 (0)1 53 73 22 22,
+shop.part_1.title;Le Dîner de verre
+shop.part_1.author;Azélina Jaboulet-Vercherre
+shop.part_1.foreword;Préface de Stéphane Derenoncourt
+shop.part_1.synopsis;Gli ospiti pensavano di venire a cena, finiranno per essere degustati. Un tavolo sulla Costa d'Alabastro. Sei ospiti. Uno chef stellato. Nel corso dei piatti e dei vini, i ricordi affiorano, i desideri prendono forma e le maschere scivolano.
+shop.part_1.tagline;Un romanzo a porte chiuse dove l'arte di ricevere diventa l'arte di rivelarsi.
+shop.buy;Aggiungi al carrello
+shop.part_2.title;Prendete posto.
+shop.part_2.text;Sotto la vetrata della sua casa in Normandia, Gaspard Vermeil riunisce una famiglia d'elezione: artisti, uomini di lettere e spiriti liberi. Per questa serata, ha scelto i vini come si compone un racconto. Ogni abbinamento apre una conversazione, risveglia un ricordo, fa nascere una confidenza. Dal champagne ai grandi borgogna, dal Libano a Collioure, la cena diventa un viaggio sensibile. La gastronomia, l'arte e la letteratura si mescolano alle storie intime dei commensali. Con il suo primo romanzo, Azélina Jaboulet-Vercherre fa del vino una materia letteraria: viva, sensuale, profondamente umana.
+shop.part_2.foreword_citation;«Questo libro è un vibrante omaggio alla cultura francese.»
+shop.part_2.foreword_author;Stéphane Derenoncourt
+shop.part_3.about_author;Informazioni sull'autrice
+shop.part_3.author_bio;Storica medievalista, specialista in storia dell'arte e del vino, Azélina Jaboulet-Vercherre esplora i legami tra cultura, gusto ed emozioni. Presidente della giuria dei Premi OIV e pioniera degli "abbinamenti vino e arte", con Le Dîner de verre apre un nuovo capitolo della sua scrittura.
+shop.part_4.the_book;Il libro
+shop.part_4.book_details;Autrice: Azélina Jaboulet-Vercherre\nPrefazione: Stéphane Derenoncourt\nEditore: EGON Éditions\nCollana: La Table d’Egon\nLingua: francese\nFormato: 13,3 × 21,5 cm\n192 pagine\nDisponibilità: disponibile\nDirezione artistica e illustrazione di copertina: Michele Bulgherini
+shop.part_4.read_offer_share;Un romanzo da leggere, da regalare, da condividere.
+shop.part_4.egon_table_title;La tavola di Egon
+shop.part_4.egon_table_paragraph1;Una collezione dedicata al gusto come territorio di creazione. Scrittori, artisti e personalità singolari sono invitati a una tavola dove si incontrano la letteratura, il vino, la gastronomia e le emozioni. Ogni libro è un invito. Ogni tavola, un modo di rivelare una visione.
+shop.part_4.egon_table_paragraph2;EGON PARIS rivela lo spirito delle Maison, dal pensiero di marca alla sua creazione. Pubblicando voci rare come quella di Azélina Jaboulet-Vercherre, l'agenzia difende una convinzione.
+shop.part_4.egon_table_paragraph3;Reale o immaginario, il libro rimane uno dei più bei strumenti di libertà.

@@ -1,8 +1,199 @@
-.shop {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  grid-row-gap: 60px;
-  height: 100vh;
-  justify-content: center;
+.page-shop {
+  > .page-shop__section {
+    align-items: center;
+    column-gap: 10rem;
+    display: grid;
+    font-family: var(--font-family-body-regular);
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 10rem;
+
+    &.page-shop__book {
+      background-image: url('../assets/images/shop/book-with-background_1920.png');
+      color: var(--white);
+      height: 797px;
+
+      .page-shop__description {
+        grid-column: 2;
+
+        .page-shop__title,
+        .page-shop__author {
+          font-size: 2rem;
+        }
+
+        .page-shop__foreword {
+          font-size: 1.6rem;
+        }
+
+        .page-shop__synopsis {
+          margin-block: 2rem;
+          max-width: 34rem;
+        }
+
+        .page-shop__tagline {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+
+        .page-shop__buy-wrapper {
+          align-items: center;
+          column-gap: 2rem;
+          display: flex;
+
+          .page-shop__price {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    &.page-shop__teasing {
+      color: var(--black);
+
+      .page-shop__teasing-wrapper {
+        line-height: 1.3;
+        max-width: 34rem;
+
+        .page-shop__teasing-title {
+          font-family: var(--font-family-body-bold);
+          margin-bottom: 1rem;
+        }
+      }
+
+      .page-shop__foreword-wrapper {
+        font-size: 2.4rem;
+      }
+    }
+
+    &.page-shop__author-section {
+      background-color: var(--blue);
+      color: var(--white);
+      padding-block: 0;
+
+      .page-shop__photo-wrapper {
+        position: relative;
+
+        > img:first-child {
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        > img:last-child {
+          position: relative;
+          z-index: 2;
+        }
+      }
+
+      .page-shop__about--title {
+        font-family: var(--font-family-body-bold);
+        margin-bottom: 2rem;
+      }
+
+      .page-shop__about--bio {
+        max-width: 30rem;
+      }
+    }
+
+    &.page-shop__book-egon-editions {
+      align-items: flex-start;
+
+      .page-shop__book-cover-details {
+        align-items: center;
+        column-gap: 2rem;
+        display: flex;
+
+        .page-shop__book-details {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          row-gap: 1rem;
+
+          .book-details__title {
+            font-family: var(--font-family-body-bold);
+          }
+
+          .book-details__info {
+          }
+
+          .book-details__tagline {
+            font-family: var(--font-family-body-bold);
+          }
+
+          .book-details__price {
+
+          }
+        }
+      }
+
+      .page-shop__egon-table {
+        .egon-table__title {
+          font-family: var(--font-family-body-bold);
+          text-transform: uppercase;
+        }
+
+        .egon-table__paragraph {
+          margin-block: 2rem;
+
+          &.final-paragraph {
+            font-family: var(--font-family-body-bold);
+          }
+        }
+      }
+    }
+
+    &.page-shop__book-zoom {
+      background-image: url('../assets/images/shop/book-zoom_1920.png');
+      height: 800px;
+    }
+  }
+
+}
+
+@media (max-width: 1400px) {
+  .page-shop {
+    > .page-shop__section {
+      &.page-shop__book {
+        background-image: url('../assets/images/shop/book-with-background_1400.png');
+        height: 581px;
+      }
+
+      &.page-shop__book-zoom {
+        background-image: url('../assets/images/shop/book-zoom_1400.png');
+        height: 583px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .page-shop {
+    > .page-shop__section {
+      &.page-shop__book {
+        background-image: url('../assets/images/shop/book-with-background_900.png');
+        height: 374px;
+      }
+
+      &.page-shop__book-zoom {
+        background-image: url('../assets/images/shop/book-zoom_900.png');
+        height: 375px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .page-shop {
+    > .page-shop__section {
+      &.page-shop__book {
+        background-image: url('../assets/images/shop/book-with-background_400.png');
+        height: 166px;
+      }
+
+      &.page-shop__book-zoom {
+        background-image: url('../assets/images/shop/book-zoom_400.png');
+        height: 167px;
+      }
+    }
+  }
 }

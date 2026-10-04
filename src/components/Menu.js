@@ -132,6 +132,11 @@ const renderLinks = (
       onClick={handleCloseOnClick}
       onFocus={handleCloseAll}
       to={`/${language}/contact#top`}>{Localizer.localize('menu.contact.label')}</HashLink>
+    <HashLink
+      className='menu__item'
+      onClick={handleCloseOnClick}
+      onFocus={handleCloseAll}
+      to={`/${language}/shop#top`}>{Localizer.localize('menu.shop.label')}</HashLink>
   </nav>
 );
 

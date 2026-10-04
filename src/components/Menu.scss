@@ -115,7 +115,7 @@
     > .menu__links {
       display: flex;
       flex-direction: column;
-      margin: 5rem 0 11rem;
+      margin: 5rem 0 2rem;
 
       > .menu__item_toggle,
       > .menu__item {
@@ -126,6 +126,10 @@
         line-height: 2.2rem;
         text-decoration: none;
         text-transform: uppercase;
+
+        &:last-child {
+          margin-top: 5rem;
+        }
       }
 
       > .menu__item_accordion {

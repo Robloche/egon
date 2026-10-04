@@ -1,0 +1,22 @@
+.stripe-buy-button {
+  color: var(--white);
+  padding: .5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &.stripe-buy-button--light {
+    border: 2px solid var(--white);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .1);
+    }
+  }
+
+  &.stripe-buy-button--dark {
+    background-color: var(--black);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .8);
+    }
+  }
+}

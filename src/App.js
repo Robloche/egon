@@ -1,7 +1,7 @@
 /* @flow */
 
 import * as React from 'react';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contact from './components/Contact';
 import Creation from './components/Creation';
 import Expertises from './components/Expertises';
@@ -9,18 +9,19 @@ import Film from './components/Film';
 import Home from './components/Home';
 import JoinUs from './components/JoinUs';
 import LegalNotice from './components/LegalNotice';
-import {Localizer} from './helpers/localizer';
+import { Localizer } from './helpers/localizer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Project from './components/Project';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import Shop from './components/Shop';
+import ShopConfirmation from './components/ShopConfirmation';
 import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
-import {configureStore} from '@reduxjs/toolkit';
-import {fetchVersion} from './helpers/version';
-import {setVersion} from './redux/actions';
+import { configureStore } from '@reduxjs/toolkit';
+import { fetchVersion } from './helpers/version';
+import { setVersion } from './redux/actions';
 
-const store = configureStore({reducer: appReducer});
+const store = configureStore({ reducer: appReducer });
 
 // Pass dispatch function to Localizer so that it can update store whenever language changes
 Localizer.setDispatch(store.dispatch);
@@ -96,6 +97,14 @@ const App = (): React.Node => (
           element={<Shop />}
           exact
           path='/shop' />
+        <Route
+          element={<ShopConfirmation />}
+          exact
+          path='/:lang/shop-confirmation' />
+        <Route
+          element={<ShopConfirmation />}
+          exact
+          path='/shop-confirmation' />
         <Route
           element={<Film />}
           exact
