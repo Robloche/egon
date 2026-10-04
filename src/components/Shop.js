@@ -65,8 +65,8 @@ const Shop = (): React.Node => {
             srcSet={`${drawing1} 190w, ${drawing2} 379w, ${drawing3} 569w, ${drawing4} 758w`} />
         </div>
         <div className='page-shop__about'>
-          <div className='page-shop__about--title'>{Localizer.localize('shop.part_3.about_author')}</div>
-          <div className='page-shop__about--bio'>{Localizer.localize('shop.part_3.author_bio')}</div>
+          <div className='page-shop__about_title'>{Localizer.localize('shop.part_3.about_author')}</div>
+          <div className='page-shop__about_bio'>{Localizer.localize('shop.part_3.author_bio')}</div>
         </div>
       </div>
 

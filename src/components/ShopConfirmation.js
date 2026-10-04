@@ -11,7 +11,7 @@ const ShopConfirmation = (): React.Node => {
 
   return (
     <div
-      className='page page-shop'
+      className='page page-shop-confirmation'
       id='top'>
       <Header />
       <div>Merci !</div>

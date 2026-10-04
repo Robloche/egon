@@ -72,25 +72,27 @@
       .page-shop__photo-wrapper {
         position: relative;
 
-        > img:first-child {
-          left: 50%;
-          position: absolute;
-          top: 50%;
-          transform: translate(-50%, -50%);
-        }
+        > img {
+          &:first-child {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
 
-        > img:last-child {
-          position: relative;
-          z-index: 2;
+          &:last-child {
+            position: relative;
+            z-index: 2;
+          }
         }
       }
 
-      .page-shop__about--title {
+      .page-shop__about_title {
         font-family: var(--font-family-body-bold);
         margin-bottom: 2rem;
       }
 
-      .page-shop__about--bio {
+      .page-shop__about_bio {
         max-width: 30rem;
       }
     }
@@ -100,28 +102,21 @@
 
       .page-shop__book-cover-details {
         align-items: center;
-        column-gap: 2rem;
         display: flex;
+        column-gap: 2rem;
 
         .page-shop__book-details {
           align-items: flex-start;
           display: flex;
           flex-direction: column;
-          row-gap: 1rem;
+          grid-row-gap: 1rem;
 
           .book-details__title {
             font-family: var(--font-family-body-bold);
           }
 
-          .book-details__info {
-          }
-
           .book-details__tagline {
             font-family: var(--font-family-body-bold);
-          }
-
-          .book-details__price {
-
           }
         }
       }

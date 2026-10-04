@@ -4,7 +4,7 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  &.stripe-buy-button--light {
+  &.stripe-buy-button__light {
     border: 2px solid var(--white);
 
     &:hover {
@@ -12,7 +12,7 @@
     }
   }
 
-  &.stripe-buy-button--dark {
+  &.stripe-buy-button__dark {
     background-color: var(--black);
 
     &:hover {

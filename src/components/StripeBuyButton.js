@@ -13,11 +13,11 @@ type StripeBuyButtonProps = {
 const StripeBuyButton = ({ isLight }: StripeBuyButtonProps): React.Node => {
   useSelector((state) => state.language);
 
-  const stripeLink = `${process.env.REACT_APP_STRIPE_PAYMENT_LINK}?locale=${Localizer.language}`;
+  const stripeLink = `${process.env.REACT_APP_STRIPE_PAYMENT_LINK ?? ''}?locale=${Localizer.language}`;
 
   return (
     <a
-      className={clsx('stripe-buy-button', isLight ? 'stripe-buy-button--light' : 'stripe-buy-button--dark')}
+      className={clsx('stripe-buy-button', isLight ? 'stripe-buy-button__light' : 'stripe-buy-button__dark')}
       href={stripeLink}>{Localizer.localize('shop.buy')}</a>
   );
 };
