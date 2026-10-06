@@ -41,7 +41,11 @@ rules:
   no-important: 2
   no-invalid-hex: 2
   no-mergeable-selectors: 2
-  no-misspelled-properties: 2
+  no-misspelled-properties:
+    - 2
+    - extra-properties:
+      - 'row-gap'
+      - 'gap'
   no-qualifying-elements:
     - 2
     - allow-element-with-attribute: true

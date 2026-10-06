@@ -1,5 +1,6 @@
 .stripe-buy-button {
   color: var(--white);
+  font-size: inherit;
   padding: .5rem 1rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -18,5 +19,11 @@
     &:hover {
       background-color: rgba(0, 0, 0, .8);
     }
+  }
+}
+
+@media (max-width: 650px) {
+  .stripe-buy-button {
+    padding: .2rem .5rem;
   }
 }
