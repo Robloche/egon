@@ -14,22 +14,17 @@
   --black-transparent-10: rgb(0 0 0 / 10%);
   --black-transparent-30: rgb(0 0 0 / 30%);
   --modal-overlay-background: rgb(0 0 0 / 40%);
-
   --border-radius-small: .2rem;
   --border-radius-big: .5rem;
-
-  --font-family-title: HelveticaBold, serif;
-  --font-family-verbatim: Bodoni, serif;
-  --font-family-body-regular: Helvetica, sans-serif;
-  --font-family-body-bold: HelveticaBold, sans-serif;
-
+  --font-family-title: helveticabold, serif;
+  --font-family-verbatim: bodoni, serif;
+  --font-family-body-regular: helvetica, sans-serif;
+  --font-family-body-bold: helveticabold, sans-serif;
   --font-size: normal;
   --font-size-title: 2.8rem;
-
   --exergue-length: 140px;
   --exergue-margin: 20px;
   --exergue-length-with-margin: calc(var(--exergue-length) + var(--exergue-margin));
-
   --header-height: 7rem;
   --footer-height: 7rem;
   --short-transition: 200ms;
@@ -38,12 +33,11 @@
 
 html {
   -moz-osx-font-smoothing: auto;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   font-size: var(--font-size);
   height: 100%;
+  text-size-adjust: 100%;
   user-select: none;
   width: 100%;
 
@@ -147,7 +141,7 @@ html {
           text-transform: uppercase;
 
           &:hover {
-            color: rgba(0, 0, 0, .8);
+            color: rgb(0 0 0 / 80%);
           }
         }
       }
@@ -155,19 +149,19 @@ html {
   }
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   :root {
     --font-size: .93rem;
   }
 }
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
   :root {
     --font-size: .87rem;
   }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   :root {
     --font-size: .81rem;
   }
@@ -186,7 +180,7 @@ html {
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   :root {
     --font-size: .87rem;
     --font-title: 2rem var(--font-family-title);
@@ -208,7 +202,7 @@ html {
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   :root {
     --font-size: .68rem;
     --font-title: 2rem var(--font-family-title);

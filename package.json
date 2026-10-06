@@ -21,8 +21,7 @@
     "react-scripts": "^5.0.1",
     "react-swipeable": "^7.0.0",
     "redux": "^5.0.1",
-    "sass": "^1.54.9",
-    "sass-lint": "^1.13.1"
+    "sass": "^1.54.9"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
@@ -34,12 +33,15 @@
     "eslint": "^8.22.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-react": "^7.31.8",
-    "flow-bin": "^0.259.1"
+    "flow-bin": "^0.259.1",
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-scss": "^7.3.0"
   },
   "scripts": {
     "lint:es": "eslint . --ext .js,.jsx --cache",
-    "lint:sass": "sass-lint -v -q",
-    "lint": "run-p -l lint:es lint:sass",
+    "lint:style": "stylelint \"src/**/*.scss\"",
+    "lint": "run-p -l lint:es lint:style",
     "flow": "flow check",
     "start-app": "react-scripts start",
     "build-app": "react-scripts build",

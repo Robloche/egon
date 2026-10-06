@@ -115,7 +115,7 @@
           align-items: flex-start;
           display: flex;
           flex-direction: column;
-          grid-row-gap: 1rem;
+          row-gap: 1rem;
           min-width: 330px;
 
           .book-details__title {
@@ -154,7 +154,7 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media (width <= 1600px) {
   .page-shop {
     > .page-shop__section {
       &.page-shop__book-egon-editions {
@@ -164,7 +164,7 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (width <= 1400px) {
   .page-shop {
     > .page-shop__section {
       column-gap: 5rem;
@@ -187,7 +187,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (width <= 1100px) {
   .page-shop {
     > .page-shop__section {
       &.page-shop__book-egon-editions {
@@ -204,7 +204,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .page-shop {
     > .page-shop__section {
       column-gap: 2rem;
@@ -243,7 +243,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (width <= 650px) {
   .page-shop {
     > .page-shop__section {
       &.page-shop__book {
@@ -282,7 +282,7 @@
   }
 }
 
-@media (max-width: 620px) {
+@media (width <= 620px) {
   .page-shop {
     > .page-shop__section {
       &.page-shop__book-egon-editions {
@@ -298,7 +298,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .page-shop {
     > .page-shop__section {
       &.page-shop__teasing {
@@ -326,7 +326,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (width <= 450px) {
   .page-shop {
     > .page-shop__section {
       &.page-shop__book {
@@ -338,7 +338,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .page-shop {
     > .page-shop__section {
       &.page-shop__book {

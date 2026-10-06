@@ -1,16 +1,16 @@
 @keyframes fade-in {
   0% {
-    opacity: 0;
+    opacity: 0%;
   }
 
   100% {
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 .page-agency {
   animation: 500ms fade-in forwards;
-  opacity: 0;
+  opacity: 0%;
 
   > .page-agency__section {
     align-items: flex-start;
@@ -34,168 +34,6 @@
 
     &.philosophy__closing {
       background-image: url('../assets/images/homepage/homepage2_1920.png');
-    }
-  }
-
-  > .page-agency__grid {
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 53% 1fr;
-
-    > .page-agency__grid-section {
-      position: relative;
-
-      &.section__manifest {
-        background-color: var(--black);
-
-        > .title-white {
-          color: var(--white);
-        }
-      }
-
-      &.section__left,
-      &.section__right {
-        height: 100%;
-      }
-
-      &.section__left {
-        align-items: self-start;
-        display: flex;
-        justify-content: flex-start;
-        padding: 4rem 0 0 2rem;
-      }
-
-      &.page-agency__philosophy {
-        align-items: center;
-        flex-direction: column;
-
-        .philosophy__title {
-          margin-bottom: 2rem;
-        }
-
-        > .philosophy__content {
-          margin: 4rem 0;
-
-          .philosophy__paragraph-title {
-            font-family: var(--font-family-body-bold);
-            margin-top: 2rem;
-          }
-
-          .philosophy__paragraph-content {
-            &.spaced {
-              margin: 2rem 0;
-            }
-
-            span {
-              &:first-child {
-                font-family: var(--font-family-body-bold);
-                margin-right: .2rem;
-              }
-            }
-          }
-        }
-      }
-
-      &.page-agency__manifest {
-        align-items: center;
-        background-color: var(--black);
-        color: var(--white);
-        flex-direction: column;
-        padding: 4rem 0;
-
-        > .manifest__content {
-          display: flex;
-          align-items: stretch;
-          flex-direction: column;
-
-          .manifest__title {
-            align-items: center;
-            display: grid;
-            grid-column-gap: 2rem;
-            grid-template-columns: auto 1fr;
-            margin-bottom: 2rem;
-
-            &.manifest-right {
-              grid-template-columns: 1fr auto;
-
-              > .manifest__title-line-number {
-                align-items: flex-start;
-              }
-            }
-
-            > .manifest__title-line-number {
-              align-items: flex-end;
-              display: flex;
-              flex-direction: column;
-
-              > .manifest__title-number {
-                font: 1rem var(--font-family-body-regular);
-                margin-bottom: 1rem;
-              }
-
-              > .manifest__title-line {
-                background-color: var(--white);
-                height: 1px;
-                transform: scaleX(0);
-                transition: transform 2s ease-out;
-                width: 100%;
-
-                &.left {
-                  transform-origin: left;
-                }
-
-                &.right {
-                  transform-origin: right;
-                }
-
-                &.visible {
-                  transform: scaleX(1);
-                }
-              }
-            }
-          }
-
-          > .manifest__text {
-            line-height: 1.6rem;
-            margin-bottom: 3rem;
-            max-width: 50%;
-
-            &.manifest-right {
-              align-self: flex-end;
-              text-align: right;
-            }
-          }
-
-          > .manifest__section {
-            align-items: flex-end;
-            display: flex;
-            flex-direction: column;
-
-            > .manifest__title {
-              display: flex;
-              margin-bottom: 1rem;
-            }
-          }
-        }
-      }
-    }
-
-    > .philosophy__closing {
-      flex-direction: column;
-      grid-column: 1 / span 3;
-
-      > .philosophy__closing-content {
-        > .philosophy__contact {
-          color: var(--white);
-          display: flex;
-          margin-top: 4rem;
-
-          > a {
-            color: var(--white);
-            margin-left: .4rem;
-          }
-        }
-      }
     }
   }
 
@@ -331,9 +169,171 @@
       }
     }
   }
+
+  > .page-agency__grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 53% 1fr;
+
+    > .page-agency__grid-section {
+      position: relative;
+
+      &.section__manifest {
+        background-color: var(--black);
+
+        > .title-white {
+          color: var(--white);
+        }
+      }
+
+      &.section__left,
+      &.section__right {
+        height: 100%;
+      }
+
+      &.section__left {
+        align-items: self-start;
+        display: flex;
+        justify-content: flex-start;
+        padding: 4rem 0 0 2rem;
+      }
+
+      &.page-agency__philosophy {
+        align-items: center;
+        flex-direction: column;
+
+        .philosophy__title {
+          margin-bottom: 2rem;
+        }
+
+        > .philosophy__content {
+          margin: 4rem 0;
+
+          .philosophy__paragraph-title {
+            font-family: var(--font-family-body-bold);
+            margin-top: 2rem;
+          }
+
+          .philosophy__paragraph-content {
+            &.spaced {
+              margin: 2rem 0;
+            }
+
+            span {
+              &:first-child {
+                font-family: var(--font-family-body-bold);
+                margin-right: .2rem;
+              }
+            }
+          }
+        }
+      }
+
+      &.page-agency__manifest {
+        align-items: center;
+        background-color: var(--black);
+        color: var(--white);
+        flex-direction: column;
+        padding: 4rem 0;
+
+        > .manifest__content {
+          align-items: stretch;
+          display: flex;
+          flex-direction: column;
+
+          .manifest__title {
+            align-items: center;
+            column-gap: 2rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            margin-bottom: 2rem;
+
+            > .manifest__title-line-number {
+              align-items: flex-end;
+              display: flex;
+              flex-direction: column;
+
+              > .manifest__title-number {
+                font: 1rem var(--font-family-body-regular);
+                margin-bottom: 1rem;
+              }
+
+              > .manifest__title-line {
+                background-color: var(--white);
+                height: 1px;
+                transform: scaleX(0);
+                transition: transform 2s ease-out;
+                width: 100%;
+
+                &.left {
+                  transform-origin: left;
+                }
+
+                &.right {
+                  transform-origin: right;
+                }
+
+                &.visible {
+                  transform: scaleX(1);
+                }
+              }
+            }
+
+            &.manifest-right {
+              grid-template-columns: 1fr auto;
+
+              > .manifest__title-line-number {
+                align-items: flex-start;
+              }
+            }
+          }
+
+          > .manifest__text {
+            line-height: 1.6rem;
+            margin-bottom: 3rem;
+            max-width: 50%;
+
+            &.manifest-right {
+              align-self: flex-end;
+              text-align: right;
+            }
+          }
+
+          > .manifest__section {
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column;
+
+            > .manifest__title {
+              display: flex;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    > .philosophy__closing {
+      flex-direction: column;
+      grid-column: 1 / span 3;
+
+      > .philosophy__closing-content {
+        > .philosophy__contact {
+          color: var(--white);
+          display: flex;
+          margin-top: 4rem;
+
+          > a {
+            color: var(--white);
+            margin-left: .4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
-@media (max-width: 1600px) {
+@media (width <= 1600px) {
   .page-agency {
     > .page-agency__grid {
       grid-template-columns: 1fr 60% 1fr;
@@ -341,7 +341,7 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (width <= 1400px) {
   .page-agency {
     .section__closing {
       height: 327px;
@@ -384,7 +384,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .page-agency {
     > .page-agency__first-name {
       > .first-name__drawing {
@@ -413,7 +413,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .page-agency {
     .section__closing {
       height: 210px;
@@ -493,10 +493,9 @@
       }
     }
   }
-
 }
 
-@media (max-width: 720px) {
+@media (width <= 720px) {
   .page-agency {
     > .page-agency__team {
       > .team__content {
@@ -529,7 +528,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .page-agency {
     > .page-agency__grid {
       grid-template-columns: 4rem 75% 1fr;
@@ -593,7 +592,6 @@
     }
 
     > .page-agency__first-name {
-      // sass-lint:disable-block indentation
       align-items: flex-start;
       display: grid;
       grid-template: 'drawing drawing'
@@ -634,7 +632,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (width <= 450px) {
   .page-agency {
     > .page-agency__team {
       > .team__content {
@@ -646,7 +644,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .page-agency {
     .section__closing {
       height: 93px;

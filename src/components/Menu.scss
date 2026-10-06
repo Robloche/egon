@@ -1,12 +1,12 @@
-@keyframes slideIn {
+@keyframes slide-in {
   from {
     transform: translateX(100%);
   }
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
-    opacity: 0;
+    opacity: 0%;
   }
 }
 
@@ -16,7 +16,7 @@
   z-index: 600;
 
   .menu__overlay {
-    animation: fadeIn 850ms cubic-bezier(.14, .78, .36, 1);
+    animation: fade-in 850ms cubic-bezier(.14, .78, .36, 1);
     background: var(--modal-overlay-background);
     inset: 0;
     position: absolute;
@@ -52,7 +52,7 @@
   }
 
   &.menu__opened {
-    animation: slideIn 500ms cubic-bezier(.14, .78, .36, 1);
+    animation: slide-in 500ms cubic-bezier(.14, .78, .36, 1);
     background-color: var(--green);
     color: var(--white);
     min-width: 25rem;
@@ -82,6 +82,17 @@
 
     > .menu__footer {
       > .menu__languages {
+        input[type='radio'] + label {
+          color: var(--white);
+          cursor: pointer;
+          flex-grow: 1;
+          font-size: .8rem;
+          padding: .2rem 0;
+
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+        }
 
         input[type='radio'] {
           display: none;
@@ -93,20 +104,8 @@
 
           &:not(:checked) + label {
             &:hover {
-              opacity: .8;
+              opacity: 80%;
             }
-          }
-        }
-
-        input[type='radio'] + label {
-          color: var(--white);
-          cursor: pointer;
-          flex-grow: 1;
-          font-size: .8rem;
-          padding: .2rem 0;
-
-          &:not(:last-child) {
-            margin-right: 10px;
           }
         }
       }
@@ -136,19 +135,10 @@
         display: flex;
         flex-direction: column;
         max-height: 0;
-        opacity: 0;
+        opacity: 0%;
         overflow: hidden;
         padding-top: .6rem;
         transition: max-height var(--medium-transition) ease-out, opacity var(--medium-transition) ease-out;
-
-        &.expanded {
-          max-height: 10rem;
-          opacity: 1;
-
-          > a {
-            pointer-events: all;
-          }
-        }
 
         > a {
           color: var(--white);
@@ -160,12 +150,21 @@
             margin-bottom: 2rem;
           }
         }
+
+        &.expanded {
+          max-height: 10rem;
+          opacity: 100%;
+
+          > a {
+            pointer-events: all;
+          }
+        }
       }
     }
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .menu {
     &.menu__opened {
       width: 100%;

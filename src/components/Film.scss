@@ -9,11 +9,8 @@
 
   > video {
     background-size: cover;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     position: absolute;
-    right: 0;
-    top: 0;
     width: 100%;
     z-index: 100;
   }
@@ -52,16 +49,16 @@
       top: 2em;
       z-index: 1000;
 
-      &:hover {
-        > img {
-          opacity: 1;
-        }
-      }
-
       > img {
         height: 32px;
-        opacity: .8;
+        opacity: 80%;
         width: 32px;
+      }
+
+      &:hover {
+        > img {
+          opacity: 100%;
+        }
       }
     }
   }

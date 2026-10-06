@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (width <= 1400px) {
   .page-contact {
     > .page-contact__landscape {
       background-image: url('../assets/images/contact/contact_1400.png');
@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .page-contact {
     > .page-contact__content {
       height: 100%;
@@ -57,10 +57,9 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .page-contact {
     > .page-contact__content {
-      // sass-lint:disable-block indentation
       display: grid;
       grid-template: 'title logo' 120px
                      '.     content'
@@ -79,10 +78,9 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .page-contact {
     > .page-contact__content {
-      // sass-lint:disable-block indentation
       grid-template: 'title logo' 120px
                      '.     content'
                      / 2rem 1fr;

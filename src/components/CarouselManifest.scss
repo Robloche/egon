@@ -110,8 +110,8 @@
   }
 }
 
-// Phones
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+/* Phones */
+@media only screen and (min-resolution: 2dppx) and (orientation: portrait) {
   .carousel {
     &.manifest {
       > .carousel__slider {

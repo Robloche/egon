@@ -1,0 +1,52 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/at-mixin-pattern": "^[a-z][a-zA-Z0-9]*$",
+    "selector-class-pattern": "^[a-z0-9_\\-]+$",
+    "max-nesting-depth": 8,
+    "declaration-block-single-line-max-declarations": 1,
+    "color-hex-alpha": "never",
+    "length-zero-no-unit": true,
+    "declaration-no-important": true,
+    "selector-max-id": 0,
+    "no-duplicate-selectors": true,
+    "declaration-block-no-duplicate-properties": true,
+    "no-empty-source": true,
+    "property-no-unknown": true,
+    "media-feature-name-no-unknown": [
+      true,
+      {
+        "ignoreMediaFeatureNames": [
+          "min-device-pixel-ratio"
+        ]
+      }
+    ],
+    "media-feature-range-notation": null,
+    "import-notation": "string",
+    "color-function-notation": "modern",
+    "alpha-value-notation": "percentage",
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreProperties": [
+          "font-family"
+        ]
+      }
+    ],
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true
+  },
+  "ignoreFiles": [
+    "node_modules/**/*",
+    "build/**/*",
+    "public/**/*",
+    "dist/**/*",
+    "test/**/*"
+  ]
+}

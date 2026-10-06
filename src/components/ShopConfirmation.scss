@@ -13,7 +13,7 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (width <= 1400px) {
   .page-shop-confirmation {
     > .page-shop-confirmation__content {
       background-image: url('../assets/images/shop/book-with-background_1400.png');
@@ -22,7 +22,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .page-shop-confirmation {
     > .page-shop-confirmation__content {
       background-image: url('../assets/images/shop/book-with-background_900.png');
@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .page-shop-confirmation {
     > .page-shop-confirmation__content {
       background-image: url('../assets/images/shop/book-with-background_400.png');

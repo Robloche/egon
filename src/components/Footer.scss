@@ -27,7 +27,7 @@
       text-transform: uppercase;
 
       &:hover {
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgb(0 0 0 / 80%);
       }
     }
   }
@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .footer {
     > .footer__links {
       > a {
@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
   .footer {
     padding: 0 20px;
 
@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .footer {
     padding: 0 10px;
 
@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (width <= 720px) {
   .footer {
     align-items: center;
     flex-direction: column;

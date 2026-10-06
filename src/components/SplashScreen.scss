@@ -1,10 +1,10 @@
 @keyframes appear {
   0% {
-    opacity: 0;
+    opacity: 0%;
   }
 
   100% {
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
@@ -20,7 +20,7 @@
   z-index: 100;
 
   &.fade-out {
-    opacity: 0;
+    opacity: 0%;
   }
 
   > .image-container {
@@ -38,7 +38,7 @@
       animation-duration: var(--animation-duration);
       animation-name: appear;
       height: var(--img-height);
-      opacity: 0;
+      opacity: 0%;
       position: absolute;
       width: var(--img-width);
 
@@ -55,7 +55,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .splash-screen {
     > img {
       height: 130px;
@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .splash-screen {
     > img {
       height: 120px;

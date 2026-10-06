@@ -17,13 +17,13 @@
       width: 20rem;
 
       &:focus {
-        outline: none !important; // sass-lint:disable-line no-important
+        outline: none;
         border: 2px solid var(--bright-green);
       }
     }
 
     ::placeholder {
-      color: rgba(255, 255, 255, .6);
+      color: rgb(255 255 255 / 60%);
     }
 
     > button {
@@ -37,7 +37,7 @@
 
       &:hover {
         &:not(:disabled) {
-          background-color: rgba(214, 193, 38, .8);
+          background-color: rgb(214 193 38 / 80%);
           border: 2px solid transparent;
         }
       }
@@ -49,7 +49,7 @@
       }
 
       &:disabled {
-        opacity: .5;
+        opacity: 50%;
       }
     }
   }
@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (width <= 450px) {
   .newsletter-form {
     > .newsletter-form__row {
       > input[type='email'],
@@ -79,7 +79,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .newsletter-form {
     > .newsletter-form__row {
       > input[type='email'] {

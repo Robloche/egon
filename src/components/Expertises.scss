@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
   .page-expertises {
     > .page-expertises__container {
       grid-template-columns: 1fr 4fr 6fr 1fr;
@@ -135,7 +135,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .page-expertises {
     > .page-expertises__container {
       > .page-expertises__listing {

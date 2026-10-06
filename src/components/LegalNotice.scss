@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
   .page-legal-notice {
     > .legal-notice__container {
       max-width: 90%;
