@@ -15,6 +15,7 @@ import Project from './components/Project';
 import { Provider } from 'react-redux';
 import Shop from './components/Shop';
 import ShopConfirmation from './components/ShopConfirmation';
+import ShopFlyout from './components/ShopFlyout';
 import SplashScreen from './components/SplashScreen';
 import appReducer from './redux/reducers';
 import { configureStore } from '@reduxjs/toolkit';
@@ -114,6 +115,7 @@ const App = (): React.Node => (
           exact
           path='/' />
       </Routes>
+      <ShopFlyout />
     </BrowserRouter>
   </Provider>
 );
