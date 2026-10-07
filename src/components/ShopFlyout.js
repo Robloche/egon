@@ -14,6 +14,10 @@ const scrollThreshold = 50;
 const ShopFlyout = (): React.Node => {
   const { pathname } = useLocation();
 
+  if (pathname.endsWith('/shop-confirmation')) {
+    return null;
+  }
+
   const [isOpen, setIsOpen] = React.useState(false);
 
   React.useEffect(() => {
