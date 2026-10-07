@@ -28,8 +28,7 @@ jobs:
     - name: Build
       run: npm run build --if-present
       env:
-        REACT_APP_STRIPE_BUY_BUTTON_ID: ${{ vars.STRIPE_BUY_BUTTON_ID }}
-        REACT_APP_STRIPE_PUBLIC_KEY: ${{ vars.STRIPE_PUBLIC_KEY }}
+        REACT_APP_STRIPE_PAYMENT_LINK: ${{ vars.STRIPE_PAYMENT_LINK }}
 
     - name: Write version file
       run: |
