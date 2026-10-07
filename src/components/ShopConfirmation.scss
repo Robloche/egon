@@ -2,13 +2,16 @@
   > .page-shop-confirmation__content {
     align-items: center;
     background-image: url('../assets/images/shop/book-with-background_1920.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--white);
     display: flex;
     font-size: 3rem;
     height: 797px;
 
     > div {
-      margin-inline-start: 60%;
+      margin-inline-start: 50%;
     }
   }
 }
@@ -27,6 +30,30 @@
     > .page-shop-confirmation__content {
       background-image: url('../assets/images/shop/book-with-background_900.png');
       height: 374px;
+
+      > div {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (width <= 700px) {
+  .page-shop-confirmation {
+    > .page-shop-confirmation__content {
+      > div {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (width <= 500px) {
+  .page-shop-confirmation {
+    > .page-shop-confirmation__content {
+      > div {
+        font-size: 1.2rem;
+      }
     }
   }
 }

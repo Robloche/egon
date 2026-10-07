@@ -4,6 +4,7 @@ import './ShopConfirmation.scss';
 import * as React from 'react';
 import Footer from './Footer';
 import Header from './Header';
+import { Localizer } from '../helpers/localizer';
 import { useSelector } from 'react-redux';
 
 const ShopConfirmation = (): React.Node => {
@@ -16,7 +17,7 @@ const ShopConfirmation = (): React.Node => {
       <Header />
 
       <div className='page-shop-confirmation__content'>
-        <div>Merci !</div>
+        <div>{Localizer.localize('shop_confirmation.thanks')}</div>
       </div>
 
       <Footer />
