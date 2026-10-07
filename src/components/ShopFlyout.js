@@ -7,7 +7,7 @@ import StripeBuyButton from './StripeBuyButton';
 import bookCover from '../assets/images/shop/book-cover_49.png';
 import { useLocation } from 'react-router-dom';
 
-// Flyout appears when user scrolls down more than this threshold (in px)
+// Flyout appears after scrolling past this position (in px)
 const scrollThreshold = 50;
 
 const ShopFlyout = (): React.Node => {
@@ -21,28 +21,8 @@ const ShopFlyout = (): React.Node => {
       return undefined;
     }
 
-    let previousScrollTop = scrollContainer.scrollTop;
-    let previousDirection = 0;
-    let accumulatedScroll = 0;
     const handleScroll = () => {
-      const currentScrollTop = scrollContainer.scrollTop;
-      const scrollDelta = currentScrollTop - previousScrollTop;
-      const direction = Math.sign(scrollDelta);
-
-      if (direction !== 0) {
-        if (direction !== previousDirection) {
-          accumulatedScroll = 0;
-          previousDirection = direction;
-        }
-
-        accumulatedScroll += Math.abs(scrollDelta);
-        if (accumulatedScroll >= scrollThreshold) {
-          setIsOpen(direction > 0);
-          accumulatedScroll = 0;
-        }
-      }
-
-      previousScrollTop = currentScrollTop;
+      setIsOpen(scrollContainer.scrollTop >= scrollThreshold);
     };
 
     scrollContainer.addEventListener('scroll', handleScroll, { passive: true });
