@@ -14,6 +14,7 @@ import azelina3 from '../assets/images/shop/azelina_316.png';
 import azelina4 from '../assets/images/shop/azelina_421.png';
 import bookBackCover from '../assets/images/shop/book-back-cover_400.png';
 import bookCover from '../assets/images/shop/book-cover_400.png';
+import bookExcerpt from '../assets/images/shop/book-excerpt_400.png';
 import drawing1 from '../assets/images/shop/drawing_190.png';
 import drawing2 from '../assets/images/shop/drawing_379.png';
 import drawing3 from '../assets/images/shop/drawing_569.png';
@@ -41,7 +42,7 @@ const Shop = (): React.Node => {
     setCurrentIndex(index);
   }, []);
 
-  const covers = [bookCover, bookBackCover];
+  const covers = [bookCover, bookBackCover, bookExcerpt];
 
   return (
     <div
@@ -100,17 +101,15 @@ const Shop = (): React.Node => {
             <img
               alt=''
               src={covers[currentIndex]} />
+            {/* eslint-disable react/no-array-index-key */}
             <div className='book-cover__carousel'>
-              <Bullet
-                index={0}
-                isFull={currentIndex === 0}
+              {covers.map((_, index) => <Bullet
+                index={index}
+                isFull={index === currentIndex}
                 isLight={false}
-                onClick={handleBulletOnClick} />
-              <Bullet
-                index={1}
-                isFull={currentIndex === 1}
-                isLight={false}
-                onClick={handleBulletOnClick} />
+                key={`cover${index}`}
+                onClick={handleBulletOnClick} />)}
+              {/* eslint-enable react/no-array-index-key */}
             </div>
           </div>
           <div className='page-shop__book-details'>
