@@ -51,6 +51,8 @@
 @media (width <= 500px) {
   .page-shop-confirmation {
     > .page-shop-confirmation__content {
+      background-position-x: 44%;
+
       > div {
         font-size: 1.2rem;
       }
