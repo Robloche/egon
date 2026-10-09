@@ -25,14 +25,16 @@ import projectRelaisChateaux from '../assets/videos/projects/relais-et-chateaux/
 import { useSelector } from 'react-redux';
 import clsx from 'clsx';
 
+/* eslint-disable react/require-default-props */
 type ProjectDataType = {|
-  isReversed?: boolean,
-  language: string,
-  name: string,
-  images?: Array<string>,
-  imageAltText?: string,
-  video?: string,
+  +isReversed?: boolean,
+  +language: string,
+  +name: string,
+  +images?: Array<string>,
+  +imageAltText?: string,
+  +video?: string,
 |};
+/* eslint-enable react/require-default-props */
 
 const renderProject = ({
     images = [],

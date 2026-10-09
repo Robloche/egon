@@ -2,6 +2,8 @@
 
 import './Shop.scss';
 import * as React from 'react';
+import { useCallback, useEffect } from 'react';
+import Bullet from './Bullet';
 import Footer from './Footer';
 import Header from './Header';
 import { Localizer } from '../helpers/localizer';
@@ -10,6 +12,7 @@ import azelina1 from '../assets/images/shop/azelina_151.png';
 import azelina2 from '../assets/images/shop/azelina_211.png';
 import azelina3 from '../assets/images/shop/azelina_316.png';
 import azelina4 from '../assets/images/shop/azelina_421.png';
+import bookBackCover from '../assets/images/shop/book-back-cover_400.png';
 import bookCover from '../assets/images/shop/book-cover_400.png';
 import drawing1 from '../assets/images/shop/drawing_190.png';
 import drawing2 from '../assets/images/shop/drawing_379.png';
@@ -17,8 +20,28 @@ import drawing3 from '../assets/images/shop/drawing_569.png';
 import drawing4 from '../assets/images/shop/drawing_758.png';
 import { useSelector } from 'react-redux';
 
+const PAGE_WIDTH_THRESHOLD = 500;
+
 const Shop = (): React.Node => {
   useSelector((state) => state.language);
+
+  const [currentIndex, setCurrentIndex] = React.useState<number>(0);
+  const [windowWidth, setWindowWidth] = React.useState<number>(typeof window !== 'undefined' ? window.innerWidth : 0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handleBulletOnClick = useCallback((index: number) => {
+    setCurrentIndex(index);
+  }, []);
+
+  const covers = [bookCover, bookBackCover];
 
   return (
     <div
@@ -27,6 +50,7 @@ const Shop = (): React.Node => {
       <Header />
 
       <div className='page-shop__section page-shop__book'>
+        <div className='page-shop__background' />
         <div className='page-shop__description'>
           <div className='page-shop__title'>{Localizer.localize('shop.part_1.title')}</div>
           <div className='page-shop__author'>{Localizer.localize('shop.part_1.author')}</div>
@@ -35,7 +59,7 @@ const Shop = (): React.Node => {
           <div className='page-shop__tagline'>{Localizer.localize('shop.part_1.tagline')}</div>
           <div className='page-shop__buy-wrapper'>
             <div className='page-shop__price'>17&nbsp;€</div>
-            <StripeBuyButton isLight />
+            <StripeBuyButton isLight={windowWidth > PAGE_WIDTH_THRESHOLD} />
           </div>
         </div>
       </div>
@@ -72,9 +96,23 @@ const Shop = (): React.Node => {
 
       <div className='page-shop__section page-shop__book-egon-editions'>
         <div className='page-shop__book-cover-details'>
-          <img
-            alt=''
-            src={bookCover} />
+          <div className='book-cover-wrapper'>
+            <img
+              alt=''
+              src={covers[currentIndex]} />
+            <div className='book-cover__carousel'>
+              <Bullet
+                index={0}
+                isFull={currentIndex === 0}
+                isLight={false}
+                onClick={handleBulletOnClick} />
+              <Bullet
+                index={1}
+                isFull={currentIndex === 1}
+                isLight={false}
+                onClick={handleBulletOnClick} />
+            </div>
+          </div>
           <div className='page-shop__book-details'>
             <div className='book-details__title'>{Localizer.localize('shop.part_4.the_book')}</div>
             <div className='book-details__info'>{Localizer.localize('shop.part_4.book_details')}</div>

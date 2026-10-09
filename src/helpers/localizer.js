@@ -69,7 +69,11 @@ export class Localizer {
     };
 
   static localize: (key: string, options: any) => string =
-    (key, options) => Localizer.#instance.t(key, options).replace(/(?: )([:!?-])/uig, '\u00A0$1').replace(/_/uig, '\u00A0');
+    (key, options) => Localizer.#instance.t(key, options)
+      .replace(/(?: )([:!?-])/uig, '\u00A0$1')
+      .replace(/« /uig, '«\u00A0')
+      .replace(/ »/uig, '\u00A0»')
+      .replace(/_/uig, '\u00A0');
 
   static changeLanguage: (language: string) => void =
     (language) => {

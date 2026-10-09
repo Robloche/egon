@@ -2,17 +2,28 @@
   cursor: pointer;
   fill: none;
   height: 10px;
-  stroke: var(--white);
   stroke-width: 10%;
   transform: scale(1);
   transition: transform var(--short-transition) ease-out;
   width: 10px;
 
-  &:hover {
-    transform: scale(1.1);
+  &.light{
+    stroke: var(--white);
+
+    &.full {
+      fill: var(--white);
+    }
   }
 
-  &.full {
-    fill: var(--white);
+  &.dark {
+    stroke: var(--black);
+
+    &.full {
+      fill: var(--black);
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }

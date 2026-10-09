@@ -53,11 +53,11 @@ const ShopFlyout = (): React.Node => {
       aria-hidden={!isOpen}
       aria-label={Localizer.localize('shop.part_1.title')}
       className={`shop-flyout${isOpen ? ' shop-flyout--open' : ''}`}>
+      <img
+        alt=''
+        className='shop-flyout__cover'
+        src={bookCover} />
       <div className='shop-flyout__content'>
-        <img
-          alt=''
-          className='shop-flyout__cover'
-          src={bookCover} />
         <div className='shop-flyout__details'>
           <div className='shop-flyout__new'>{Localizer.localize('shop_flyout.new')}</div>
           <div className='shop-flyout__price'>17&nbsp;€</div>

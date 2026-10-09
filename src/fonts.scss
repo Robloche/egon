@@ -3,20 +3,27 @@
 @font-face {
   font-display: swap;
   font-family: Helvetica;
-  src: url('./assets/fonts/1488882/f20b86ad-a3dc-4459-92b7-456b456d015a.woff2') format('woff2'),
-  url('./assets/fonts/1488882/ca003289-5ee3-45c2-94ad-36c743c35fc1.woff') format('woff');
+  src: url('./assets/fonts/helvetica.woff2') format('woff2'),
+  url('./assets/fonts/helvetica.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
   font-family: HelveticaBold;
-  src: url('./assets/fonts/1488906/e535ec76-8fc8-4985-94e6-9246a2c6b245.woff2') format('woff2'),
-  url('./assets/fonts/1488906/67da9da8-4b53-4407-9184-abce69bfc8b5.woff') format('woff');
+  src: url('./assets/fonts/helvetica-bold.woff2') format('woff2'),
+  url('./assets/fonts/helvetica-bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: HelveticaNeueCondensedBlack;
+  src: url('./assets/fonts/helvetica-neue-condensed-black.woff2') format('woff2'),
+  url('./assets/fonts/helvetica-neue-condensed-black.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
   font-family: Bodoni;
-  src: url('./assets/fonts/1557468/5d60805f-567f-4ccb-920d-fefe77577fd5.woff2') format('woff2'),
-  url('./assets/fonts/1557468/c2dcad27-a62d-40b0-88a4-fd4b1126d0cc.woff') format('woff');
+  src: url('./assets/fonts/bodoni.woff2') format('woff2'),
+  url('./assets/fonts/bodoni.woff') format('woff');
 }

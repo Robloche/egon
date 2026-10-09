@@ -1,13 +1,15 @@
 .shop-flyout {
   --shadow-color: 0deg 0% 63%;
 
+  align-items: center;
   background-color: var(--white);
   bottom: 0;
   box-shadow: 0 -0.2px 0.2px hsl(var(--shadow-color) / 36%),
   0 -0.6px 0.7px -0.8px hsl(var(--shadow-color) / 36%),
   0 -1.5px 1.7px -1.7px hsl(var(--shadow-color) / 36%),
   0 -3.6px 4.1px -2.5px hsl(var(--shadow-color) / 36%);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 49px 1fr;
   height: 100px;
   left: 0;
   justify-content: flex-end;
@@ -24,61 +26,44 @@
     visibility: visible;
   }
 
+  .shop-flyout__cover,
+  .shop-flyout__logo {
+    display: block;
+    flex: 0 0 auto;
+    height: 80px;
+    object-fit: contain;
+    width: auto;
+  }
+
+  .shop-flyout__cover {
+    grid-column: 2
+  }
+
   .shop-flyout__content {
     align-items: center;
     display: flex;
-    margin-inline-end: 20%;
-
-    .shop-flyout__cover ,
-    .shop-flyout__logo{
-      display: block;
-      flex: 0 0 auto;
-      height: 80px;
-      object-fit: contain;
-      width: auto;
-    }
 
     .shop-flyout__details {
       align-items: flex-start;
       display: flex;
       flex-direction: column;
-      font-family: var(--font-family-body-bold);
-      margin-inline: 2rem 4rem;
+      margin-inline: 2rem;
 
       .shop-flyout__new {
         color: #C00000;
-        font-size: 1.4rem;
-        font-weight: bold;
+        font: 1.6rem var(--font-family-black);
         text-transform: uppercase;
       }
 
       .shop-flyout__price {
-        font-size: .6rem;
+        font: .6rem var(--font-family-body-bold);
         margin-bottom: .5rem;
       }
 
-      > .stripe-buy-button{
+      > .stripe-buy-button {
         font-size: .6rem;
         text-align: center;
         width: 100%;
-      }
-    }
-  }
-}
-
-@media (width <= 600px) {
-  .shop-flyout {
-    .shop-flyout__content {
-      margin-inline: auto;
-
-      .shop-flyout__details {
-        .shop-flyout__new {
-          font-size: .8rem;
-        }
-      }
-
-      .stripe-buy-button__dark {
-        padding: .4rem .5rem;
       }
     }
   }
