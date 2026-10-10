@@ -119,13 +119,29 @@
         column-gap: 2rem;
         justify-self: flex-end;
 
-        .book-cover-wrapper{
+        .book-cover-wrapper {
           align-items: center;
           display: flex;
           flex-direction: column;
           row-gap: 1rem;
 
-          .book-cover__carousel{
+          .book-cover__images {
+            display: grid;
+            position: relative;
+
+            .book-cover__image {
+              grid-area: 1 / 1;
+              opacity: 0%;
+              transition: opacity var(--medium-transition) ease-in-out;
+              width: 100%;
+
+              &.visible {
+                opacity: 100%;
+              }
+            }
+          }
+
+          .book-cover__carousel {
             column-gap: 5px;
             display: flex;
           }

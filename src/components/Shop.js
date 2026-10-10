@@ -15,6 +15,7 @@ import azelina4 from '../assets/images/shop/azelina_421.png';
 import bookBackCover from '../assets/images/shop/book-back-cover_400.png';
 import bookCover from '../assets/images/shop/book-cover_400.png';
 import bookExcerpt from '../assets/images/shop/book-excerpt_400.png';
+import clsx from 'clsx';
 import drawing1 from '../assets/images/shop/drawing_190.png';
 import drawing2 from '../assets/images/shop/drawing_379.png';
 import drawing3 from '../assets/images/shop/drawing_569.png';
@@ -98,19 +99,25 @@ const Shop = (): React.Node => {
       <div className='page-shop__section page-shop__book-egon-editions'>
         <div className='page-shop__book-cover-details'>
           <div className='book-cover-wrapper'>
-            <img
-              alt=''
-              src={covers[currentIndex]} />
             {/* eslint-disable react/no-array-index-key */}
+            <div className='book-cover__images'>
+              {covers.map((cover, index) => (
+                <img
+                  alt=''
+                  className={clsx('book-cover__image',index === currentIndex && 'visible')}
+                  key={`cover-img-${index}`}
+                  src={cover} />
+              ))}
+            </div>
             <div className='book-cover__carousel'>
               {covers.map((_, index) => <Bullet
                 index={index}
                 isFull={index === currentIndex}
                 isLight={false}
-                key={`cover${index}`}
+                key={`cover-bullet-${index}`}
                 onClick={handleBulletOnClick} />)}
-              {/* eslint-enable react/no-array-index-key */}
             </div>
+            {/* eslint-enable react/no-array-index-key */}
           </div>
           <div className='page-shop__book-details'>
             <div className='book-details__title'>{Localizer.localize('shop.part_4.the_book')}</div>
