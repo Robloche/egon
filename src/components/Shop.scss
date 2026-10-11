@@ -177,6 +177,11 @@
             font-family: var(--font-family-body-bold);
           }
         }
+
+        a {
+          color: var(--black);
+          margin-left: .4rem;
+        }
       }
     }
 

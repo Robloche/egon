@@ -104,7 +104,7 @@ const Shop = (): React.Node => {
               {covers.map((cover, index) => (
                 <img
                   alt=''
-                  className={clsx('book-cover__image',index === currentIndex && 'visible')}
+                  className={clsx('book-cover__image', index === currentIndex && 'visible')}
                   key={`cover-img-${index}`}
                   src={cover} />
               ))}
@@ -133,6 +133,14 @@ const Shop = (): React.Node => {
           <div className='egon-table__paragraph'>{Localizer.localize('shop.part_4.egon_table_paragraph2')}</div>
           <div
             className='egon-table__paragraph final-paragraph'>{Localizer.localize('shop.part_4.egon_table_paragraph3')}</div>
+          <div
+            className='egon-table__paragraph contact'>
+            <span>{Localizer.localize('shop.part_4.contact')}</span>
+            <a
+              href='mailto:egon@egonparis.com'
+              rel='noopener noreferrer'
+              target='_blank'>egon@egonparis.com</a>
+          </div>
         </div>
       </div>
 
