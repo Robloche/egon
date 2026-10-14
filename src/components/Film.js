@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import verticalFilm from '../assets/videos/egon-film-vertical.mp4';
 
-const SKIP_BUTTON_BOTTOM_MARGIN = 50;
+const SKIP_BUTTON_BOTTOM_MARGIN = 100;
 
 const Film = (): React.Node => {
   const navigate = useNavigate();
