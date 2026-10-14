@@ -200,13 +200,23 @@
         margin-inline: -5rem;
 
         .page-shop__background {
+          /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
           background-image: url('../assets/images/shop/book-with-background_1400.png');
+          background-image: image-set(
+                  url('../assets/images/shop/book-with-background_1400.png') 1x,
+                  url('../assets/images/shop/book-with-background_1920.png') 1.5x
+          );
           height: 581px;
         }
       }
 
       &.page-shop__book-zoom {
+        /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
         background-image: url('../assets/images/shop/book-zoom_1400.png');
+        background-image: image-set(
+                url('../assets/images/shop/book-zoom_1400.png') 1x,
+                url('../assets/images/shop/book-zoom_1920.png') 1.5x
+        );
         height: 583px;
       }
 
@@ -248,7 +258,13 @@
         margin-inline: -2rem;
 
         .page-shop__background {
+          /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
           background-image: url('../assets/images/shop/book-with-background_900.png');
+          background-image: image-set(
+                  url('../assets/images/shop/book-with-background_900.png') 1x,
+                  url('../assets/images/shop/book-with-background_1400.png') 1.5x,
+                  url('../assets/images/shop/book-with-background_1920.png') 2x
+          );
           height: 374px;
         }
 
@@ -274,7 +290,13 @@
       }
 
       &.page-shop__book-zoom {
+        /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
         background-image: url('../assets/images/shop/book-zoom_900.png');
+        background-image: image-set(
+                url('../assets/images/shop/book-zoom_900.png') 1x,
+                url('../assets/images/shop/book-zoom_1400.png') 1.5x,
+                url('../assets/images/shop/book-zoom_1920.png') 2x
+        );
         height: 375px;
       }
     }
@@ -375,7 +397,12 @@
         flex-direction: column;
 
         .page-shop__background {
+          /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
           background-image: url('../assets/images/shop/book-with-background-centered_400.png');
+          background-image: image-set(
+                  url('../assets/images/shop/book-with-background-centered_400.png') 1x,
+                  url('../assets/images/shop/book-with-background_900.png') 2x
+          );
           height: 234px;
         }
 
@@ -431,7 +458,12 @@
       }
 
       &.page-shop__book-zoom {
+        /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
         background-image: url('../assets/images/shop/book-zoom_400.png');
+        background-image: image-set(
+                url('../assets/images/shop/book-zoom_400.png') 1x,
+                url('../assets/images/shop/book-zoom_900.png') 2x
+        );
         height: 167px;
       }
     }
