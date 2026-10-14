@@ -8,16 +8,12 @@ import Footer from './Footer';
 import Header from './Header';
 import { Localizer } from '../helpers/localizer';
 import StripeBuyButton from './StripeBuyButton';
-import azelina1 from '../assets/images/shop/azelina_151.png';
-import azelina2 from '../assets/images/shop/azelina_211.png';
-import azelina3 from '../assets/images/shop/azelina_316.png';
-import azelina4 from '../assets/images/shop/azelina_421.png';
+import azelina1 from '../assets/images/shop/azelina_190.png';
+import azelina2 from '../assets/images/shop/azelina_379.png';
+import azelina3 from '../assets/images/shop/azelina_569.png';
+import azelina4 from '../assets/images/shop/azelina_758.png';
 import bookCover from '../assets/images/shop/book-cover_247.png';
 import clsx from 'clsx';
-import drawing1 from '../assets/images/shop/drawing_190.png';
-import drawing2 from '../assets/images/shop/drawing_379.png';
-import drawing3 from '../assets/images/shop/drawing_569.png';
-import drawing4 from '../assets/images/shop/drawing_758.png';
 import { useSelector } from 'react-redux';
 
 const PAGE_WIDTH_THRESHOLD = 500;
@@ -76,18 +72,11 @@ const Shop = (): React.Node => {
       </div>
 
       <div className='page-shop__section page-shop__author-section'>
-        <div className='page-shop__photo-wrapper'>
-          <img
-            alt="Photo d'Azélina Jaboulet-Vercherre"
-            sizes='(max-width: 600px) 151px, (max-width: 900px) 211px, (max-width: 1400px) 316px, 421px'
-            src={azelina4}
-            srcSet={`${azelina1} 151w, ${azelina2} 211w, ${azelina3} 316w, ${azelina4} 421w`} />
-          <img
-            alt=''
-            sizes='(max-width: 600px) 190px, (max-width: 900px) 379px, (max-width: 1400px) 569px, 758px'
-            src={drawing4}
-            srcSet={`${drawing1} 190w, ${drawing2} 379w, ${drawing3} 569w, ${drawing4} 758w`} />
-        </div>
+        <img
+          alt="Photo d'Azélina Jaboulet-Vercherre"
+          sizes='(max-width: 600px) 190px, (max-width: 900px) 379px, (max-width: 1400px) 569px, 758px'
+          src={azelina4}
+          srcSet={`${azelina1} 190w, ${azelina2} 379w, ${azelina3} 569w, ${azelina4} 758w`} />
         <div className='page-shop__about'>
           <div className='page-shop__about_title'>{Localizer.localize('shop.part_3.about_author')}</div>
           <div className='page-shop__about_bio'>{Localizer.localize('shop.part_3.author_bio')}</div>

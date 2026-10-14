@@ -81,23 +81,8 @@
       color: var(--white);
       padding-block: 0;
 
-      .page-shop__photo-wrapper {
+      img {
         justify-self: flex-end;
-        position: relative;
-
-        > img {
-          &:first-child {
-            left: 50%;
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-          }
-
-          &:last-child {
-            position: relative;
-            z-index: 2;
-          }
-        }
       }
 
       .page-shop__about_title {
@@ -371,10 +356,6 @@
         flex-direction: column;
         padding-block: 2rem;
         row-gap: 2rem;
-
-        .page-shop__photo-wrapper {
-          margin-left: -20px;
-        }
       }
 
       &.page-shop__book-egon-editions {
