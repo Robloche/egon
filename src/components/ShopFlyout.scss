@@ -32,11 +32,15 @@
     flex: 0 0 auto;
     height: 80px;
     object-fit: contain;
-    width: auto;
   }
 
   .shop-flyout__cover {
-    grid-column: 2
+    grid-column: 2;
+    width: 49px;
+  }
+
+  .shop-flyout__logo {
+    width: 56px;
   }
 
   .shop-flyout__content {
