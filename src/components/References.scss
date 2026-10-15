@@ -18,6 +18,7 @@
 
         > img {
           object-fit: cover;
+          width: 50%;
         }
 
         > video {
@@ -127,6 +128,10 @@
             > .project__description {
               margin-block: .8rem;
             }
+          }
+
+          > img {
+            align-self: center;
           }
         }
       }
