@@ -5,8 +5,8 @@ import * as React from 'react';
 import AnimatedText from './AnimatedText';
 import Footer from './Footer';
 import Header from './Header';
-import {Localizer} from '../helpers/localizer';
-import {useSelector} from 'react-redux';
+import { Localizer } from '../helpers/localizer';
+import { useSelector } from 'react-redux';
 
 const renderSectionStrategy = () => (
   <>
@@ -231,7 +231,9 @@ const Expertises = (): React.Node => {
   useSelector((state) => state.language);
 
   return (
-    <div className='page page-expertises'>
+    <div
+      className='page page-expertises'
+      id='top'>
       <Header />
       <div className='page-expertises__container'>
         {renderSectionStrategy()}

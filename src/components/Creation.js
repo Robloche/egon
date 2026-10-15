@@ -72,7 +72,9 @@ const renderSectionCustomers = () => (
 );
 
 const Creation = (): React.Node => (
-  <div className='page page-creation'>
+  <div
+    className='page page-creation'
+    id='top'>
     <Header />
     <div className='page-creation__container'>
       {renderSectionIntroduction()}

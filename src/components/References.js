@@ -92,19 +92,23 @@ const renderSectionProjects = (language: string) => (
 const References = (): React.Node => {
   const language = useSelector((state) => state.language);
 
-  return (<div className='page page-references'>
-    <Header />
-    <div className='page-references__container'>
-      {renderSectionProjects(language)}
-      <div className='page-references__closing'>
-        <AnimatedText
-          classList='title verbatim'
-          direction='up'
-          stringKey='references.projects.closing' />
+  return (
+    <div
+      className='page page-references'
+      id='top'>
+      <Header />
+      <div className='page-references__container'>
+        {renderSectionProjects(language)}
+        <div className='page-references__closing'>
+          <AnimatedText
+            classList='title verbatim'
+            direction='up'
+            stringKey='references.projects.closing' />
+        </div>
       </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>);
+  );
 };
 
 export default References;

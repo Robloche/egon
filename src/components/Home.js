@@ -233,7 +233,9 @@ const Home = (): React.Node => {
   }, []);
 
   return (
-    <div className='page page-agency'>
+    <div
+      className='page page-agency'
+      id='top'>
       <CarouselManifest />
       <Header />
       <CarouselClients />
