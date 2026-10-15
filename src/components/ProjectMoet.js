@@ -26,22 +26,22 @@ import vintage2015RoseL336 from '../assets/images/projects/moet/vintage-2015-ros
 const renderHeader = () => (
   <div className='page-project__header'>
     {/*<div className='project__bullets'>*/}
-    {/*  <div>{Localizer.localize('creation.projects.moet.bullet1')}</div>*/}
-    {/*  <div>{Localizer.localize('creation.projects.moet.bullet2')}</div>*/}
-    {/*  <div>{Localizer.localize('creation.projects.moet.bullet3')}</div>*/}
+    {/*  <div>{Localizer.localize('references.projects.moet.bullet1')}</div>*/}
+    {/*  <div>{Localizer.localize('references.projects.moet.bullet2')}</div>*/}
+    {/*  <div>{Localizer.localize('references.projects.moet.bullet3')}</div>*/}
     {/*</div>*/}
     <div className='project__introduction'>
-      <div className='project__title'>{Localizer.localize('creation.projects.moet.title')}</div>
-      <div className='project__description-huge'>{Localizer.localize('creation.projects.moet.description1')}</div>
-      <div>{Localizer.localize('creation.projects.moet.description2')}</div>
+      <div className='project__title'>{Localizer.localize('references.projects.moet.title')}</div>
+      <div className='project__description-huge'>{Localizer.localize('references.projects.moet.description1')}</div>
+      <div>{Localizer.localize('references.projects.moet.description2')}</div>
     </div>
   </div>
 );
 
 const renderStake = () => (
   <div className='project__stake'>
-    <div className='project__stake-title'>{Localizer.localize('creation.projects.moet.stake_title')}</div>
-    <div>{Localizer.localize('creation.projects.moet.stake_description')}</div>
+    <div className='project__stake-title'>{Localizer.localize('references.projects.moet.stake_title')}</div>
+    <div>{Localizer.localize('references.projects.moet.stake_description')}</div>
   </div>
 );
 
@@ -80,13 +80,13 @@ const renderVintages = () => (
 
     <div className='project__vintages-list'>
       <div className='project__vintages-year'>2015</div>
-      <div>{Localizer.localize('creation.projects.moet.vintage_2015')}</div>
+      <div>{Localizer.localize('references.projects.moet.vintage_2015')}</div>
       <div className='project__vintages-year'>2015 Rosé</div>
-      <div>{Localizer.localize('creation.projects.moet.vintage_2015_rose')}</div>
+      <div>{Localizer.localize('references.projects.moet.vintage_2015_rose')}</div>
       <div className='project__vintages-year'>1999</div>
-      <div>{Localizer.localize('creation.projects.moet.vintage_1999')}</div>
+      <div>{Localizer.localize('references.projects.moet.vintage_1999')}</div>
       <div className='project__vintages-year'>2006</div>
-      <div>{Localizer.localize('creation.projects.moet.vintage_2006')}</div>
+      <div>{Localizer.localize('references.projects.moet.vintage_2006')}</div>
     </div>
   </div>
 );
@@ -111,18 +111,18 @@ const renderScreens = () => (
 
 const renderEnd = () => (
   <div className='project__end'>
-    <div className='project__thanks'>{Localizer.localize('creation.projects.common.thanks')}</div>
+    <div className='project__thanks'>{Localizer.localize('references.projects.common.thanks')}</div>
     <div className='project__cast'>
-      <span>{Localizer.localize('creation.projects.common.client')} @Moët</span>
-      <span>{Localizer.localize('creation.projects.common.photographer')} @Stan.desjeux</span>
-      <span>{Localizer.localize('creation.projects.common.styling')} @charlene.viseux</span>
-      <span>{Localizer.localize('creation.projects.common.post_production')} @Paul Pomorski</span>
+      <span>{Localizer.localize('references.projects.common.client')} @Moët</span>
+      <span>{Localizer.localize('references.projects.common.photographer')} @Stan.desjeux</span>
+      <span>{Localizer.localize('references.projects.common.styling')} @charlene.viseux</span>
+      <span>{Localizer.localize('references.projects.common.post_production')} @Paul Pomorski</span>
     </div>
     <a
       className='project__contact'
       href='mailto:egon@egonparis.com'
       rel='noopener noreferrer'
-      target='_blank'>{Localizer.localize('creation.projects.common.contact_us')}</a>
+      target='_blank'>{Localizer.localize('references.projects.common.contact_us')}</a>
   </div>
 );
 

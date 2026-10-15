@@ -121,12 +121,13 @@ const renderLinks = (
         onFocus={handleOnFocus}
         scroll={scrollTopWithHeader}
         to={`/${language}/creation#customers`}>{Localizer.localize('menu.creation.customers')}</HashLink>
-      <HashLink
-        onClick={handleCloseOnClick}
-        onFocus={handleOnFocus}
-        scroll={scrollTopWithHeader}
-        to={`/${language}/creation#projects`}>{Localizer.localize('menu.creation.projects')}</HashLink>
     </div>
+    <HashLink
+      className='menu__item'
+      onClick={handleCloseOnClick}
+      onFocus={handleCloseAll}
+      scroll={scrollTopWithHeader}
+      to={`/${language}/references#top`}>{Localizer.localize('menu.references.label')}</HashLink>
     <HashLink
       className='menu__item'
       onClick={handleCloseOnClick}

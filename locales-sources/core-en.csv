@@ -52,46 +52,6 @@ creation.introduction.paragraph1;We love what you love through your eyes, your h
 creation.introduction.paragraph2;What we share here... is just a selection of the projects that are close to our hearts. A selection of case studies that may give an idea of our fields of action. These are neither our favorites (although we obviously love them all) nor the most prestigious.\nJust the ones that might give you a better idea of our portfolio of possibilities.\nDon't hesitate to contact us to discuss your project.
 creation.introduction.side_title;CREATION - Introduction
 creation.introduction.title;What we share here...
-creation.projects.closing;More adventures to come! Stay TUNED!
-creation.projects.common.client;Client
-creation.projects.common.contact_us;Contact us
-creation.projects.common.discover_all_projects;Discover all projects
-creation.projects.common.photographer;Photographer
-creation.projects.common.post_production;Post-Production
-creation.projects.common.styling;Styling
-creation.projects.common.thanks;Thanks!
-creation.projects.contact;Let's talk
-creation.projects.condesa.description;A new address for Indra Carrillo Perea's La Condesa. A story told and imagined by EGON PARIS. Indra Carrillo Perea's new restaurant now has 34 covers in an atmosphere completely redesigned by the chef and his architect, Camille Flammarion.
-creation.projects.condesa.subtitle;Creation, copy-writing, press kits, content production, social media
-creation.projects.condesa.title;Egon x La Condesa
-creation.projects.moet.bullet1;content production
-creation.projects.moet.bullet2;artistic direction
-creation.projects.moet.bullet3;photography
-creation.projects.moet.description1;A new chapter in Moët & Chandon's Grands Vintages collection, signed by EGON Paris.
-creation.projects.moet.description2;A floral scenography imagined and produced by EGON Paris. A creative and joyful playground from Creation to Production, for the agency dedicated to a new art of living luxury.
-creation.projects.moet.stake_description;To educate consumers about the notion of vintage Champagne by explaining its organoleptic qualities and how they have evolved over the years.
-creation.projects.moet.stake_title;The Challenge
-creation.projects.moet.subtitle;Content creation & Production
-creation.projects.moet.title;Egon x Moët & Chandon
-creation.projects.moet.vintage_2015;An extraordinary story. An expressive, tender and enveloping vintage.
-creation.projects.moet.vintage_2015_rose;Point du jour, an expressive, powerful, spicy rosé vintage.
-creation.projects.moet.vintage_1999;A mature, powerful, expansive vintage.
-creation.projects.moet.vintage_2006;A floral, expansive, succulent vintage.
-creation.projects.more;Discover more
-creation.projects.relais_chateaux.description;Relais & Châteaux has entrusted EGON with its global year-end campaign:\nCreative concept, storytelling, B2B and B2C film creation and production, greeting card, and showcase design.
-creation.projects.relais_chateaux.description1;Bathed in the soft, golden light of a winter morning, I still see the images, shapes, and emotions of my dreams. Inspiration comes gently. An old sheet of paper, a golden pencil in hand, a stroke, and a direction for tomorrow.
-creation.projects.relais_chateaux.description2;The journey to 2025 can begin.
-creation.projects.relais_chateaux.stake_description;To enchant with passion and authenticity by showcasing the richness and diversity of hospitality traditions from around the world.\n\nWe would like to extend our heartfelt thanks to Relais & Châteaux for continuing to create and produce exceptional publications. Words endure and are passed down. For 70 years, Relais & Châteaux has been committed to preserving the traditions of hospitality, and we wouldn’t have it any other way.
-creation.projects.relais_chateaux.stake_title;The Challenge
-creation.projects.relais_chateaux.subtitle;Content Creation & Production
-creation.projects.relais_chateaux.subtitle2;The journey to 2025 can begin.
-creation.projects.relais_chateaux.title;Egon x Relais & Châteaux
-creation.projects.rothschild.description;Barons de Rothschild champagne, creator of Grands Vins de Champagne, has a new lease of life: brand platform, visual identity, packaging, gift box... all that was left was a significant advertising campaign for its Concordia brut and blanc de blancs, to mark a significant milestone in its life.
-creation.projects.rothschild.subtitle;Creation & Production
-creation.projects.rothschild.title;Egon x Barons de Rothschild Champagne
-creation.projects.paragraph;We love what you love through your eyes, your story, your meaning and your senses. We are inspired by faraway places, here, your heritage and, most of all, your words which guide every step of the creative process. We advocate precision, coherence and longevity.
-creation.projects.side_title;CREATION - Projects
-creation.projects.title;Design is a journey. A journey of meaning, culture and imagination. The outcome is multi-faceted and shapeshifting.
 expertises.creation.closing;We believe that living remains an art seeking permanence
 expertises.creation.column1.item1;Artistic Direction
 expertises.creation.column1.item2;Mood
@@ -243,7 +203,6 @@ menu.contact.label;Contact
 menu.creation.customers;Who?
 menu.creation.introduction;Introduction
 menu.creation.label;Creation
-menu.creation.projects;How?
 menu.expertises.creation;Creation
 menu.expertises.digital;Digital
 menu.expertises.edition;Publishing
@@ -253,6 +212,7 @@ menu.expertises.strategy;Strategy
 menu.language.en;UK
 menu.language.fr;FR
 menu.language.it;IT
+menu.references.label;References
 menu.shop.label;Shop
 newsletter.action.subscribe;I subscribe
 newsletter.error;Please check your e-mail address
@@ -303,6 +263,45 @@ privacy_policy.security_paragraph;We are committed to taking appropriate technic
 privacy_policy.applicable_law_title;Applicable law
 privacy_policy.applicable_law_paragraph1;The EGON PARIS site has been designed and written in French, English and Italian. The Terms of Use are subject to French law. Any dispute shall be referred to the French courts, which shall have exclusive jurisdiction.
 privacy_policy.applicable_law_paragraph2;For any questions about these TOU, or in the event of a request or complaint about your Personal Data, contact us as follows:
+references.projects.closing;More adventures to come! Stay TUNED!
+references.projects.common.client;Client
+references.projects.common.contact_us;Contact us
+references.projects.common.discover_all_projects;Discover all projects
+references.projects.common.photographer;Photographer
+references.projects.common.post_production;Post-Production
+references.projects.common.styling;Styling
+references.projects.common.thanks;Thanks!
+references.projects.contact;Let's talk
+references.projects.condesa.description;A new address for Indra Carrillo Perea's La Condesa. A story told and imagined by EGON PARIS. Indra Carrillo Perea's new restaurant now has 34 covers in an atmosphere completely redesigned by the chef and his architect, Camille Flammarion.
+references.projects.condesa.subtitle;Creation, copy-writing, press kits, content production, social media
+references.projects.condesa.title;Egon x La Condesa
+references.projects.moet.bullet1;content production
+references.projects.moet.bullet2;artistic direction
+references.projects.moet.bullet3;photography
+references.projects.moet.description1;A new chapter in Moët & Chandon's Grands Vintages collection, signed by EGON Paris.
+references.projects.moet.description2;A floral scenography imagined and produced by EGON Paris. A creative and joyful playground from Creation to Production, for the agency dedicated to a new art of living luxury.
+references.projects.moet.stake_description;To educate consumers about the notion of vintage Champagne by explaining its organoleptic qualities and how they have evolved over the years.
+references.projects.moet.stake_title;The Challenge
+references.projects.moet.subtitle;Content creation & Production
+references.projects.moet.title;Egon x Moët & Chandon
+references.projects.moet.vintage_2015;An extraordinary story. An expressive, tender and enveloping vintage.
+references.projects.moet.vintage_2015_rose;Point du jour, an expressive, powerful, spicy rosé vintage.
+references.projects.moet.vintage_1999;A mature, powerful, expansive vintage.
+references.projects.moet.vintage_2006;A floral, expansive, succulent vintage.
+references.projects.more;Discover more
+references.projects.relais_chateaux.description;Relais & Châteaux has entrusted EGON with its global year-end campaign:\nCreative concept, storytelling, B2B and B2C film creation and production, greeting card, and showcase design.
+references.projects.relais_chateaux.description1;Bathed in the soft, golden light of a winter morning, I still see the images, shapes, and emotions of my dreams. Inspiration comes gently. An old sheet of paper, a golden pencil in hand, a stroke, and a direction for tomorrow.
+references.projects.relais_chateaux.description2;The journey to 2025 can begin.
+references.projects.relais_chateaux.stake_description;To enchant with passion and authenticity by showcasing the richness and diversity of hospitality traditions from around the world.\n\nWe would like to extend our heartfelt thanks to Relais & Châteaux for continuing to create and produce exceptional publications. Words endure and are passed down. For 70 years, Relais & Châteaux has been committed to preserving the traditions of hospitality, and we wouldn’t have it any other way.
+references.projects.relais_chateaux.stake_title;The Challenge
+references.projects.relais_chateaux.subtitle;Content Creation & Production
+references.projects.relais_chateaux.subtitle2;The journey to 2025 can begin.
+references.projects.relais_chateaux.title;Egon x Relais & Châteaux
+references.projects.rothschild.description;Barons de Rothschild champagne, creator of Grands Vins de Champagne, has a new lease of life: brand platform, visual identity, packaging, gift box... all that was left was a significant advertising campaign for its Concordia brut and blanc de blancs, to mark a significant milestone in its life.
+references.projects.rothschild.subtitle;Creation & Production
+references.projects.rothschild.title;Egon x Barons de Rothschild Champagne
+references.projects.paragraph;We love what you love through your eyes, your story, your meaning and your senses. We are inspired by faraway places, here, your heritage and, most of all, your words which guide every step of the creative process. We advocate precision, coherence and longevity.
+references.projects.title;Design is a journey. A journey of meaning, culture and imagination. The outcome is multi-faceted and shapeshifting.
 shop.part_1.title;Le Dîner de verre
 shop.part_1.author;Azélina Jaboulet-Vercherre
 shop.part_1.foreword;Préface de Stéphane Derenoncourt

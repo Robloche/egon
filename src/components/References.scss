@@ -1,0 +1,135 @@
+.page-references {
+  > .page-references__container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+
+    > .page-references__section {
+      grid-column: 2;
+
+      .page-references__project {
+        column-gap: 2rem;
+        display: flex;
+        margin-block: 2rem;
+
+        &.reversed {
+          flex-direction: row-reverse;
+        }
+
+        > img {
+          object-fit: cover;
+        }
+
+        > video {
+          align-self: center;
+          max-width: 848px;
+          width: 50%;
+        }
+
+        > .page-references__project-content {
+          padding: 2rem;
+
+          > .project__title {
+            font: 2rem var(--font-family-title);
+          }
+
+          > .project__subtitle {
+            font: 1.2rem var(--font-family-title);
+          }
+
+          > .project__description {
+            margin-block: 2rem 4rem;
+          }
+        }
+      }
+    }
+
+    > .page-references__closing {
+      align-items: center;
+      background-color: var(--maroon);
+      color: var(--white);
+      display: flex;
+      grid-column: 1 / span 3;
+      justify-content: center;
+      padding: 4rem;
+    }
+  }
+}
+
+@media (width <= 1500px) {
+  .page-references {
+    > .page-references__container {
+      grid-template-columns: 5% auto 5%;
+    }
+  }
+}
+
+@media (width <= 1400px) {
+  .page-references {
+    > .page-references__container {
+      > .page-references__closing {
+        padding: 3.6rem;
+      }
+    }
+  }
+}
+
+@media (width <= 1200px) {
+  .page-references {
+    > .page-references__container {
+      > .page-references__closing {
+        padding: 3.2rem;
+      }
+    }
+  }
+}
+
+@media (width <= 1000px) {
+  .page-references {
+    > .page-references__container {
+      > .page-references__closing {
+        padding: 2.6rem;
+      }
+    }
+  }
+}
+
+@media (width <= 800px) {
+  .page-references {
+    > .page-references__container {
+      > .page-references__closing {
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+@media (width <= 600px) {
+  .page-references {
+    > .page-references__container {
+      > .page-references__section {
+        > .page-references__project {
+          flex-direction: column-reverse;
+
+          &.reversed {
+            flex-direction: column-reverse;
+          }
+
+          > .page-references__project-content {
+            > .project__title {
+              font-size: 1rem;
+            }
+
+            > .project__subtitle {
+              font-size: .8rem;
+            }
+
+            > .project__description {
+              margin-block: .8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

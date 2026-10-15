@@ -52,46 +52,6 @@ creation.introduction.paragraph1;Nous aimons ce que vous aimez à travers vos ye
 creation.introduction.paragraph2;Ce que nous partageons ici... n'est qu'une partie des projets qui nous tiennent à cœur. Une sélection d'études de cas qui peuvent donner une idée de nos domaines d'action. Ce ne sont ni nos préférés (même si nous les aimons tous évidemment) ni les plus prestigieux.\nSeulement ceux qui peuvent vous donner une meilleure idée de notre portefeuille de possibilités.\nN'hésitez pas à nous contacter pour étudier votre projet.
 creation.introduction.side_title;CREATION - Introduction
 creation.introduction.title;Ce que nous partageons ici...
-creation.projects.closing;D'autres aventures à venir ! Stay TUNED !
-creation.projects.common.client;Client
-creation.projects.common.contact_us;Contactez-nous
-creation.projects.common.discover_all_projects;Découvrir tous les projets
-creation.projects.common.photographer;Photographe
-creation.projects.common.post_production;Post-Production
-creation.projects.common.styling;Stylisme
-creation.projects.common.thanks;Merci !
-creation.projects.contact;Et si on s'en parlait ?
-creation.projects.condesa.description;Une nouvelle adresse pour La Condesa d'Indra Carrillo Perea. Une histoire racontée et imagée par EGON PARIS. Le nouveau restaurant d'Indra Carrillo Perea compte dorénavant 34 couverts dans une ambiance entièrement repensée par le chef et son architecte, Camille Flammarion.
-creation.projects.condesa.subtitle;Creation, copy-writing, dossier de presse, production de contenus, social media
-creation.projects.condesa.title;Egon x La Condesa
-creation.projects.moet.bullet1;production de contenus
-creation.projects.moet.bullet2;direction artistique
-creation.projects.moet.bullet3;photographie
-creation.projects.moet.description1;Un nouveau chapitre dans la collection des Grands Vintages de la maison Moët & Chandon signé EGON Paris.
-creation.projects.moet.description2;Une scénographie florale imaginée et produite par EGON Paris. Un terrain de jeu créatif et joyeux de la Création à la Production, pour l'agence consacrée à un nouvel art de vivre le luxe.
-creation.projects.moet.stake_description;Éduquer les consommateurs sur la notion de Champagne millésimé en racontant les qualités organoleptiques et leur évolution à travers les années.
-creation.projects.moet.stake_title;L'enjeu
-creation.projects.moet.subtitle;Creation & Production de contenus
-creation.projects.moet.title;Egon x Moët & Chandon
-creation.projects.moet.vintage_2015;Une histoire extraordinaire. Millésime expressif, tendre et enveloppant.
-creation.projects.moet.vintage_2015_rose;Point du jour, un millésime rosé, expressif, puissant, épicé.
-creation.projects.moet.vintage_1999;Un millésime mature, puissant, expansif.
-creation.projects.moet.vintage_2006;Un millésime floral, expansif, succulent.
-creation.projects.more;Découvrir plus
-creation.projects.relais_chateaux.description;Relais & Châteaux a confié à EGON sa campagne de fin d’année globale internationale :\nconcept créatif, story-telling, création et production film BtB, film BtC, carte de vœux et vitrine.
-creation.projects.relais_chateaux.description1;Ébloui par la lumière douce et dorée d’un matin d’hiver, avec encore dans mes yeux, les images, les formes et les émotions de mes rêveries. L’inspiration me vient, avec douceur. Une feuille de papier ancien, un crayon doré à la main, un trait et une direction pour demain.
-creation.projects.relais_chateaux.description2;Le voyage pour 2025 peut commencer.
-creation.projects.relais_chateaux.stake_description;Enchanter avec passion et authenticité en valorisant la richesse et la diversité des traditions hospitalières du monde entier.\n\nNous tenons à remercier chaleureusement Relais & Châteaux qui continue de créer et produire de l’édition d’exception. Les écrits restent et se transmettent. Depuis 70 ans, Relais & Châteaux veille à contribuer à la préservation des traditions d’hospitalité et ce n’est pas pour nous déplaire.
-creation.projects.relais_chateaux.stake_title;L'enjeu
-creation.projects.relais_chateaux.subtitle;Création & Production de contenus
-creation.projects.relais_chateaux.subtitle2;Le voyage pour 2025 peut commencer.
-creation.projects.relais_chateaux.title;Egon x Relais & Châteaux
-creation.projects.rothschild.description;Barons de Rothschild champagne, créateur de Grands Vins de Champagne, est porté par un souffle nouveau : plateforme de marque, identité visuelle, habillage, coffret... il ne lui restait plus qu'une campagne publicitaire signifiante pour son brut Concordia et son blanc de blancs, pour marquer une étape significative dans sa vie.
-creation.projects.rothschild.subtitle;Création & Production
-creation.projects.rothschild.title;Egon x Barons de Rothschild Champagne
-creation.projects.paragraph;Nous aimons ce que vous aimez à travers vos yeux, votre histoire, votre sens, vos sens. Notre inspiration naît d'ailleurs, d'ici, de votre héritage, de vos mots surtout qui nous guident à chaque pas de notre réflexion. Nous revendiquons la justesse, la cohérence, la longévité.
-creation.projects.side_title;CREATION - Les projets
-creation.projects.title;La création est un parcours. Un parcours de sens, de culture, d'imaginaire. L'issue est plurielle, protéiforme.
 expertises.creation.closing;Nous croyons que vivre reste un art en quête de perpétuité
 expertises.creation.column1.item1;Direction de Création
 expertises.creation.column1.item2;Mood
@@ -243,7 +203,6 @@ menu.contact.label;Contact
 menu.creation.customers;Qui ?
 menu.creation.introduction;Introduction
 menu.creation.label;Creation
-menu.creation.projects;Comment ?
 menu.expertises.creation;Création
 menu.expertises.digital;Digital
 menu.expertises.edition;Édition
@@ -253,6 +212,7 @@ menu.expertises.strategy;Stratégie
 menu.language.en;UK
 menu.language.fr;FR
 menu.language.it;IT
+menu.references.label;Références
 menu.shop.label;Shop
 newsletter.action.subscribe;Je m'inscris
 newsletter.error;Veuillez vérifier votre adresse e-mail
@@ -303,6 +263,45 @@ privacy_policy.security_paragraph;Nous nous engageons à mettre en œuvre les me
 privacy_policy.applicable_law_title;Droit applicable
 privacy_policy.applicable_law_paragraph1;Le site EGON PARIS a été conçu et écrit en français, anglais et italien. Les Conditions Générales d'utilisation sont soumises au droit français. En cas de litige, la compétence est attribuée aux tribunaux français.
 privacy_policy.applicable_law_paragraph2;Pour toute question concernant les présentes CGU, en cas de demande ou de réclamation portant sur vos Données Personnelles, vous pouvez nous contacter selon les modalités suivantes :
+references.projects.closing;D'autres aventures à venir ! Stay TUNED !
+references.projects.common.client;Client
+references.projects.common.contact_us;Contactez-nous
+references.projects.common.discover_all_projects;Découvrir tous les projets
+references.projects.common.photographer;Photographe
+references.projects.common.post_production;Post-Production
+references.projects.common.styling;Stylisme
+references.projects.common.thanks;Merci !
+references.projects.contact;Et si on s'en parlait ?
+references.projects.condesa.description;Une nouvelle adresse pour La Condesa d'Indra Carrillo Perea. Une histoire racontée et imagée par EGON PARIS. Le nouveau restaurant d'Indra Carrillo Perea compte dorénavant 34 couverts dans une ambiance entièrement repensée par le chef et son architecte, Camille Flammarion.
+references.projects.condesa.subtitle;Creation, copy-writing, dossier de presse, production de contenus, social media
+references.projects.condesa.title;Egon x La Condesa
+references.projects.moet.bullet1;production de contenus
+references.projects.moet.bullet2;direction artistique
+references.projects.moet.bullet3;photographie
+references.projects.moet.description1;Un nouveau chapitre dans la collection des Grands Vintages de la maison Moët & Chandon signé EGON Paris.
+references.projects.moet.description2;Une scénographie florale imaginée et produite par EGON Paris. Un terrain de jeu créatif et joyeux de la Création à la Production, pour l'agence consacrée à un nouvel art de vivre le luxe.
+references.projects.moet.stake_description;Éduquer les consommateurs sur la notion de Champagne millésimé en racontant les qualités organoleptiques et leur évolution à travers les années.
+references.projects.moet.stake_title;L'enjeu
+references.projects.moet.subtitle;Creation & Production de contenus
+references.projects.moet.title;Egon x Moët & Chandon
+references.projects.moet.vintage_2015;Une histoire extraordinaire. Millésime expressif, tendre et enveloppant.
+references.projects.moet.vintage_2015_rose;Point du jour, un millésime rosé, expressif, puissant, épicé.
+references.projects.moet.vintage_1999;Un millésime mature, puissant, expansif.
+references.projects.moet.vintage_2006;Un millésime floral, expansif, succulent.
+references.projects.more;Découvrir plus
+references.projects.relais_chateaux.description;Relais & Châteaux a confié à EGON sa campagne de fin d’année globale internationale :\nconcept créatif, story-telling, création et production film BtB, film BtC, carte de vœux et vitrine.
+references.projects.relais_chateaux.description1;Ébloui par la lumière douce et dorée d’un matin d’hiver, avec encore dans mes yeux, les images, les formes et les émotions de mes rêveries. L’inspiration me vient, avec douceur. Une feuille de papier ancien, un crayon doré à la main, un trait et une direction pour demain.
+references.projects.relais_chateaux.description2;Le voyage pour 2025 peut commencer.
+references.projects.relais_chateaux.stake_description;Enchanter avec passion et authenticité en valorisant la richesse et la diversité des traditions hospitalières du monde entier.\n\nNous tenons à remercier chaleureusement Relais & Châteaux qui continue de créer et produire de l’édition d’exception. Les écrits restent et se transmettent. Depuis 70 ans, Relais & Châteaux veille à contribuer à la préservation des traditions d’hospitalité et ce n’est pas pour nous déplaire.
+references.projects.relais_chateaux.stake_title;L'enjeu
+references.projects.relais_chateaux.subtitle;Création & Production de contenus
+references.projects.relais_chateaux.subtitle2;Le voyage pour 2025 peut commencer.
+references.projects.relais_chateaux.title;Egon x Relais & Châteaux
+references.projects.rothschild.description;Barons de Rothschild champagne, créateur de Grands Vins de Champagne, est porté par un souffle nouveau : plateforme de marque, identité visuelle, habillage, coffret... il ne lui restait plus qu'une campagne publicitaire signifiante pour son brut Concordia et son blanc de blancs, pour marquer une étape significative dans sa vie.
+references.projects.rothschild.subtitle;Création & Production
+references.projects.rothschild.title;Egon x Barons de Rothschild Champagne
+references.projects.paragraph;Nous aimons ce que vous aimez à travers vos yeux, votre histoire, votre sens, vos sens. Notre inspiration naît d'ailleurs, d'ici, de votre héritage, de vos mots surtout qui nous guident à chaque pas de notre réflexion. Nous revendiquons la justesse, la cohérence, la longévité.
+references.projects.title;La création est un parcours. Un parcours de sens, de culture, d'imaginaire. L'issue est plurielle, protéiforme.
 shop.part_1.title;Le Dîner de verre
 shop.part_1.author;Azélina Jaboulet-Vercherre
 shop.part_1.foreword;Préface de Stéphane Derenoncourt

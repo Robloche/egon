@@ -13,6 +13,7 @@ import { Localizer } from './helpers/localizer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Project from './components/Project';
 import { Provider } from 'react-redux';
+import References from './components/References';
 import Shop from './components/Shop';
 import ShopConfirmation from './components/ShopConfirmation';
 import ShopFlyout from './components/ShopFlyout';
@@ -83,6 +84,13 @@ const App = (): React.Node => (
         <Route
           element={<PrivacyPolicy />}
           path='/privacy-policy' />
+        <Route
+          element={<References />}
+          exact
+          path='/:lang/references' />
+        <Route
+          element={<References />}
+          path='/references' />
         <Route
           element={<SplashScreen />}
           exact

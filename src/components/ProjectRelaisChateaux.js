@@ -16,18 +16,18 @@ import { useSelector } from 'react-redux';
 const renderHeader = () => (
   <div className='page-project__header'>
     <div className='project__introduction'>
-      <div className='project__title'>{Localizer.localize('creation.projects.relais_chateaux.title')}</div>
+      <div className='project__title'>{Localizer.localize('references.projects.relais_chateaux.title')}</div>
       <div
-        className='project__description-huge'>{Localizer.localize('creation.projects.relais_chateaux.subtitle2')}</div>
-      <div>{Localizer.localize('creation.projects.relais_chateaux.description')}</div>
+        className='project__description-huge'>{Localizer.localize('references.projects.relais_chateaux.subtitle2')}</div>
+      <div>{Localizer.localize('references.projects.relais_chateaux.description')}</div>
     </div>
   </div>
 );
 
 const renderStake = () => (
   <div className='project__stake'>
-    <div className='project__stake-title'>{Localizer.localize('creation.projects.relais_chateaux.stake_title')}</div>
-    <div>{Localizer.localize('creation.projects.relais_chateaux.stake_description')}</div>
+    <div className='project__stake-title'>{Localizer.localize('references.projects.relais_chateaux.stake_title')}</div>
+    <div>{Localizer.localize('references.projects.relais_chateaux.stake_description')}</div>
   </div>
 );
 
@@ -58,15 +58,15 @@ const renderShots = () => (
 
 const renderEnd = () => (
   <div className='project__end'>
-    <div className='project__thanks'>{Localizer.localize('creation.projects.common.thanks')}</div>
+    <div className='project__thanks'>{Localizer.localize('references.projects.common.thanks')}</div>
     <div className='project__cast'>
-      <span>{Localizer.localize('creation.projects.common.client')} @RelaisChâteaux</span>
+      <span>{Localizer.localize('references.projects.common.client')} @RelaisChâteaux</span>
     </div>
     <a
       className='project__contact'
       href='mailto:egon@egonparis.com'
       rel='noopener noreferrer'
-      target='_blank'>{Localizer.localize('creation.projects.common.contact_us')}</a>
+      target='_blank'>{Localizer.localize('references.projects.common.contact_us')}</a>
   </div>
 );
 
