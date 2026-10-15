@@ -41,6 +41,7 @@ const renderProject = ({
       autoPlay
       loop
       muted
+      playsInline
       preload='auto'
       src={video} />
     :
