@@ -29,7 +29,7 @@ const Project = (): React.Node => {
       {Projects[name]}
       <HashLink
         className='underlined'
-        to={`/${language}/references`}>{Localizer.localize('references.projects.common.discover_all_projects')}</HashLink>
+        to={`/${language}/references#top`}>{Localizer.localize('references.projects.common.discover_all_projects')}</HashLink>
       <Footer />
     </div>
   );
