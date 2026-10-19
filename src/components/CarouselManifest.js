@@ -12,13 +12,13 @@ const renderSlideContent = (index: number): React.Node => {
   if (index === 0 || index >= PAGE_COUNT) {
     // First slide
     return (
-      <>
+      <div className='slide__text-content text-content__uppercase'>
         <img
           alt='Logo Egon Paris'
           className='slide__logo'
           src={egonLogo} />
-        <div className='slide__text-content'>{Localizer.localize(`manifest.page${index}.text`)}</div>
-      </>
+        <span>{Localizer.localize(`manifest.page${index}.text`)}</span>
+      </div>
     );
   }
 
