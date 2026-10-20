@@ -6,16 +6,19 @@ import Footer from './Footer';
 import { HashLink } from 'react-router-hash-link';
 import Header from './Header';
 import { Localizer } from '../helpers/localizer';
+import ProjectChateauMontrose from './ProjectChateauMontrose';
 import ProjectMoet from './ProjectMoet';
 import ProjectRelaisChateaux from './ProjectRelaisChateaux';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
+/* eslint-disable camelcase */
 const Projects = Object.freeze({
+  chateau_montrose: <ProjectChateauMontrose />,
   moet: <ProjectMoet />,
-  // eslint-disable-next-line camelcase
   relais_chateaux: <ProjectRelaisChateaux />,
 });
+/* eslint-enable camelcase */
 
 const Project = (): React.Node => {
   const language = useSelector((state) => state.language);

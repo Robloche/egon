@@ -8,6 +8,10 @@ import { HashLink } from 'react-router-hash-link';
 import Header from './Header';
 import { Localizer } from '../helpers/localizer';
 import clsx from 'clsx';
+import projectChateauMontrose168 from '../assets/images/projects/chateau-montrose/intro_168.png';
+import projectChateauMontrose384 from '../assets/images/projects/chateau-montrose/intro_384.png';
+import projectChateauMontrose600 from '../assets/images/projects/chateau-montrose/intro_600.png';
+import projectChateauMontrose848 from '../assets/images/projects/chateau-montrose/intro_848.png';
 import projectMoet168 from '../assets/images/projects/moet/label_168.png';
 import projectMoet384 from '../assets/images/projects/moet/label_384.png';
 import projectMoet600 from '../assets/images/projects/moet/label_600.png';
@@ -72,6 +76,14 @@ const renderProject = ({
 
 const renderSectionProjects = (language: string) => (
   <div className='page-references__section'>
+    {/* Egon x Château Montrose */}
+    {renderProject({
+      imageAltText: '',
+      images: [projectChateauMontrose168, projectChateauMontrose384, projectChateauMontrose600, projectChateauMontrose848],
+      isReversed: true,
+      language,
+      name: 'chateau_montrose'
+    })}
     {/* Egon x Moët & Chandon */}
     {renderProject({
       imageAltText: 'Étiquette de bouteille de champagne Moët & Chandon Grand Vintage 2015',

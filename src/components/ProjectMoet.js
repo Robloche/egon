@@ -25,11 +25,6 @@ import vintage2015RoseL336 from '../assets/images/projects/moet/vintage-2015-ros
 
 const renderHeader = () => (
   <div className='page-project__header'>
-    {/*<div className='project__bullets'>*/}
-    {/*  <div>{Localizer.localize('references.projects.moet.bullet1')}</div>*/}
-    {/*  <div>{Localizer.localize('references.projects.moet.bullet2')}</div>*/}
-    {/*  <div>{Localizer.localize('references.projects.moet.bullet3')}</div>*/}
-    {/*</div>*/}
     <div className='project__introduction'>
       <div className='project__title'>{Localizer.localize('references.projects.moet.title')}</div>
       <div className='project__description-huge'>{Localizer.localize('references.projects.moet.description1')}</div>

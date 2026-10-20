@@ -15,16 +15,6 @@
     grid-template-columns: auto auto;
     margin: 0 var(--margin-inline) var(--margin-block);
 
-    > .project__bullets {
-      align-items: flex-start;
-      background-color: var(--black-transparent-10);
-      display: flex;
-      flex-direction: column;
-      row-gap: 2rem;
-      justify-content: space-evenly;
-      padding: 1rem;
-    }
-
     > .project__introduction {
       margin-left: 10rem;
 
