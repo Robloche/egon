@@ -16,8 +16,6 @@
     margin: 0 var(--margin-inline) var(--margin-block);
 
     > .project__introduction {
-      margin-left: 10rem;
-
       > .project__title {
         font: var(--project-big-size) var(--font-family-title);
         text-decoration: underline;
@@ -33,6 +31,11 @@
   > img {
     &.project__image-full-width {
       margin-inline: var(--margin-inline);
+    }
+
+    &.project__image-two-third {
+      align-self: center;
+      width: 66%;
     }
   }
 
@@ -217,8 +220,6 @@
 
     > .page-project__header {
       > .project__introduction {
-        margin: 5rem;
-
         > .project__description-huge {
           margin-block: 1.6rem;
         }

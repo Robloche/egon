@@ -66,12 +66,9 @@ const renderProject = ({
           <br />
           {Localizer.localize(`references.projects.${name}.description2`)}
         </div>
-        {name !== 'chateau_montrose' ? (
-          <HashLink
-            className='underlined'
-            to={`/${language}/projects/${name}#top`}>{Localizer.localize('references.projects.more')}</HashLink>
-        ) : null}
-
+        <HashLink
+          className='underlined'
+          to={`/${language}/projects/${name}#top`}>{Localizer.localize('references.projects.more')}</HashLink>
       </div>
     </div>
   );
