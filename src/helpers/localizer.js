@@ -2,12 +2,14 @@
 
 import LanguageDetector from 'i18next-browser-languagedetector';
 import i18nInstance from 'i18next';
-import {initReactI18next} from 'react-i18next';
-import {setLanguage} from '../redux/actions';
+import { initReactI18next } from 'react-i18next';
+import { setLanguage } from '../redux/actions';
 
 type ResourcesI18Next = {|
   [string]: {| translation: string |}
 |};
+
+type LocalizeOptions = Record<string, mixed>;
 
 export class Localizer {
 
@@ -27,7 +29,7 @@ export class Localizer {
 
       const resources: ResourcesI18Next = {};
       Object.entries(translations).forEach(([lang, file]) => {
-        resources[lang] = {translation: file};
+        resources[lang] = { translation: file };
       });
 
       return i18nInstance
@@ -68,12 +70,26 @@ export class Localizer {
       Localizer.dispatch = dispatch;
     };
 
-  static localize: (key: string, options: any) => string =
-    (key, options) => Localizer.#instance.t(key, options)
-      .replace(/(?: )([:!?-])/uig, '\u00A0$1')
-      .replace(/« /uig, '«\u00A0')
-      .replace(/ »/uig, '\u00A0»')
-      .replace(/_/uig, '\u00A0');
+  static localize: (key: string, options?: LocalizeOptions) => string =
+    (key, options) => {
+      const rawText = Localizer.#instance.t(key, options);
+
+      const replacements: Record<string, string> = {
+        ' ': '\u00A0',
+        ' »': '\u00A0»',
+        _: '\u00A0',
+        '« ': '«\u00A0',
+      };
+
+      return rawText
+        // Apply French punctuation & space replacements in a single pass
+        .replace(/(?: )([:!?-])|« | »|_/uig, (match, p1) => {
+          if (p1) {
+            return `\u00A0${p1}`;
+          }
+          return replacements[match] || match;
+        });
+    };
 
   static changeLanguage: (language: string) => void =
     (language) => {
@@ -81,7 +97,7 @@ export class Localizer {
         .then(() => {
           Localizer.dispatch(setLanguage(language));
 
-          const {location: {href, pathname}} = window;
+          const { location: { href, pathname } } = window;
           const regex = new RegExp(`/(${Localizer.supportedLanguages.join('|')})/`, 'ui');
           const newUrl = new URL(href);
 
