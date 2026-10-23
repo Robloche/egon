@@ -15,13 +15,13 @@ const SKIP_BUTTON_BOTTOM_MARGIN = 100;
 
 const Film = (): React.Node => {
   const navigate = useNavigate();
-  const languageRef = useRef(useSelector((state) => state.language));
+  const language = useSelector((state) => state.language);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const [isMuted, setIsMuted] = React.useState(true);
 
   const goToHome = useCallback(() => {
-    navigate(`/${languageRef.current}/home`);
-  }, [navigate]);
+    navigate(`/${language}/home`);
+  }, [language, navigate]);
 
   const showSkipButton = useCallback((event: SyntheticEvent<>) => {
     const { currentTarget } = event;

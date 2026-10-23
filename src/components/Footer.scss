@@ -44,7 +44,7 @@
       text-transform: uppercase;
 
       &:hover {
-        background-color: rgb(0 0 0 / 80%);
+        background-color: var(--black-transparent-80);
       }
     }
   }

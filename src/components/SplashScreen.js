@@ -2,7 +2,7 @@
 
 import './SplashScreen.scss';
 import * as React from 'react';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { PAGE_COUNT as CLIENTS_PAGE_COUNT } from './CarouselClients';
 import { PAGE_COUNT as MANIFEST_PAGE_COUNT } from './CarouselManifest';
 import clsx from 'clsx';
@@ -32,7 +32,7 @@ const frames = Object.freeze([frame1, frame2, frame3, frame4, frame5, frame6, fr
 
 const SplashScreen = (): React.Node => {
   const navigate = useNavigate();
-  const languageRef = useRef(useSelector((state) => state.language));
+  const language = useSelector((state) => state.language);
 
   const [fadeOut, setFadeOut] = useState(false);
 
@@ -42,7 +42,7 @@ const SplashScreen = (): React.Node => {
     const splashScreenTimer = setTimeout(() => {
       setFadeOut(true);
       fadeTimer = setTimeout(() => {
-        navigate(`/${languageRef.current}/home`);
+        navigate(`/${language}/home`);
       }, SPLASH_SCREEN_FADE_TIMEOUT);
     }, SPLASH_SCREEN_TIMEOUT);
 
@@ -50,7 +50,7 @@ const SplashScreen = (): React.Node => {
       clearTimeout(splashScreenTimer);
       clearTimeout(fadeTimer);
     };
-  }, [navigate, setFadeOut]);
+  }, [language, navigate, setFadeOut]);
 
   /* eslint-disable react/no-array-index-key */
   return (

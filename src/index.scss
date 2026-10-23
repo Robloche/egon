@@ -13,6 +13,7 @@
   --white-transparent-10: rgb(255 255 255 / 10%);
   --black-transparent-10: rgb(0 0 0 / 10%);
   --black-transparent-30: rgb(0 0 0 / 30%);
+  --black-transparent-80: rgb(0 0 0 / 80%);
   --modal-overlay-background: rgb(0 0 0 / 40%);
   --light-button-hovered-background: rgb(0 0 0 / 5%);
   --border-radius-small: .2rem;
@@ -160,7 +161,7 @@ html {
           text-transform: uppercase;
 
           &:hover {
-            color: rgb(0 0 0 / 80%);
+            color: var(--black-transparent-80);
           }
         }
       }
