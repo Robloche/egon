@@ -24,12 +24,12 @@
   > .project__new-website {
     margin: var(--margin-block) var(--margin-inline);
 
-    > .title {
+    > .new-website__title {
       font: var(--project-big-size) var(--font-family-title);
       margin-bottom: 1rem;
     }
 
-    > .subtitle {
+    > .new-website__subtitle {
       font-size: 1.4rem;
     }
   }
@@ -138,6 +138,10 @@
     > .project__stories {
       margin-inline: 1rem;
 
+      &.centered {
+        font-size: 1rem;
+      }
+
       > .stories__title {
         font-size: 1rem;
       }
@@ -148,6 +152,20 @@
     > .project__credits,
     > .project__screens-wrapper {
       margin-inline: 1rem;
+    }
+
+    > .project__new-website {
+      > .new-website__title {
+        font-size: 1rem;
+      }
+
+      > .new-website__subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    > .project__last-paragraph {
+      font-size: 1rem;
     }
   }
 }

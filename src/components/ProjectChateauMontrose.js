@@ -140,8 +140,8 @@ const ProjectChateauMontrose = (): React.Node => {
         }</div>
       </div>
       <div className='project__new-website'>
-        <div className='title'>{Localizer.localize('references.projects.chateau_montrose.new_website1')}</div>
-        <div className='subtitle'>{Localizer.localize('references.projects.chateau_montrose.new_website2')}</div>
+        <div className='new-website__title'>{Localizer.localize('references.projects.chateau_montrose.new_website1')}</div>
+        <div className='new-website__subtitle'>{Localizer.localize('references.projects.chateau_montrose.new_website2')}</div>
       </div>
       <div className='project__screens-wrapper'>
         <img
