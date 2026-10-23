@@ -16,7 +16,7 @@
     }
 
     > .stories__title {
-      font: 1.8rem var(--font-family-title);
+      font: var(--project-big-size) var(--font-family-title);
       margin-bottom: 1rem;
     }
   }
@@ -42,16 +42,9 @@
     justify-content: center;
     margin-inline: var(--margin-inline);
 
-    &.nature {
-      > img {
-        width: 600px;
-      }
-    }
-
-    &.chocolates {
-      > img {
-        width: 400px;
-      }
+    img {
+      height: auto;
+      max-width: 100%;
     }
   }
 
@@ -148,7 +141,8 @@
 
     > .project__new-website,
     > .project__last-paragraph,
-    > .project__credits {
+    > .project__credits,
+    > .project__screens-wrapper {
       margin-inline: 1rem;
     }
   }

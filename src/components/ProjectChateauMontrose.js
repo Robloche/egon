@@ -160,7 +160,7 @@ const ProjectChateauMontrose = (): React.Node => {
         className='project__last-paragraph'>
         <LocalizedTrans keyName='references.projects.chateau_montrose.paragraph4' />
       </div>
-      <div className='project__screens-wrapper nature'>
+      <div className='project__screens-wrapper'>
         <img
           alt=''
           sizes='(max-width: 600px) 400px, 600px'
@@ -172,7 +172,7 @@ const ProjectChateauMontrose = (): React.Node => {
           src={nature2600}
           srcSet={`${nature2400} 400w, ${nature2600} 600w`} />
       </div>
-      <div className='project__screens-wrapper chocolates'>
+      <div className='project__screens-wrapper'>
         <img
           alt=''
           sizes='400px'
