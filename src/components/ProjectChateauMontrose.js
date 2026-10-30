@@ -19,8 +19,8 @@ import chocolates1400 from '../assets/images/projects/chateau-montrose/chocolate
 import chocolates2400 from '../assets/images/projects/chateau-montrose/chocolates2_400.png';
 import chocolates3400 from '../assets/images/projects/chateau-montrose/chocolates3_400.png';
 import clsx from 'clsx';
-import iphone400 from '../assets/images/projects/chateau-montrose/iphone_400.png';
-import iphone600 from '../assets/images/projects/chateau-montrose/iphone_600.png';
+import iphone340 from '../assets/images/projects/chateau-montrose/iphone_340.png';
+import iphone510 from '../assets/images/projects/chateau-montrose/iphone_510.png';
 import mac400 from '../assets/images/projects/chateau-montrose/mac_400.png';
 import mac600 from '../assets/images/projects/chateau-montrose/mac_600.png';
 import map11400 from '../assets/images/projects/chateau-montrose/map1_1400.png';
@@ -152,9 +152,9 @@ const ProjectChateauMontrose = (): React.Node => {
           srcSet={`${mac400} 400w, ${mac600} 600w`} />
         <img
           alt=''
-          sizes='(max-width: 600px) 400px, 600px'
-          src={iphone600}
-          srcSet={`${iphone400} 400w, ${iphone600} 600w`} />
+          sizes='(max-width: 510px) 340px, 510px'
+          src={iphone510}
+          srcSet={`${iphone340} 340w, ${iphone510} 510w`} />
       </div>
       <div
         className='project__last-paragraph'>
