@@ -1,36 +1,39 @@
 .page-egon-editions {
+  --subtitle-size: 3rem;
+
   .page-egon-editions__container {
     margin-inline: 4rem;
 
     .egon-editions__title {
       font: 2rem var(--font-family-title);
       margin-bottom: 2rem;
+      text-decoration: underline;
     }
 
     .egon-editions__subtitle {
-      font: 1.8rem var(--font-family-verbatim);
-      font-weight: bold;
+      font: var(--subtitle-size) var(--font-family-title);
       margin-bottom: 2rem;
+      text-wrap: balance;
     }
 
     .egon-editions__section-title {
-      font-size: 1.2rem;
-      font-weight: bold;
+      font-family: var(--font-family-body-bold);
       margin-block: 1rem;
     }
 
     .egon-editions__section-paragraph {
-      margin-block: 1rem;
       max-width: 854px;
 
       &.closing {
         font-weight: bold;
+        margin-top: 1rem;
       }
     }
 
     .egon-editions__images-wrapper {
       display: flex;
       flex-wrap: wrap;
+      margin-block: 2rem;
 
       img {
         height: auto;
@@ -42,11 +45,17 @@
       font-weight: bold;
       margin-block: 4rem 1rem;
     }
+
+    a {
+      margin-top: 1rem;
+    }
   }
 }
 
 @media (width <= 600px) {
   .page-egon-editions {
+    --subtitle-size: 2.5rem;
+
     .page-egon-editions__container {
       margin-inline: 2rem;
 
@@ -60,6 +69,8 @@
 
 @media (width <= 400px) {
   .page-egon-editions {
+    --subtitle-size: 2rem;
+
     .page-egon-editions__container {
       margin-inline: 1rem;
     }
