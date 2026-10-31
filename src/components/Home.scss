@@ -56,7 +56,7 @@
     }
 
     > .first-name__content {
-      margin: 0 10rem 0 1rem;
+      margin: 0 18rem 0 1rem;
 
       > .first-name__title {
         margin-bottom: 6rem;
@@ -77,41 +77,6 @@
 
       > .first-name__founder {
         font-family: var(--font-family-body-bold);
-      }
-    }
-
-    > .first-name__pronunciation {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-
-      > a {
-        > img {
-          width: 10rem;
-        }
-
-        &:hover {
-          box-shadow: 0 0 2px 0 rgb(0 0 0 / 20%);
-        }
-      }
-
-      > .first-name__line {
-        background-color: var(--black);
-        height: 14rem;
-        margin: 2rem 0;
-        transform: scaleY(0);
-        transform-origin: bottom;
-        transition: transform 1s ease-out;
-        width: 1px;
-
-        &.visible {
-          transform: scaleY(1);
-        }
-      }
-
-      > .first-name__how {
-        max-width: 10rem;
-        text-align: center;
       }
     }
   }
@@ -616,10 +581,6 @@
         > .first-name__title {
           margin-bottom: 3rem;
         }
-      }
-
-      > .first-name__pronunciation {
-        display: none;
       }
     }
 

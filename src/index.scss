@@ -167,6 +167,14 @@ html {
           }
         }
       }
+
+      .text-pretty {
+        text-wrap: pretty;
+      }
+
+      .text-balance {
+        text-wrap: balance;
+      }
     }
   }
 }

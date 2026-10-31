@@ -18,7 +18,6 @@ import michele1 from '../assets/images/homepage/michele_200.png';
 import michele2 from '../assets/images/homepage/michele_400.png';
 import michele3 from '../assets/images/homepage/michele_600.png';
 import michele4 from '../assets/images/homepage/michele_800.png';
-import qrCode from '../assets/svg/qr-code.svg';
 import severine1 from '../assets/images/homepage/severine_200.png';
 import severine2 from '../assets/images/homepage/severine_400.png';
 import severine3 from '../assets/images/homepage/severine_600.png';
@@ -27,59 +26,41 @@ import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useSelector } from 'react-redux';
 
-const renderSectionFirstName = () => {
-  const { inView, ref } = useInView();
-
-  return (
-    <>
-      <div
-        className='page-agency__first-name page-agency__section'
-        data-id='first-name'>
-        <div className='side-title'>{Localizer.localize('agency.first_name.side_title')}</div>
-        <div className='first-name__drawing'>
-          <img
-            alt='Egon by Séverine'
-            sizes='(max-width: 900px) 144px, (max-width: 1200px) 287px, (max-width: 1400px) 430px, 573px'
-            src={egon4}
-            srcSet={`${egon1} 144w, ${egon2} 287w, ${egon3} 430w, ${egon4} 573w`} />
-          <div className='first-name__copyright'>&#169; SB</div>
-        </div>
+const renderSectionFirstName = () => (
+  <>
+    <div
+      className='page-agency__first-name page-agency__section'
+      data-id='first-name'>
+      <div className='side-title'>{Localizer.localize('agency.first_name.side_title')}</div>
+      <div className='first-name__drawing'>
+        <img
+          alt='Egon by Séverine'
+          sizes='(max-width: 900px) 144px, (max-width: 1200px) 287px, (max-width: 1400px) 430px, 573px'
+          src={egon4}
+          srcSet={`${egon1} 144w, ${egon2} 287w, ${egon3} 430w, ${egon4} 573w`} />
+        <div className='first-name__copyright'>&#169; SB</div>
+      </div>
+      <AnimatedText
+        classList='first-name__content'
+        direction='up'>
+        <div className='first-name__title title'>{Localizer.localize('agency.first_name.why_egon')}</div>
+        <div className='first-name__paragraph text-balance'>{Localizer.localize('agency.first_name.paragraph1')}</div>
+        <div
+          className='first-name__paragraph paragraph-bold text-balance'>{Localizer.localize('agency.first_name.paragraph2')}</div>
+        <div className='first-name__severine'>Séverine Breton Join-Diéterle</div>
+        <div className='first-name__founder'>{Localizer.localize('agency.first_name.founder')}</div>
+      </AnimatedText>
+    </div>
+    <div className='section__closing first-name__closing'>
+      <div className='first-name__closing-content'>
         <AnimatedText
-          classList='first-name__content'
-          direction='up'>
-          <div className='first-name__title title'>{Localizer.localize('agency.first_name.why_egon')}</div>
-          <div className='first-name__paragraph'>{Localizer.localize('agency.first_name.paragraph1')}</div>
-          <div
-            className='first-name__paragraph paragraph-bold'>{Localizer.localize('agency.first_name.paragraph2')}</div>
-          <div className='first-name__severine'>Séverine Breton Join-Diéterle</div>
-          <div className='first-name__founder'>{Localizer.localize('agency.first_name.founder')}</div>
-        </AnimatedText>
-        <div className='first-name__pronunciation'>
-          <a
-            href='https://www.youtube.com/watch?v=H5kkx2Lk5x4'
-            rel='noopener noreferrer'
-            target='_blank'>
-            <img
-              alt='QR code pointant vers la prononciation du prénom Egon'
-              src={qrCode} />
-          </a>
-          <div
-            className={clsx('first-name__line', inView && 'visible')}
-            ref={ref} />
-          <div className='first-name__how'>{Localizer.localize('agency.first_name.pronunciation')}</div>
-        </div>
+          classList='first-name__title title verbatim title-white'
+          direction='up'
+          stringKey='agency.first_name.closing' />
       </div>
-      <div className='section__closing first-name__closing'>
-        <div className='first-name__closing-content'>
-          <AnimatedText
-            classList='first-name__title title verbatim title-white'
-            direction='up'
-            stringKey='agency.first_name.closing' />
-        </div>
-      </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 
 const renderSectionPhilosophy = () => (
   <>
