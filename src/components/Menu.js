@@ -132,6 +132,12 @@ const renderLinks = (
       className='menu__item'
       onClick={handleCloseOnClick}
       onFocus={handleCloseAll}
+      scroll={scrollTopWithHeader}
+      to={`/${language}/egon-editions#top`}>{Localizer.localize('menu.egon_editions.label')}</HashLink>
+    <HashLink
+      className='menu__item'
+      onClick={handleCloseOnClick}
+      onFocus={handleCloseAll}
       to={`/${language}/contact#top`}>{Localizer.localize('menu.contact.label')}</HashLink>
     <HashLink
       className='menu__item'

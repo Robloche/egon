@@ -51,6 +51,26 @@ creation.introduction.paragraph1;We love what you love through your eyes, your h
 creation.introduction.paragraph2;What we share here... is just a selection of the projects that are close to our hearts. A selection of case studies that may give an idea of our fields of action. These are neither our favorites (although we obviously love them all) nor the most prestigious.\nJust the ones that might give you a better idea of our portfolio of possibilities.\nDon't hesitate to contact us to discuss your project.
 creation.introduction.side_title;CREATION - Introduction
 creation.introduction.title;What we share here...
+egon_editions.last_book.content;<bold>Le Dîner de Verre</bold> — a novel by Azélina Jaboulet-Vercherre, with a preface by Stéphane Derenoncourt — opens this publishing adventure.
+egon_editions.last_book.label;Our latest book:
+egon_editions.last_book.link;Discover the book
+egon_editions.last_section.content;Let us imagine together the book that will give it its full dimension.
+egon_editions.last_section.label;Great Maisons inspire fine books, don't they?
+egon_editions.last_section.link;Let's talk about your project
+egon_editions.section1.paragraph1;EGON Éditions creates singular books for prestigious Maisons and publishes inspired authors' voices.
+egon_editions.section1.paragraph2;A story to pass on, a perspective to share, an imaginary world to explore: every project finds its form in the encounter between words, images, and material.
+egon_editions.section1.title;Some stories deserve a book.
+egon_editions.section2.closing;Books to give, to keep, and to pass on.
+egon_editions.section2.paragraph1;Revealing a heritage, celebrating a creation, showcasing know-how, or offering a fresh perspective on a Maison.
+egon_editions.section2.paragraph2;We design bespoke books, from editorial concept to multilingual writing, photography, and production.
+egon_editions.section2.paragraph3;Authors, artists, photographers, and book artisans combine their sensibilities to compose a book-object true to the spirit of each project, down to the smallest detail.
+egon_editions.section2.title;Maisons tell their stories.
+egon_editions.section3.paragraph1;EGON Éditions also opens its pages to authors whose writing awakens the senses and brings forth unexpected connections.
+egon_editions.section3.paragraph2;With <bold>La Table d’EGON</bold>, we launch a collection dedicated to taste as a realm of creation.
+egon_editions.section3.paragraph3;Writers, artists, and personalities imagine a table where literature, wine, gastronomy, and emotions meet.
+egon_editions.section3.title;Voices take their place.
+egon_editions.subtitle;The art of crafting books for exceptional Maisons & singular voices.
+egon_editions.title;EGON Éditions
 expertises.creation.closing;We believe that living remains an art seeking permanence
 expertises.creation.column1.item1;Artistic Direction
 expertises.creation.column1.item2;Mood
@@ -202,6 +222,7 @@ menu.contact.label;Contact
 menu.creation.customers;Who?
 menu.creation.introduction;Introduction
 menu.creation.label;Creation
+menu.egon_editions.label;EGON Éditions
 menu.expertises.creation;Creation
 menu.expertises.digital;Digital
 menu.expertises.edition;Publishing

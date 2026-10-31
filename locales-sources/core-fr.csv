@@ -51,6 +51,26 @@ creation.introduction.paragraph1;Nous aimons ce que vous aimez à travers vos ye
 creation.introduction.paragraph2;Ce que nous partageons ici... n'est qu'une partie des projets qui nous tiennent à cœur. Une sélection d'études de cas qui peuvent donner une idée de nos domaines d'action. Ce ne sont ni nos préférés (même si nous les aimons tous évidemment) ni les plus prestigieux.\nSeulement ceux qui peuvent vous donner une meilleure idée de notre portefeuille de possibilités.\nN'hésitez pas à nous contacter pour étudier votre projet.
 creation.introduction.side_title;CREATION - Introduction
 creation.introduction.title;Ce que nous partageons ici...
+egon_editions.last_book.content;<bold>Le Dîner de Verre</bold> — roman d’Azélina Jaboulet-Vercherre, préfacé par Stéphane Derenoncourt — ouvre cette aventure éditoriale.
+egon_editions.last_book.label;Notre dernier ouvrage :
+egon_editions.last_book.link;Découvrir le livre
+egon_editions.last_section.content;Imaginons ensemble l’ouvrage qui lui donnera toute sa dimension.
+egon_editions.last_section.label;Les Grandes Maisons inspirent les beaux livres. N’est-il pas ?
+egon_editions.last_section.link;Parlons de votre projet
+egon_editions.section1.paragraph1;EGON Éditions imagine des livres singuliers pour les grandes Maisons et publie des voix d’auteurs inspirées.
+egon_editions.section1.paragraph2;Une histoire à transmettre, un regard à partager, un imaginaire à explorer : chaque projet trouve sa forme dans la rencontre entre les mots, les images et la matière.
+egon_editions.section1.title;Il est des histoires qui méritent un livre.
+egon_editions.section2.closing;Des livres que l’on offre, que l’on garde et que l’on transmet.
+egon_editions.section2.paragraph1;Révéler un héritage, célébrer une création, donner à voir un savoir-faire ou porter un regard inédit sur une Maison.
+egon_editions.section2.paragraph2;Nous concevons des ouvrages sur mesure, de l’intention éditoriale, à l’écriture mulitlingue, la photographie et la fabrication.
+egon_editions.section2.paragraph3;Auteurs, artistes, photographes et artisans du livre réunissent leurs sensibilités pour composer un livre-objet fidèle à l’esprit de chaque projet, jusque dans ses moindres détails.
+egon_editions.section2.title;Les Maisons se racontent.
+egon_editions.section3.paragraph1;EGON Éditions ouvre aussi ses pages à des auteurs dont l’écriture éveille les sens et fait naître des correspondances inattendues.
+egon_editions.section3.paragraph2;Avec <bold>La Table d’EGON</bold>, nous inaugurons une collection consacrée au goût comme territoire de création.
+egon_editions.section3.paragraph3;Écrivains, artistes et personnalités y imaginent une table où se rencontrent littérature, vin, gastronomie et émotions.
+egon_editions.section3.title;Les voix prennent place.
+egon_editions.subtitle;The art of crafting books for exceptional Maisons & singular voices.
+egon_editions.title;EGON Éditions
 expertises.creation.closing;Nous croyons que vivre reste un art en quête de perpétuité
 expertises.creation.column1.item1;Direction de Création
 expertises.creation.column1.item2;Mood
@@ -202,6 +222,7 @@ menu.contact.label;Contact
 menu.creation.customers;Qui ?
 menu.creation.introduction;Introduction
 menu.creation.label;Creation
+menu.egon_editions.label;EGON Éditions
 menu.expertises.creation;Création
 menu.expertises.digital;Digital
 menu.expertises.edition;Édition

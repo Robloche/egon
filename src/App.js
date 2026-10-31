@@ -4,6 +4,7 @@ import * as React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contact from './components/Contact';
 import Creation from './components/Creation';
+import EgonEditions from './components/EgonEditions';
 import Expertises from './components/Expertises';
 import Film from './components/Film';
 import Home from './components/Home';
@@ -54,6 +55,12 @@ const App = (): React.Node => (
         <Route
           element={<Project />}
           path='/projects/:name' />
+        <Route
+          element={<EgonEditions />}
+          path='/:lang/egon-editions' />
+        <Route
+          element={<EgonEditions />}
+          path='/egon-editions' />
         <Route
           element={<Expertises />}
           path='/:lang/expertises' />

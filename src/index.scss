@@ -157,6 +157,7 @@ html {
         &.underlined {
           border-bottom: 1px solid var(--black);
           color: var(--black);
+          display: inline-block;
           font: .8rem var(--font-family-body-bold);
           padding-bottom: .2rem;
           text-decoration: none;
