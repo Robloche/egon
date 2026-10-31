@@ -21,7 +21,7 @@ const LocalizedTrans = ({
   /* eslint-disable react/jsx-props-no-spreading */
   return (
     <Trans
-      components={{ bold: <strong /> }}
+      components={{ bold: <span className='bold' /> }}
       defaults={localizedString}
       i18nKey='this_key_will_never_exist'
       {...props} />

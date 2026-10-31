@@ -169,6 +169,10 @@ html {
         }
       }
 
+      .bold {
+        font-family: var(--font-family-body-bold);
+      }
+
       .text-pretty {
         text-wrap: pretty;
       }
