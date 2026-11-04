@@ -10,6 +10,8 @@ import { Localizer } from '../helpers/localizer';
 import bucketGlass from '../assets/images/egon-editions/bucket-glass_427.png';
 import glasses from '../assets/images/egon-editions/glasses_427.png';
 import pot from '../assets/images/egon-editions/pot_427.png';
+import ruinartBook from '../assets/images/egon-editions/ruinart-book_427.png';
+import ruinartBooks from '../assets/images/egon-editions/ruinart-books_427.png';
 import seeView from '../assets/images/egon-editions/see-view_427.png';
 import trees from '../assets/images/egon-editions/trees_427.png';
 import { useSelector } from 'react-redux';
@@ -74,6 +76,14 @@ const EgonEditions = (): React.Node => {
           <img
             alt=''
             src={bucketGlass} />
+        </div>
+        <div className='egon-editions__images-wrapper'>
+          <img
+            alt=''
+            src={ruinartBooks} />
+          <img
+            alt=''
+            src={ruinartBook} />
         </div>
         {/* Last book */}
         <div className='egon-editions__label'>{Localizer.localize('egon_editions.last_book.label')}</div>
