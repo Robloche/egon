@@ -116,9 +116,10 @@
 
             .book-cover__image {
               grid-area: 1 / 1;
+              height: 400px;
               opacity: 0%;
               transition: opacity var(--medium-transition) ease-in-out;
-              width: 100%;
+              width: 247px;
 
               &.visible {
                 opacity: 100%;

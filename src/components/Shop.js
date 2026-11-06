@@ -12,7 +12,12 @@ import azelina1 from '../assets/images/shop/azelina_190.png';
 import azelina2 from '../assets/images/shop/azelina_379.png';
 import azelina3 from '../assets/images/shop/azelina_569.png';
 import azelina4 from '../assets/images/shop/azelina_758.png';
-import bookCover from '../assets/images/shop/book-cover_247.png';
+import bookBackCover247 from '../assets/images/shop/book-back-cover_247.png';
+import bookBackCover494 from '../assets/images/shop/book-back-cover_494.png';
+import bookBackCover740 from '../assets/images/shop/book-back-cover_740.png';
+import bookCover247 from '../assets/images/shop/book-cover_247.png';
+import bookCover494 from '../assets/images/shop/book-cover_494.png';
+import bookCover740 from '../assets/images/shop/book-cover_740.png';
 import clsx from 'clsx';
 import { useSelector } from 'react-redux';
 
@@ -37,7 +42,10 @@ const Shop = (): React.Node => {
     setCurrentIndex(index);
   }, []);
 
-  const covers = [bookCover];
+  const covers = [
+    { q1: bookCover247, q2: bookCover494, q3: bookCover740 },
+    { q1: bookBackCover247, q2: bookBackCover494, q3: bookBackCover740 }
+  ];
 
   return (
     <div
@@ -92,8 +100,11 @@ const Shop = (): React.Node => {
                 <img
                   alt=''
                   className={clsx('book-cover__image', index === currentIndex && 'visible')}
+                  height={400}
                   key={`cover-img-${index}`}
-                  src={cover} />
+                  src={cover.q1}
+                  srcSet={`${cover.q1} 1x, ${cover.q2} 2x, ${cover.q3} 3x`}
+                  width={247} />
               ))}
             </div>
             <div className='book-cover__carousel'>
