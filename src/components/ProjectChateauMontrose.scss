@@ -26,11 +26,15 @@
 
     > .new-website__title {
       font: var(--project-big-size) var(--font-family-title);
-      margin-bottom: 1rem;
     }
 
     > .new-website__subtitle {
       font-size: 1.4rem;
+      margin-block: 1rem;
+    }
+
+    > a {
+      color: var(--black);
     }
   }
 

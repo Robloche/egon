@@ -142,6 +142,10 @@ const ProjectChateauMontrose = (): React.Node => {
       <div className='project__new-website'>
         <div className='new-website__title'>{Localizer.localize('references.projects.chateau_montrose.new_website1')}</div>
         <div className='new-website__subtitle'>{Localizer.localize('references.projects.chateau_montrose.new_website2')}</div>
+        <a
+          href='https://www.chateau-montrose.com'
+          rel='noopener noreferrer'
+          target='_blank'>chateau-montrose.com</a>
       </div>
       <div className='project__screens-wrapper'>
         <img
